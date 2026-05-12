@@ -851,6 +851,31 @@
         "new-skill-candidate",
         "rejected"
       ]
+    },
+    {
+      "skill_id": "premortem",
+      "scope": "generic",
+      "domain": "planning",
+      "automation_level": "semi-automatic",
+      "pilot_priority": "now",
+      "protected_surfaces": [
+        "name",
+        "description",
+        "When to Use",
+        "When NOT to Use",
+        "Core Moves",
+        "skill-domain",
+        "skill-category",
+        "skill-thesis"
+      ],
+      "proposal_targets": [
+        "Activation Triggers",
+        "Optional Modules",
+        "Verification",
+        "Anti-patterns",
+        "templates/",
+        "examples/"
+      ]
     }
   ]
 }
