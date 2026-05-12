@@ -2,7 +2,7 @@
 name: ux-provocation
 description: Pressure test the dominant UX hypothesis before the team locks in a direction too early.
 version: 0.1.0
-owner: adaptative-skills
+owner: adaptive-skills
 ---
 
 # Overview

@@ -2,7 +2,7 @@
 name: workflow
 description: Frame a task with explicit scope, proof, and next step before execution starts.
 version: 0.1.0
-owner: adaptative-skills
+owner: adaptive-skills
 ---
 
 # Overview

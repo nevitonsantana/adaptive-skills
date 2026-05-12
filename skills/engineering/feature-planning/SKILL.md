@@ -2,7 +2,7 @@
 name: feature-planning
 description: Turn a feature request into a small, testable delivery plan with scope, risks, slices, and proof.
 version: 0.1.0
-owner: adaptative-skills
+owner: adaptive-skills
 ---
 
 # Overview

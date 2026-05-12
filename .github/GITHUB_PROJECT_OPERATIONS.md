@@ -1,7 +1,7 @@
-# 📋 GitHub Project Operations - Adaptative Skills
+# 📋 GitHub Project Operations - Adaptive Skills
 
 > **Baseado em:** Crisis Monitor Project Operations  
-> **Adaptado para:** Adaptative Skills Library  
+> **Adaptado para:** Adaptive Skills Library  
 > **Versão:** 1.0.0  
 > **Data:** 2026-04-16
 
@@ -415,10 +415,10 @@ gh issue create \
   --title "Título da iniciativa ou tarefa" \
   --body "Descrição completa..." \
   --label "priority:P1,category:skill,domain:product" \
-  --project "Adaptative Skills Kanban"
+  --project "Adaptive Skills Kanban"
 
 # Vincular ao project e iniciar
-gh project item-add --project-id "PVT_kwDO..." --url "https://github.com/nevitonsantana/adaptative-skills/issues/<numero>"
+gh project item-add --project-id "PVT_kwDO..." --url "https://github.com/nevitonsantana/adaptive-skills/issues/<numero>"
 
 # Setar campos
 gh project item-edit --project-id "PVT_kwDO..." --id "<item-id>" \
@@ -473,7 +473,7 @@ gh issue create \
   --title "Fatia restante: ..." \
   --body "Continuação da #<numero>..." \
   --label "priority:P1" \
-  --project "Adaptative Skills Kanban"
+  --project "Adaptive Skills Kanban"
 
 # Linkar como subissue
 gh issue edit <subissue-numero> --milestone "<parent-issue>"
@@ -566,4 +566,4 @@ Issue pode ir para Done?
 
 ---
 
-*Documento baseado nas regras do Crisis Monitor, adaptado para Adaptative Skills. Última atualização: 2026-04-16*
+*Documento baseado nas regras do Crisis Monitor, adaptado para Adaptive Skills. Última atualização: 2026-04-16*

@@ -2,7 +2,7 @@
 name: monitoring-architect
 description: Design monitoring coverage as an operational sensing system with useful sources, tiers, keywords, noise filters, and readiness.
 version: 0.1.0
-owner: adaptative-skills
+owner: adaptive-skills
 ---
 
 # Overview

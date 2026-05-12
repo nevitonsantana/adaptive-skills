@@ -2,7 +2,7 @@
 
 ## What this repository gives you
 
-Adaptative Skills gives you a reusable micro-skill library.
+Adaptive Skills gives you a reusable micro-skill library.
 It does **not** try to replace your project's local operating system.
 
 Use this repository when you want:
@@ -59,10 +59,10 @@ Typical loop:
 
 ## Using the library with AletheIA
 
-Use Adaptative Skills for micro execution and AletheIA for macro orchestration.
+Use Adaptive Skills for micro execution and AletheIA for macro orchestration.
 
 A practical split:
-- **Adaptative Skills** -> execution pattern, heuristics, output discipline
+- **Adaptive Skills** -> execution pattern, heuristics, output discipline
 - **AletheIA** -> framing, review gates, continuity, handoff, learning
 
 AletheIA may suggest the skill, enforce minimum proof, or detect the need for handoff.

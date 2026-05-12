@@ -2,11 +2,11 @@
 
 ## Goal
 
-Use Adaptative Skills from another project with a small, predictable Codex-first setup.
+Use Adaptive Skills from another project with a small, predictable Codex-first setup.
 
 This guide assumes:
 - the consumer project has its own local operating rules
-- Adaptative Skills remains the reusable skill canon
+- Adaptive Skills remains the reusable skill canon
 - Codex skills are installed under `~/.codex/skills`
 
 ## Recommended setup order
@@ -16,8 +16,8 @@ This guide assumes:
 You can keep the repository as a standalone checkout and project from it:
 
 ```bash
-git clone https://github.com/nevitonsantana/adaptative-skills.git
-cd adaptative-skills
+git clone https://github.com/nevitonsantana/adaptive-skills.git
+cd adaptive-skills
 ```
 
 ### 2. Validate before projecting
@@ -100,7 +100,7 @@ Use this when:
 ## Suggested operating model in a consumer repo
 
 A practical split is:
-- Adaptative Skills -> reusable skill canon
+- Adaptive Skills -> reusable skill canon
 - consumer repo -> local ownership, security, review, and release rules
 - AletheIA (optional) -> macro framing, proof expectations, handoff, continuity
 

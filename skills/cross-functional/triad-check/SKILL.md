@@ -2,7 +2,7 @@
 name: triad-check
 description: Bring product, design, and technical perspectives together when a decision crosses boundaries or is hard to reverse.
 version: 0.1.0
-owner: adaptative-skills
+owner: adaptive-skills
 ---
 
 # Overview

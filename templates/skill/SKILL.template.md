@@ -2,7 +2,7 @@
 name: your-skill-name
 description: One-sentence description of the capability and when to use it.
 version: 0.1.0
-owner: adaptative-skills
+owner: adaptive-skills
 ---
 
 # Overview

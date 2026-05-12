@@ -1,8 +1,8 @@
-# Adaptative Skills - Project Setup Guide
+# Adaptive Skills - Project Setup Guide
 
 ## GitHub Project: https://github.com/users/nevitonsantana/projects/3/views/1
 
-Este documento contém a estrutura completa do Kanban e Roadmap Evolutivo para o projeto Adaptative Skills.
+Este documento contém a estrutura completa do Kanban e Roadmap Evolutivo para o projeto Adaptive Skills.
 
 ---
 

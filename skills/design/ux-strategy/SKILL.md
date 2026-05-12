@@ -2,7 +2,7 @@
 name: ux-strategy
 description: Compare plausible UX directions, surface trade-offs, and take a position when the interaction approach is still open.
 version: 0.1.0
-owner: adaptative-skills
+owner: adaptive-skills
 ---
 
 # Overview

@@ -2,12 +2,12 @@
 
 ## Goal
 
-Explain how **AletheIA agent roles** consume **Adaptative Skills** without collapsing the macro and micro layers into one system.
+Explain how **AletheIA agent roles** consume **Adaptive Skills** without collapsing the macro and micro layers into one system.
 
 The stable boundary is:
 
 - **AletheIA** = macro layer
-- **Adaptative Skills** = micro layer
+- **Adaptive Skills** = micro layer
 
 This document describes a consumption model, not a new skill type and not a second agent framework inside this repository.
 
@@ -43,7 +43,7 @@ Without this separation, teams tend to create one of two problems:
 The healthy model is simpler:
 
 - AletheIA defines the portable semantic boundary
-- Adaptative Skills provides the reusable execution support
+- Adaptive Skills provides the reusable execution support
 - the consumer project decides how those are projected into a specific runtime
 
 ---
@@ -139,7 +139,7 @@ Problems such as:
 
 still belong to AletheIA or to consumer-local operating overlays.
 
-The Efficiency Layer remains a bounded Adaptative Skills track focused on lighter execution support such as chunking, handoff summary, and checkpoint review.
+The Efficiency Layer remains a bounded Adaptive Skills track focused on lighter execution support such as chunking, handoff summary, and checkpoint review.
 
 ---
 

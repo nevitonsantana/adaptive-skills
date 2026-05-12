@@ -2,7 +2,7 @@
 name: observability-review
 description: Design or review metrics, events, alerts, and diagnostics so they support real decisions and expose real failure.
 version: 0.1.0
-owner: adaptative-skills
+owner: adaptive-skills
 ---
 
 # Overview

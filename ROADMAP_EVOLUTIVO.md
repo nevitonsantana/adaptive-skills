@@ -1,4 +1,4 @@
-# 🗺️ Roadmap Evolutivo - Adaptative Skills
+# 🗺️ Roadmap Evolutivo - Adaptive Skills
 
 > **Versão do Roadmap:** 1.0  
 > **Data de Criação:** 2026-04-15  

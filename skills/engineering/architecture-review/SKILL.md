@@ -2,7 +2,7 @@
 name: architecture-review
 description: Review boundaries, coupling, complexity, and maintenance cost before consolidating a structural decision.
 version: 0.1.0
-owner: adaptative-skills
+owner: adaptive-skills
 ---
 
 # Overview

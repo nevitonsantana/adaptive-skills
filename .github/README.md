@@ -1,4 +1,4 @@
-# 📋 GitHub Project Setup - Adaptative Skills
+# 📋 GitHub Project Setup - Adaptive Skills
 
 > **Project Kanban:** https://github.com/users/nevitonsantana/projects/3/views/1  
 > **Baseado em:** Crisis Monitor Project Operations  
@@ -9,7 +9,7 @@
 
 ## 🎯 Objetivo
 
-Este diretório contém toda a configuração necessária para operar o GitHub Project do Adaptative Skills como sistema oficial de:
+Este diretório contém toda a configuração necessária para operar o GitHub Project do Adaptive Skills como sistema oficial de:
 
 - Roadmap e backlog
 - Discovery e priorização
@@ -192,7 +192,7 @@ gh issue create \
   --title "[TASK] Minha tarefa" \
   --template task-kanban.md \
   --label "priority:P2-Medium,category:task,domain:engineering" \
-  --project "Adaptative Skills Kanban"
+  --project "Adaptive Skills Kanban"
 ```
 
 ### Iniciar Trabalho
@@ -271,4 +271,4 @@ Trate como `stale warning`. Exija handoff ou fechamento explícito antes de reas
 
 ---
 
-*Documentação baseada nas regras do Crisis Monitor, adaptada para Adaptative Skills. Última atualização: 2026-04-16*
+*Documentação baseada nas regras do Crisis Monitor, adaptada para Adaptive Skills. Última atualização: 2026-04-16*

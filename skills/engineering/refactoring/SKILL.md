@@ -2,7 +2,7 @@
 name: refactoring
 description: Improve structure and clarity incrementally while protecting behavior and rollback options.
 version: 0.1.0
-owner: adaptative-skills
+owner: adaptive-skills
 ---
 
 # Overview

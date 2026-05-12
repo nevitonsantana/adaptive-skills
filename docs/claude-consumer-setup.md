@@ -2,7 +2,7 @@
 
 ## Goal
 
-Use Adaptative Skills in a Claude-oriented workflow without pretending that v0 supports symmetric auto-installation.
+Use Adaptive Skills in a Claude-oriented workflow without pretending that v0 supports symmetric auto-installation.
 
 In v0, Claude projection is intentionally selective.
 That means the repository helps you decide what to reuse, but it does not try to force every skill into a Claude-native installation shape.
@@ -53,7 +53,7 @@ It simply means the repository is not treating it as part of the current default
 
 A good Claude-oriented consumer setup usually looks like this:
 
-- Adaptative Skills repo -> canonical skill definition
+- Adaptive Skills repo -> canonical skill definition
 - consumer project docs -> local notes about when Claude should use or adapt those skills
 - consumer project Claude setup -> only the small subset that truly benefits from a Claude-specific wrapper
 
@@ -87,7 +87,7 @@ Do not choose manual adaptation when:
 ## Relationship to AletheIA
 
 If you use AletheIA, keep the same split:
-- Adaptative Skills -> micro execution guidance
+- Adaptive Skills -> micro execution guidance
 - AletheIA -> macro framing, gates, continuity, handoff
 
 Claude-specific wrapping stays local to the consumer project unless it becomes broadly reusable.

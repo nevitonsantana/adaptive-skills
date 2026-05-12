@@ -2,7 +2,7 @@
 name: crisis-analyst
 description: Read a crisis context by separating signal from noise, naming stage, and surfacing the next meaningful watchpoints.
 version: 0.1.0
-owner: adaptative-skills
+owner: adaptive-skills
 ---
 
 # Overview

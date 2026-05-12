@@ -2,7 +2,7 @@
 name: heuristic-audit
 description: Audit an existing interface for usability failures, operational impact, and minimum defensible fixes.
 version: 0.1.0
-owner: adaptative-skills
+owner: adaptive-skills
 ---
 
 # Overview

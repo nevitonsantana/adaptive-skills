@@ -2,13 +2,13 @@
 
 ## Goal
 
-Run a small, explicit test of how Adaptative Skills behaves when AletheIA is used as the macro layer.
+Run a small, explicit test of how Adaptive Skills behaves when AletheIA is used as the macro layer.
 
 This is **not** a benchmark and not a runtime integration.
 It is a practical operating test for the macro/micro split:
 
 - **AletheIA** -> framing, proof expectations, review gates, handoff, continuity
-- **Adaptative Skills** -> micro execution pattern for the task itself
+- **Adaptive Skills** -> micro execution pattern for the task itself
 
 ## Recommended first test shape
 
@@ -43,7 +43,7 @@ Capture:
 - minimum proof
 - whether handoff risk exists
 
-### 2. Adaptative Skills drives the micro moves
+### 2. Adaptive Skills drives the micro moves
 
 Use:
 - `workflow` to set local execution clarity

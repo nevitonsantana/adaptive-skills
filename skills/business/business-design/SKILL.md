@@ -2,7 +2,7 @@
 name: business-design
 description: Turn messy research and signals into structured product or business strategy with explicit facts, interpretations, hypotheses, and implications.
 version: 0.1.0
-owner: adaptative-skills
+owner: adaptive-skills
 ---
 
 # Overview

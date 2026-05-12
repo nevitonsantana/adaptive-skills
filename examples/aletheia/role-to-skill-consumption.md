@@ -2,7 +2,7 @@
 
 ## Goal
 
-Show how a consumer can keep the same AletheIA mental stack across runtimes while letting Adaptative Skills handle the micro execution support.
+Show how a consumer can keep the same AletheIA mental stack across runtimes while letting Adaptive Skills handle the micro execution support.
 
 ---
 
@@ -122,7 +122,7 @@ What changes:
 This is the healthy macro/micro split:
 
 - AletheIA defines the role and boundary meaning
-- Adaptative Skills supplies the micro execution support
+- Adaptive Skills supplies the micro execution support
 - the consumer project controls the runtime-specific projection
 
 No layer has to pretend to be the others.

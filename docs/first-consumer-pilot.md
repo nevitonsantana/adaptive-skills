@@ -2,7 +2,7 @@
 
 ## Goal
 
-Run the first real adoption round of Adaptative Skills in another project without turning the pilot into a full migration.
+Run the first real adoption round of Adaptive Skills in another project without turning the pilot into a full migration.
 
 The purpose of the pilot is to answer:
 - can a small skill bundle improve execution quality?

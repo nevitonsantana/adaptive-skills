@@ -2,7 +2,7 @@
 
 ## Why this layer exists
 
-Adaptative Skills already treats skills as reusable, structured, and portable.
+Adaptive Skills already treats skills as reusable, structured, and portable.
 The next step is to let the library improve through real usage without turning it into an unrestricted self-rewriting system.
 
 The evolution layer exists to make that improvement:
@@ -194,7 +194,7 @@ See `docs/efficiency-layer.md` for the roadmap.
 ## Relation to AletheIA
 
 AletheIA may eventually help coordinate this layer by surfacing repeated breakdowns, handoff friction, and continuity signals.
-But Adaptative Skills must remain useful without AletheIA.
+But Adaptive Skills must remain useful without AletheIA.
 The evolution layer therefore stays repository-native and review-native in v1.1.
 
 ## Recommended next step
