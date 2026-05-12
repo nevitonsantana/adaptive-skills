@@ -32,7 +32,7 @@ Do not create empty sidecar directories.
 
 ## Before opening a PR
 
-Run:
+CI runs all validators automatically on every PR. You can run them locally first:
 
 ```bash
 python3 scripts/validate_skills.py
@@ -46,6 +46,8 @@ If you changed projection metadata, also run:
 ```bash
 python3 scripts/project_to_codex.py --check
 ```
+
+All scripts must exit with code 0 before merge. The `Quality Gate` CI job aggregates all checks.
 
 ## When to add an example
 
