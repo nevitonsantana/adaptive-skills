@@ -483,6 +483,27 @@
         "mode": "available-not-default",
         "target_path": null
       }
+    },
+    {
+      "id": "premortem",
+      "source_path": "skills/planning/premortem/SKILL.md",
+      "category": "planning",
+      "status": "active",
+      "portability_tags": [
+        "planning",
+        "generic"
+      ],
+      "codex_projection": {
+        "enabled": true,
+        "target_name": "premortem",
+        "generate_openai_yaml": true,
+        "default_prompt": "Use $premortem when the task involves stress-testing a plan by assuming it already failed."
+      },
+      "claude_projection": {
+        "enabled": true,
+        "mode": "available-not-default",
+        "target_path": null
+      }
     }
   ]
 }
