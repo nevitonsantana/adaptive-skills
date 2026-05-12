@@ -1,4 +1,4 @@
-# Labels do GitHub Project - Adaptative Skills
+# Labels do GitHub Project - Adaptive Skills
 
 ## Prioridade
 

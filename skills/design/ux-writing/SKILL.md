@@ -2,7 +2,7 @@
 name: ux-writing
 description: Improve product language, terminology, and explanatory text so interface and documentation are semantically safe and easy to act on.
 version: 0.1.0
-owner: adaptative-skills
+owner: adaptive-skills
 ---
 
 # Overview

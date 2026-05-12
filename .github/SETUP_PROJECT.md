@@ -1,4 +1,4 @@
-# 🚀 Setup do GitHub Project - Adaptative Skills
+# 🚀 Setup do GitHub Project - Adaptive Skills
 
 > **Project URL:** https://github.com/users/nevitonsantana/projects/3/views/1  
 > **Versão deste guia:** 1.0.0  
@@ -29,7 +29,7 @@ gh auth login
 
 ```bash
 # Navegue até o repositório
-cd /path/to/adaptative-skills
+cd /path/to/adaptive-skills
 
 # Sincronizar labels a partir do arquivo .github/labels.yml
 gh label sync --delete-missing .github/labels.yml
@@ -105,10 +105,10 @@ gh issue create \
   --title "[TASK] Preencher skeleton do domínio Product" \
   --body-file .github/ISSUE_TEMPLATE/task-kanban.md \
   --label "priority:P1-High,category:skill,domain:product,complexity:M" \
-  --project "Adaptative Skills Kanban"
+  --project "Adaptive Skills Kanban"
 
 # Ou use a UI do GitHub:
-# 1. Acesse https://github.com/nevitonsantana/adaptative-skills/issues/new/choose
+# 1. Acesse https://github.com/nevitonsantana/adaptive-skills/issues/new/choose
 # 2. Selecione template apropriado
 # 3. Preencha e submit
 ```
@@ -130,7 +130,7 @@ Se já há issues sem vínculo com o project:
 
 ```bash
 # Adicionar issue existente ao project
-gh project item-add --project-id "PVT_kwDO..." --url "https://github.com/nevitonsantana/adaptative-skills/issues/<numero>"
+gh project item-add --project-id "PVT_kwDO..." --url "https://github.com/nevitonsantana/adaptive-skills/issues/<numero>"
 
 # Setar campos
 gh project item-edit --project-id "PVT_kwDO..." --id "<item-id>" \
@@ -155,13 +155,13 @@ ISSUE_NUM=$(gh issue create \
   --title "[TASK] Minha tarefa" \
   --body "Descrição..." \
   --label "priority:P2-Medium,category:task" \
-  --repo nevitonsantana/adaptative-skills)
+  --repo nevitonsantana/adaptive-skills)
 
 # Extrair número da issue
 ISSUE_NUM=$(echo $ISSUE_NUM | grep -o '[0-9]\+')
 
 # Adicionar ao project
-gh project item-add --project-id "PVT_kwDO..." --url "https://github.com/nevitonsantana/adaptative-skills/issues/$ISSUE_NUM"
+gh project item-add --project-id "PVT_kwDO..." --url "https://github.com/nevitonsantana/adaptive-skills/issues/$ISSUE_NUM"
 ```
 
 ### Iniciar Trabalho (Claim)

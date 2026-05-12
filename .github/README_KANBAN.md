@@ -1,8 +1,8 @@
-# 📋 Kanban & Roadmap - Adaptative Skills
+# 📋 Kanban & Roadmap - Adaptive Skills
 
 > **Project Board**: https://github.com/users/nevitonsantana/projects/3/views/1
 
-Este diretório contém toda a documentação e ferramentas para gestão do projeto Adaptative Skills via Kanban e Roadmap Evolutivo.
+Este diretório contém toda a documentação e ferramentas para gestão do projeto Adaptive Skills via Kanban e Roadmap Evolutivo.
 
 ---
 

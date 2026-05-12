@@ -2,7 +2,7 @@
 name: handoff-summary
 description: Close a round of work with enough verified context for the next round without dragging the full session forward.
 version: 0.1.0
-owner: adaptative-skills
+owner: adaptive-skills
 ---
 
 # Overview

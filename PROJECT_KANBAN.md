@@ -1,4 +1,4 @@
-# 📋 Adaptative Skills - Project Kanban
+# 📋 Adaptive Skills - Project Kanban
 
 > **Última atualização:** 2026-04-15  
 > **Status do Sprint:** Planejamento Q2 2026  

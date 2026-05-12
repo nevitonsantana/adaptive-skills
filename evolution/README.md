@@ -1,6 +1,6 @@
 # Evolution Layer
 
-This folder contains the governed learning layer for Adaptative Skills.
+This folder contains the governed learning layer for Adaptive Skills.
 
 It exists so the library can improve through real usage without turning into an unrestricted self-rewriting system.
 

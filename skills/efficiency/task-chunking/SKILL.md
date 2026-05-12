@@ -2,7 +2,7 @@
 name: task-chunking
 description: Break oversized work into smaller, reviewable slices with explicit stop conditions and next-slice boundaries.
 version: 0.1.0
-owner: adaptative-skills
+owner: adaptive-skills
 ---
 
 # Overview

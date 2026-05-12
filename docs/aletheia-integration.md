@@ -2,10 +2,10 @@
 
 ## Macro versus micro
 
-AletheIA and Adaptative Skills are complementary, not interchangeable.
+AletheIA and Adaptive Skills are complementary, not interchangeable.
 
 - **AletheIA** handles macro orchestration: framing, gates, review, handoffs, continuity, and learning.
-- **Adaptative Skills** handle micro execution: specialist heuristics, reusable workflows, output discipline, and failure signals.
+- **Adaptive Skills** handle micro execution: specialist heuristics, reusable workflows, output discipline, and failure signals.
 
 ## Integration points
 
@@ -20,12 +20,12 @@ AletheIA may:
 
 ## Agent-role consumption layer
 
-AletheIA roles may consume Adaptative Skills without turning this repository into an agent framework.
+AletheIA roles may consume Adaptive Skills without turning this repository into an agent framework.
 
 Healthy reading model:
 
 - **AletheIA role** -> semantic responsibility
-- **Adaptative Skill** -> reusable micro-execution support
+- **Adaptive Skill** -> reusable micro-execution support
 - **projection / runtime adapter** -> consumer-local delivery mechanism
 
 That means a consumer may keep the same role across Codex and Claude Code while changing only how the skills are loaded or projected locally.
@@ -52,11 +52,11 @@ If you want to see the model after two real rounds in a product lane, read:
 ## Evolution-layer boundary
 
 The evolution layer can be informed by AletheIA, but it should never depend on AletheIA to exist.
-AletheIA may surface recurring signals; the Adaptative Skills repository still owns the governed writeback through its own review process.
+AletheIA may surface recurring signals; the Adaptive Skills repository still owns the governed writeback through its own review process.
 
 ## Efficiency-layer boundary
 
-A future Efficiency Layer may align closely with AletheIA because both care about handoffs, checkpoints, and bounded work. Even then, the Efficiency Layer should remain an Adaptative Skills track rather than becoming an AletheIA requirement.
+A future Efficiency Layer may align closely with AletheIA because both care about handoffs, checkpoints, and bounded work. Even then, the Efficiency Layer should remain an Adaptive Skills track rather than becoming an AletheIA requirement.
 
 ## Current Efficiency Layer focus
 

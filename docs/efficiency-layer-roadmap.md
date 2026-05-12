@@ -2,7 +2,7 @@
 
 ## Goal
 
-Turn the Efficiency Layer into a clear, bounded roadmap for improving how work is carried out with Adaptative Skills.
+Turn the Efficiency Layer into a clear, bounded roadmap for improving how work is carried out with Adaptive Skills.
 
 This roadmap is not about changing the current Evolution Layer baseline.
 It is about reducing waste in:

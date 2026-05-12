@@ -5,7 +5,7 @@
 Rigid step-by-step skills break when one skill supports multiple task shapes.
 Unstructured skills break because they depend on improvisation.
 
-Adaptative Skills uses a middle path:
+Adaptive Skills uses a middle path:
 
 - **Core Moves** for invariants
 - **Optional Modules** for context-specific depth

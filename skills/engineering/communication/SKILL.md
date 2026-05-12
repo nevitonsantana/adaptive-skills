@@ -2,7 +2,7 @@
 name: communication
 description: Explain changes, failures, options, and handoffs with clarity, evidence, and low noise.
 version: 0.1.0
-owner: adaptative-skills
+owner: adaptive-skills
 ---
 
 # Overview

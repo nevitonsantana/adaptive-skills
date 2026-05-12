@@ -2,7 +2,7 @@
 name: qa-review
 description: Audit the consistency of a change across behavior, validation, handoffs, and operational risk.
 version: 0.1.0
-owner: adaptative-skills
+owner: adaptive-skills
 ---
 
 # Overview

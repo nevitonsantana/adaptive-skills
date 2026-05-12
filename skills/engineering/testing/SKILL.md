@@ -2,7 +2,7 @@
 name: testing
 description: Choose the minimum reliable proof for a change based on risk, reversibility, and impact.
 version: 0.1.0
-owner: adaptative-skills
+owner: adaptive-skills
 ---
 
 # Overview

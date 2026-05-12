@@ -1,4 +1,4 @@
-# 📋 Adaptative Skills - Kanban Board Setup
+# 📋 Adaptive Skills - Kanban Board Setup
 
 ## Link do Projeto GitHub
 **https://github.com/users/nevitonsantana/projects/3/views/1**
@@ -7,7 +7,7 @@
 
 ## 🎯 Resumo Executivo
 
-Este documento descreve a estrutura completa do Kanban e Roadmap Evolutivo para o projeto **Adaptative Skills**. O quadro foi projetado para suportar o sistema de evolução governada das skills, com rastreabilidade completa desde observações até releases.
+Este documento descreve a estrutura completa do Kanban e Roadmap Evolutivo para o projeto **Adaptive Skills**. O quadro foi projetado para suportar o sistema de evolução governada das skills, com rastreabilidade completa desde observações até releases.
 
 ---
 
@@ -126,12 +126,12 @@ gh auth login
 
 # Adicione as issues ao projeto
 gh project item-add 3 --owner nevitonsantana --type ISSUE \
-  --url "https://github.com/nevitonsantana/adaptative-skills/issues/XXX"
+  --url "https://github.com/nevitonsantana/adaptive-skills/issues/XXX"
 ```
 
 ### Opção 2: Manual
 
-1. Acesse https://github.com/nevitonsantana/adaptative-skills/issues
+1. Acesse https://github.com/nevitonsantana/adaptive-skills/issues
 2. Clique em "New issue"
 3. Copie título e descrição do arquivo `.github/PROJECT_SETUP.md`
 4. Aplique os labels correspondentes

@@ -1,4 +1,4 @@
-# 📦 Evolution Backlog - Adaptative Skills
+# 📦 Evolution Backlog - Adaptive Skills
 
 > **Última atualização:** 2026-04-15  
 > **Cycle Atual:** #3 (Observations)  

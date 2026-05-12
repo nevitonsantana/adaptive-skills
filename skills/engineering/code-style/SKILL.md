@@ -2,7 +2,7 @@
 name: code-style
 description: Keep code readable, cohesive, and easy to change without turning style into dogma.
 version: 0.1.0
-owner: adaptative-skills
+owner: adaptive-skills
 ---
 
 # Overview

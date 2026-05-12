@@ -38,7 +38,7 @@ This track has a strong conceptual connection to AletheIA because AletheIA alrea
 - proof
 - review
 
-But the Efficiency Layer still belongs in Adaptative Skills as a transversal capability layer, not as an AletheIA dependency.
+But the Efficiency Layer still belongs in Adaptive Skills as a transversal capability layer, not as an AletheIA dependency.
 
 ## Efficiency Layer v0 — framing and operating patterns
 

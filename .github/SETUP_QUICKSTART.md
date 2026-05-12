@@ -13,7 +13,7 @@ gh label sync --delete-missing .github/labels.yml
 ```
 
 Ou manualmente via UI:
-1. Acesse https://github.com/nevitonsantana/adaptative-skills/labels
+1. Acesse https://github.com/nevitonsantana/adaptive-skills/labels
 2. Clique em "New label"
 3. Crie cada label conforme `.github/labels.yml`
 
@@ -37,7 +37,7 @@ Isso criará 15 issues com:
 
 # Exemplo (substitua XXX pelo número da issue):
 gh project item-add 3 --owner nevitonsantana --type ISSUE \
-  --url "https://github.com/nevitonsantana/adaptative-skills/issues/XXX"
+  --url "https://github.com/nevitonsantana/adaptive-skills/issues/XXX"
 ```
 
 ## Passo 4: Configurar Views no Project

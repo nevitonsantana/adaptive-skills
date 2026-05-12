@@ -27,7 +27,7 @@ assignees: ''
 
 ## 🔗 Vínculo com Project
 
-- **Project:** Adaptative Skills Kanban (#3)
+- **Project:** Adaptive Skills Kanban (#3)
 - **Priority:** P0-Critical | P1-High | P2-Medium | P3-Low *(selecione uma)*
 - **Target Release:** v1.x.0
 - **Complexity:** XS | S | M | L | XL *(estime)*

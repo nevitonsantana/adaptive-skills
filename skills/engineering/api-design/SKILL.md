@@ -2,7 +2,7 @@
 name: api-design
 description: Shape a contract so inputs, outputs, errors, names, and compatibility are clear and hard to misuse.
 version: 0.1.0
-owner: adaptative-skills
+owner: adaptive-skills
 ---
 
 # Overview

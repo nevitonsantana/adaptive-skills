@@ -2,7 +2,7 @@
 name: debugging
 description: Reproduce, isolate, fix, and guard against recurrence instead of patching symptoms by instinct.
 version: 0.1.0
-owner: adaptative-skills
+owner: adaptive-skills
 ---
 
 # Overview

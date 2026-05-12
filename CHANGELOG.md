@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.1.2
+
+- rename repository from `adaptative-skills` to `adaptive-skills` (modern English standard; GitHub redirect preserves old URLs)
+
 ## 0.1.1
 
 - add a next-signals guide for when Efficiency Layer expansion should reopen
@@ -17,7 +21,7 @@
 
 ## 0.1.0
 
-- initial public scaffold for Adaptative Skills
+- initial public scaffold for Adaptive Skills
 - English-first skill model built on Core + Modules + Triggers
 - generic skill domains plus crisis-management domain pack
 - Codex-first projection registry and tooling

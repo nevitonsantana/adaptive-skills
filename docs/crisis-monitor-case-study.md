@@ -2,7 +2,7 @@
 
 ## Why this case matters
 
-The first real consumer test of Adaptative Skills happened in **Crisis Monitor**, using **AletheIA** as the macro layer and a small set of skills as the micro layer.
+The first real consumer test of Adaptive Skills happened in **Crisis Monitor**, using **AletheIA** as the macro layer and a small set of skills as the micro layer.
 
 This matters because it was not a synthetic demo.
 It was a bounded, real product lane with existing signals, approvals, follow-up explainability, and auditability.
@@ -27,7 +27,7 @@ The goal was to verify whether the macro/micro split would stay legible in real 
 - reading whether review or handoff was needed
 - preserving continuity between rounds
 
-### Adaptative Skills handled the micro layer
+### Adaptive Skills handled the micro layer
 
 - shrinking the slice to the smallest useful change
 - making the execution shape more explicit
@@ -122,7 +122,7 @@ That means future rounds should be opened only if one of these is true:
 
 Use this case when you need to explain:
 
-- how Adaptative Skills works with AletheIA without depending on it
+- how Adaptive Skills works with AletheIA without depending on it
 - what a small first consumer pilot should look like
 - why skill activation by trigger is healthier than a large default bundle
 - how to keep product-local rules out of the generic library

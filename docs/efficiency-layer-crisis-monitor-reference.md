@@ -7,7 +7,7 @@ Use the Crisis Monitor case as the first real reference for the Efficiency Layer
 This document exists because the Crisis Monitor lane already proved a healthy macro/micro split with:
 
 - **AletheIA** as the macro layer
-- **Adaptative Skills** as the micro layer
+- **Adaptive Skills** as the micro layer
 - a small, auditable product lane as the real field context
 
 The next useful move is not a fourth efficiency skill.

@@ -2,7 +2,7 @@
 name: checkpoint-review
 description: Insert a short review pause between rounds so work can continue, stop, or hand off with better discipline.
 version: 0.1.0
-owner: adaptative-skills
+owner: adaptive-skills
 ---
 
 # Overview
