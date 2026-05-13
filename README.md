@@ -97,7 +97,7 @@ A real field case is documented in `docs/crisis-monitor-case-study.md`.
 
 The repository keeps the canon in the repo and treats agent installs as derived artifacts.
 
-- `projections/registry.yaml` defines projection metadata
+- `projections/registry.json` defines projection metadata
 - Codex projection is first-class today
 - Claude projection remains selective and availability-based in v0
 

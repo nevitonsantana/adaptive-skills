@@ -79,7 +79,7 @@ def main() -> int:
     for path in domain_pack_paths:
         errors.extend(validate_skill(path, generic=False))
 
-    registry = json.loads((root / 'projections' / 'registry.yaml').read_text())
+    registry = json.loads((root / 'projections' / 'registry.json').read_text())
     for item in registry.get('skills', []):
         source = root / item['source_path']
         if not source.exists():

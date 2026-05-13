@@ -105,7 +105,7 @@ def main() -> int:
     root = repo_root()
     errors: list[str] = []
     skills = load_skill_ids(root)
-    registry = json.loads((root / 'evolution' / 'registry.yaml').read_text())
+    registry = json.loads((root / 'evolution' / 'registry.json').read_text())
     items = registry.get('skills', [])
 
     registry_ids: set[str] = set()
