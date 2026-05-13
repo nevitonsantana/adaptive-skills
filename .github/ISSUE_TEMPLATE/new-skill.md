@@ -63,7 +63,7 @@ Antes de marcar como ready:
 - [ ] Definir activation triggers
 - [ ] Criar exemplos de uso
 - [ ] Linkar com AletheIA (se aplicável)
-- [ ] Adicionar ao registry em `evolution/registry.yaml`
+- [ ] Adicionar ao registry em `evolution/registry.json`
 
 ## 📝 Notas para Revisão
 

@@ -32,7 +32,7 @@ This repository therefore uses an explicit loop:
 The current v1.1 baseline is already implemented through:
 
 - `docs/evolution-layer.md`
-- `evolution/registry.yaml`
+- `evolution/registry.json`
 - `evolution/observations/`
 - `evolution/proposals/`
 - `evolution/reviews/`
@@ -86,7 +86,7 @@ Valid outcomes include:
 
 ```txt
 evolution/
-  registry.yaml
+  registry.json
   observations/
   proposals/
   reviews/
