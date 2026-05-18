@@ -1,6 +1,6 @@
 # Adaptive Skills
 
-A public, English-first library of micro-skills for agentic work.
+A public library of micro-skills for agentic work.
 
 **AletheIA is the macro layer.** It frames work, gates risk, supports handoffs, and preserves continuity.
 **Adaptive Skills is the micro layer.** It helps an agent or team execute a specific capability with discipline, lightweight structure, and reusable heuristics.
