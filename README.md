@@ -1,37 +1,65 @@
 # Adaptive Skills
 
-A public, English-first library of micro-skills for agentic work.
+**Adaptive Skills is a portable library of micro-skills for AI-assisted work.**
 
-**AletheIA is the macro layer.** It frames work, gates risk, supports handoffs, and preserves continuity.
-**Adaptive Skills is the micro layer.** It helps an agent or team execute a specific capability with discipline, lightweight structure, and reusable heuristics.
+It helps agents, teams, and AI-enabled workflows choose the right capability for the task, execute it with discipline, and leave behind outputs that are easier to review, reuse, and improve.
 
-## Core thesis
+The goal is simple: make AI work less improvised.
 
-The library is built around **Core + Modules + Triggers**:
+Instead of relying on one large prompt, a fixed agent role, or a vague instruction like "be strategic", Adaptive Skills breaks work into small, explicit capabilities such as planning, testing, debugging, UX critique, observability review, premortem analysis, handoff discipline, and domain-specific reasoning.
 
-- **Core Moves** — the few moves that should almost always happen
-- **Optional Modules** — add-ons that activate only when the context needs them
-- **Activation Triggers** — simple signals that help choose the right modules without building a rigid mini-engine
+## Why this exists
 
-This keeps skills structured without turning them into bureaucracy.
+AI-assisted work often fails for predictable reasons:
 
-## Governed evolution layer
+- the agent uses the wrong mode for the problem;
+- risks and assumptions stay implicit;
+- useful patterns disappear after a thread ends;
+- project-specific rules leak into reusable prompts;
+- teams cannot tell whether an output was improvised, repeatable, or governed.
 
-The library now also includes a repository-level evolution layer.
-It treats skills as governed living assets:
+Adaptive Skills turns repeated work patterns into small, inspectable assets.
 
-- observations capture real usage signals
-- proposals turn repeated evidence into reviewable change requests
-- `reinforced` and `no-change` are valid outcomes
-- the canon never self-rewrites in v1.1
+Each skill defines:
 
-See `docs/evolution-layer.md` and `evolution/README.md`.
+- when to use it;
+- when not to use it;
+- the core moves that should happen;
+- optional modules that activate only when needed;
+- verification criteria;
+- handoff signals and anti-patterns.
 
-A separate **Efficiency Layer** is now tracked as a future path for context, checkpoint, handoff, and chunking discipline. It is intentionally separate from the Evolution Layer so the current v1.1 baseline does not get reopened prematurely. See `docs/efficiency-layer.md`, `docs/efficiency-layer-roadmap.md`, and `docs/efficiency-layer-candidate-skills.md`.
+This makes skills reusable without turning them into bureaucracy.
 
-## What is in v0
+## What Adaptive Skills is
 
-### Generic library
+Adaptive Skills is the **micro layer** for agentic work.
+
+It does not try to replace product strategy, project management, design systems, or orchestration frameworks. It gives those systems a reusable capability layer: small units of judgment and execution that can be projected into different AI runtimes.
+
+Use it when you want:
+
+- more consistent AI-assisted execution;
+- clearer specialist handoffs;
+- reusable quality gates;
+- better separation between generic practices and project-local rules;
+- a governed way to evolve prompts, skills, and operating patterns over time.
+
+## How it works
+
+The library is built around **Core + Modules + Triggers**.
+
+- **Core Moves** — the few moves that should almost always happen.
+- **Optional Modules** — add-ons that activate only when the context needs them.
+- **Activation Triggers** — simple signals that help choose the right modules without building a rigid mini-engine.
+
+This keeps skills practical: structured enough to be repeatable, flexible enough to adapt to the task.
+
+## What is in the repository
+
+### Generic skills
+
+Generic skills live under `/skills` and are organized by domain:
 
 - `skills/engineering`
 - `skills/design`
@@ -40,6 +68,18 @@ A separate **Efficiency Layer** is now tracked as a future path for context, che
 - `skills/metrics`
 - `skills/cross-functional`
 - `skills/efficiency`
+- `skills/planning`
+
+Current examples include:
+
+- `workflow` — keep work bounded, explicit, and reviewable;
+- `feature-planning` — turn vague intent into an executable slice;
+- `testing` — define useful validation instead of shallow confidence;
+- `debugging` — isolate causes before changing code;
+- `ux-writing` — improve product language and semantic clarity;
+- `triad-check` — coordinate product, design, and technical reasoning;
+- `checkpoint-review` — pause during execution and decide whether to continue, adjust, or hand off;
+- `premortem` — assume a future failure happened and work backwards before execution begins.
 
 Skeleton-only domains in v0:
 
@@ -48,14 +88,44 @@ Skeleton-only domains in v0:
 
 ### Domain packs
 
+Domain packs live under `/domain-packs`.
+
+They are intentionally specific, versioned, and reusable, but they are **not** treated as generic skill truth.
+
+Current domain pack:
+
 - `domain-packs/crisis-management`
 
-Domain packs are intentionally specific. They are useful, versioned, and reusable, but they are **not** treated as generic skills.
+### Projection layer
+
+The repository keeps the canon in source control and treats agent installs as derived artifacts.
+
+- `projections/registry.json` defines projection metadata.
+- Codex projection is first-class today.
+- Claude projection remains selective and availability-based in v0.
+
+### Evolution layer
+
+Adaptive Skills includes a governed evolution layer so the library can improve without self-rewriting.
+
+It uses:
+
+- observations — real usage signals;
+- proposals — reviewable change requests;
+- reviews — decisions about whether to change, reinforce, defer, or reject;
+- `reinforced` and `no-change` as valid healthy outcomes.
+
+The canon never self-rewrites in v1.1. Human review remains part of the evolution loop.
+
+See:
+
+- `docs/evolution-layer.md`
+- `evolution/README.md`
 
 ## Repository layout
 
 ```txt
-/docs           -> model, taxonomy, telemetry, AletheIA integration
+/docs           -> model, taxonomy, telemetry, integration notes
 /skills         -> generic skills by domain
 /domain-packs   -> explicit domain-specific packs
 /projections    -> projection registry for agent installs
@@ -66,22 +136,26 @@ Domain packs are intentionally specific. They are useful, versioned, and reusabl
 
 ## Use with or without AletheIA
 
-The library is useful on its own.
+Adaptive Skills is useful on its own.
 
 Use it without AletheIA when you want:
-- reusable execution discipline
-- consistent outputs
-- better specialist handoffs
+
+- reusable execution discipline;
+- consistent outputs;
+- better specialist handoffs;
+- portable skill cards for different AI tools.
 
 Use it with AletheIA when you also want:
-- macro framing
-- review gates
-- continuity between rounds
-- structured learning and operational memory
 
-See `docs/aletheia-integration.md` for the integration model and `docs/agent-role-integration.md` for the role-to-skill consumption layer.
+- macro framing;
+- review gates;
+- continuity between rounds;
+- structured learning and operational memory.
 
-A real field case is documented in `docs/crisis-monitor-case-study.md`.
+See:
+
+- `docs/aletheia-integration.md`
+- `docs/agent-role-integration.md`
 
 ## Current domains
 
@@ -92,16 +166,11 @@ A real field case is documented in `docs/crisis-monitor-case-study.md`.
 - **Metrics** — observable, decision-linked signals
 - **Cross-functional** — triad-style checks for multi-function decisions
 - **Efficiency** — chunking, checkpoints, handoff discipline, and bounded execution patterns
-
-## Projection model
-
-The repository keeps the canon in the repo and treats agent installs as derived artifacts.
-
-- `projections/registry.json` defines projection metadata
-- Codex projection is first-class today
-- Claude projection remains selective and availability-based in v0
+- **Planning** — premortem analysis before consequential plans or commitments
 
 ## Quick start
+
+Run the repository checks:
 
 ```bash
 python3 scripts/validate_skills.py
@@ -110,43 +179,61 @@ python3 scripts/report_projection_status.py
 python3 scripts/project_to_codex.py --all --dry-run
 ```
 
-## 📊 Project Management
+Project all enabled skills into a local Codex skill directory:
 
-- **[Project Kanban](./PROJECT_KANBAN.md)**: Quadro Kanban com tarefas, prioridades e status dos pilotos
-- **[Roadmap Evolutivo](./ROADMAP_EVOLUTIVO.md)**: Planejamento estratégico Q2-Q3 2026 com fases, OKRs e métricas
-- **[Evolution Backlog](./EVOLUTION_BACKLOG.md)**: Backlog de evolution cycles (observations, proposals, reviews)
+```bash
+python3 scripts/project_to_codex.py --all
+```
 
-### Status Atual (Abril 2026)
+Project one skill:
 
-| Dimensão | Status | Próxima Entrega |
-|----------|--------|-----------------|
-| Skills Validadas | 23/35 | Efficiency Layer v1.1 - 2026-04-25 |
-| Pilotos Ativos | 5 | Resultados - 2026-04-20 |
-| Evolution Cycle | #3 (Observations) | Cycle #4 - 2026-05-01 |
-| Domínios | 8/10 | Product + Governance - Maio 2026 |
-
-**📋 Veja o [Project Kanban](./PROJECT_KANBAN.md) para detalhes das tarefas atuais e prioridades.**
+```bash
+python3 scripts/project_to_codex.py --skill premortem
+```
 
 ## Adopt in another project
 
 Start with:
+
 - `docs/consumer-adoption.md`
 - `docs/codex-consumer-setup.md`
 - `docs/claude-consumer-setup.md`
 - `docs/first-consumer-pilot.md`
-- `docs/aletheia-first-test.md`
 - `examples/README.md`
-- `docs/aletheia-integration.md`
 - `docs/agent-role-integration.md`
-- `docs/efficiency-layer-first-pilot.md`
-- `docs/efficiency-layer-crisis-monitor-reference.md`
-- `docs/efficiency-layer-trio-patterns.md`
-- `docs/efficiency-layer-next-signals.md`
 
 Recommended first bundle for a new consumer:
+
 - `workflow`
 - `feature-planning`
 - `testing`
+
+Add `premortem` when plans have meaningful cost of failure and can still be changed before execution.
+
+## Current status
+
+### May 2026
+
+| Dimension | Status | Next delivery posture |
+|----------|--------|-----------------------|
+| Validated skills | 24/35 | Expand only when evidence justifies it |
+| Active pilots | 5 | Keep follow-ups evidence-gated |
+| Evolution cycle | #3 — Observations | Start Cycle #4 only after reviewable signals |
+| Domains | 9/10 | Product + Governance remain skeleton-only |
+
+See:
+
+- `PROJECT_KANBAN.md`
+- `ROADMAP_EVOLUTIVO.md`
+- `EVOLUTION_BACKLOG.md`
+
+## Field evidence
+
+Adaptive Skills has been exercised in real project work, including a documented field case:
+
+- `docs/crisis-monitor-case-study.md`
+
+That case remains evidence for the library, not an active product backlog inside this repository.
 
 ## License
 
