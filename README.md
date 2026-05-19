@@ -45,6 +45,12 @@ Use it when you want:
 - better separation between generic practices and project-local rules;
 - a governed way to evolve prompts, skills, and operating patterns over time.
 
+<p align="center">
+  <img src="./docs/assets/adaptive-skills-macro-micro-runtime.svg" alt="Diagram showing AletheIA as the macro orchestration layer, Adaptive Skills as the micro execution layer, and runtimes such as Codex and Claude Code as consumer projections." />
+</p>
+
+<p align="center"><em>Adaptive Skills provides the reusable micro-execution layer that AletheIA roles and agent runtimes can consume without collapsing governance, skills, and runtime adapters into one system.</em></p>
+
 ## How it works
 
 The library is built around **Core + Modules + Triggers**.
@@ -54,6 +60,12 @@ The library is built around **Core + Modules + Triggers**.
 - **Activation Triggers** — simple signals that help choose the right modules without building a rigid mini-engine.
 
 This keeps skills practical: structured enough to be repeatable, flexible enough to adapt to the task.
+
+<p align="center">
+  <img src="./docs/assets/adaptive-skills-skill-anatomy.svg" alt="Diagram explaining the anatomy of an Adaptive Skill, including when to use, core moves, activation triggers, optional modules, expected output, verification, and handoff." />
+</p>
+
+<p align="center"><em>Each skill is a small execution asset: stable enough to be repeatable, modular enough to adapt to context.</em></p>
 
 ## What is in the repository
 
@@ -214,6 +226,12 @@ Recommended first bundle for a new consumer:
 - `testing`
 
 Add `premortem` when plans have meaningful cost of failure and can still be changed before execution.
+
+<p align="center">
+  <img src="./docs/assets/adaptive-skills-usage-flow.svg" alt="Diagram showing the Adaptive Skill usage flow: task, dominant need, smallest fitting skill, core moves, optional modules, reviewable output, verification, and closure decision." />
+</p>
+
+<p align="center"><em>Adaptive Skills starts from the task, not from the catalog. A skill is used only when it improves clarity, proof, handoff, or decision quality.</em></p>
 
 ## Current status
 
