@@ -12,6 +12,7 @@ Current generic domains:
 - metrics
 - cross-functional
 - efficiency
+- planning
 
 Skeleton-only in v0:
 - product

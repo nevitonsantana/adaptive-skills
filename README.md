@@ -193,6 +193,10 @@ python3 scripts/project_to_codex.py --skill premortem
 
 ## Adopt in another project
 
+For the full documentation map, start with:
+
+- `docs/README.md`
+
 Start with:
 
 - `docs/consumer-adoption.md`
