@@ -2,7 +2,7 @@
 
 ## What this repository gives you
 
-Adaptive Skills gives you a reusable micro-skill library.
+Adaptive Skills gives you a reusable micro-skill library for making AI-assisted work less improvised.
 It does **not** try to replace your project's local operating system.
 
 Use this repository when you want:
@@ -10,6 +10,7 @@ Use this repository when you want:
 - clearer outputs
 - better handoffs between roles or agents
 - a reusable skill canon that can travel across projects
+- a practical way to choose the right capability before asking an agent to act
 
 Keep local to your project:
 - ownership rules
@@ -20,7 +21,18 @@ Keep local to your project:
 
 ## Recommended adoption order
 
-### 1. Start with a small generic set
+### 1. Learn the skill loop
+
+Before installing many skills, read `docs/how-to-use-a-skill.md`.
+
+The basic loop is:
+1. choose the smallest skill that fits the task
+2. run the core moves
+3. activate only the modules that match the context
+4. produce the expected output
+5. verify the result before treating the task as done
+
+### 2. Start with a small generic set
 
 For a first consumer project, start with three engineering skills:
 - `workflow`
@@ -29,14 +41,17 @@ For a first consumer project, start with three engineering skills:
 
 That combination is enough to improve framing, execution planning, and minimum proof without introducing too much process.
 
-### 2. Add one domain or specialist lane only when needed
+Add `premortem` when the plan has meaningful cost of failure and can still be changed before execution.
+
+### 3. Add one domain or specialist lane only when needed
 
 Examples:
+- add `premortem` when optimistic planning may hide fragile assumptions, missing gates, or rollback risk
 - add `ux-writing` when terminology and explanation are failing
 - add `architecture-review` when boundaries or coupling start to matter
 - add `triad-check` when decisions cross product, design, and engineering
 
-### 3. Treat local overlays as separate
+### 4. Treat local overlays as separate
 
 A consumer project will usually still need its own local files such as:
 - `AGENTS.md`
@@ -56,6 +71,8 @@ Typical loop:
 3. activate only the needed modules
 4. produce the expected output
 5. verify closure using the skill's verification section
+
+For a more detailed usage guide, see `docs/how-to-use-a-skill.md`.
 
 ## Using the library with AletheIA
 

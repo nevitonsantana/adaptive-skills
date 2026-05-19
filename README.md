@@ -196,6 +196,7 @@ python3 scripts/project_to_codex.py --skill premortem
 Start with:
 
 - `docs/consumer-adoption.md`
+- `docs/how-to-use-a-skill.md`
 - `docs/codex-consumer-setup.md`
 - `docs/claude-consumer-setup.md`
 - `docs/first-consumer-pilot.md`

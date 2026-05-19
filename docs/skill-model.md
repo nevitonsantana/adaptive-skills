@@ -40,8 +40,13 @@ Triggers are natural-language cues such as:
 - if the work crosses multiple functions
 - if an existing interface already exists
 - if another system consumes the contract
+- if the plan has meaningful cost of failure and can still change
 
 They are not a mini policy engine.
+
+Triggers help select both the skill and its depth.
+
+For example, a reversible plan may not need `premortem`; a consequential plan with hidden assumptions, missing rollback, or human decision gates probably does.
 
 ## Sidecars
 
@@ -60,6 +65,21 @@ Only add them when they reduce cognitive load or improve reuse.
 - do not create modules for one-off edge cases
 - do not create empty sidecar folders
 - do not turn a skill into a mini framework
+- do not select skills just because they are available
+
+## Selection discipline
+
+A skill should be selected because it improves the task, not because the catalog needs to be exercised.
+
+Use this order:
+
+1. Identify the dominant need in the task.
+2. Choose the smallest skill that fits that need.
+3. Use `When NOT to Use` to reject weak fits.
+4. Activate optional modules only when the trigger is present.
+5. Verify the output using the skill's verification section.
+
+See `docs/how-to-use-a-skill.md` for a practical usage guide.
 
 
 ## Governed evolution

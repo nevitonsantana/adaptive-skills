@@ -32,9 +32,12 @@ Minimum bundle:
 Optional add-ons by need:
 - `debugging`
 - `api-design`
+- `premortem`
 - `ux-writing`
 - `heuristic-audit`
 - `triad-check`
+
+Use `premortem` only when the pilot lane includes a consequential plan that can still be changed. It is especially useful when the team needs to surface fragile assumptions, define gates, or decide whether to reduce scope before execution.
 
 ## Choose the lane
 
@@ -71,6 +74,8 @@ Write down:
 - skills in scope
 - local overlays in scope
 - pilot duration
+- what would make the pilot worth continuing
+- what would make the pilot too heavy to keep
 
 ### 2. Install only the chosen skills
 
@@ -90,10 +95,13 @@ For Claude-oriented pilots:
 Do not run artificial demos only.
 Use the skills in real tickets, reviews, planning steps, or debugging loops.
 
+For each use, record the reason the skill was selected. This helps distinguish good fit from novelty.
+
 ### 4. Capture evidence weekly
 
 Track:
 - which skills were used
+- why each skill was selected
 - where modules activated
 - what improved
 - what felt heavy or unnecessary
@@ -113,6 +121,7 @@ At the end of the pilot, decide whether:
 The first pilot is successful if:
 - the team keeps using at least part of the bundle after the initial trial
 - proof or planning quality visibly improves in at least one recurring task
+- people can explain why a skill was selected
 - the team does not feel forced into full-library adoption
 - the canon stays clean while local project rules stay local
 
@@ -121,6 +130,7 @@ The first pilot is successful if:
 - the pilot installs too many skills at once
 - people cannot tell which skill to use
 - every task feels slower with no quality gain
+- skills are selected because they are available, not because the task needs them
 - local project constraints keep getting copied into the canon
 - the team tries to solve organizational problems with skills alone
 
