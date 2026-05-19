@@ -10,7 +10,7 @@ def repo_root() -> Path:
 
 
 def load_registry() -> list[dict]:
-    return json.loads((repo_root() / "projections" / "registry.yaml").read_text()).get("skills", [])
+    return json.loads((repo_root() / "projections" / "registry.json").read_text()).get("skills", [])
 
 
 def main() -> int:

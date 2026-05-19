@@ -126,3 +126,15 @@ Use this case when you need to explain:
 - what a small first consumer pilot should look like
 - why skill activation by trigger is healthier than a large default bundle
 - how to keep product-local rules out of the generic library
+
+## May 2026 boundary update
+
+Crisis Monitor has completed the handoff from founder-led product execution to the development team. From this point, Adaptive Skills remains a reusable micro-layer and Crisis Monitor remains a field case, but Adaptive Skills evolution should not be driven through the Crisis Monitor backlog.
+
+Operationally:
+
+- Crisis Monitor keeps local product ownership, delivery priorities, and launch constraints.
+- Adaptive Skills keeps reusable execution patterns, projections, and evolution mechanics.
+- AletheIA remains the macro framework that can consume Adaptive Skills, but its framework decisions live outside the Crisis Monitor repository.
+- Any future Crisis Monitor re-entry must happen through an explicit integration Issue, not through background framework work.
+

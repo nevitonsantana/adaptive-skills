@@ -7,7 +7,7 @@ It exists so the library can improve through real usage without turning into an 
 ## Reading order
 
 1. `docs/evolution-layer.md`
-2. `evolution/registry.yaml`
+2. `evolution/registry.json`
 3. `evolution/templates/`
 4. `evolution/observations/`
 5. `evolution/proposals/`
@@ -15,7 +15,7 @@ It exists so the library can improve through real usage without turning into an 
 
 ## Directory guide
 
-- `registry.yaml` — evolution policy for every published skill
+- `registry.json` — evolution policy for every published skill
 - `templates/` — canonical formats for observations, proposals, and reviews
 - `observations/` — concrete usage signals and attributions
 - `proposals/` — approved, rejected, and deferred improvement proposals

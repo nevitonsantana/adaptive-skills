@@ -15,15 +15,11 @@ These examples show how to combine a small set of skills in realistic work.
 
 ### Efficiency
 - `efficiency/task-chunking-bounded-slice.md` — use `task-chunking` to turn an oversized task into one bounded execution slice
-
-### Efficiency
-- `efficiency/task-chunking-bounded-slice.md` — use `task-chunking` to turn an oversized task into one bounded execution slice
-- `efficiency/handoff-summary-round-closure.md` — use `handoff-summary` to close a round cleanly without replaying the whole session
-
-### Efficiency
-- `efficiency/task-chunking-bounded-slice.md` — use `task-chunking` to turn an oversized task into one bounded execution slice
 - `efficiency/handoff-summary-round-closure.md` — use `handoff-summary` to close a round cleanly without replaying the whole session
 - `efficiency/checkpoint-review-stop-or-continue.md` — use `checkpoint-review` to decide whether a round should continue, stop, or hand off
+
+### Planning
+- `../skills/planning/premortem/examples/quality-gates-ai-code.md` — use `premortem` before a consequential plan with meaningful cost of failure
 
 ### AletheIA
 - `aletheia/first-test-report.md` — capture the first macro/micro test with AletheIA

@@ -7,6 +7,7 @@ Use this checklist at the end of a first consumer pilot.
 - [ ] The team used a small enough bundle.
 - [ ] At least one skill was reused more than once.
 - [ ] The team could explain why each skill was in scope.
+- [ ] Optional add-ons, such as `premortem`, were used only when the task justified them.
 
 ## Operational quality
 
@@ -25,3 +26,9 @@ Use this checklist at the end of a first consumer pilot.
 - [ ] The pilot identified at least one useful doc or example improvement.
 - [ ] The pilot identified whether a local wrapper is needed.
 - [ ] The next step is explicit: expand, adjust, or stop.
+
+## Evidence quality
+
+- [ ] The pilot report names real tasks, not only abstract examples.
+- [ ] The report records why each skill was selected.
+- [ ] The report separates reusable library feedback from consumer-local constraints.

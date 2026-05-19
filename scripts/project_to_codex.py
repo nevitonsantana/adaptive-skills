@@ -12,14 +12,14 @@ def repo_root() -> Path:
 
 
 def registry_path() -> Path:
-    return repo_root() / "projections" / "registry.yaml"
+    return repo_root() / "projections" / "registry.json"
 
 
 def load_registry() -> list[dict]:
     data = json.loads(registry_path().read_text())
     skills = data.get("skills", [])
     if not isinstance(skills, list):
-        raise SystemExit("registry.yaml must contain a list in 'skills'")
+        raise SystemExit("registry.json must contain a list in 'skills'")
     return skills
 
 
