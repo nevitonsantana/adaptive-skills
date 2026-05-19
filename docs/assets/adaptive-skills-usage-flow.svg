@@ -1,0 +1,40 @@
+<svg width="2000" height="1220" viewBox="0 0 2000 1220" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+<title id="title">Adaptive Skill Usage Flow</title>
+<desc id="desc">Diagram showing how to use an Adaptive Skill: start from the task, identify the dominant need, choose the smallest fitting skill, run core moves, activate optional modules only when triggered, produce a reviewable output, verify closure, and decide whether to finish, hand off, or capture an observation.</desc>
+<style>
+.title{font:700 54px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;fill:#111827}.subtitle{font:400 25px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;fill:#4B5563}.step{font:700 27px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;fill:#111827}.small{font:400 18px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;fill:#4B5563}.soft{font:400 18px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;fill:#6B7280}.bold{font:700 18px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}.num{font:700 26px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+</style>
+<defs><marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto" markerUnits="strokeWidth"><path d="M2,2 L10,6 L2,10 z" fill="#D1D5DB"/></marker></defs>
+<rect width="2000" height="1220" fill="#F7F8FA"/>
+<text x="90" y="122" class="title">Adaptive Skill Usage Flow</text>
+<text x="92" y="185" class="subtitle">Start from the task, choose the smallest fitting skill, produce something reviewable, then verify closure.</text>
+<rect x="110" y="255" width="1780" height="760" rx="36" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="2"/>
+<rect x="165" y="300" width="600" height="56" rx="28" fill="#EEF2FF"/><text x="191" y="336" class="bold" fill="#3730A3">Start from the task, not from the catalog.</text>
+<rect x="1230" y="300" width="600" height="56" rx="28" fill="#F1F5F9"/><text x="1256" y="336" class="bold" fill="#4B5563">Do not run every skill just because it exists.</text>
+<g>
+<rect x="165" y="385" width="230" height="185" rx="28" fill="#FAFAFA" stroke="#E5E7EB"/><rect x="185" y="405" width="46" height="46" rx="23" fill="#EDE9FE"/><text x="208" y="437" class="num" text-anchor="middle" fill="#7C3AED">1</text><text x="185" y="502" class="step">Task</text><text x="185" y="536" class="small">What needs to be</text><text x="185" y="561" class="small">accomplished?</text>
+<line x1="397" y1="477" x2="410" y2="477" stroke="#D1D5DB" stroke-width="4" marker-end="url(#arrow)"/>
+<rect x="413" y="385" width="230" height="185" rx="28" fill="#FAFAFA" stroke="#E5E7EB"/><rect x="433" y="405" width="46" height="46" rx="23" fill="#DBEAFE"/><text x="456" y="437" class="num" text-anchor="middle" fill="#2563EB">2</text><text x="433" y="502" class="step">Dominant need</text><text x="433" y="536" class="small">planning · debugging ·</text><text x="433" y="561" class="small">review · handoff · testing</text>
+<line x1="645" y1="477" x2="658" y2="477" stroke="#D1D5DB" stroke-width="4" marker-end="url(#arrow)"/>
+<rect x="661" y="385" width="230" height="185" rx="28" fill="#FAFAFA" stroke="#E5E7EB"/><rect x="681" y="405" width="46" height="46" rx="23" fill="#DBEAFE"/><text x="704" y="437" class="num" text-anchor="middle" fill="#2563EB">3</text><text x="681" y="502" class="step">Smallest fitting skill</text><text x="681" y="536" class="small">Use When NOT to Use</text><text x="681" y="561" class="small">to reject weak fits.</text>
+<line x1="893" y1="477" x2="906" y2="477" stroke="#D1D5DB" stroke-width="4" marker-end="url(#arrow)"/>
+<rect x="909" y="385" width="230" height="185" rx="28" fill="#FAFAFA" stroke="#E5E7EB"/><rect x="929" y="405" width="46" height="46" rx="23" fill="#D1FAE5"/><text x="952" y="437" class="num" text-anchor="middle" fill="#059669">4</text><text x="929" y="502" class="step">Core moves</text><text x="929" y="536" class="small">Run invariant moves</text><text x="929" y="561" class="small">without ceremony.</text>
+<line x1="1141" y1="477" x2="1154" y2="477" stroke="#D1D5DB" stroke-width="4" marker-end="url(#arrow)"/>
+<rect x="1157" y="385" width="230" height="185" rx="28" fill="#FAFAFA" stroke="#E5E7EB"/><rect x="1177" y="405" width="46" height="46" rx="23" fill="#FEF3C7"/><text x="1200" y="437" class="num" text-anchor="middle" fill="#D97706">5</text><text x="1177" y="502" class="step">Optional modules</text><text x="1177" y="536" class="small">Activate only when a</text><text x="1177" y="561" class="small">matching trigger is present.</text>
+<line x1="1389" y1="477" x2="1402" y2="477" stroke="#D1D5DB" stroke-width="4" marker-end="url(#arrow)"/>
+<rect x="1405" y="385" width="230" height="185" rx="28" fill="#FAFAFA" stroke="#E5E7EB"/><rect x="1425" y="405" width="46" height="46" rx="23" fill="#D1FAE5"/><text x="1448" y="437" class="num" text-anchor="middle" fill="#059669">6</text><text x="1425" y="502" class="step">Reviewable output</text><text x="1425" y="536" class="small">Plan, checklist, brief,</text><text x="1425" y="561" class="small">gate, or handoff note.</text>
+<line x1="1637" y1="477" x2="1650" y2="477" stroke="#D1D5DB" stroke-width="4" marker-end="url(#arrow)"/>
+<rect x="1653" y="385" width="230" height="185" rx="28" fill="#FAFAFA" stroke="#E5E7EB"/><rect x="1673" y="405" width="46" height="46" rx="23" fill="#EDE9FE"/><text x="1696" y="437" class="num" text-anchor="middle" fill="#7C3AED">7</text><text x="1673" y="502" class="step">Verification</text><text x="1673" y="536" class="small">Check assumptions, limits,</text><text x="1673" y="561" class="small">proof, and next action.</text>
+</g>
+<line x1="1768" y1="582" x2="1768" y2="660" stroke="#D1D5DB" stroke-width="4" marker-end="url(#arrow)"/>
+<rect x="1543" y="685" width="450" height="140" rx="28" fill="#EEF2FF" stroke="#C7D2FE" stroke-width="2"/>
+<rect x="1571" y="713" width="190" height="40" rx="20" fill="#E0E7FF"/><text x="1592" y="739" class="bold" fill="#3730A3">closure decision</text>
+<text x="1571" y="800" class="step">Finish, hand off, or capture evidence?</text>
+<path d="M1768 827 L1768 870 L475 870 L475 910" stroke="#D1D5DB" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+<path d="M1768 827 L1768 870 L995 870 L995 910" stroke="#D1D5DB" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+<path d="M1768 827 L1768 870 L1515 870 L1515 910" stroke="#D1D5DB" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+<rect x="260" y="925" width="430" height="135" rx="28" fill="#FAFAFA" stroke="#E5E7EB"/><rect x="284" y="950" width="100" height="40" rx="20" fill="#D1FAE5"/><text x="305" y="976" class="bold" fill="#059669">Done</text><text x="284" y="1029" class="small">The output is sufficient and the next action is clear.</text>
+<rect x="780" y="925" width="430" height="135" rx="28" fill="#FAFAFA" stroke="#E5E7EB"/><rect x="804" y="950" width="125" height="40" rx="20" fill="#DBEAFE"/><text x="825" y="976" class="bold" fill="#2563EB">Handoff</text><text x="804" y="1029" class="small">Another role, domain, or reviewer should continue.</text>
+<rect x="1300" y="925" width="430" height="135" rx="28" fill="#FAFAFA" stroke="#E5E7EB"/><rect x="1324" y="950" width="150" height="40" rx="20" fill="#FEF3C7"/><text x="1345" y="976" class="bold" fill="#D97706">Observation</text><text x="1324" y="1029" class="small">A repeated friction may improve the library later.</text>
+<text x="90" y="1137" class="soft">A good skill invocation improves clarity, proof, handoff, or decision quality at the right moment.</text>
+</svg>
