@@ -33,6 +33,7 @@ Follow this sequence:
 
 - `aletheia-integration.md` — macro/micro integration model
 - `agent-role-integration.md` — role-to-skill consumption without collapsing roles and skills
+- `specification-facilitation.md` — compose `workflow + feature-planning + premortem` for clarify/spec/plan/tasks/readiness support
 - `aletheia-first-test.md` — first test structure
 
 ## Evolve the library
