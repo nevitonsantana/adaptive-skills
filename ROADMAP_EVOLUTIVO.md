@@ -1,9 +1,12 @@
 # 🗺️ Roadmap Evolutivo - Adaptive Skills
 
-> **Versão do Roadmap:** 1.0  
-> **Data de Criação:** 2026-04-15  
-> **Horizonte de Planejamento:** Q2-Q3 2026 (Abril-Setembro)  
+> **Versão do Roadmap:** 1.1 (reconciliação Onda 0 do plano cross-repo)
+> **Data de Criação:** 2026-04-15
+> **Última revisão:** 2026-05-21
+> **Horizonte de Planejamento:** Q2-Q3 2026 (Abril-Setembro)
 > **Princípio Guia:** "Evolução governada, não auto-edição"
+>
+> **Nota 2026-05-21:** As Fases 1-4 abaixo refletem o planejamento original de 2026-04-15. A partir de 2026-05-21, o roadmap operacional passa a ser conduzido pelo [plano cross-repo AletheIA + Adaptive Skills](../Downloads/_Uteis/AI/AletheIA-Adaptative-Skills/aletheia-adaptive-skills-plano-cross-repo.md) (8 épicos, gates explícitos). Os marcos abaixo permanecem como referência histórica de intenção, com status reconciliados; novas datas e prioridades vêm dos sprints do plano cross-repo.
 
 ---
 
@@ -23,46 +26,47 @@
 ## 🎯 Fases do Roadmap
 
 ### **Fase 1: Consolidação (Abril 2026)**
-*Status: Em andamento*
+*Status (reconciliado 2026-05-21): parcialmente entregue; itens não concluídos absorvidos ou aposentados*
 
-| Entrega | Data | Status | Critério de Sucesso |
+| Entrega | Data prevista | Status real (2026-05-21) | Observação |
 |---------|------|--------|---------------------|
-| Efficiency Layer v1.1 | 2026-04-25 | 🟡 70% | 5 skills validadas em pilotos |
-| Policy de Superfícies Protegidas | 2026-04-16 | 🟢 90% | Aprovada pelo core team |
-| Pilotos Ativos (5 skills) | 2026-04-20 | 🟡 50% | 80% aprovação rate |
-| Evolution Cycle #3 | 2026-04-25 | 🟡 40% | 10+ observations catalogadas |
-| Domain Pack: Crisis Management | 2026-04-25 | 🟢 85% | Case study documentado |
+| Efficiency Layer v1.1 | 2026-04-25 | 🟡 Parcial — skills mapeadas e templates ok; pilotos de validação parados | Validação restante absorvida pelos pilotos sobreviventes (P01/P03/P05) com gate em 28/05 |
+| Policy de Superfícies Protegidas | 2026-04-16 | ⚪ Aposentada como item isolado | Conteúdo continua em [`docs/skill-model.md`](docs/skill-model.md) (seção *Protected surfaces*); policy formal será definida no Épico 1 do plano cross-repo (ADR-001/002) |
+| Pilotos Ativos (5 skills) | 2026-04-20 | 🔴 2 aposentados (P02, P04), 3 com gate em 28/05 (P01, P03, P05) | Sem evidência de execução em ~5 semanas |
+| Evolution Cycle #3 | 2026-04-25 | 🟡 7/10 observations catalogadas | Pipeline parou em 2026-04-15; Cycle #4 reformulado vai reabsorver |
+| Domain Pack: Crisis Management | 2026-04-25 | 🟢 Entregue + reposicionamento [#31](https://github.com/nevitonsantana/adaptive-skills/pull/31) | Crisis Monitor passou a "team-owned field evidence, not active backlog" — alinhado ao plano cross-repo |
 
-**Riscos:**
-- WIP excedido pode atrasar conclusão dos pilotos
-- Falta de métricas de telemetry prática
-
-**Mitigações:**
-- Congelar novas entradas até reduzir In Progress para 5
-- Priorizar criação do guia de telemetry (T03)
+**Riscos consolidados (2026-05-21):**
+- Pilotos podem voltar a estacionar se não houver disciplina de fechamento em 28/05
+- Reconciliação narrativa Crisis Monitor (Épico 2 do plano) ainda precisa ser feita em conteúdo canônico (concepts/, contracts/)
 
 ---
 
-### **Fase 2: Expansão (Maio 2026)**
-*Status: Planejamento*
+### **Fase 2: Expansão (Maio 2026) — reescopada em 2026-05-21**
+*Status: Reabsorvida pelo plano cross-repo*
 
-| Entrega | Data | Status | Critério de Sucesso |
-|---------|------|--------|---------------------|
-| Domínio Product completo | 2026-05-10 | ⚪ 0% | 5+ skills criadas e validadas |
-| Domínio Governance completo | 2026-05-15 | ⚪ 0% | 5+ skills + AletheIA integration |
-| Skill Finder Matrix | 2026-05-05 | ⚪ 0% | Navegável com filtros por domínio/trigger |
-| Evolution Cycle #4 | 2026-05-20 | ⚪ 0% | 2+ proposals aprovadas |
-| Evolution Cycle #5 | 2026-05-31 | ⚪ 0% | 1+ skill evoluída via processo |
-| Guide: Telemetry Prática | 2026-05-08 | ⚪ 0% | 3 exemplos reais de metrics |
+Maioria das entregas originalmente planejadas para esta fase **foram absorvidas pelos épicos do plano cross-repo** ou **adiadas explicitamente** após reconciliação:
 
-**Dependências Críticas:**
-- T01 e T02 (preencher skeletons) devem ser concluídos na Fase 1
-- Policy de versionamento (B03) necessária antes de expandir
+| Entrega original | Data prevista | Decisão 2026-05-21 |
+|---|---|---|
+| Domínio Product completo | 2026-05-10 | Adiado — será reavaliado após Épico 1 do plano cross-repo (ADRs de posicionamento) define se "completar domain skeleton" continua sendo prioridade vs. focar em adoption |
+| Domínio Governance completo | 2026-05-15 | Adiado — idem; também depende da relação AletheIA ↔ Adaptive Skills ser fixada no ADR-003 |
+| Skill Finder Matrix | 2026-05-05 | **Absorvido pelo Épico 7** do plano cross-repo (`docs/getting-started/skill-catalog.md`) |
+| Evolution Cycle #4 (forma original) | 2026-05-20 | **Aposentado e reformulado** — ver abaixo |
+| Evolution Cycle #5 | 2026-05-31 | Adiado — janela revista após Cycle #4 reformulado terminar (após 2026-06-30) |
+| Guide: Telemetry Prática | 2026-05-08 | **Absorvido pelo Épico 7** (entra como seção no overview ou no FAQ do Adaptive Skills) |
 
-**Recursos Necessários:**
-- 2 Domain Experts (Product + Governance)
-- 1 QA Lead para validação de triggers
-- Evolution Bot automatizado
+#### Evolution Cycle #4 — reformulado (2026-05-21)
+
+| Campo | Conteúdo |
+|---|---|
+| **Período** | 2026-05-21 → 2026-06-30 (~6 semanas) |
+| **Foco** | "Reconciliação narrativa: do Crisis Monitor sandbox ao posicionamento ecossistêmico" |
+| **Inputs** | 7 observations existentes em `evolution/observations/` (todas com viés Crisis Monitor); 2 proposals em `evolution/proposals/deferred/`; aprendizados embutidos nos PRs [#31](https://github.com/nevitonsantana/adaptive-skills/pull/31)-[#34](https://github.com/nevitonsantana/adaptive-skills/pull/34) |
+| **Meta de evolução** | (1) Reclassificar cada observation como **canônica** (insight agnóstico) ou **exemplo** (Crisis Monitor-específica); (2) Reabrir as 2 proposals deferred com novo critério de agnosticismo; (3) Aprovar ≥1 proposal alinhada com Épicos 1/2 do plano cross-repo |
+| **Dependência** | Onda 0 fechada (✅ 2026-05-21) + Épico 1 (ADRs) iniciado |
+| **Critério de Done** | Observations reclassificadas + decisão registrada sobre as 2 proposals deferred + ≥1 proposal aprovada |
+| **Como não vai falhar de novo** | Escopo amarrado ao plano cross-repo (não é cycle "abstrato"); entregável pequeno e verificável; gate explícito antes de Cycle #5 |
 
 ---
 
@@ -132,8 +136,8 @@ Abril 2026          Maio 2026           Junho 2026          Julho 2026
 | #1 | Jan-Fev | Baseline | 23 skills mapeadas |
 | #2 | Mar-Abr | Efficiency Layer | 5 skills validadas |
 | #3 | Abr-Mai | Observations | 10+ observations |
-| #4 | Mai-Jun | Proposals | 2+ proposals aprovadas |
-| #5 | Jun-Jul | Implementation | 1+ skill evoluída |
+| #4 (reformulado) | 2026-05-21 → 2026-06-30 | Reconciliação narrativa (Crisis Monitor → ecossistêmico) | ≥1 proposal aprovada + observations reclassificadas |
+| #5 | A definir após Cycle #4 | Implementation | 1+ skill evoluída |
 | #6 | Jul-Ago | Automation | Processo automatizado |
 
 ### Loop de 8 Passos (v1.1)
@@ -289,5 +293,5 @@ Abril 2026          Maio 2026           Junho 2026          Julho 2026
 
 ---
 
-*Este roadmap é um documento vivo, atualizado a cada sprint. Última revisão: 2026-04-15*  
-*Próxima revisão programada: 2026-04-29 (Sprint Review)*
+*Este roadmap é um documento vivo, atualizado a cada sprint. Última revisão: 2026-05-21 (reconciliação Onda 0)*
+*Próxima revisão programada: ao final do Sprint 1 do plano cross-repo (após Épicos 1 e 2)*
