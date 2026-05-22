@@ -111,7 +111,25 @@ The first three are the "protected surfaces" of the Evolution Layer (`docs/skill
 
 ### 2.5 Subdirectories
 
-None of the 21 skills use `scripts/`, `references/`, or `assets/`. Each skill folder contains exactly one file: `SKILL.md`.
+None of the 21 skills use the spec's three *named* optional subdirectories (`scripts/`, `references/`, `assets/`). However, **8 of 21 skills have subdirectories under other names** (the spec explicitly allows "any additional files or directories"):
+
+| Skill | Subdirectories present |
+|---|---|
+| `business/business-design` | `templates/` |
+| `design/ux-writing` | `checklists/` |
+| `efficiency/checkpoint-review` | `examples/`, `templates/` |
+| `efficiency/handoff-summary` | `examples/`, `templates/` |
+| `efficiency/task-chunking` | `examples/`, `templates/` |
+| `engineering/feature-planning` | `templates/` |
+| `planning/premortem` | `examples/`, `templates/`, `workflows/` |
+
+The remaining 13 skills contain only `SKILL.md` at the skill folder root.
+
+These extra subdirectories are spec-compliant (the catch-all "any additional files or directories" applies). Three optional considerations are flagged here for follow-up — none are blockers for Case A:
+
+- **Naming alignment.** The spec gives `scripts/`, `references/`, `assets/` semantic meaning under progressive disclosure. The current names (`templates/`, `examples/`, `workflows/`, `checklists/`) are not wrong, but they are also not the spec's named conventions. Future-proofing could either rename or leave a `references/` symlink pointing at the canonical name.
+- **Progressive disclosure footprint.** Spec's optional dirs load on demand; arbitrary subdirs may or may not be picked up by harnesses depending on how each implements discovery. No harness reports of this today, but worth confirming in Epic 5 smoke tests.
+- **Library convention vs. spec.** The 4 ad-hoc subdir names should be documented somewhere (likely `docs/skill-model.md`) as part of the library's structural convention.
 
 ## 3. Diff: spec vs. current
 
@@ -142,12 +160,27 @@ That is the entire delta. No other divergences were found.
 
 Several aspects of Adaptive Skills go *beyond* the spec, which is not a divergence:
 
-- **11-section body structure.** Spec body is unrestricted. The Adaptive Skills body convention is internal library discipline; it does not violate any spec rule.
+- **11-section body structure.** Spec body is unrestricted. The Adaptive Skills body convention is internal library discipline; it does not violate any spec rule. *Note: the internal validator `scripts/validate_skills.py` enforces the 11 sections as required — see §3.4 below.*
 - **Domain grouping in `skills/<domain>/<skill-name>/`.** Spec defines the skill folder boundary, not the library boundary. Repo-level organization is unconstrained.
 - **Evolution Layer (`evolution/`), projections (`projections/`), templates (`templates/`), scripts (`scripts/`).** Library-level concerns. Out of skill scope.
 - **`docs/skill-model.md` defining "protected surfaces" and governance rules.** Library governance discipline. Outside spec scope.
 
 These items are repo-level *enrichment* on top of an otherwise spec-conformant skill format.
+
+### 3.4 Internal validator (`scripts/validate_skills.py`) — interaction with remediation
+
+The repo ships its own validator that runs in CI (Quality Gate, PR [#21](https://github.com/nevitonsantana/adaptive-skills/pull/21)). At the time of this audit (commit on branch `docs/agentskills-io-audit`), it enforces:
+
+```python
+REQUIRED_FRONTMATTER = {'name', 'description', 'version', 'owner'}
+REQUIRED_SECTIONS = [11 sections]
+FORBIDDEN_GENERIC_PATTERNS = ['Crisis Monitor', 'AGENTS.md', ...]
+```
+
+This has two implications for Case A remediation:
+
+1. **Lockstep update required.** Moving `version`/`owner` into `metadata` will cause `validate_skills.py` to **fail** in CI because it still expects them at the top level. The remediation PR (Epic 5) MUST update `REQUIRED_FRONTMATTER` to `{'name', 'description'}` and either drop the version/owner enforcement or move it into a `metadata`-aware check. Otherwise CI breaks the same commit that fixes external conformance.
+2. **Internal validator and reference validator diverge today.** Internally, 21/21 pass (because version/owner present). Externally (`skills-ref validate`), 21/21 fail. After Case A remediation, both should pass — but only if both validators are updated in the same PR.
 
 ### 3.4 Validator-confirmed results (`skills-ref validate`)
 

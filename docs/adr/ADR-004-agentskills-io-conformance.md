@@ -71,9 +71,11 @@ The `version` value MUST be quoted as a string, per the spec's `metadata` field 
 
 Remediation is **not** executed in this ADR's PR (anti-criterion of Epic 3). It will be folded into **Epic 5** of the cross-repo plan (APM packaging of Adaptive Skills), since both touch every skill's frontmatter and Epic 5 has a natural validation gate (`apm install` smoke test). Alternative: a small standalone PR before Epic 5; either is acceptable.
 
-Concretely, Epic 5 must produce:
-- `apm install nevitonsantana/adaptive-skills` succeeds.
-- `skills-ref validate` passes on all 21 skills (CI gate).
+Concretely, Epic 5 must produce (all in the same PR — see §3 below on the lockstep requirement):
+- 21/21 `SKILL.md` files updated per §2.2 pattern.
+- `scripts/validate_skills.py` updated to reflect the new frontmatter shape: drop `version`/`owner` from `REQUIRED_FRONTMATTER`; if version/owner are still wanted as soft requirements, check them inside `metadata` instead.
+- `skills-ref validate` invoked in CI (new Quality Gate step) and passing on all 21 skills.
+- `apm install nevitonsantana/adaptive-skills` succeeds on a clean smoke project.
 - No body content changes; no protected-surface touch (governance preserved).
 
 ### 2.4 Validation as ongoing discipline
@@ -84,9 +86,15 @@ Concretely, Epic 5 must produce:
 
 **Positive.** Adaptive Skills moves from "high-conformance-with-caveat" to "validator-clean" with mechanical edits. APM packaging (Epic 5) unblocked: skills install on any spec-compliant harness without a translation step. The library's identity — governance, evolution, body convention — is fully preserved.
 
-**Negative.** Existing readers and tools that consume `version` or `owner` as top-level fields will need to read them from `metadata`. No such reader exists today inside the repo (`scripts/`, projection scripts, and CI do not depend on top-level `version`/`owner`), so the actual cost is zero; if external consumers exist, they will need a one-line change.
+**Negative — lockstep update required.** The repo's internal validator [`scripts/validate_skills.py`](../../scripts/validate_skills.py) currently enforces `REQUIRED_FRONTMATTER = {'name', 'description', 'version', 'owner'}` and runs in the Quality Gate CI (PR [#21](https://github.com/nevitonsantana/adaptive-skills/pull/21)). Moving `version`/`owner` into `metadata` without updating this validator in the same PR would break CI. The remediation PR (Epic 5 or a standalone) therefore MUST:
 
-**Accepted tradeoff.** Strict conformance with the open standard outweighs preserving idiosyncratic frontmatter shape. Case A delivers the maximum compatibility surface for the minimum delta.
+1. Edit all 21 `SKILL.md` files per §2.2.
+2. Edit `scripts/validate_skills.py` to drop `version`/`owner` from `REQUIRED_FRONTMATTER` (or move them to a `metadata`-aware check).
+3. Add `skills-ref validate` to the Quality Gate workflow so external and internal validators agree from that point forward.
+
+External consumers depending on the old top-level shape (if any exist outside this repo) will need a one-line change to read from `metadata`. None are known today.
+
+**Accepted tradeoff.** Strict conformance with the open standard outweighs preserving idiosyncratic frontmatter shape. Case A delivers the maximum compatibility surface for the minimum delta — provided the lockstep update is respected.
 
 ## 4. Alternatives considered
 
