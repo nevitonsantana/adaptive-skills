@@ -252,11 +252,12 @@ See:
 
 ## Field evidence
 
-Adaptive Skills has been exercised in real project work, including a documented field case:
+Adaptive Skills is **domain-agnostic** (see [`docs/adr/ADR-002-domain-agnosticism.md`](docs/adr/ADR-002-domain-agnosticism.md)). The library was first validated against the **Crisis Monitor** project; that case is preserved as labeled field evidence:
 
-- `docs/crisis-monitor-case-study.md`
+- [`docs/crisis-monitor-case-study.md`](docs/crisis-monitor-case-study.md)
+- [`domain-packs/crisis-management/`](domain-packs/crisis-management/) — first example domain pack (not the canonical pack)
 
-That case remains evidence for the library, not an active product backlog inside this repository.
+That case remains evidence for the library, not an active product backlog inside this repository. Additional consumer projects across other domains are expected and prioritized.
 
 ## License
 

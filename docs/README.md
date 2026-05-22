@@ -55,7 +55,9 @@ The Efficiency Layer is a separate track for context, checkpoint, handoff, and c
 
 ## Field evidence
 
-- `crisis-monitor-case-study.md` — field case used as evidence for Adaptive Skills
-- `efficiency-layer-crisis-monitor-reference.md` — field reference for the Efficiency Layer
+Adaptive Skills is domain-agnostic (see [`adr/ADR-002-domain-agnosticism.md`](adr/ADR-002-domain-agnosticism.md)). The first validation case is Crisis Monitor — labeled evidence, not canonical reference:
+
+- [`crisis-monitor-case-study.md`](crisis-monitor-case-study.md) — first-validation field case
+- [`efficiency-layer-crisis-monitor-reference.md`](efficiency-layer-crisis-monitor-reference.md) — first-validation field reference for the Efficiency Layer
 
 Field evidence is not active product backlog inside this repository.
