@@ -16,7 +16,7 @@ They improve how work is carried out, but they do not require the repository to 
 
 ## `task-chunking`
 
-**Status:** published in `skills/efficiency/task-chunking/` as the first Efficiency Layer skill.
+**Status:** published in `skills/task-chunking/` as the first Efficiency Layer skill.
 
 
 ### Purpose
@@ -41,7 +41,7 @@ Break oversized work into smaller, reviewable, and more testable slices.
 
 ## `handoff-summary`
 
-**Status:** published in `skills/efficiency/handoff-summary/` as the second Efficiency Layer skill.
+**Status:** published in `skills/handoff-summary/` as the second Efficiency Layer skill.
 
 
 ### Purpose
@@ -67,7 +67,7 @@ Close one round of work with enough context for the next round without dragging 
 
 ## `checkpoint-review`
 
-**Status:** published in `skills/efficiency/checkpoint-review/` as the third Efficiency Layer skill.
+**Status:** published in `skills/checkpoint-review/` as the third Efficiency Layer skill.
 
 
 ### Purpose

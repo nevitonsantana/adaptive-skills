@@ -313,7 +313,7 @@ Entrega pronta para revisão.
 - o que foi entregue: Skill completa com docs e examples
 - validação executada: validate_skills.py + manual review
 - ponto que merece atenção na revisão: Triggers podem precisar ajuste fino
-- referência de código/doc/PR: PR #123, skills/product/roadmap-prioritization/SKILL.md
+- referência de código/doc/PR: PR #123, skills/roadmap-prioritization/SKILL.md
 ```
 
 ### Blocked

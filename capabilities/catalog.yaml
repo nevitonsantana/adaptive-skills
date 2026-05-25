@@ -4,7 +4,7 @@ purpose: "Advisory capability metadata for routing, composition, evidence, and e
 capabilities:
   - id: workflow
     kind: macro-capability
-    source_skill: skills/engineering/workflow/SKILL.md
+    source_skill: skills/workflow/SKILL.md
     category: engineering
     stable: true
     default_mode: workflow/basic
@@ -23,7 +23,7 @@ capabilities:
 
   - id: feature-planning
     kind: macro-capability
-    source_skill: skills/engineering/feature-planning/SKILL.md
+    source_skill: skills/feature-planning/SKILL.md
     category: engineering
     stable: true
     default_mode: workflow/extended
@@ -51,7 +51,7 @@ capabilities:
 
   - id: debugging
     kind: macro-capability
-    source_skill: skills/engineering/debugging/SKILL.md
+    source_skill: skills/debugging/SKILL.md
     category: engineering
     stable: true
     default_mode: debugging/root-cause
@@ -76,7 +76,7 @@ capabilities:
 
   - id: checkpoint-review
     kind: micro-capability
-    source_skill: skills/efficiency/checkpoint-review/SKILL.md
+    source_skill: skills/checkpoint-review/SKILL.md
     category: efficiency
     stable: true
     default_mode: workflow/basic
@@ -95,7 +95,7 @@ capabilities:
 
   - id: premortem
     kind: macro-capability
-    source_skill: skills/planning/premortem/SKILL.md
+    source_skill: skills/premortem/SKILL.md
     category: planning
     stable: true
     default_mode: workflow/high-risk

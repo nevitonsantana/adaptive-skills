@@ -3,7 +3,7 @@
   "skills": [
     {
       "id": "workflow",
-      "source_path": "skills/engineering/workflow/SKILL.md",
+      "source_path": "skills/workflow/SKILL.md",
       "category": "engineering",
       "status": "active",
       "portability_tags": [
@@ -24,7 +24,7 @@
     },
     {
       "id": "feature-planning",
-      "source_path": "skills/engineering/feature-planning/SKILL.md",
+      "source_path": "skills/feature-planning/SKILL.md",
       "category": "engineering",
       "status": "active",
       "portability_tags": [
@@ -45,7 +45,7 @@
     },
     {
       "id": "testing",
-      "source_path": "skills/engineering/testing/SKILL.md",
+      "source_path": "skills/testing/SKILL.md",
       "category": "engineering",
       "status": "active",
       "portability_tags": [
@@ -66,7 +66,7 @@
     },
     {
       "id": "debugging",
-      "source_path": "skills/engineering/debugging/SKILL.md",
+      "source_path": "skills/debugging/SKILL.md",
       "category": "engineering",
       "status": "active",
       "portability_tags": [
@@ -87,7 +87,7 @@
     },
     {
       "id": "api-design",
-      "source_path": "skills/engineering/api-design/SKILL.md",
+      "source_path": "skills/api-design/SKILL.md",
       "category": "engineering",
       "status": "active",
       "portability_tags": [
@@ -108,7 +108,7 @@
     },
     {
       "id": "refactoring",
-      "source_path": "skills/engineering/refactoring/SKILL.md",
+      "source_path": "skills/refactoring/SKILL.md",
       "category": "engineering",
       "status": "active",
       "portability_tags": [
@@ -129,7 +129,7 @@
     },
     {
       "id": "architecture-review",
-      "source_path": "skills/engineering/architecture-review/SKILL.md",
+      "source_path": "skills/architecture-review/SKILL.md",
       "category": "engineering",
       "status": "active",
       "portability_tags": [
@@ -150,7 +150,7 @@
     },
     {
       "id": "code-style",
-      "source_path": "skills/engineering/code-style/SKILL.md",
+      "source_path": "skills/code-style/SKILL.md",
       "category": "engineering",
       "status": "active",
       "portability_tags": [
@@ -171,7 +171,7 @@
     },
     {
       "id": "communication",
-      "source_path": "skills/engineering/communication/SKILL.md",
+      "source_path": "skills/communication/SKILL.md",
       "category": "engineering",
       "status": "active",
       "portability_tags": [
@@ -192,7 +192,7 @@
     },
     {
       "id": "ux-strategy",
-      "source_path": "skills/design/ux-strategy/SKILL.md",
+      "source_path": "skills/ux-strategy/SKILL.md",
       "category": "design",
       "status": "active",
       "portability_tags": [
@@ -213,7 +213,7 @@
     },
     {
       "id": "ux-provocation",
-      "source_path": "skills/design/ux-provocation/SKILL.md",
+      "source_path": "skills/ux-provocation/SKILL.md",
       "category": "design",
       "status": "active",
       "portability_tags": [
@@ -234,7 +234,7 @@
     },
     {
       "id": "heuristic-audit",
-      "source_path": "skills/design/heuristic-audit/SKILL.md",
+      "source_path": "skills/heuristic-audit/SKILL.md",
       "category": "design",
       "status": "active",
       "portability_tags": [
@@ -255,7 +255,7 @@
     },
     {
       "id": "ux-writing",
-      "source_path": "skills/design/ux-writing/SKILL.md",
+      "source_path": "skills/ux-writing/SKILL.md",
       "category": "design",
       "status": "active",
       "portability_tags": [
@@ -276,7 +276,7 @@
     },
     {
       "id": "business-design",
-      "source_path": "skills/business/business-design/SKILL.md",
+      "source_path": "skills/business-design/SKILL.md",
       "category": "business",
       "status": "active",
       "portability_tags": [
@@ -297,7 +297,7 @@
     },
     {
       "id": "qa-review",
-      "source_path": "skills/quality/qa-review/SKILL.md",
+      "source_path": "skills/qa-review/SKILL.md",
       "category": "quality",
       "status": "active",
       "portability_tags": [
@@ -318,7 +318,7 @@
     },
     {
       "id": "observability-review",
-      "source_path": "skills/metrics/observability-review/SKILL.md",
+      "source_path": "skills/observability-review/SKILL.md",
       "category": "metrics",
       "status": "active",
       "portability_tags": [
@@ -339,7 +339,7 @@
     },
     {
       "id": "triad-check",
-      "source_path": "skills/cross-functional/triad-check/SKILL.md",
+      "source_path": "skills/triad-check/SKILL.md",
       "category": "cross-functional",
       "status": "active",
       "portability_tags": [
@@ -423,7 +423,7 @@
     },
     {
       "id": "task-chunking",
-      "source_path": "skills/efficiency/task-chunking/SKILL.md",
+      "source_path": "skills/task-chunking/SKILL.md",
       "category": "efficiency",
       "status": "active",
       "portability_tags": [
@@ -444,7 +444,7 @@
     },
     {
       "id": "handoff-summary",
-      "source_path": "skills/efficiency/handoff-summary/SKILL.md",
+      "source_path": "skills/handoff-summary/SKILL.md",
       "category": "efficiency",
       "status": "active",
       "portability_tags": [
@@ -465,7 +465,7 @@
     },
     {
       "id": "checkpoint-review",
-      "source_path": "skills/efficiency/checkpoint-review/SKILL.md",
+      "source_path": "skills/checkpoint-review/SKILL.md",
       "category": "efficiency",
       "status": "active",
       "portability_tags": [
@@ -486,7 +486,7 @@
     },
     {
       "id": "premortem",
-      "source_path": "skills/planning/premortem/SKILL.md",
+      "source_path": "skills/premortem/SKILL.md",
       "category": "planning",
       "status": "active",
       "portability_tags": [
