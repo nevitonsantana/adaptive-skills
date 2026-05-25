@@ -1,0 +1,42 @@
+version: 1
+status: experimental
+relationships:
+  - from: workflow
+    to: feature-planning
+    relation: pairs-well-with
+    reason: "Workflow frames the immediate scope before feature planning expands the plan."
+
+  - from: feature-planning
+    to: testing
+    relation: expected-downstream-proof
+    reason: "Feature plans should define acceptance evidence that testing can validate."
+
+  - from: feature-planning
+    to: premortem
+    relation: optional-risk-deepening
+    reason: "Premortem is justified when failure cost is meaningful and the plan can still change."
+
+  - from: feature-planning
+    to: checkpoint-review
+    relation: optional-continuation-control
+    reason: "Checkpoint review controls scope growth when planning expands mid-round."
+
+  - from: workflow
+    to: task-chunking
+    relation: optional-scope-control
+    reason: "Task chunking helps when a framed task is still too large for one round."
+
+  - from: checkpoint-review
+    to: handoff-summary
+    relation: handoff-escalation
+    reason: "A checkpoint may conclude that a clean restart or another owner is needed."
+
+escalation_boundaries:
+  - signal: human_decision_required
+    owner: AletheIA or consumer governance layer
+  - signal: macro_gate_required
+    owner: AletheIA or consumer governance layer
+  - signal: risky_state_change
+    owner: agent runtime or harness
+  - signal: skill_contract_change
+    owner: Adaptive Skills Evolution Layer

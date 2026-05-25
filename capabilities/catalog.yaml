@@ -1,0 +1,119 @@
+version: 1
+status: experimental
+purpose: "Advisory capability metadata for routing, composition, evidence, and evolution signals."
+capabilities:
+  - id: workflow
+    kind: macro-capability
+    source_skill: skills/engineering/workflow/SKILL.md
+    category: engineering
+    stable: true
+    default_mode: workflow/basic
+    allowed_modes:
+      - workflow/basic
+      - workflow/extended
+    intent: "Frame a task with explicit scope, proof, and next step before execution starts."
+    evidence:
+      - goal
+      - immediate_scope
+      - minimum_proof
+      - next_step
+    escalate_to_aletheia_if:
+      - ownership_boundary_crossed
+      - macro_gate_required
+
+  - id: feature-planning
+    kind: macro-capability
+    source_skill: skills/engineering/feature-planning/SKILL.md
+    category: engineering
+    stable: true
+    default_mode: workflow/extended
+    allowed_modes:
+      - workflow/basic
+      - workflow/extended
+      - workflow/high-risk
+    intent: "Turn product intent into a small, testable delivery plan with scope, risks, slices, and proof."
+    modules:
+      - ambiguity-check
+      - scope-boundary
+      - smallest-viable-slice
+      - dependency-map
+      - risk-review
+      - traceability-check
+    evidence:
+      - problem_statement
+      - goal_and_non_goals
+      - smallest_useful_slice
+      - acceptance_evidence
+    escalate_to_aletheia_if:
+      - human_decision_required
+      - readiness_blocked
+      - cross_ownership_boundary
+
+  - id: debugging
+    kind: macro-capability
+    source_skill: skills/engineering/debugging/SKILL.md
+    category: engineering
+    stable: true
+    default_mode: debugging/root-cause
+    allowed_modes:
+      - debugging/quick-fix
+      - debugging/root-cause
+      - debugging/production-incident
+    intent: "Reproduce, isolate, fix, and guard against recurrence instead of patching symptoms."
+    modules:
+      - instrumentation-pass
+      - boundary-check
+      - recurrence-guard
+    evidence:
+      - repro_path
+      - likely_root_cause
+      - validated_fix
+      - recurrence_guard_or_rationale
+    escalate_to_aletheia_if:
+      - production_incident
+      - cross_system_failure
+      - human_approval_required
+
+  - id: checkpoint-review
+    kind: micro-capability
+    source_skill: skills/efficiency/checkpoint-review/SKILL.md
+    category: efficiency
+    stable: true
+    default_mode: workflow/basic
+    allowed_modes:
+      - workflow/basic
+      - workflow/extended
+    intent: "Insert a short review pause so work can continue, stop, or hand off deliberately."
+    evidence:
+      - what_changed
+      - what_is_proved
+      - what_remains_open
+      - continue_stop_or_handoff_decision
+    escalate_to_aletheia_if:
+      - macro_review_required
+      - governance_gate_required
+
+  - id: premortem
+    kind: macro-capability
+    source_skill: skills/planning/premortem/SKILL.md
+    category: planning
+    stable: true
+    default_mode: workflow/high-risk
+    allowed_modes:
+      - workflow/extended
+      - workflow/high-risk
+    intent: "Assume a future failure happened and work backwards before execution begins."
+    modules:
+      - assumption-stress-test
+      - signal-log
+      - rollback-gate
+    evidence:
+      - failure_modes
+      - hidden_assumption
+      - warning_signals
+      - recommended_gates
+      - revised_plan
+    escalate_to_aletheia_if:
+      - hard_gate_identified
+      - human_decision_gate_required
+      - high_assurance_context_missing

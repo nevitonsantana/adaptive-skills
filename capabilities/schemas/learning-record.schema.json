@@ -1,0 +1,13 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Adaptive Skills Learning Record",
+  "type": "object",
+  "required": ["capability_id", "learning_type", "evidence_refs", "recommendation"],
+  "properties": {
+    "capability_id": {"type": "string"},
+    "learning_type": {"enum": ["reinforced", "no-change", "routing-adjustment", "module-candidate", "skill-candidate", "governance-boundary"]},
+    "evidence_refs": {"type": "array", "items": {"type": "string"}},
+    "recommendation": {"type": "string"},
+    "evolution_layer_action": {"enum": ["none", "observation", "proposal", "review"]}
+  }
+}

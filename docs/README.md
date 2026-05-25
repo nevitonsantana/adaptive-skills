@@ -16,6 +16,8 @@ The recommended path is:
 - `skill-model.md` — Core + Modules + Triggers model
 - `how-to-use-a-skill.md` — practical guide for choosing and using a skill
 - `domain-taxonomy.md` — generic skills vs. domain packs
+- `capability-model.md` — skills, capabilities, workflows, runtime, harness, and governance boundaries
+- `capability-graph.md` — experimental graph overlay for composition and routing
 
 ## Adopt in another project
 
@@ -35,6 +37,19 @@ Follow this sequence:
 - `agent-role-integration.md` — role-to-skill consumption without collapsing roles and skills
 - `specification-facilitation.md` — compose `workflow + feature-planning + premortem` for clarify/spec/plan/tasks/readiness support
 - `aletheia-first-test.md` — first test structure
+
+## Capability layer
+
+The Capability Graph is an experimental metadata overlay. It makes routing, composition, execution modes, and evidence expectations explicit without moving existing skills or introducing a runtime engine.
+
+- `capability-model.md` — terms and boundaries for skills, capabilities, workflows, runtime, harness, and governance
+- `capability-graph.md` — graph structure and advisory routing model
+- `operational-runtime.md` — runtime contract, checkpointing, resumability, and approval boundaries
+- `execution-modes.md` — basic, extended, high-risk, multi-agent, and debugging depth profiles
+- `../capabilities/catalog.yaml` — pilot capability metadata
+- `../capabilities/routes.yaml` — advisory route examples
+- `../capabilities/profiles.yaml` — execution depth profiles
+- `../capabilities/dependencies.yaml` — capability graph relationships
 
 ## Evolve the library
 

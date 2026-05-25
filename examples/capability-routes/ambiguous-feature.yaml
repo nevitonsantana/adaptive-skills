@@ -1,0 +1,18 @@
+task: "Plan a new feature with unclear acceptance evidence."
+observed_signals:
+  task_shape: feature_or_behavior_change
+  ambiguity: medium_or_high
+  risk: medium
+selected_route: route.feature-planning.ambiguous-feature
+selected_capabilities:
+  - workflow
+  - feature-planning
+mode: workflow/extended
+activated_modules:
+  - ambiguity-check
+  - scope-boundary
+  - smallest-viable-slice
+expected_evidence:
+  - clarified what/why
+  - smallest useful slice
+  - acceptance evidence

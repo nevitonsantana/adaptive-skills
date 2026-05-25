@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Adaptive Skills Capability Manifest",
+  "type": "object",
+  "required": ["id", "kind", "source_skill", "category", "default_mode", "allowed_modes", "intent", "evidence"],
+  "properties": {
+    "id": {"type": "string"},
+    "kind": {"enum": ["micro-capability", "macro-capability", "workflow"]},
+    "source_skill": {"type": "string"},
+    "category": {"type": "string"},
+    "stable": {"type": "boolean"},
+    "default_mode": {"type": "string"},
+    "allowed_modes": {"type": "array", "items": {"type": "string"}},
+    "intent": {"type": "string"},
+    "modules": {"type": "array", "items": {"type": "string"}},
+    "evidence": {"type": "array", "items": {"type": "string"}},
+    "escalate_to_aletheia_if": {"type": "array", "items": {"type": "string"}}
+  }
+}

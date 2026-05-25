@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Adaptive Skills Execution Record",
+  "type": "object",
+  "required": ["capability_id", "mode", "trigger", "evidence", "result"],
+  "properties": {
+    "capability_id": {"type": "string"},
+    "mode": {"type": "string"},
+    "trigger": {"type": "string"},
+    "modules_activated": {"type": "array", "items": {"type": "string"}},
+    "evidence": {"type": "array", "items": {"type": "string"}},
+    "result": {"enum": ["usable", "partial", "misrouted", "blocked", "escalated"]},
+    "follow_up": {"type": "array", "items": {"type": "string"}}
+  }
+}
