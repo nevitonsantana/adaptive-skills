@@ -80,7 +80,9 @@ Concretely, Epic 5 must produce (all in the same PR — see §3 below on the loc
 
 ### 2.4 Validation as ongoing discipline
 
-`skills-ref validate` should run in the CI Quality Gate (already established by PR [#21](https://github.com/nevitonsantana/adaptive-skills/pull/21)) once remediation lands. Concretely: a new CI step that validates every `SKILL.md` against the pinned validator version. This makes future regressions deterministic, not "may warn".
+The reference validator should run in the CI Quality Gate (already established by PR [#21](https://github.com/nevitonsantana/adaptive-skills/pull/21)) once remediation lands. Concretely: a new CI step that validates every `SKILL.md` against the pinned validator version. This makes future regressions deterministic, not "may warn".
+
+> **Errata (2026-05-25):** The PyPI distribution is `skills-ref==0.1.0` but the installed CLI binary is `agentskills` (not `skills-ref`). Therefore the CI step is `pip install 'skills-ref==0.1.0'` followed by `agentskills validate <path>`. The textual references to `skills-ref validate` elsewhere in this ADR predate the discovery and should be read as `agentskills validate`. The decision itself (Case A) is unaffected.
 
 ## 3. Consequences
 

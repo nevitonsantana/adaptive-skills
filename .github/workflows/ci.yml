@@ -35,12 +35,12 @@ jobs:
       - uses: actions/setup-python@v6
         with:
           python-version: '3.11'
-      - name: Install skills-ref (pinned)
+      - name: Install skills-ref (pinned; ships the `agentskills` CLI)
         run: pip install 'skills-ref==0.1.0'
       - name: Validate generic skills
-        run: skills-ref validate skills/
+        run: agentskills validate skills/
       - name: Validate domain-pack skills
-        run: skills-ref validate domain-packs/crisis-management/skills/
+        run: agentskills validate domain-packs/crisis-management/skills/
 
   validate-evolution:
     name: Validate Evolution (observations + proposals + reviews)
