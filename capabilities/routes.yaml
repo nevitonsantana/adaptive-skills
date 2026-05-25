@@ -1,0 +1,67 @@
+version: 1
+status: experimental
+routes:
+  - id: route.workflow.basic
+    activates:
+      - workflow
+    when:
+      task_size: small
+      risk: low
+      ambiguity: low
+    mode: workflow/basic
+
+  - id: route.feature-planning.ambiguous-feature
+    activates:
+      - workflow
+      - feature-planning
+    when:
+      task_shape: feature_or_behavior_change
+      ambiguity: medium_or_high
+    mode: workflow/extended
+    modules:
+      - ambiguity-check
+      - scope-boundary
+      - smallest-viable-slice
+
+  - id: route.feature-planning.high-risk
+    activates:
+      - workflow
+      - feature-planning
+      - premortem
+    when:
+      task_shape: feature_or_behavior_change
+      failure_cost: meaningful
+      direction_can_still_change: true
+    mode: workflow/high-risk
+    modules:
+      - risk-review
+      - traceability-check
+      - rollback-gate
+    escalation_hint: aletheia_readiness_gate
+
+  - id: route.debugging.root-cause
+    activates:
+      - debugging
+    when:
+      task_shape: observed_failure
+      cause_known: false
+    mode: debugging/root-cause
+    modules:
+      - boundary-check
+      - recurrence-guard
+
+  - id: route.checkpoint.context-heavy
+    activates:
+      - checkpoint-review
+    when:
+      context_load: high
+      next_step_unclear: true
+    mode: workflow/basic
+
+  - id: route.handoff.ownership-boundary
+    activates:
+      - checkpoint-review
+    when:
+      ownership_boundary_crossed: true
+    mode: workflow/extended
+    escalation_hint: use_handoff_summary_or_aletheia

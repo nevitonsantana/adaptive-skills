@@ -116,6 +116,29 @@ The repository keeps the canon in source control and treats agent installs as de
 - Codex projection is first-class today.
 - Claude projection remains selective and availability-based in v0.
 
+
+### Capability graph overlay
+
+Adaptive Skills now includes an experimental capability graph overlay under `/capabilities`.
+
+This does not replace skills. It adds lightweight metadata for:
+
+- capability composition;
+- advisory routing;
+- execution depth profiles;
+- expected evidence;
+- escalation boundaries;
+- evolution signals.
+
+Start with:
+
+- `docs/capability-model.md`
+- `docs/capability-graph.md`
+- `docs/operational-runtime.md`
+- `docs/execution-modes.md`
+
+The overlay is intentionally docs/metadata-first. It is not a runtime engine and does not auto-edit the skill canon.
+
 ### Evolution layer
 
 Adaptive Skills includes a governed evolution layer so the library can improve without self-rewriting.

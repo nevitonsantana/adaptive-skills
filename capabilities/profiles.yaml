@@ -1,0 +1,70 @@
+version: 1
+status: experimental
+profiles:
+  - id: workflow/basic
+    depth: lite
+    use_when: "Task is small, local, reversible, and has obvious proof."
+    requires:
+      - goal
+      - scope
+      - minimum_proof
+    avoid:
+      - extra_artifacts
+      - speculative_architecture
+
+  - id: workflow/extended
+    depth: standard
+    use_when: "Task has ambiguity, dependencies, or multiple validation steps."
+    requires:
+      - clarified_assumptions
+      - selected_capabilities
+      - acceptance_evidence
+    optional:
+      - traceability_table
+      - checkpoint_review
+
+  - id: workflow/high-risk
+    depth: high-assurance
+    use_when: "Failure cost is meaningful, decisions are hard to reverse, or human approval may be required."
+    requires:
+      - risk_review
+      - explicit_gates
+      - human_decision_points
+      - resumable_handoff
+    optional:
+      - premortem
+      - readiness_review
+
+  - id: workflow/multi-agent
+    depth: coordinated
+    use_when: "The work needs multiple specialists, owners, or agents to produce a safer result."
+    requires:
+      - role_boundaries
+      - coordination_checkpoints
+      - handoff_protocol
+      - macro_governance_owner
+
+  - id: debugging/quick-fix
+    depth: lite
+    use_when: "Failure is obvious, local, low-risk, and quick to prove."
+    requires:
+      - failure_observed
+      - local_fix
+      - smoke_proof
+
+  - id: debugging/root-cause
+    depth: standard
+    use_when: "Failure needs diagnosis before change."
+    requires:
+      - repro_or_evidence
+      - narrowed_cause
+      - recurrence_proof
+
+  - id: debugging/production-incident
+    depth: high-assurance
+    use_when: "Failure is urgent, user-facing, data-affecting, or operationally risky."
+    requires:
+      - impact_summary
+      - rollback_or_mitigation
+      - human_approval_boundary
+      - post_fix_evidence
