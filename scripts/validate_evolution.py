@@ -69,18 +69,34 @@ def repo_root() -> Path:
 
 
 def parse_frontmatter(text: str) -> dict[str, object]:
+    """Parse YAML-ish frontmatter; supports a single nested `metadata:` block.
+
+    Keys inside `metadata:` are surfaced into the returned dict prefixed with
+    `metadata.` so callers can read `metadata.category` etc. uniformly.
+    """
     lines = text.splitlines()
     if not lines or lines[0].strip() != '---':
         return {}
     meta: dict[str, object] = {}
+    in_metadata = False
     for line in lines[1:]:
         if line.strip() == '---':
             break
+        if not line.strip():
+            continue
+        if in_metadata and line.startswith('  ') and ':' in line:
+            mk, mv = line.strip().split(':', 1)
+            meta[f'metadata.{mk.strip()}'] = mv.strip().strip('"')
+            continue
+        in_metadata = False
         if ':' not in line:
             continue
         key, value = line.split(':', 1)
         key = key.strip()
         value = value.strip()
+        if key == 'metadata' and value == '':
+            in_metadata = True
+            continue
         if key in LIST_KEYS:
             meta[key] = [item.strip() for item in value.split(',') if item.strip()] if value else []
         else:
@@ -90,14 +106,16 @@ def parse_frontmatter(text: str) -> dict[str, object]:
 
 def load_skill_ids(root: Path) -> dict[str, dict[str, str]]:
     skills: dict[str, dict[str, str]] = {}
-    for path in sorted(root.glob('skills/*/*/SKILL.md')):
+    for path in sorted(root.glob('skills/*/SKILL.md')):
         meta = parse_frontmatter(path.read_text())
         skill_id = str(meta.get('name') or path.parent.name)
-        skills[skill_id] = {'scope': 'generic', 'path': str(path.relative_to(root)), 'domain': path.parts[-3]}
+        domain = str(meta.get('metadata.category') or '')
+        skills[skill_id] = {'scope': 'generic', 'path': str(path.relative_to(root)), 'domain': domain}
     for path in sorted(root.glob('domain-packs/*/skills/*/SKILL.md')):
         meta = parse_frontmatter(path.read_text())
         skill_id = str(meta.get('name') or path.parent.name)
-        skills[skill_id] = {'scope': 'domain-pack', 'path': str(path.relative_to(root)), 'domain': path.parts[-4]}
+        domain = str(meta.get('metadata.category') or path.parts[-4])
+        skills[skill_id] = {'scope': 'domain-pack', 'path': str(path.relative_to(root)), 'domain': domain}
     return skills
 
 

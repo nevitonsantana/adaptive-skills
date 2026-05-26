@@ -1,12 +1,17 @@
 # 🗺️ Roadmap Evolutivo - Adaptive Skills
 
-> **Versão do Roadmap:** 1.1 (reconciliação Onda 0 do plano cross-repo)
+> **Versão do Roadmap:** 1.2 (Épico 5 — APM packaging — em PR review)
 > **Data de Criação:** 2026-04-15
-> **Última revisão:** 2026-05-21
+> **Última revisão:** 2026-05-25
 > **Horizonte de Planejamento:** Q2-Q3 2026 (Abril-Setembro)
 > **Princípio Guia:** "Evolução governada, não auto-edição"
 >
 > **Nota 2026-05-21:** As Fases 1-4 abaixo refletem o planejamento original de 2026-04-15. A partir de 2026-05-21, o roadmap operacional passa a ser conduzido pelo [plano cross-repo AletheIA + Adaptive Skills](../Downloads/_Uteis/AI/AletheIA-Adaptative-Skills/aletheia-adaptive-skills-plano-cross-repo.md) (8 épicos, gates explícitos). Os marcos abaixo permanecem como referência histórica de intenção, com status reconciliados; novas datas e prioridades vêm dos sprints do plano cross-repo.
+>
+> **Nota 2026-05-25 — execução do plano cross-repo até aqui:**
+> - **Sprint 1** (Fronteira + Despoluição): Épico 1 (PR #37, ADR-001/002/003 + ecosystem-map), Épico 2 (PR #38, despoluição Crisis Monitor) — ambos mergeados.
+> - **Sprint 2** (Padrões + Empacotamento AletheIA): Épico 3 (PR #39, ADR-004 Caso A para `agentskills.io`), Épico 4 (AletheIA PR #151, tag `v0.1.0-alpha`) — ambos mergeados.
+> - **Sprint 3** (Empacotamento Adaptive Skills + Doc AletheIA): Épico 5 — APM packaging do Adaptive Skills (branch `feat/apm-package`, 2 commits, PR pending). Decisões A1/C1/D3 registradas em ADR-005. Épico 6 (doc AletheIA) ainda não iniciado.
 
 ---
 

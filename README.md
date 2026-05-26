@@ -71,16 +71,7 @@ This keeps skills practical: structured enough to be repeatable, flexible enough
 
 ### Generic skills
 
-Generic skills live under `/skills` and are organized by domain:
-
-- `skills/engineering`
-- `skills/design`
-- `skills/business`
-- `skills/quality`
-- `skills/metrics`
-- `skills/cross-functional`
-- `skills/efficiency`
-- `skills/planning`
+Generic skills live flat under `/skills` as `skills/<skill-name>/SKILL.md`, conforming to the [`agentskills.io`](https://agentskills.io/specification) Skill Collection layout consumed by APM. Each skill carries its domain in the `metadata.category` field of its frontmatter; see [`docs/skill-categories.md`](docs/skill-categories.md) for the category taxonomy and per-category backlog, and [ADR-005](docs/adr/ADR-005-apm-packaging-strategy.md) for the rationale.
 
 Current examples include:
 
@@ -93,10 +84,7 @@ Current examples include:
 - `checkpoint-review` — pause during execution and decide whether to continue, adjust, or hand off;
 - `premortem` — assume a future failure happened and work backwards before execution begins.
 
-Skeleton-only domains in v0:
-
-- `skills/product`
-- `skills/governance`
+Skeleton-only categories in v0 (no published skills yet): `product`, `governance`. See `docs/skill-categories.md` for backlog.
 
 ### Domain packs
 

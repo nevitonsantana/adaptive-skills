@@ -1,11 +1,20 @@
 #!/usr/bin/env python3
+"""Internal validator for Adaptive Skills SKILL.md files.
+
+Enforces:
+- agentskills.io spec top-level fields (`name`, `description`) per ADR-004
+- library convention: `metadata.version`, `metadata.owner`, `metadata.category`
+- 11 required body sections (library enrichment, outside spec scope)
+- no forbidden generic references in `skills/` (case study terms live only in `domain-packs/`)
+"""
 from __future__ import annotations
 
 import json
 import re
 from pathlib import Path
 
-REQUIRED_FRONTMATTER = {'name', 'description', 'version', 'owner'}
+REQUIRED_TOP_LEVEL = {'name', 'description'}
+REQUIRED_METADATA = {'version', 'owner', 'category'}
 REQUIRED_SECTIONS = [
     'Overview',
     'When to Use',
@@ -32,28 +41,51 @@ def repo_root() -> Path:
     return Path(__file__).resolve().parents[1]
 
 
-def parse_frontmatter(text: str) -> dict[str, str]:
+def parse_frontmatter(text: str) -> tuple[dict[str, str], dict[str, str]]:
+    """Return (top_level, metadata) parsed from YAML-ish frontmatter.
+
+    Supports a single nested block under `metadata:` with two-space indent.
+    """
     lines = text.splitlines()
     if not lines or lines[0].strip() != '---':
-        return {}
-    meta = {}
+        return {}, {}
+    top: dict[str, str] = {}
+    meta: dict[str, str] = {}
+    in_metadata = False
     for line in lines[1:]:
         if line.strip() == '---':
             break
+        if not line.strip():
+            continue
+        if in_metadata and line.startswith('  ') and ':' in line:
+            key, value = line.strip().split(':', 1)
+            meta[key.strip()] = value.strip().strip('"')
+            continue
+        in_metadata = False
         if ':' not in line:
             continue
         key, value = line.split(':', 1)
-        meta[key.strip()] = value.strip().strip('"')
-    return meta
+        key = key.strip()
+        value = value.strip().strip('"')
+        if key == 'metadata' and value == '':
+            in_metadata = True
+            continue
+        top[key] = value
+    return top, meta
 
 
 def validate_skill(path: Path, generic: bool) -> list[str]:
-    errors = []
+    errors: list[str] = []
     text = path.read_text()
-    meta = parse_frontmatter(text)
-    missing = sorted(REQUIRED_FRONTMATTER - set(meta))
-    if missing:
-        errors.append(f'{path}: missing frontmatter keys: {", ".join(missing)}')
+    top, meta = parse_frontmatter(text)
+
+    missing_top = sorted(REQUIRED_TOP_LEVEL - set(top))
+    if missing_top:
+        errors.append(f'{path}: missing top-level frontmatter keys: {", ".join(missing_top)}')
+
+    missing_meta = sorted(REQUIRED_METADATA - set(meta))
+    if missing_meta:
+        errors.append(f'{path}: missing metadata keys: {", ".join(missing_meta)}')
 
     headings = set(re.findall(r'^# (.+)$', text, flags=re.M))
     for section in REQUIRED_SECTIONS:
@@ -71,7 +103,7 @@ def main() -> int:
     root = repo_root()
     errors: list[str] = []
 
-    generic_skill_paths = sorted(root.glob('skills/*/*/SKILL.md'))
+    generic_skill_paths = sorted(root.glob('skills/*/SKILL.md'))
     domain_pack_paths = sorted(root.glob('domain-packs/*/skills/*/SKILL.md'))
 
     for path in generic_skill_paths:

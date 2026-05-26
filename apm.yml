@@ -1,0 +1,51 @@
+# Adaptive Skills — APM package manifest
+#
+# Adaptive Skills is an agentskills.io-conformant capability library. The
+# repo lays out 21 generic skills as a flat APM Skill Collection
+# (`skills/<name>/SKILL.md`) so adopters can install the full library or a
+# single skill:
+#
+#   apm install nevitonsantana/adaptive-skills
+#   apm install nevitonsantana/adaptive-skills --skill <skill-name>
+#
+# `domain-packs/` (currently: crisis-management) is intentionally NOT part of
+# this APM package. Domain packs are case studies, not canonical capability;
+# they remain consumable via `git clone` and may be promoted to a separate
+# APM package once soft-launch demand justifies it.
+#
+# See docs/adr/ADR-005-apm-packaging-strategy.md for the layout decision
+# (flatten + metadata.category) and docs/guides/install-via-apm.md for the
+# adopter-facing flow.
+
+name: adaptive-skills
+version: 0.1.0
+description: >
+  Adaptive Skills capability library — 21 portable, domain-agnostic micro-skills
+  for AI-assisted work, conforming to the agentskills.io specification. Ships
+  as a flat APM Skill Collection installable in full or per-skill.
+author: Neviton Santana
+license: MIT
+target: claude
+type: skill
+
+# scripts: convenience entry points exposed via `apm run <name>`.
+scripts:
+  list-skills: "ls skills/"
+  validate: "python3 scripts/validate_skills.py"
+  start: "echo 'See docs/guides/install-via-apm.md for the install flow.'"
+
+# includes: allow-list of paths shipped in the APM package payload. The
+# library payload is the skills themselves plus the minimal docs an adopter
+# needs to use them. Internal governance docs, evolution/, domain-packs/,
+# projections/, capabilities/, examples/, and templates/ stay out of the
+# shipped artifact — they are repo-internal and not part of the spec-defined
+# Skill Collection surface.
+includes:
+  - apm.yml
+  - skills/**
+  - docs/skill-categories.md
+  - docs/guides/install-via-apm.md
+  - docs/adr/ADR-004-agentskills-io-conformance.md
+  - docs/adr/ADR-005-apm-packaging-strategy.md
+  - LICENSE
+  - README.md

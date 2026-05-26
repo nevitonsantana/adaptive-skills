@@ -27,6 +27,33 @@ jobs:
       - name: Run validate_skills.py
         run: python3 scripts/validate_skills.py
 
+  validate-skills-ref:
+    name: agentskills.io conformance (skills-ref)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.11'
+      - name: Install skills-ref (pinned; ships the `agentskills` CLI)
+        run: pip install 'skills-ref==0.1.0'
+      - name: Validate generic skills (one folder per invocation)
+        run: |
+          set -e
+          for d in skills/*/; do
+            echo "::group::agentskills validate $d"
+            agentskills validate "$d"
+            echo "::endgroup::"
+          done
+      - name: Validate domain-pack skills (one folder per invocation)
+        run: |
+          set -e
+          for d in domain-packs/crisis-management/skills/*/; do
+            echo "::group::agentskills validate $d"
+            agentskills validate "$d"
+            echo "::endgroup::"
+          done
+
   validate-evolution:
     name: Validate Evolution (observations + proposals + reviews)
     runs-on: ubuntu-latest
@@ -76,6 +103,7 @@ jobs:
     runs-on: ubuntu-latest
     needs:
       - validate-skills
+      - validate-skills-ref
       - validate-evolution
       - projection-status
       - projection-dry-run

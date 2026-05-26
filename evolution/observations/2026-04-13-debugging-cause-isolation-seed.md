@@ -7,7 +7,7 @@ date: 2026-04-13
 modules_activated: none
 trigger_matches: maintainer review keeps seeing teams jump to fixes before isolating the cause
 observed_issue_type: possible-missing-module
-evidence_refs: skills/engineering/debugging/SKILL.md, docs/consumer-adoption.md
+evidence_refs: skills/debugging/SKILL.md, docs/consumer-adoption.md
 attribution_guess: the current skill is directionally right, but the library may eventually benefit from a cause-isolation module if repeated evidence appears
 result_mode: new-module-candidate
 ---

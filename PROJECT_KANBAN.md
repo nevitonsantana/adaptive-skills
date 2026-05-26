@@ -1,8 +1,8 @@
 # 📋 Adaptive Skills - Project Kanban
 
-> **Última atualização:** 2026-05-21 (reconciliação Onda 0 do plano cross-repo AletheIA + Adaptive Skills)
-> **Status do Sprint:** Onda 0 fechada — gate aberto para Épico 1 do plano cross-repo
-> **Foco atual:** Posicionamento ecossistêmico, despoluição narrativa Crisis Monitor e empacotamento APM
+> **Última atualização:** 2026-05-25 (Épico 5 — APM packaging — ready for review)
+> **Status do Sprint:** Sprint 2/3 do plano cross-repo — Épicos 1, 2, 3 mergeados; Épico 4 mergeado no AletheIA; Épico 5 em PR
+> **Foco atual:** Empacotamento APM (Adaptive Skills) e preparação para Épico 6 (documentação adoptável AletheIA)
 >
 > **Plano vigente:** [`aletheia-adaptive-skills-plano-cross-repo.md`](../Downloads/_Uteis/AI/AletheIA-Adaptative-Skills/aletheia-adaptive-skills-plano-cross-repo.md) (8 épicos, gates explícitos)
 
@@ -88,6 +88,10 @@
 | **A02** | **P04 piloto code-review-patterns — aposentado** | 2026-05-21 | — | Sem evidência de execução em 5 semanas. Mesma justificativa que A01. |
 | **A03** | **P06 policy superfícies protegidas — aposentado** | 2026-05-21 | — | Conteúdo dispersou-se em [`docs/skill-model.md`](docs/skill-model.md) (seção *Protected surfaces* existe desde scaffold inicial). Policy formal absorvida no Épico 1 do plano cross-repo (ADR-001/002 do Adaptive Skills). |
 | **A04** | **P07 Evolution Cycle #4 (forma original) — aposentado** | 2026-05-21 | — | Cycle reformulado com novo escopo "Reconciliação narrativa" (ver [`ROADMAP_EVOLUTIVO.md`](./ROADMAP_EVOLUTIVO.md), Fase 2). |
+| D17 | Épico 1 — ADRs cross-repo + ecosystem-map | 2026-05-22 ([#37](https://github.com/nevitonsantana/adaptive-skills/pull/37)) | Alto | Posicionamento ecossistêmico fixado: ADR-001/002/003 + mapa sincronizado com AletheIA |
+| D18 | Épico 2 — Despoluição Crisis Monitor de conteúdo canônico | 2026-05-22 ([#38](https://github.com/nevitonsantana/adaptive-skills/pull/38)) | Alto | Crisis Monitor agora aparece exclusivamente em `domain-packs/` e `docs/crisis-monitor-case-study.md` |
+| D19 | Épico 3 — Auditoria agentskills.io + ADR-004 (Caso A) | 2026-05-22 ([#39](https://github.com/nevitonsantana/adaptive-skills/pull/39)) | Crítico | Estratégia de conformância decidida: alta conformância via remediação cosmética; remediação efetiva em Épico 5 |
+| **R01** | **Épico 5 — APM packaging + ADR-004 lockstep — ready for review** | 2026-05-25 (branch `feat/apm-package`) | Crítico | Flatten para Skill Collection layout + 24 SKILL.md remediados + apm.yml + ADR-005. PR pendente. |
 
 ---
 
@@ -191,7 +195,14 @@ graph LR
 - **Risco:** Reabrir trabalho em cima de pilotos parados; retomar narrativa Crisis Monitor centrada
 - **Mitigação:** WIP reduzido a 3, Cycle #4 reformulado com escopo amarrado ao plano, gate em 28/05 para pilotos sobreviventes
 
+### Semana de 22-25 Mai 2026 — Sprints 1-2 do plano cross-repo
+- **Mergeados:** Épico 1 (PR #37), Épico 2 (PR #38), Épico 3 (PR #39) no Adaptive Skills; Épico 4 (PR AletheIA#151, tag `v0.1.0-alpha`) no AletheIA.
+- **Em PR:** Épico 5 — APM packaging do Adaptive Skills + lockstep da remediação ADR-004 (branch `feat/apm-package`, 2 commits).
+- **Gates cumpridos:** H5 (Crisis Monitor sai do core sem perda) ✅; decisão A/B/C para conformance (Caso A) ✅.
+- **Falsificação parcial registrada:** H2 (APM acelera adoção sem custo de manutenção excessivo) — AletheIA ADR-007 documentou fluxo em dois passos; Adaptive Skills evita o mesmo problema porque skills são primitivos APM nativos.
+
 ### Decisões Recentes
+0. **2026-05-25:** Épico 5 — decisões A1 (flatten skills/), C1 (version 0.1.0), D3 (domain-packs fora do APM payload) registradas em ADR-005 do Adaptive Skills.
 1. **2026-05-21:** Onda 0 fechada — kanban e roadmap reconciliados com estado real (último update real era 2026-04-15, 36 dias stale).
 2. **2026-05-21:** Aposentados P02 (testing-strategy-validation), P04 (code-review-patterns), P06 (policy superfícies protegidas), P07 (Evolution Cycle #4 forma original). WIP 7 → 3.
 3. **2026-05-21:** Evolution Cycle #4 reformulado com escopo "Reconciliação narrativa: do Crisis Monitor sandbox ao posicionamento ecossistêmico" (período 2026-05-21 a 2026-06-30). Detalhes em [`ROADMAP_EVOLUTIVO.md`](./ROADMAP_EVOLUTIVO.md).

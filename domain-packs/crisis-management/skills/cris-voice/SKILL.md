@@ -1,8 +1,10 @@
 ---
 name: cris-voice
 description: Review assistant tone, semantic safety, and fact-versus-inference boundaries for crisis-facing responses.
-version: 0.1.0
-owner: adaptive-skills
+metadata:
+  version: "0.1.0"
+  owner: adaptive-skills
+  category: crisis-management
 ---
 
 # Overview
