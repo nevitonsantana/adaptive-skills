@@ -37,10 +37,22 @@ jobs:
           python-version: '3.11'
       - name: Install skills-ref (pinned; ships the `agentskills` CLI)
         run: pip install 'skills-ref==0.1.0'
-      - name: Validate generic skills
-        run: agentskills validate skills/
-      - name: Validate domain-pack skills
-        run: agentskills validate domain-packs/crisis-management/skills/
+      - name: Validate generic skills (one folder per invocation)
+        run: |
+          set -e
+          for d in skills/*/; do
+            echo "::group::agentskills validate $d"
+            agentskills validate "$d"
+            echo "::endgroup::"
+          done
+      - name: Validate domain-pack skills (one folder per invocation)
+        run: |
+          set -e
+          for d in domain-packs/crisis-management/skills/*/; do
+            echo "::group::agentskills validate $d"
+            agentskills validate "$d"
+            echo "::endgroup::"
+          done
 
   validate-evolution:
     name: Validate Evolution (observations + proposals + reviews)
