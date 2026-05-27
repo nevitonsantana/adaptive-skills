@@ -216,6 +216,15 @@ python3 scripts/project_to_codex.py --skill premortem
 
 ## Adopt in another project
 
+### New here? Start with these four documents
+
+1. [`docs/getting-started/overview.md`](docs/getting-started/overview.md) — what Adaptive Skills is, who it's for, when to use it
+2. [`docs/getting-started/installation-guide.md`](docs/getting-started/installation-guide.md) — step-by-step install via APM
+3. [`docs/getting-started/skill-catalog.md`](docs/getting-started/skill-catalog.md) — all 24 skills with trigger signals and composite flows
+4. [`docs/getting-started/faq.md`](docs/getting-started/faq.md) — common questions about setup, skill selection, and teamwork
+
+### Deeper adoption reference
+
 For the full documentation map, start with:
 
 - `docs/README.md`
