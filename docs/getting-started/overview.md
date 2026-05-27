@@ -58,7 +58,7 @@ See [`docs/adr/ADR-001-adaptive-skills-as-capability-library.md`](../adr/ADR-001
 
 ---
 
-## Current library (24 skills, 9 domains)
+## Current library (21 skills, 9 domains)
 
 | Domain | Skills |
 |---|---|

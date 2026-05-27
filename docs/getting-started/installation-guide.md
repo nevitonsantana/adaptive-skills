@@ -35,7 +35,7 @@ apm install nevitonsantana/adaptive-skills
 What happens:
 
 - APM resolves the package from GitHub and writes `apm.lock.yaml`.
-- All 24 skills are materialized into `.claude/skills/` (for Claude Code) or the equivalent target for your harness.
+- All 21 skills are materialized into `.claude/skills/` (for Claude Code) or the equivalent target for your harness.
 
 **Commit the lockfile** so teammates and CI get the same skill versions:
 
@@ -98,7 +98,7 @@ The selection is persisted in your project's `apm.yml` and lockfile. Teammates r
 
 | Included in the APM package | Not included |
 |---|---|
-| All 24 skills (`skills/**`) | `domain-packs/` (case studies — see below) |
+| All 21 skills (`skills/**`) | `domain-packs/` (case studies — see below) |
 | `docs/skill-categories.md` | `evolution/` (meta-process, not capability) |
 | `docs/guides/install-via-apm.md` | `projections/`, `capabilities/`, `templates/` |
 | `LICENSE`, `README.md` | Validation scripts (`scripts/validate_skills.py`, etc.) |
@@ -135,11 +135,11 @@ For harnesses other than Claude Code, see [`docs/codex-consumer-setup.md`](../co
 The library ships with a reference validator. To confirm all installed skills are spec-conformant:
 
 ```bash
-pip install 'agentskills==0.1.0'
+pip install 'skills-ref==0.1.0'   # PyPI package; ships the `agentskills` CLI
 agentskills validate .claude/skills/
 ```
 
-All skills should report conformant. This is the same check the library's CI runs on every PR.
+All skills should report conformant. This is the same check the library's CI runs on every PR (`skills-ref` is the PyPI distribution name; `agentskills` is the CLI entrypoint it installs).
 
 ---
 

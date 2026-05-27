@@ -1,6 +1,6 @@
 # Adaptive Skills — Skill Catalog
 
-A navigable reference of all 24 published skills, organized by category, with trigger signals, brief descriptions, and composite flows for common task types.
+A navigable reference of all 21 published skills, organized by category, with trigger signals, brief descriptions, and composite flows for common task types.
 
 **How to use this catalog:**  
 Start from the task, not from the list. Identify the dominant need of the work, then find the skill that fits that need. The composite flows section at the bottom shows how multiple skills combine for common task types.
