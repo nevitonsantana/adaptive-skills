@@ -876,6 +876,81 @@
         "templates/",
         "examples/"
       ]
+    },
+    {
+      "skill_id": "knowledge-source-evaluation",
+      "scope": "generic",
+      "domain": "governance",
+      "automation_level": "semi-automatic",
+      "pilot_priority": "later",
+      "protected_surfaces": [
+        "name",
+        "description",
+        "When to Use",
+        "When NOT to Use",
+        "Core Moves",
+        "skill-domain",
+        "skill-category",
+        "skill-thesis"
+      ],
+      "proposal_targets": [
+        "Activation Triggers",
+        "Optional Modules",
+        "Verification",
+        "Anti-patterns",
+        "templates/",
+        "examples/"
+      ]
+    },
+    {
+      "skill_id": "knowledge-conflict-resolution",
+      "scope": "generic",
+      "domain": "governance",
+      "automation_level": "semi-automatic",
+      "pilot_priority": "later",
+      "protected_surfaces": [
+        "name",
+        "description",
+        "When to Use",
+        "When NOT to Use",
+        "Core Moves",
+        "skill-domain",
+        "skill-category",
+        "skill-thesis"
+      ],
+      "proposal_targets": [
+        "Activation Triggers",
+        "Optional Modules",
+        "Verification",
+        "Anti-patterns",
+        "templates/",
+        "examples/"
+      ]
+    },
+    {
+      "skill_id": "restricted-context-check",
+      "scope": "generic",
+      "domain": "governance",
+      "automation_level": "semi-automatic",
+      "pilot_priority": "later",
+      "protected_surfaces": [
+        "name",
+        "description",
+        "When to Use",
+        "When NOT to Use",
+        "Core Moves",
+        "skill-domain",
+        "skill-category",
+        "skill-thesis"
+      ],
+      "proposal_targets": [
+        "Activation Triggers",
+        "Optional Modules",
+        "Verification",
+        "Anti-patterns",
+        "templates/",
+        "examples/"
+      ]
     }
   ]
 }
