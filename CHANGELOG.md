@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+- add `templates/README.md` indexing the template inventory and documenting when to use each model; flags that `knowledge-aware-skill-template.md` is a content guide (its illustrative headings fail `validate_skills.py` if copied verbatim) and that the real `SKILL.md` must keep the 11 required sections
+- add `feature-value-governance` as the first knowledge-aware consumer skill (`product` domain): judges whether a proposed feature is worth doing — business intent, revenue/operational lever, user evidence, opportunity-tree fit, complexity cost, and overreach risk — declaring knowledge slot types (not source ids) and running loudly in generic mode when no governed pack is available; consumes the AletheIA Knowledge Governance Layer (ADR-008) per the skill-side boundary (ADR-006)
 - introduce the knowledge-aware skills boundary (docs-only): boundary doc, dependency-declaration guide, capsule + skill templates, and three governance skills (`knowledge-source-evaluation`, `knowledge-conflict-resolution`, `restricted-context-check`) implementing the skill-side surface of the AletheIA Knowledge Governance Layer (ADR-006)
 
 ## 0.1.2
