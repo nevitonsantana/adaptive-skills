@@ -1,0 +1,76 @@
+# Skill Knowledge Dependency Declaration — feature-value-governance
+#
+# Declares TYPES of knowledge the skill needs, never specific source ids.
+# The AletheIA Knowledge Governance Layer resolver decides which concrete pack
+# (if any) fills each slot under the active permissions and policy.
+# See:
+#   - docs/declaring-knowledge-dependencies.md
+#   - ../../../aletheia/docs/contracts/skill-knowledge-dependency-contract.md
+
+skill: feature-value-governance
+version: 0.1.0
+
+knowledge_dependencies:
+
+  # Always required: a framework that connects business intent to feature shape.
+  # The skill reasons from the capsule; full source is not expected.
+  strategic_framework:
+    required: true
+    accepted_types:
+      - proprietary_framework
+      - product_strategy
+      - business_design_framework
+    min_authority: interpretive
+    preferred_retrieval_mode: capsule_first
+    notes: |
+      Anchors business intent and the value claim. The skill never names a
+      specific framework; any pack of an accepted type satisfies the slot.
+
+  # Optional: user evidence behind the feature. Improves the verdict when present.
+  personas:
+    required: false
+    accepted_types:
+      - persona
+      - research_finding
+    preferred_retrieval_mode: capsule_first
+    notes: |
+      When absent, the user-evidence claim is marked as an assumption rather
+      than fabricated.
+
+  # Conditional: required only when the feature touches the interface or
+  # customer-facing experience. Accepts only accessibility guidelines.
+  accessibility_guidelines:
+    required_when:
+      - interface_change
+      - content_decision
+      - customer_facing_experience
+    accepted_types:
+      - accessibility_guideline
+    min_authority: normative
+    preferred_retrieval_mode: excerpt_only
+    notes: |
+      Mandatory accessibility outranks lower-tier sources in any conflict
+      (see source-precedence-policy).
+
+  # Conditional: required only when the task is a roadmap or prioritization decision.
+  operating_model:
+    required_when:
+      - roadmap_decision
+      - prioritization_decision
+    accepted_types:
+      - operating_model
+    preferred_retrieval_mode: capsule_first
+    notes: |
+      Governs how prioritization and sequencing decisions are made in the org.
+
+fallback_behavior:
+  missing_required_source: stop_and_request_source
+  missing_optional_source: continue_with_assumption_marker
+  restricted_source: request_authorized_context_pack
+  conflicting_sources: apply_source_precedence_policy
+
+output_requirements:
+  cite_satisfying_packs: true              # list pack_id@version per satisfied slot
+  cite_unsatisfied_slots: true             # list unsatisfied slots and fallback applied
+  list_active_restrictions: true           # capsule-only, no verbatim, no export, etc.
+  list_conflicts_and_resolutions: true     # for audit reconstruction
