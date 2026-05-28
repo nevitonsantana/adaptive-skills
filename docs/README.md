@@ -68,6 +68,29 @@ The Efficiency Layer is a separate track for context, checkpoint, handoff, and c
 - `efficiency-layer-trio-patterns.md`
 - `efficiency-layer-next-signals.md`
 
+## Knowledge governance (skill side)
+
+How skills consume governed knowledge bases (frameworks, policies, personas) without carrying their content.
+
+- [`skill-knowledge-boundaries.md`](skill-knowledge-boundaries.md) — skill carries procedure; knowledge pack carries content
+- [`declaring-knowledge-dependencies.md`](declaring-knowledge-dependencies.md) — slot-based declaration of required, optional, and conditional knowledge
+- [`using-proprietary-frameworks-safely.md`](using-proprietary-frameworks-safely.md) — capsule + manifest + dependency declaration
+- [`../templates/skill-knowledge-dependency.yaml`](../templates/skill-knowledge-dependency.yaml) — template for the dependency file
+- [`../templates/framework-capsule-template.md`](../templates/framework-capsule-template.md) — template for authoring a capsule
+- [`../templates/knowledge-aware-skill-template.md`](../templates/knowledge-aware-skill-template.md) — skill template supporting generic and knowledge-aware modes
+- [`../skills/knowledge-source-evaluation/`](../skills/knowledge-source-evaluation) — evaluate a candidate before registration
+- [`../skills/knowledge-conflict-resolution/`](../skills/knowledge-conflict-resolution) — apply source precedence when sources disagree
+- [`../skills/restricted-context-check/`](../skills/restricted-context-check) — leakage / injection / poisoning / permission / contamination checks
+
+The AletheIA-side contracts these depend on:
+
+- knowledge-governance-layer (AletheIA `docs/concepts/`)
+- knowledge-pack-manifest (AletheIA `docs/contracts/`)
+- skill-knowledge-dependency-contract (AletheIA `docs/contracts/`)
+- source-precedence-policy (AletheIA `docs/contracts/`)
+- restricted-knowledge-usage-policy (AletheIA `docs/contracts/`)
+- knowledge-audit-log-spec (AletheIA `docs/contracts/`)
+
 ## Field evidence
 
 Adaptive Skills is domain-agnostic (see [`adr/ADR-002-domain-agnosticism.md`](adr/ADR-002-domain-agnosticism.md)). The first validation case is Crisis Monitor — labeled evidence, not canonical reference:

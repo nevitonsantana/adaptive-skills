@@ -1,0 +1,67 @@
+# Template — Skill Knowledge Dependency Declaration
+#
+# Use one file per skill. Place it alongside SKILL.md.
+# A skill declares TYPES of knowledge it needs, not specific source ids.
+# See:
+#   - docs/declaring-knowledge-dependencies.md
+#   - aletheia/docs/contracts/skill-knowledge-dependency-contract.md
+
+skill: <skill-id>                  # e.g. feature-value-governance
+version: 0.1.0
+
+knowledge_dependencies:
+
+  # Example slot — required strategic context
+  strategic_framework:
+    required: true
+    accepted_types:
+      - proprietary_framework
+      - product_strategy
+      - business_design_framework
+    min_authority: interpretive
+    preferred_retrieval_mode: capsule_first
+    notes: |
+      Any framework that helps connect business intent and feature shape.
+      Skill must operate from the capsule; full source is not expected.
+
+  # Example slot — optional user evidence
+  personas:
+    required: false
+    accepted_types:
+      - persona
+      - research_finding
+    preferred_retrieval_mode: capsule_first
+
+  # Example slot — required only when the task touches the interface
+  accessibility_guidelines:
+    required_when:
+      - interface_change
+      - content_decision
+      - navigation_decision
+      - customer_facing_experience
+    accepted_types:
+      - accessibility_guideline
+    min_authority: normative
+    preferred_retrieval_mode: excerpt_only
+
+  # Example slot — required only when the task is a governance decision
+  operating_model:
+    required_when:
+      - roadmap_decision
+      - prioritization_decision
+      - governance_decision
+    accepted_types:
+      - operating_model
+    preferred_retrieval_mode: capsule_first
+
+fallback_behavior:
+  missing_required_source: stop_and_request_source
+  missing_optional_source: continue_with_assumption_marker
+  restricted_source: request_authorized_context_pack
+  conflicting_sources: apply_source_precedence_policy
+
+output_requirements:
+  cite_satisfying_packs: true              # list pack_id@version per satisfied slot
+  cite_unsatisfied_slots: true             # list unsatisfied slots and fallback applied
+  list_active_restrictions: true           # capsule-only, no verbatim, no export, etc.
+  list_conflicts_and_resolutions: true     # for audit reconstruction
