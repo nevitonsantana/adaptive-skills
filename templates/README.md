@@ -1,0 +1,53 @@
+# Templates
+
+Reusable starting points for authoring skills, declaring knowledge dependencies, capsuling a framework, and reporting on pilots. This index says **what each template is** and **when to reach for it**.
+
+## Quick chooser
+
+| You are… | Use |
+|---|---|
+| writing an ordinary procedural skill | [`skill/SKILL.template.md`](skill/SKILL.template.md) |
+| writing a skill that consumes governed knowledge | [`skill/SKILL.template.md`](skill/SKILL.template.md) **+** [`knowledge-aware-skill-template.md`](knowledge-aware-skill-template.md) (as a content guide) **+** [`skill-knowledge-dependency.yaml`](skill-knowledge-dependency.yaml) |
+| capsuling a framework or knowledge source | [`framework-capsule-template.md`](framework-capsule-template.md) |
+| reporting on a consumer or efficiency pilot | [`pilot/`](pilot/) |
+
+## The templates
+
+### `skill/SKILL.template.md` — base skill scaffold
+
+The canonical `SKILL.md` skeleton: the **11 required sections** in order (Overview, When to Use, When NOT to Use, Core Moves, Optional Modules, Activation Triggers, Expected Output, Verification, Handoff Signals, Pairs Well With, Anti-patterns) with the front-matter convention (`name`, `description`, `metadata: { version, owner, category }`).
+
+Use it for **every** skill. This is the structure `scripts/validate_skills.py` enforces — section names outside this list fail validation.
+
+### `knowledge-aware-skill-template.md` — content guide for knowledge-aware skills
+
+A guide for skills that declare knowledge dependencies and run in generic / knowledge-aware modes. It shows the *content* a knowledge-aware skill must carry: the two-mode discipline, capsule-first reasoning, `pack_id@version` citations, and fallback behavior.
+
+> **Important — this is a content guide, not a literal `SKILL.md`.** It includes illustrative headings (`Modes`, `Knowledge Dependencies`) that are **not** in the 11 required sections. Copying it verbatim into `skills/<name>/SKILL.md` will fail `validate_skills.py`.
+>
+> Instead, start from `skill/SKILL.template.md` (the 11 sections) and **fold** the knowledge-aware content into them:
+> - put the two modes into **Overview** and **Core Moves**;
+> - put the dependency summary into **Core Moves** / **Optional Modules**;
+> - set `metadata.knowledge_aware: true`;
+> - ship a sibling `skill-knowledge-dependency.yaml`.
+>
+> See `skills/feature-value-governance/` for a worked example.
+
+### `skill-knowledge-dependency.yaml` — dependency manifest
+
+The sibling file every knowledge-aware skill ships next to its `SKILL.md`. Declares knowledge **slot types** (never specific source ids), the `required` / `required_when` posture of each slot, `accepted_types`, and explicit `fallback_behavior` for all four cases. See [`../docs/declaring-knowledge-dependencies.md`](../docs/declaring-knowledge-dependencies.md).
+
+### `framework-capsule-template.md` — framework capsule
+
+For the **knowledge-pack side**, not the skill side. Produces the operational summary an agent reasons from when a framework is resolved. A capsule is *how to use* a framework, never a paraphrase of its body. Lives in the project / org that owns the framework, not in a skill. See [`../docs/using-proprietary-frameworks-safely.md`](../docs/using-proprietary-frameworks-safely.md).
+
+### `pilot/` — pilot report templates
+
+- `consumer-pilot-report.md` — for a consumer-adoption pilot.
+- `efficiency-pilot-report.md` — for an Efficiency Layer trio pilot.
+
+## See also
+
+- [`../docs/skill-model.md`](../docs/skill-model.md) — the Core + Modules + Triggers skill model.
+- [`../docs/skill-knowledge-boundaries.md`](../docs/skill-knowledge-boundaries.md) — what a skill carries vs. what a knowledge pack carries.
+- [`../docs/declaring-knowledge-dependencies.md`](../docs/declaring-knowledge-dependencies.md) — author-facing guide to the dependency manifest.
