@@ -1,5 +1,9 @@
 # Changelog
 
+## Unreleased
+
+- introduce the knowledge-aware skills boundary (docs-only): boundary doc, dependency-declaration guide, capsule + skill templates, and three governance skills (`knowledge-source-evaluation`, `knowledge-conflict-resolution`, `restricted-context-check`) implementing the skill-side surface of the AletheIA Knowledge Governance Layer (ADR-006)
+
 ## 0.1.2
 
 - rename repository from `adaptative-skills` to `adaptive-skills` (modern English standard; GitHub redirect preserves old URLs)
