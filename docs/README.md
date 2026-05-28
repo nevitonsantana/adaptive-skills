@@ -78,9 +78,9 @@ How skills consume governed knowledge bases (frameworks, policies, personas) wit
 - [`../templates/skill-knowledge-dependency.yaml`](../templates/skill-knowledge-dependency.yaml) — template for the dependency file
 - [`../templates/framework-capsule-template.md`](../templates/framework-capsule-template.md) — template for authoring a capsule
 - [`../templates/knowledge-aware-skill-template.md`](../templates/knowledge-aware-skill-template.md) — skill template supporting generic and knowledge-aware modes
-- [`../skills/governance/knowledge-source-evaluation/`](../skills/governance/knowledge-source-evaluation) — evaluate a candidate before registration
-- [`../skills/governance/knowledge-conflict-resolution/`](../skills/governance/knowledge-conflict-resolution) — apply source precedence when sources disagree
-- [`../skills/governance/restricted-context-check/`](../skills/governance/restricted-context-check) — leakage / injection / poisoning / permission / contamination checks
+- [`../skills/knowledge-source-evaluation/`](../skills/knowledge-source-evaluation) — evaluate a candidate before registration
+- [`../skills/knowledge-conflict-resolution/`](../skills/knowledge-conflict-resolution) — apply source precedence when sources disagree
+- [`../skills/restricted-context-check/`](../skills/restricted-context-check) — leakage / injection / poisoning / permission / contamination checks
 
 The AletheIA-side contracts these depend on:
 

@@ -10,7 +10,7 @@ metadata:
 
 # Overview
 
-Use this skill when two or more sources selected by the [knowledge resolver](../../../../aletheia/docs/concepts/knowledge-resolver.md) disagree on a decision-relevant point. It applies the [source-precedence-policy](../../../../aletheia/docs/contracts/source-precedence-policy.md), records the resolution in the audit log, and escalates when precedence cannot settle the conflict.
+Use this skill when two or more sources selected by the [knowledge resolver](../../../aletheia/docs/concepts/knowledge-resolver.md) disagree on a decision-relevant point. It applies the [source-precedence-policy](../../../aletheia/docs/contracts/source-precedence-policy.md), records the resolution in the audit log, and escalates when precedence cannot settle the conflict.
 
 # When to Use
 

@@ -6,7 +6,7 @@ Write a single line: *which sources, on which decision point, with which positio
 
 ## Step 2 — Locate tiers
 
-Use the tier mapping in [source-precedence-policy](../../../../aletheia/docs/contracts/source-precedence-policy.md). Tag each source with its tier.
+Use the tier mapping in [source-precedence-policy](../../../aletheia/docs/contracts/source-precedence-policy.md). Tag each source with its tier.
 
 ## Step 3 — Tie-break inside a tier
 
@@ -32,7 +32,7 @@ Escalate to human review if any of the following is true:
 
 ## Step 6 — Record
 
-Emit the structured `conflict_resolution` block (see SKILL.md "Expected Output") and write an audit entry per [knowledge-audit-log-spec](../../../../aletheia/docs/contracts/knowledge-audit-log-spec.md).
+Emit the structured `conflict_resolution` block (see SKILL.md "Expected Output") and write an audit entry per [knowledge-audit-log-spec](../../../aletheia/docs/contracts/knowledge-audit-log-spec.md).
 
 ## Step 7 — Re-derive the decision
 

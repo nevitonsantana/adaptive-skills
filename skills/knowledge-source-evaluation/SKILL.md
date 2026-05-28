@@ -10,7 +10,7 @@ metadata:
 
 # Overview
 
-Use this skill before adding a document, framework, policy, or persona to the knowledge registry. It checks whether the source has the metadata, ownership, and exposure rules required by the [Knowledge Governance Layer](../../../../aletheia/docs/concepts/knowledge-governance-layer.md), and recommends a maturity level (minimal, operational, governed) or refusal.
+Use this skill before adding a document, framework, policy, or persona to the knowledge registry. It checks whether the source has the metadata, ownership, and exposure rules required by the [Knowledge Governance Layer](../../../aletheia/docs/concepts/knowledge-governance-layer.md), and recommends a maturity level (minimal, operational, governed) or refusal.
 
 # When to Use
 
@@ -27,7 +27,7 @@ Use this skill before adding a document, framework, policy, or persona to the kn
 # Core Moves
 
 1. Identify the candidate: name, owner, link, intended use.
-2. Classify type using the source taxonomy in [knowledge-source-contract](../../../../aletheia/docs/contracts/knowledge-source-contract.md).
+2. Classify type using the source taxonomy in [knowledge-source-contract](../../../aletheia/docs/contracts/knowledge-source-contract.md).
 3. Assess sensitivity and authority.
 4. Determine scope: which task families, skills, agents.
 5. Decide retrieval mode and exposure policy.

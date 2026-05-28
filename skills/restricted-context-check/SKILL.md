@@ -10,7 +10,7 @@ metadata:
 
 # Overview
 
-Run this check before a knowledge pack — especially one above `internal` sensitivity — is consumed by a skill. It applies the guardrails described in the [Knowledge Governance Layer](../../../../aletheia/docs/concepts/knowledge-governance-layer.md) and the [restricted-knowledge-usage-policy](../../../../aletheia/docs/contracts/restricted-knowledge-usage-policy.md).
+Run this check before a knowledge pack — especially one above `internal` sensitivity — is consumed by a skill. It applies the guardrails described in the [Knowledge Governance Layer](../../../aletheia/docs/concepts/knowledge-governance-layer.md) and the [restricted-knowledge-usage-policy](../../../aletheia/docs/contracts/restricted-knowledge-usage-policy.md).
 
 # When to Use
 
@@ -31,9 +31,11 @@ Run this check before a knowledge pack — especially one above `internal` sensi
 2. Run the five guardrail checks (see below).
 3. Translate any finding into a structured restriction or a refusal.
 4. Surface required human-review conditions.
-5. Write an audit entry per [knowledge-audit-log-spec](../../../../aletheia/docs/contracts/knowledge-audit-log-spec.md).
+5. Write an audit entry per [knowledge-audit-log-spec](../../../aletheia/docs/contracts/knowledge-audit-log-spec.md).
 
-# Guardrails
+# Optional Modules
+
+The five guardrails below are the optional modules of this skill. Each can run on its own when a task only needs one of them.
 
 1. **Data leakage.** Will any of the following appear in output, logs, traces, or handoffs?
    - PII, credentials, secrets

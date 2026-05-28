@@ -58,4 +58,4 @@ If mixing without authorization, refuse.
 
 ## Step 7 — Decide and record
 
-Emit the structured `restricted_context_check` block (see SKILL.md "Expected Output"). Write an audit entry per [knowledge-audit-log-spec](../../../../aletheia/docs/contracts/knowledge-audit-log-spec.md).
+Emit the structured `restricted_context_check` block (see SKILL.md "Expected Output"). Write an audit entry per [knowledge-audit-log-spec](../../../aletheia/docs/contracts/knowledge-audit-log-spec.md).
