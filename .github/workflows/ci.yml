@@ -65,6 +65,19 @@ jobs:
       - name: Run validate_evolution.py
         run: python3 scripts/validate_evolution.py
 
+  validate-knowledge-deps:
+    name: Validate Knowledge Dependencies (skill manifests vs contract)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.11'
+      - name: Install PyYAML
+        run: pip install 'pyyaml==6.0.2'
+      - name: Run validate_knowledge_deps.py
+        run: python3 scripts/validate_knowledge_deps.py
+
   projection-status:
     name: Projection Status Report
     runs-on: ubuntu-latest
@@ -105,6 +118,7 @@ jobs:
       - validate-skills
       - validate-skills-ref
       - validate-evolution
+      - validate-knowledge-deps
       - projection-status
       - projection-dry-run
       - projection-check
