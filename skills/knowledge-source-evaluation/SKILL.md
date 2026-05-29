@@ -37,7 +37,10 @@ Use this skill before adding a document, framework, policy, or persona to the kn
 # Optional Modules
 
 - **Capsule readiness check** — verify the capsule exists and is operational, not narrative.
-- **Provenance check** — confirm `source_integrity_notes` are sufficient.
+- **Provenance check** — confirm `source_integrity_notes` are sufficient. Run the
+  [data-poisoning-checklist](../../../aletheia/docs/security/data-poisoning-checklist.md)
+  (provenance, validate-before-index, version control, change history, rollback)
+  before recommending `register_governed`.
 - **Allowlist scoping** — recommend explicit `allowed_skills` / `allowed_agents`.
 
 # Activation Triggers
@@ -75,6 +78,10 @@ evaluation:
 - All required manifest fields can be populated from this evaluation.
 - If recommendation is `register_governed`, a reviewer other than the author signed off.
 - If the candidate is `restricted` or higher, `human_review_required_for` is non-empty.
+- Provenance and rollback pass the [data-poisoning-checklist](../../../aletheia/docs/security/data-poisoning-checklist.md);
+  a source that fails it is capped at `register_minimal`.
+- The conditions in [human-review-criteria](../../../aletheia/docs/security/human-review-criteria.md)
+  are reflected in the recommended `human_review_required_for` list.
 
 # Handoff Signals
 

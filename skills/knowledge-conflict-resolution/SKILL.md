@@ -73,10 +73,15 @@ conflict_resolution:
 - Precedence chosen matches the tier mapping in `source-precedence-policy`.
 - Suppressed sources are preserved as context, not erased.
 - Escalation fired whenever precedence did not settle the conflict.
+- Escalation matches the mandatory triggers in [human-review-criteria](../../../aletheia/docs/security/human-review-criteria.md)
+  (mandatory-source conflict, regulatory risk, high-impact decision).
+- The conflict record is carried forward per [logs-and-handoffs-policy](../../../aletheia/docs/security/logs-and-handoffs-policy.md)
+  without exposing restricted excerpts.
 
 # Handoff Signals
 
-- Pass the structured conflict record to the next agent.
+- Pass the structured conflict record to the next agent, preserving restrictions per
+  [logs-and-handoffs-policy](../../../aletheia/docs/security/logs-and-handoffs-policy.md).
 - If escalated, do not produce a final deliverable until review returns.
 
 # Pairs Well With

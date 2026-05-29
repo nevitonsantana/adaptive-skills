@@ -97,9 +97,19 @@ restricted_context_check:
 - Restrictions are concrete (`no_verbatim`, `mask_in_logs`), not generic ("be careful").
 - An audit entry is queued whether the decision is `allow`, `allow_with_restrictions`, or `refuse`.
 
+Apply the AletheIA hardening checklists as the canonical standard for each guardrail
+(do not restate them here):
+
+- Data leakage → [data-leakage-checklist](../../../aletheia/docs/security/data-leakage-checklist.md)
+- Prompt injection → [prompt-injection-in-sources-checklist](../../../aletheia/docs/security/prompt-injection-in-sources-checklist.md)
+- Data poisoning → [data-poisoning-checklist](../../../aletheia/docs/security/data-poisoning-checklist.md)
+- Carrying restrictions forward → [logs-and-handoffs-policy](../../../aletheia/docs/security/logs-and-handoffs-policy.md)
+- When to escalate → [human-review-criteria](../../../aletheia/docs/security/human-review-criteria.md)
+
 # Handoff Signals
 
-- Pass restrictions forward; do not let them drop at the next boundary.
+- Pass restrictions forward; do not let them drop at the next boundary. Follow the
+  carry-forward rule in [logs-and-handoffs-policy](../../../aletheia/docs/security/logs-and-handoffs-policy.md).
 - If refused, hand back to the requester with the specific guardrail that failed.
 
 # Pairs Well With
