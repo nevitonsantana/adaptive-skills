@@ -36,12 +36,14 @@ Use this skill to structure strategy work so it becomes teachable, reviewable, a
 - **Assumption map** — List the assumptions carrying the strategy before the team over-trusts them.
 - **Leverage scan** — Identify where growth, retention, or defensibility could change materially.
 - **Operating constraints** — Name the organizational or execution limits that shape the strategy.
+- **Value-layer lens** — Read the strategy through a value-layer framework (existence, growth, sustainment, organization). The framework is **pluggable knowledge**, resolved via the `strategic_framework` slot (a proprietary pack or the generic `example-4-layers`) — never hard-coded here. In generic mode, apply the layers by name and mark the inference.
 
 # Activation Triggers
 
 - Use assumption map when the strategy rests on early or weak evidence.
 - Use leverage scan when the work touches growth or monetization.
 - Use operating constraints when organizational reality can invalidate the thesis.
+- Use the value-layer lens when the strategy must show coherence across existence, growth, sustainment, and organization; resolve `strategic_framework` and cite `pack_id@version`, or mark `generic`.
 
 # Expected Output
 

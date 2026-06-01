@@ -24,7 +24,10 @@ Use this skill when the right next step depends on more than one functional lens
 # Core Moves
 
 1. Name the decision under review.
-2. Assess it through product, design, and technical lenses.
+2. Assess it through product, design, and technical lenses. Force the value-vs-cost tension explicitly:
+   - **Product** — What value/lever does this move, for which ICP, and what is the evidence?
+   - **Design** — What experience cost or benefit, and where could it dilute the value proposition?
+   - **Tech** — What *permanent* complexity does this add, and how reversible is it?
 3. Identify the dominant conflict.
 4. Choose the leading function and the next move.
 
@@ -33,12 +36,14 @@ Use this skill when the right next step depends on more than one functional lens
 - **Owner split** — Decide whether the work continues in one thread, several threads, or a handoff.
 - **Risk tie-breaker** — Use reversibility and operational risk to resolve disagreement.
 - **Decision note** — Capture the rationale when the triad materially changes the plan.
+- **Permanent-cost tension** — When the three lenses disagree on whether the value is worth the forever-carry, surface it as a value-governance question and route to `feature-value-governance` rather than letting one function quietly win.
 
 # Activation Triggers
 
 - Use owner split when more than one function must act next.
 - Use risk tie-breaker when the disagreement is about speed versus caution.
 - Use decision note when the outcome affects future similar work.
+- Use the permanent-cost tension module when the disagreement is really about whether the value justifies the permanent complexity.
 
 # Expected Output
 

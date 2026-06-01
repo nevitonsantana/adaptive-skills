@@ -21,6 +21,7 @@ Use this skill to convert product intent into an executable plan with a smallest
 
 - tiny local changes with obvious scope
 - tasks that still lack the basic problem framing
+- the feature has **not yet been judged worth doing** — run `feature-value-governance` first; planning a feature that should be killed or parked is wasted work
 
 # Core Moves
 
@@ -38,6 +39,9 @@ Use this skill to convert product intent into an executable plan with a smallest
 - **Metrics hook** — Add success indicators when the feature should change observable behavior.
 - **Stakeholder alignment** — Record who needs to review or sign off when multiple functions are involved.
 - **Traceability and anti-overengineering check** — Link requirement, decision, task, and acceptance evidence before implementation, then remove complexity that does not protect the first slice.
+- **[Feature-worthiness check](modules/feature-worthiness.md)** — Before planning delivery, confirm the feature was judged worth doing (problem, ICP, lever, evidence, permanent cost). If it was not, stop and route to `feature-value-governance`.
+- **[Revenue-lever fit](modules/revenue-lever-fit.md)** — Confirm the plan's first slice actually moves the declared revenue/value lever, not just adjacent activity.
+- **Scope-boundaries (do-not-build)** — Make the non-build explicit: list what is deliberately *not* being built and the criterion that would change that, separating a real MVP from scope accumulation.
 
 # Activation Triggers
 
@@ -47,6 +51,9 @@ Use this skill to convert product intent into an executable plan with a smallest
 - Add metrics when the feature changes adoption, reliability, or decision quality.
 - Use stakeholder alignment when the work crosses product, design, and engineering.
 - Use traceability and anti-overengineering check when the plan starts producing many tasks, hidden implementation assumptions, or architecture before the first slice is stable.
+- Use the feature-worthiness check at the start of any non-trivial plan; if worthiness is unproven, stop and route to `feature-value-governance`.
+- Use revenue-lever fit when the plan risks optimizing activity that does not move the declared lever.
+- Use scope-boundaries (do-not-build) when scope is creeping or stakeholders keep adding "while we're at it" asks.
 
 # Expected Output
 

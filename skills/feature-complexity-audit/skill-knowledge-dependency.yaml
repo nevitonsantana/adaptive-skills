@@ -1,0 +1,46 @@
+# Skill Knowledge Dependency Declaration — feature-complexity-audit
+#
+# Declares TYPES of knowledge the skill needs, never specific source ids.
+# See: ../../../aletheia/docs/contracts/skill-knowledge-dependency-contract.md
+
+skill: feature-complexity-audit
+version: 0.1.0
+
+knowledge_dependencies:
+
+  # Conditional: governance carry must be scored against real obligations when the
+  # feature touches interface, content, or customer-facing experience.
+  accessibility_guidelines:
+    required_when:
+      - interface_change
+      - content_decision
+      - customer_facing_experience
+    accepted_types:
+      - accessibility_guideline
+    min_authority: normative
+    preferred_retrieval_mode: excerpt_only
+    notes: |
+      Mandatory accessibility outranks lower-tier sources in any conflict
+      (see source-precedence-policy). Drives the governance dimension score.
+
+  # Optional: how the org runs operations shapes the operational carry estimate.
+  operating_model:
+    required: false
+    accepted_types:
+      - operating_model
+    preferred_retrieval_mode: capsule_first
+    notes: |
+      When present, informs the operational and governance carry. When absent,
+      the audit runs generic and marks operational estimates as assumptions.
+
+fallback_behavior:
+  missing_required_source: stop_and_request_source
+  missing_optional_source: continue_with_assumption_marker
+  restricted_source: request_authorized_context_pack
+  conflicting_sources: apply_source_precedence_policy
+
+output_requirements:
+  cite_satisfying_packs: true
+  cite_unsatisfied_slots: true
+  list_active_restrictions: true
+  list_conflicts_and_resolutions: true
