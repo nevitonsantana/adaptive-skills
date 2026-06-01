@@ -504,6 +504,174 @@
         "mode": "available-not-default",
         "target_path": null
       }
+    },
+    {
+      "id": "feature-value-governance",
+      "source_path": "skills/feature-value-governance/SKILL.md",
+      "category": "product",
+      "status": "active",
+      "portability_tags": [
+        "product",
+        "generic"
+      ],
+      "codex_projection": {
+        "enabled": true,
+        "target_name": "feature-value-governance",
+        "generate_openai_yaml": true,
+        "default_prompt": "Use $feature-value-governance when deciding whether a proposed feature is worth doing."
+      },
+      "claude_projection": {
+        "enabled": true,
+        "mode": "manual",
+        "target_path": ".claude/skills/feature-value-governance.md"
+      }
+    },
+    {
+      "id": "revenue-lever-mapping",
+      "source_path": "skills/revenue-lever-mapping/SKILL.md",
+      "category": "business",
+      "status": "active",
+      "portability_tags": [
+        "business",
+        "generic"
+      ],
+      "codex_projection": {
+        "enabled": true,
+        "target_name": "revenue-lever-mapping",
+        "generate_openai_yaml": true,
+        "default_prompt": "Use $revenue-lever-mapping when mapping which revenue or value lever an opportunity moves."
+      },
+      "claude_projection": {
+        "enabled": true,
+        "mode": "manual",
+        "target_path": ".claude/skills/revenue-lever-mapping.md"
+      }
+    },
+    {
+      "id": "opportunity-tree-alignment",
+      "source_path": "skills/opportunity-tree-alignment/SKILL.md",
+      "category": "product",
+      "status": "active",
+      "portability_tags": [
+        "product",
+        "generic"
+      ],
+      "codex_projection": {
+        "enabled": true,
+        "target_name": "opportunity-tree-alignment",
+        "generate_openai_yaml": true,
+        "default_prompt": "Use $opportunity-tree-alignment when aligning an opportunity tree to revenue levers and value."
+      },
+      "claude_projection": {
+        "enabled": true,
+        "mode": "manual",
+        "target_path": ".claude/skills/opportunity-tree-alignment.md"
+      }
+    },
+    {
+      "id": "feature-complexity-audit",
+      "source_path": "skills/feature-complexity-audit/SKILL.md",
+      "category": "governance",
+      "status": "active",
+      "portability_tags": [
+        "governance",
+        "generic"
+      ],
+      "codex_projection": {
+        "enabled": true,
+        "target_name": "feature-complexity-audit",
+        "generate_openai_yaml": true,
+        "default_prompt": "Use $feature-complexity-audit when estimating the permanent cost of a feature before build."
+      },
+      "claude_projection": {
+        "enabled": true,
+        "mode": "manual",
+        "target_path": ".claude/skills/feature-complexity-audit.md"
+      }
+    },
+    {
+      "id": "sunset-decision",
+      "source_path": "skills/sunset-decision/SKILL.md",
+      "category": "governance",
+      "status": "active",
+      "portability_tags": [
+        "governance",
+        "generic"
+      ],
+      "codex_projection": {
+        "enabled": true,
+        "target_name": "sunset-decision",
+        "generate_openai_yaml": true,
+        "default_prompt": "Use $sunset-decision when deciding whether an existing feature should be kept, limited, refactored, deprecated, or removed."
+      },
+      "claude_projection": {
+        "enabled": true,
+        "mode": "manual",
+        "target_path": ".claude/skills/sunset-decision.md"
+      }
+    },
+    {
+      "id": "knowledge-source-evaluation",
+      "source_path": "skills/knowledge-source-evaluation/SKILL.md",
+      "category": "governance",
+      "status": "active",
+      "portability_tags": [
+        "governance",
+        "generic"
+      ],
+      "codex_projection": {
+        "enabled": true,
+        "target_name": "knowledge-source-evaluation",
+        "generate_openai_yaml": true,
+        "default_prompt": "Use $knowledge-source-evaluation when registering or evaluating a knowledge source."
+      },
+      "claude_projection": {
+        "enabled": true,
+        "mode": "manual",
+        "target_path": ".claude/skills/knowledge-source-evaluation.md"
+      }
+    },
+    {
+      "id": "knowledge-conflict-resolution",
+      "source_path": "skills/knowledge-conflict-resolution/SKILL.md",
+      "category": "governance",
+      "status": "active",
+      "portability_tags": [
+        "governance",
+        "generic"
+      ],
+      "codex_projection": {
+        "enabled": true,
+        "target_name": "knowledge-conflict-resolution",
+        "generate_openai_yaml": true,
+        "default_prompt": "Use $knowledge-conflict-resolution when resolving a conflict between knowledge sources."
+      },
+      "claude_projection": {
+        "enabled": true,
+        "mode": "manual",
+        "target_path": ".claude/skills/knowledge-conflict-resolution.md"
+      }
+    },
+    {
+      "id": "restricted-context-check",
+      "source_path": "skills/restricted-context-check/SKILL.md",
+      "category": "governance",
+      "status": "active",
+      "portability_tags": [
+        "governance",
+        "generic"
+      ],
+      "codex_projection": {
+        "enabled": true,
+        "target_name": "restricted-context-check",
+        "generate_openai_yaml": true,
+        "default_prompt": "Use $restricted-context-check when risk-checking a sensitive source before use."
+      },
+      "claude_projection": {
+        "enabled": true,
+        "mode": "manual",
+        "target_path": ".claude/skills/restricted-context-check.md"
+      }
     }
   ]
 }
