@@ -1,0 +1,49 @@
+# Skill Knowledge Dependency Declaration — revenue-lever-mapping
+#
+# Declares TYPES of knowledge the skill needs, never specific source ids.
+# The AletheIA Knowledge Governance Layer resolver decides which concrete pack
+# (if any) fills each slot under the active permissions and policy.
+# See:
+#   - ../../../aletheia/docs/contracts/skill-knowledge-dependency-contract.md
+
+skill: revenue-lever-mapping
+version: 0.1.0
+
+knowledge_dependencies:
+
+  # The value lens that defines what "value" and "lever" mean for this org.
+  # The skill reasons from the capsule; it never names a specific framework.
+  strategic_framework:
+    required: false
+    accepted_types:
+      - proprietary_framework
+      - product_strategy
+      - business_design_framework
+    min_authority: interpretive
+    preferred_retrieval_mode: capsule_first
+    notes: |
+      When unsatisfied, the skill runs in generic mode using the seven generic
+      levers (acquisition, activation, retention, expansion, efficiency, margin,
+      strategic_defense) and marks the output mode: generic.
+
+  # Optional user evidence behind the value claim.
+  personas:
+    required: false
+    accepted_types:
+      - persona
+      - research_finding
+    preferred_retrieval_mode: capsule_first
+    notes: |
+      When absent, the value claim is marked as an assumption rather than fabricated.
+
+fallback_behavior:
+  missing_required_source: stop_and_request_source
+  missing_optional_source: continue_with_assumption_marker
+  restricted_source: request_authorized_context_pack
+  conflicting_sources: apply_source_precedence_policy
+
+output_requirements:
+  cite_satisfying_packs: true
+  cite_unsatisfied_slots: true
+  list_active_restrictions: true
+  list_conflicts_and_resolutions: true

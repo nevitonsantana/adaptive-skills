@@ -32,13 +32,13 @@ Use this skill to pressure test structural choices before they quietly become lo
 
 # Optional Modules
 
-- **Complexity budget** — Estimate whether the added structure earns its cost.
+- **Complexity budget** — Estimate whether the added structure earns its cost. For a feature, make the **permanent cost** and **reversibility** explicit (`reversible` / `partially_reversible` / `one_way_door`, with mechanisms like flag, cohort, rollback, migration plan). Delegate to `feature-complexity-audit` for the full four-dimension scorecard; a `one_way_door` requires a technical gate, and a `high` cost approved to build requires a recorded `exception_approval` on the [Feature Value Governance Contract](../../../aletheia/schemas/feature-value-governance-contract.schema.json).
 - **Operational impact** — Check deployment, ownership, or observability consequences.
 - **Future change test** — Imagine the next two likely changes and whether the design helps or hurts.
 
 # Activation Triggers
 
-- Use complexity budget when the proposal adds new layers or abstractions.
+- Use complexity budget when the proposal adds new layers or abstractions; make reversibility explicit and route high/irreversible cost to a technical gate or `exception_approval`.
 - Use operational impact when runtime behavior or ownership will change.
 - Use future change test when the decision could become a template.
 

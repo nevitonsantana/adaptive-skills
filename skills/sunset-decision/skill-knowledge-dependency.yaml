@@ -1,0 +1,41 @@
+# Skill Knowledge Dependency Declaration — sunset-decision
+#
+# Declares TYPES of knowledge the skill needs, never specific source ids.
+# See: ../../../aletheia/docs/contracts/skill-knowledge-dependency-contract.md
+
+skill: sunset-decision
+version: 0.1.0
+
+knowledge_dependencies:
+
+  strategic_framework:
+    required: false
+    accepted_types:
+      - proprietary_framework
+      - product_strategy
+      - business_design_framework
+    min_authority: interpretive
+    preferred_retrieval_mode: capsule_first
+    notes: |
+      Used to judge strategic alignment of the existing feature. Generic mode
+      judges alignment against stated goals and marks the inference.
+
+  operating_model:
+    required: false
+    accepted_types:
+      - operating_model
+    preferred_retrieval_mode: capsule_first
+    notes: |
+      Informs how deprecation/removal is sequenced and communicated in the org.
+
+fallback_behavior:
+  missing_required_source: stop_and_request_source
+  missing_optional_source: continue_with_assumption_marker
+  restricted_source: request_authorized_context_pack
+  conflicting_sources: apply_source_precedence_policy
+
+output_requirements:
+  cite_satisfying_packs: true
+  cite_unsatisfied_slots: true
+  list_active_restrictions: true
+  list_conflicts_and_resolutions: true

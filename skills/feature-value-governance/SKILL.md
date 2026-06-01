@@ -35,7 +35,7 @@ The skill is **knowledge-aware**: it declares the knowledge it needs as slot *ty
 
 1. **Frame the feature and resolve knowledge.** State the proposed feature in one line. Identify which knowledge slots the task needs (`strategic_framework` always; `accessibility_guidelines` and `operating_model` by task shape). Read the resolved context pack: satisfied slots, gaps, conflicts, active restrictions. If a required slot is unsatisfied, apply `fallback_behavior` and say so loudly.
 2. **Surface business intent.** Name the business or product intent the feature serves. In knowledge-aware mode, anchor it to the resolved `strategic_framework`; in generic mode, derive it from stated goals and mark the inference.
-3. **Name the lever.** Identify the revenue or operational lever the feature pulls (acquisition, conversion, retention, expansion, cost-to-serve, risk reduction). One feature, one primary lever.
+3. **Name the lever.** Identify the revenue or value lever the feature pulls (acquisition, activation, retention, expansion, efficiency, margin, strategic_defense — the canonical taxonomy shared with the Feature Value Governance Contract). One feature, one primary lever.
 4. **Weigh user evidence.** Cite the user evidence supporting the feature from the `personas` slot when present; otherwise state the assumption explicitly with an assumption marker.
 5. **Check opportunity-tree alignment.** Place the feature against the opportunity / outcome it claims to serve. Flag features that serve no live opportunity.
 6. **Estimate complexity cost.** Give a coarse complexity read (low / medium / high) and the main drivers. Complexity is a cost against value, not a veto on its own.
@@ -44,9 +44,10 @@ The skill is **knowledge-aware**: it declares the knowledge it needs as slot *ty
 
 # Optional Modules
 
-- **Revenue lever detail** — Decompose the primary lever into a small driver model (e.g. which step of the funnel, which cost line) when the value claim is contested.
-- **Opportunity-tree mapping** — Draw the feature → opportunity → outcome path explicitly when the backlog has competing bets.
-- **Complexity audit** — Expand the complexity read into build, integration, and operational-carry costs when complexity is the deciding factor.
+- **Revenue lever detail** — When the value claim is contested, delegate to the `revenue-lever-mapping` skill for a driver model (which funnel step, which cost line) instead of reasoning inline.
+- **Opportunity-tree mapping** — When the backlog has competing bets, delegate to `opportunity-tree-alignment` to draw the outcome → opportunity → lever → feature path and flag orphans.
+- **Complexity audit** — When complexity is the deciding factor, delegate to `feature-complexity-audit` for the four-dimension permanent-cost scorecard and reduction recommendation.
+- **Sunset hook** — When the subject is an *existing* feature (keep / limit / refactor / deprecate / remove) rather than a new bet, hand off to `sunset-decision` and record the result as a `sunset` decision on the contract.
 - **Overreach deep-check** — When an `accessibility_guidelines`, privacy, or compliance dimension is in play, run the dimension against the resolved normative pack (or, in generic mode, against general norms with a clear generic marker).
 - **Persona evidence pull** — When `personas` resolves, pull the relevant capsule excerpt (respecting retrieval mode) instead of paraphrasing the whole source.
 - **Conflict resolution hook** — When two packs disagree on a decision-relevant point, hand off to `knowledge-conflict-resolution` or apply the precedence policy inline and record it.
@@ -57,8 +58,10 @@ The skill is **knowledge-aware**: it declares the knowledge it needs as slot *ty
 - Use the overreach deep-check and treat `accessibility_guidelines` as required when the task is an `interface_change`, `content_decision`, or `customer_facing_experience`.
 - Treat `operating_model` as required when the task is a `roadmap_decision` or `prioritization_decision`.
 - Pull persona evidence when the `personas` slot resolves; otherwise mark the user-evidence claim as an assumption.
-- Run the complexity audit when complexity is the pivotal factor in the verdict.
+- Delegate to `feature-complexity-audit` when complexity is the pivotal factor in the verdict.
+- Hand off to `sunset-decision` when the subject is an existing feature rather than a new bet.
 - Invoke the conflict resolution hook when resolved packs disagree.
+- Record the verdict against the AletheIA [Feature Value Governance Contract](../../../aletheia/schemas/feature-value-governance-contract.schema.json) and apply the seven [readiness gates](../../../aletheia/policies/feature-readiness-gates.md); see the [product-value-governance domain pack](../../domain-packs/product-value-governance/orchestration-pattern.md).
 
 # Expected Output
 
@@ -68,7 +71,7 @@ feature_value_analysis:
   mode: generic | knowledge_aware
   business_intent: <intent served; cite framework pack in knowledge-aware mode>
   lever:
-    primary: acquisition | conversion | retention | expansion | cost_to_serve | risk_reduction
+    primary: acquisition | activation | retention | expansion | efficiency | margin | strategic_defense
     rationale: <short>
   user_evidence:
     summary: <what the evidence says, or the assumption made>
@@ -122,6 +125,10 @@ feature_value_analysis:
 
 # Pairs Well With
 
+- `revenue-lever-mapping`
+- `opportunity-tree-alignment`
+- `feature-complexity-audit`
+- `sunset-decision`
 - `feature-planning`
 - `knowledge-source-evaluation`
 - `knowledge-conflict-resolution`
