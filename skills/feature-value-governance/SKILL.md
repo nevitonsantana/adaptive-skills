@@ -35,7 +35,7 @@ The skill is **knowledge-aware**: it declares the knowledge it needs as slot *ty
 
 1. **Frame the feature and resolve knowledge.** State the proposed feature in one line. Identify which knowledge slots the task needs (`strategic_framework` always; `accessibility_guidelines` and `operating_model` by task shape). Read the resolved context pack: satisfied slots, gaps, conflicts, active restrictions. If a required slot is unsatisfied, apply `fallback_behavior` and say so loudly.
 2. **Surface business intent.** Name the business or product intent the feature serves. In knowledge-aware mode, anchor it to the resolved `strategic_framework`; in generic mode, derive it from stated goals and mark the inference.
-3. **Name the lever.** Identify the revenue or operational lever the feature pulls (acquisition, conversion, retention, expansion, cost-to-serve, risk reduction). One feature, one primary lever.
+3. **Name the lever.** Identify the revenue or value lever the feature pulls (acquisition, activation, retention, expansion, efficiency, margin, strategic_defense — the canonical taxonomy shared with the Feature Value Governance Contract). One feature, one primary lever.
 4. **Weigh user evidence.** Cite the user evidence supporting the feature from the `personas` slot when present; otherwise state the assumption explicitly with an assumption marker.
 5. **Check opportunity-tree alignment.** Place the feature against the opportunity / outcome it claims to serve. Flag features that serve no live opportunity.
 6. **Estimate complexity cost.** Give a coarse complexity read (low / medium / high) and the main drivers. Complexity is a cost against value, not a veto on its own.
@@ -71,7 +71,7 @@ feature_value_analysis:
   mode: generic | knowledge_aware
   business_intent: <intent served; cite framework pack in knowledge-aware mode>
   lever:
-    primary: acquisition | conversion | retention | expansion | cost_to_serve | risk_reduction
+    primary: acquisition | activation | retention | expansion | efficiency | margin | strategic_defense
     rationale: <short>
   user_evidence:
     summary: <what the evidence says, or the assumption made>
