@@ -98,6 +98,23 @@ def ensure_parent(path: Path) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
 
 
+def bundle_files(source: Path) -> list[tuple[str, Path]]:
+    """Every file in the skill directory except the top-level SKILL.md, as
+    (relative posix path, absolute path). Ensures referenced sibling files —
+    skill-knowledge-dependency.yaml, workflow.md, templates/, modules/ — are
+    projected alongside SKILL.md rather than dropped."""
+    source_dir = source.parent
+    files: list[tuple[str, Path]] = []
+    for path in sorted(source_dir.rglob("*")):
+        if path.is_dir():
+            continue
+        rel = path.relative_to(source_dir).as_posix()
+        if rel == "SKILL.md":
+            continue
+        files.append((rel, path))
+    return files
+
+
 def project_skill(skill: dict, codex_root: Path, dry_run: bool, check: bool) -> None:
     source = repo_root() / skill["source_path"]
     meta = parse_frontmatter(source)
@@ -109,19 +126,23 @@ def project_skill(skill: dict, codex_root: Path, dry_run: bool, check: bool) -> 
     expected_skill = source.read_text()
     expected_yaml = build_openai_yaml(skill, description)
 
+    # SKILL.md and the generated openai.yaml, then the rest of the skill bundle so
+    # the projected skill is complete (declared knowledge dependencies, workflow,
+    # templates) rather than a lone SKILL.md.
+    targets: list[tuple[str, Path, str]] = [
+        ("SKILL", target_skill, expected_skill),
+        ("openai.yaml", target_yaml, expected_yaml),
+    ]
+    for rel, abspath in bundle_files(source):
+        targets.append((rel, target_dir / rel, abspath.read_text()))
+
     if check:
-        for label, target, expected in [
-            ("SKILL", target_skill, expected_skill),
-            ("openai.yaml", target_yaml, expected_yaml),
-        ]:
+        for label, target, expected in targets:
             status, detail = compare_file(target, expected)
             print(f"[{status}] {label}: {target}: {detail}")
         return
 
-    for label, target, expected in [
-        ("SKILL", target_skill, expected_skill),
-        ("openai.yaml", target_yaml, expected_yaml),
-    ]:
+    for label, target, expected in targets:
         if dry_run:
             print(f"[dry-run] {label}: would write {target}")
             continue
