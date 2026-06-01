@@ -12,6 +12,7 @@ It exists so the library can improve through real usage without turning into an 
 4. `evolution/observations/`
 5. `evolution/proposals/`
 6. `evolution/reviews/`
+7. `evolution/validation-cases/` and `evolution/experiments/` (Skill Evolution Validation Layer)
 
 ## Directory guide
 
@@ -20,6 +21,17 @@ It exists so the library can improve through real usage without turning into an 
 - `observations/` — concrete usage signals and attributions
 - `proposals/` — approved, rejected, and deferred improvement proposals
 - `reviews/` — review summaries for bounded pilot rounds
+- `validation-cases/` — reproducible expectations used as evidence (Skill Evolution Validation Layer)
+- `experiments/` — baseline-vs-candidate experiments that produce proposals, never decisions
+
+## Skill Evolution Validation Layer
+
+A docs-first layer that tests proposed skill evolutions with evidence *before* they become
+proposals. **Optimization is evidence, not authority** — experiments never edit skills and
+never decide on their own. See `docs/evolution/optimization-boundaries.md`,
+`docs/evolution/validation-case-guidelines.md`, and
+`docs/evolution/skill-evolution-experiments.md`. Validate structure with
+`python3 scripts/validate_evolution_experiments.py`.
 
 ## Current v1.1 boundaries
 

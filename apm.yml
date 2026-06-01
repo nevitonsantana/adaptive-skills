@@ -32,6 +32,7 @@ type: skill
 scripts:
   list-skills: "ls skills/"
   validate: "python3 scripts/validate_skills.py"
+  validate-experiments: "python3 scripts/validate_evolution_experiments.py"
   start: "echo 'See docs/guides/install-via-apm.md for the install flow.'"
 
 # includes: allow-list of paths shipped in the APM package payload. The
