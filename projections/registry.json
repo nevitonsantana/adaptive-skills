@@ -86,6 +86,27 @@
       }
     },
     {
+      "id": "domain-language-alignment",
+      "source_path": "skills/domain-language-alignment/SKILL.md",
+      "category": "engineering",
+      "status": "active",
+      "portability_tags": [
+        "engineering",
+        "generic"
+      ],
+      "codex_projection": {
+        "enabled": true,
+        "target_name": "domain-language-alignment",
+        "generate_openai_yaml": true,
+        "default_prompt": "Use $domain-language-alignment when the task matches domain language alignment work."
+      },
+      "claude_projection": {
+        "enabled": true,
+        "mode": "available-not-default",
+        "target_path": null
+      }
+    },
+    {
       "id": "api-design",
       "source_path": "skills/api-design/SKILL.md",
       "category": "engineering",
