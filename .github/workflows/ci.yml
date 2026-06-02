@@ -65,6 +65,17 @@ jobs:
       - name: Run validate_evolution.py
         run: python3 scripts/validate_evolution.py
 
+  validate-evolution-experiments:
+    name: Validate Evolution Experiments (validation cases + experiments)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.11'
+      - name: Run validate_evolution_experiments.py
+        run: python3 scripts/validate_evolution_experiments.py
+
   validate-knowledge-deps:
     name: Validate Knowledge Dependencies (skill manifests vs contract)
     runs-on: ubuntu-latest
@@ -118,6 +129,7 @@ jobs:
       - validate-skills
       - validate-skills-ref
       - validate-evolution
+      - validate-evolution-experiments
       - validate-knowledge-deps
       - projection-status
       - projection-dry-run
