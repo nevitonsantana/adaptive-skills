@@ -13,6 +13,7 @@ recommendation.
 - `templates/skill-evolution-experiment-template.md` — canonical experiment format
 - `templates/regression-note-template.md` — for recording a regression
 - `examples/` — safe, non-sensitive worked experiments
+- `pilot/` — the Fase 5 batch: real experiments over existing observations (outcomes: no-change, defer, reinforced)
 
 ## Authorized flow
 
