@@ -150,6 +150,43 @@
       ]
     },
     {
+      "skill_id": "domain-language-alignment",
+      "scope": "generic",
+      "domain": "engineering",
+      "automation_level": "manual-assisted",
+      "pilot_priority": "hold",
+      "protected_surfaces": [
+        "name",
+        "description",
+        "When to Use",
+        "When NOT to Use",
+        "Core Moves",
+        "skill-domain",
+        "skill-category",
+        "skill-merge-split",
+        "skill-thesis"
+      ],
+      "proposal_targets": [
+        "Activation Triggers",
+        "Optional Modules",
+        "Verification",
+        "Anti-patterns",
+        "templates/",
+        "checklists/",
+        "examples/",
+        "references/",
+        "changelog.md"
+      ],
+      "result_modes": [
+        "reinforced",
+        "no-change",
+        "proposal-created",
+        "new-module-candidate",
+        "new-skill-candidate",
+        "rejected"
+      ]
+    },
+    {
       "skill_id": "api-design",
       "scope": "generic",
       "domain": "engineering",

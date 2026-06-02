@@ -35,12 +35,14 @@ Use this skill to pressure test structural choices before they quietly become lo
 - **Complexity budget** — Estimate whether the added structure earns its cost. For a feature, make the **permanent cost** and **reversibility** explicit (`reversible` / `partially_reversible` / `one_way_door`, with mechanisms like flag, cohort, rollback, migration plan). Delegate to `feature-complexity-audit` for the full four-dimension scorecard; a `one_way_door` requires a technical gate, and a `high` cost approved to build requires a recorded `exception_approval` on the [Feature Value Governance Contract](../../../aletheia/schemas/feature-value-governance-contract.schema.json).
 - **Operational impact** — Check deployment, ownership, or observability consequences.
 - **Future change test** — Imagine the next two likely changes and whether the design helps or hurts.
+- **Module depth review** — Evaluate whether a module provides leverage through a smaller interface or merely moves complexity behind a new name. A deep module hides real implementation complexity behind a simple interface; a shallow one just relocates it. Assess interface size versus behavior hidden, a deletion test (what complexity returns if the module is removed), locality (are changes concentrated or scattered), adapter reality (is the seam real or hypothetical), and test surface (is the interface a good place to verify behavior).
 
 # Activation Triggers
 
 - Use complexity budget when the proposal adds new layers or abstractions; make reversibility explicit and route high/irreversible cost to a technical gate or `exception_approval`.
 - Use operational impact when runtime behavior or ownership will change.
 - Use future change test when the decision could become a template.
+- Use module depth review when an abstraction is introduced primarily for naming or layering rather than for proven leverage.
 
 # Expected Output
 
@@ -53,6 +55,9 @@ Use this skill to pressure test structural choices before they quietly become lo
 - The boundary change is explicit.
 - At least one simpler alternative was considered.
 - Maintenance cost is visible, not implicit.
+- For any new module, interface size is weighed against the behavior hidden behind it.
+- A deletion test was run: the complexity that returns if the module is removed is named.
+- The seam is real, not hypothetical, and the interface is a usable place to verify behavior.
 
 # Handoff Signals
 

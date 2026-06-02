@@ -35,12 +35,14 @@ Use this skill when behavior is wrong and you need disciplined diagnosis rather 
 - **Instrumentation pass** — Add temporary logs or visibility when the failure is opaque.
 - **Boundary check** — Inspect upstream and downstream assumptions when the issue crosses layers.
 - **Recurrence guard** — Add a focused automated or procedural guard after the fix.
+- **Feedback loop construction** — Build or identify a fast, deterministic, agent-runnable pass/fail signal before changing code. Prefer the smallest loop that reproduces the failure: a focused failing test, a CLI run over a fixture, a reproducible HTTP request, a headless browser script, a real trace or payload replayed in isolation, a throwaway harness, or a property/fuzz loop for intermittent bugs. Specific tools are examples — any loop that yields a deterministic pass/fail counts.
 
 # Activation Triggers
 
 - Use instrumentation when you cannot see the failure shape clearly.
 - Use the boundary check when multiple systems may be contributing.
 - Use the recurrence guard when the bug was expensive or likely to repeat.
+- Use feedback loop construction when the failure is not yet reproducible, when the bug is intermittent, or when changing code without a pass/fail signal would be guesswork.
 
 # Expected Output
 
@@ -54,6 +56,9 @@ Use this skill when behavior is wrong and you need disciplined diagnosis rather 
 - The original failure is reproducible or otherwise evidenced.
 - The fix changes the cause, not only the visible outcome.
 - The validation exercises the failure path.
+- A concrete pass/fail signal exists, or the reason it cannot exist is stated.
+- The loop is small enough to run during the debugging session.
+- The fix is checked against the original failure path through that loop.
 
 # Handoff Signals
 
