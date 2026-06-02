@@ -24,7 +24,10 @@ Rules (SDD section 6):
      human_review_required: true;
   6. no experiment declares a write target under skills/;
   7. recommendation.outcome is in the allowed set and is never approved/merged;
-  8. knowledge-aware skills (or knowledge_aware cases) require human_review_required.
+  8. knowledge-aware skills require human_review_required. A skill is
+     knowledge-aware if it declares metadata.knowledge_aware: true in its
+     SKILL.md frontmatter, is in the baseline set, or the experiment references
+     a case typed knowledge_aware.
 """
 from __future__ import annotations
 
@@ -54,6 +57,10 @@ VALID_SOURCE_POLICIES = {'synthetic_only', 'authorized_pack', 'public_source'}
 # Outcomes align with evolution result_modes plus `defer`; never approved/merged.
 VALID_OUTCOMES = {'reinforced', 'no-change', 'proposal-created', 'defer', 'rejected'}
 FORBIDDEN_OUTCOMES = {'approved', 'merged'}
+# Baseline fallback set. The authoritative source is each skill's own
+# `metadata.knowledge_aware: true` frontmatter, loaded via
+# load_knowledge_aware_skills(); this set covers skills that are knowledge-aware
+# by nature even if the flag is ever absent.
 KNOWLEDGE_AWARE_SKILLS = {
     'knowledge-source-evaluation', 'restricted-context-check',
     'knowledge-conflict-resolution',
@@ -151,6 +158,22 @@ def load_skill_ids(root: Path) -> set[str]:
     return {i for i in ids if i}
 
 
+def load_knowledge_aware_skills(root: Path) -> set[str]:
+    """Skills declaring `metadata.knowledge_aware: true` in SKILL.md frontmatter,
+    unioned with the baseline KNOWLEDGE_AWARE_SKILLS set. This makes contract R11
+    (knowledge-aware experiments require human review) enforceable even when the
+    paired validation case is not itself `case_type: knowledge_aware`.
+    """
+    aware = set(KNOWLEDGE_AWARE_SKILLS)
+    for path in list(root.glob('skills/*/SKILL.md')) + list(root.glob('domain-packs/*/skills/*/SKILL.md')):
+        meta = parse_frontmatter(path.read_text())
+        md = meta.get('metadata')
+        flag = md.get('knowledge_aware') if isinstance(md, dict) else None
+        if _as_bool(flag):
+            aware.add(str(meta.get('name') or path.parent.name))
+    return aware
+
+
 def _content_files(base: Path) -> list[Path]:
     """All *.md under base except READMEs and anything in a templates/ dir."""
     out = []
@@ -202,7 +225,7 @@ def validate_cases(root: Path, skills: set[str], errors: list[str]) -> dict[str,
     return cases
 
 
-def validate_experiments(root: Path, skills: set[str], cases: dict[str, dict], errors: list[str]) -> int:
+def validate_experiments(root: Path, skills: set[str], knowledge_aware_skills: set[str], cases: dict[str, dict], errors: list[str]) -> int:
     base = root / 'evolution' / 'experiments'
     if not base.exists():
         return 0
@@ -261,8 +284,11 @@ def validate_experiments(root: Path, skills: set[str], cases: dict[str, dict], e
         if not rec.get('rationale'):
             errors.append(f'{rel}: recommendation.rationale is required')
 
-        # Rule 8: knowledge-aware skills / cases require human review
-        knowledge_aware = meta['skill_id'] in KNOWLEDGE_AWARE_SKILLS
+        # Rule 8: knowledge-aware skills / cases require human review.
+        # A skill is knowledge-aware if it declares metadata.knowledge_aware: true
+        # (loaded from frontmatter), is in the baseline set, or the experiment
+        # references a case typed knowledge_aware.
+        knowledge_aware = meta['skill_id'] in knowledge_aware_skills
         knowledge_aware = knowledge_aware or any(
             cases.get(vc, {}).get('case_type') == 'knowledge_aware' for vc in vcs
         )
@@ -275,8 +301,9 @@ def main() -> int:
     root = repo_root()
     errors: list[str] = []
     skills = load_skill_ids(root)
+    knowledge_aware_skills = load_knowledge_aware_skills(root)
     cases = validate_cases(root, skills, errors)
-    experiments = validate_experiments(root, skills, cases, errors)
+    experiments = validate_experiments(root, skills, knowledge_aware_skills, cases, errors)
 
     if errors:
         print('Skill evolution validation failed:')
