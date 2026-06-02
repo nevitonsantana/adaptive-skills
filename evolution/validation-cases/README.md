@@ -12,6 +12,7 @@ They do not change any skill — experiments run *against* them.
 - `templates/validation-case-template.md` — canonical format (YAML frontmatter + narrative)
 - `examples/` — safe, non-sensitive worked cases
 - `pilot/` — the Fase 5 batch: real cases derived from existing `evolution/observations/`
+- `fase6/` — the Fase 6 batch: triad-check, business-design, feature-value-governance (knowledge-aware)
 
 ## Rules (summary)
 

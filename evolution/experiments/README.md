@@ -14,6 +14,7 @@ recommendation.
 - `templates/regression-note-template.md` — for recording a regression
 - `examples/` — safe, non-sensitive worked experiments
 - `pilot/` — the Fase 5 batch: real experiments over existing observations (outcomes: no-change, defer, reinforced)
+- `fase6/` — the Fase 6 controlled expansion (outcomes: reinforced, proposal-created, defer)
 
 ## Authorized flow
 
