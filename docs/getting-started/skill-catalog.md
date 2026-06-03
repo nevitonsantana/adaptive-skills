@@ -1,6 +1,6 @@
 # Adaptive Skills — Skill Catalog
 
-A navigable reference of all 21 published skills, organized by category, with trigger signals, brief descriptions, and composite flows for common task types.
+A navigable reference of the published generic skills, organized by category, with trigger signals, brief descriptions, and composite flows for common task types.
 
 **How to use this catalog:**  
 Start from the task, not from the list. Identify the dominant need of the work, then find the skill that fits that need. The composite flows section at the bottom shows how multiple skills combine for common task types.
@@ -22,6 +22,7 @@ Start from the task, not from the list. Identify the dominant need of the work, 
 | [`architecture-review`](#architecture-review) | Evaluating a design decision with long-term consequences | Surface tradeoffs, risks, and alternatives before committing |
 | [`code-style`](#code-style) | Code review; style inconsistency; style guide creation | Enforce consistent style with explicit criteria, not instinct |
 | [`communication`](#communication) | Writing an update, decision, or explanation for a mixed audience | Shape technical communication for the right audience and purpose |
+| [`domain-language-alignment`](#domain-language-alignment) | Misaligned vocabulary between product, domain, docs, and code | Reconcile terms before agents touch code or plan |
 
 ### Design
 
@@ -52,11 +53,29 @@ Start from the task, not from the list. Identify the dominant need of the work, 
 |---|---|---|
 | [`triad-check`](#triad-check) | Decision crossing product, design, and engineering; hard-to-reverse change | Surface all three perspectives before committing |
 
+### Product
+
+| Skill | Trigger signal | One-line description |
+|---|---|---|
+| [`feature-value-governance`](#feature-value-governance) | Feature proposed; prioritization decision; worth-doing judgment | Judge whether a proposed feature deserves investment |
+| [`opportunity-tree-alignment`](#opportunity-tree-alignment) | Competing bets; backlog without clear outcome links | Connect an opportunity tree to revenue levers and flag orphan bets |
+
 ### Business
 
 | Skill | Trigger signal | One-line description |
 |---|---|---|
 | [`business-design`](#business-design) | Strategic framing; value logic; operating model decisions | Frame the business logic behind a product or initiative |
+| [`revenue-lever-mapping`](#revenue-lever-mapping) | Vague value claim; competing bets; no measurable mechanism | Map which revenue or value lever an opportunity moves |
+
+### Governance
+
+| Skill | Trigger signal | One-line description |
+|---|---|---|
+| [`feature-complexity-audit`](#feature-complexity-audit) | Complexity is the deciding factor; non-trivial build commitment | Estimate the permanent cost of a feature before build |
+| [`sunset-decision`](#sunset-decision) | Low-traction feature with ongoing cost; portfolio review | Decide whether to keep, limit, refactor, deprecate, or remove a feature |
+| [`knowledge-source-evaluation`](#knowledge-source-evaluation) | Registering a new knowledge source; re-evaluation due | Evaluate whether a document can be a governed knowledge pack |
+| [`knowledge-conflict-resolution`](#knowledge-conflict-resolution) | Sources disagree on a decision-relevant point | Resolve conflict between knowledge sources via precedence |
+| [`restricted-context-check`](#restricted-context-check) | Sensitive source about to be consumed; cross-boundary task | Check a knowledge use for leakage, injection, and permission risks |
 
 ### Quality
 
@@ -370,6 +389,137 @@ Start from the task, not from the list. Identify the dominant need of the work, 
 
 ---
 
+### domain-language-alignment
+
+**When to use:** Before a relevant implementation or architectural change. When the request uses vague, overloaded, or inconsistent terms. When business language conflicts with names in the code.
+
+**When NOT to use:** Trivial local changes with no shared vocabulary at stake. When domain language is already settled and consistently used.
+
+**Core moves:**
+1. Extract key terms used in the request, docs, code, and prior decisions.
+2. Mark ambiguous, overloaded, missing, or conflicting terms.
+3. Recommend canonical terms and where they should be recorded.
+4. Flag decisions that deserve an ADR or decision record.
+
+---
+
+### feature-value-governance
+
+**When to use:** A feature is proposed and someone must decide whether it is worth doing. Prioritizing a backlog where value and cost are contested. A roadmap decision needs an explicit business intent and lever.
+
+**When NOT to use:** The decision to build is already made (use `feature-planning`). The change is tiny with obvious value. No problem framing exists yet.
+
+**Core moves:**
+1. Frame the feature and resolve knowledge context (strategic framework, personas, operating model).
+2. Surface business intent and name the primary revenue/value lever.
+3. Weigh user evidence; check opportunity-tree alignment.
+4. Estimate complexity cost and assess overreach risk (compliance, accessibility, privacy).
+5. Render a worth-doing verdict with audit trail.
+
+---
+
+### revenue-lever-mapping
+
+**When to use:** An opportunity or feature has a vague value claim. Two bets compete and you need to compare levers. A roadmap item lists no measurable mechanism of value.
+
+**When NOT to use:** The lever is already named, measured, and uncontested. No problem framing exists yet. Pure execution planning (use `feature-planning`).
+
+**Core moves:**
+1. Name the primary lever: acquisition, activation, retention, expansion, efficiency, margin, or strategic_defense.
+2. Name secondary levers (if any), clearly subordinate.
+3. Attach a metric that would prove the lever moved.
+4. Pick a proxy for early signal.
+5. State risks and uncertainty.
+
+---
+
+### opportunity-tree-alignment
+
+**When to use:** A backlog has competing bets with unclear links to outcomes. An opportunity tree exists but does not connect to revenue/value levers. Sequencing across opportunities by value and evidence.
+
+**When NOT to use:** A single obvious bet with a clear outcome. No outcomes or opportunities have been framed yet. The lever for one feature is the only question (use `revenue-lever-mapping`).
+
+**Core moves:**
+1. List opportunities under each outcome.
+2. Attach a lever to each opportunity.
+3. Place candidate features under the opportunity they serve.
+4. Flag orphans — features with no opportunity, opportunities with no lever.
+5. Reorder by value × evidence and state sequencing rationale.
+
+---
+
+### feature-complexity-audit
+
+**When to use:** A feature looks valuable and complexity is the deciding factor. Before a build commitment on anything non-trivial. Comparing two designs that deliver similar value at different carry.
+
+**When NOT to use:** The change is tiny and obviously cheap. Value itself is unresolved (resolve the lever first). No scope or dependencies are known yet.
+
+**Core moves:**
+1. Score four dimensions (each low/medium/high): cognitive, technical, operational, governance.
+2. Name reversibility: reversible, partially reversible, or one-way door.
+3. Roll up to a coarse level with the dominant driver named.
+4. Recommend the smallest scope that keeps the value.
+
+---
+
+### sunset-decision
+
+**When to use:** A feature has low traction but ongoing maintenance or security cost. Periodic portfolio review. A feature blocks a platform upgrade or widens the attack surface.
+
+**When NOT to use:** The feature is new and has not had a fair chance. The decision is about a new feature (use `feature-value-governance`). No usage, cost, or support data exists.
+
+**Core moves:**
+1. Read traction vs. cost — is value-per-cost positive, flat, or negative?
+2. Map dependencies: who/what breaks if it changes.
+3. Choose a disposition: keep, limit, refactor, deprecate, or remove.
+4. Attach a plan (migration for deprecate/remove; reduced scope for limit/refactor; next review trigger for keep).
+
+---
+
+### knowledge-source-evaluation
+
+**When to use:** A user proposes adding a knowledge source to a project. A skill author wants to depend on a new framework. A source's review cycle has elapsed.
+
+**When NOT to use:** Authoring the framework's content itself. Resolving conflict between already-registered sources (use `knowledge-conflict-resolution`). Checking restricted-exposure risk at runtime (use `restricted-context-check`).
+
+**Core moves:**
+1. Classify type using the source taxonomy.
+2. Assess sensitivity and authority.
+3. Determine scope and retrieval mode.
+4. Check whether a capsule is required and exists.
+5. Recommend maturity level (minimal, operational, governed) or refuse with reason.
+
+---
+
+### knowledge-conflict-resolution
+
+**When to use:** Resolved context pack contains sources that disagree. A skill output would change depending on which source is authoritative. Two mandatory sources appear to conflict.
+
+**When NOT to use:** Selecting sources in the first place. Evaluating whether a single source can be registered (use `knowledge-source-evaluation`). Checking exposure risk (use `restricted-context-check`).
+
+**Core moves:**
+1. State the conflict precisely: which sources, which decision point, which positions.
+2. Locate each source in the precedence tiers.
+3. Apply precedence; record prevailing and suppressed sources.
+4. Re-derive the affected decision under the prevailing source.
+5. Escalate to human review if precedence cannot settle it.
+
+---
+
+### restricted-context-check
+
+**When to use:** A skill is about to consume a confidential, restricted, or regulated source. A task crosses a trust boundary. A new source is being used for the first time. A deliverable will be external.
+
+**When NOT to use:** Resolving conflicts between sources (use `knowledge-conflict-resolution`). Evaluating whether a source can be registered (use `knowledge-source-evaluation`). Routine use of public sources.
+
+**Core moves:**
+1. Run five guardrail checks: data leakage, prompt injection, data poisoning, permission mismatch, context contamination.
+2. Translate findings into structured restrictions or refusal.
+3. Surface required human-review conditions.
+4. Write an audit entry.
+
+---
+
 ## Composite flows
 
 These flows show how multiple skills combine for common task types. They are starting points, not rigid sequences — adapt to your context.
@@ -469,6 +619,6 @@ handoff-summary   → Document the decision to ship with open items captured
 
 **Domain packs** (e.g., `crisis-management`) are case studies for specific domains, not generic capability surface. They are excluded from the standard APM package. See [`docs/adr/ADR-002-domain-agnosticism.md`](../adr/ADR-002-domain-agnosticism.md).
 
-**Skeleton-only domains** (`product`, `governance`) have no published skills yet. Check [`docs/skill-categories.md`](../skill-categories.md) for the backlog.
+**Product and governance skills** are now published and included above.
 
 **Evolution layer** (`evolution/`) is not a skill — it is the process by which the library improves over time. See [`docs/evolution-layer.md`](../evolution-layer.md).
