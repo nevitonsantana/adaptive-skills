@@ -6,6 +6,10 @@ These examples show how to combine a small set of skills in realistic work.
 
 ### Engineering
 - `engineering/new-feature-slice.md` — use `workflow + feature-planning + testing`
+- `engineering/feedback-loop-construction-example.md` — use `debugging + testing` to build a deterministic pass/fail loop before changing code
+- `engineering/behavior-first-test-example.md` — use `testing + feature-planning` to test behavior through a public interface instead of implementation
+- `engineering/module-depth-review-example.md` — use `architecture-review + api-design` to check whether a module earns its interface
+- `engineering/domain-language-alignment-example.md` — use `domain-language-alignment + feature-planning` to reconcile vocabulary before implementation
 
 ### Design
 - `design/ux-copy-clarity.md` — use `ux-writing + heuristic-audit`
