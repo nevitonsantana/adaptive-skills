@@ -10,6 +10,7 @@ Reusable starting points for authoring skills, declaring knowledge dependencies,
 | writing a skill that consumes governed knowledge | [`skill/SKILL.template.md`](skill/SKILL.template.md) **+** [`knowledge-aware-skill-template.md`](knowledge-aware-skill-template.md) (as a content guide) **+** [`skill-knowledge-dependency.yaml`](skill-knowledge-dependency.yaml) |
 | capsuling a framework or knowledge source | [`framework-capsule-template.md`](framework-capsule-template.md) |
 | reporting on a consumer or efficiency pilot | [`pilot/`](pilot/) |
+| running an engineering skill on a real task | [engineering hardening templates](#engineering-hardening-templates) (feedback loop, behavior-first test, module depth, domain language) |
 
 ## The templates
 
@@ -45,6 +46,15 @@ For the **knowledge-pack side**, not the skill side. Produces the operational su
 
 - `consumer-pilot-report.md` — for a consumer-adoption pilot.
 - `efficiency-pilot-report.md` — for an Efficiency Layer trio pilot.
+
+## Engineering hardening templates
+
+Operational worksheets that pair with the engineering skills (see [`../docs/engineering-skills-hardening-pack.md`](../docs/engineering-skills-hardening-pack.md)). Unlike the scaffolds above, these are filled out *per task*, not per skill.
+
+- [`feedback-loop-plan.md`](feedback-loop-plan.md) — pairs with `debugging` (Feedback loop construction): plan a fast, deterministic pass/fail signal before changing code.
+- [`behavior-first-test-plan.md`](behavior-first-test-plan.md) — pairs with `testing` (Behavior-first test design / Vertical test slice): design a test around public behavior that survives refactoring.
+- [`module-depth-review.md`](module-depth-review.md) — pairs with `architecture-review` (Module depth review): decide whether a module earns its interface or just relocates complexity.
+- [`domain-language-alignment-record.md`](domain-language-alignment-record.md) — pairs with `domain-language-alignment`: record canonical, ambiguous, and conflicting terms before implementation.
 
 ## See also
 

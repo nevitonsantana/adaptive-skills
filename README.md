@@ -79,12 +79,13 @@ Current examples include:
 - `feature-planning` — turn vague intent into an executable slice;
 - `testing` — define useful validation instead of shallow confidence;
 - `debugging` — isolate causes before changing code;
+- `domain-language-alignment` — reconcile vocabulary across product, domain, docs, ADRs, and code before implementation;
 - `ux-writing` — improve product language and semantic clarity;
 - `triad-check` — coordinate product, design, and technical reasoning;
 - `checkpoint-review` — pause during execution and decide whether to continue, adjust, or hand off;
 - `premortem` — assume a future failure happened and work backwards before execution begins.
 
-Skeleton-only categories in v0 (no published skills yet): `product`, `governance`. See `docs/skill-categories.md` for backlog.
+Every category now has at least one published skill. See `docs/skill-categories.md` for the per-category roster and backlog.
 
 ### Domain packs
 
@@ -154,7 +155,7 @@ See:
 /projections    -> projection registry for agent installs
 /evolution      -> governed learning artifacts, observations, proposals, reviews
 /scripts        -> validation and projection tooling
-/templates      -> starter templates for new skills
+/templates      -> starter templates for new skills and operational worksheets
 ```
 
 ## Use with or without AletheIA
@@ -182,9 +183,11 @@ See:
 
 ## Current domains
 
-- **Engineering** — implementation, contracts, testing, debugging, structural review
+- **Engineering** — implementation, contracts, testing, debugging, structural review, domain-language alignment
 - **Design** — UX strategy, critique, provocation, UX writing
 - **Business** — strategic framing and synthesis
+- **Product** — feature value governance and opportunity-tree alignment
+- **Governance** — complexity audits, sunset decisions, and knowledge-boundary checks
 - **Quality** — cross-layer quality review
 - **Metrics** — observable, decision-linked signals
 - **Cross-functional** — triad-style checks for multi-function decisions
@@ -220,7 +223,7 @@ python3 scripts/project_to_codex.py --skill premortem
 
 1. [`docs/getting-started/overview.md`](docs/getting-started/overview.md) — what Adaptive Skills is, who it's for, when to use it
 2. [`docs/getting-started/installation-guide.md`](docs/getting-started/installation-guide.md) — step-by-step install via APM
-3. [`docs/getting-started/skill-catalog.md`](docs/getting-started/skill-catalog.md) — all 24 skills with trigger signals and composite flows
+3. [`docs/getting-started/skill-catalog.md`](docs/getting-started/skill-catalog.md) — published skills with trigger signals and composite flows
 4. [`docs/getting-started/faq.md`](docs/getting-started/faq.md) — common questions about setup, skill selection, and teamwork
 
 ### Deeper adoption reference
@@ -255,14 +258,14 @@ Add `premortem` when plans have meaningful cost of failure and can still be chan
 
 ## Current status
 
-### May 2026
+### June 2026
 
 | Dimension | Status | Next delivery posture |
 |----------|--------|-----------------------|
-| Validated skills | 24/35 | Expand only when evidence justifies it |
+| Validated skills | 30 generic + 3 domain-pack | Expand only when evidence justifies it |
 | Active pilots | 5 | Keep follow-ups evidence-gated |
 | Evolution cycle | #3 — Observations | Start Cycle #4 only after reviewable signals |
-| Domains | 9/10 | Product + Governance remain skeleton-only |
+| Domains | 10/10 | All categories now have at least one published skill |
 
 See:
 

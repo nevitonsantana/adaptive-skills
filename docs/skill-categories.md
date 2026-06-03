@@ -36,7 +36,7 @@ Skills that compound execution speed without sacrificing clarity — task chunki
 
 Reusable execution skills for engineering work. These skills should work across products without inheriting local operating rules.
 
-- **Published:** `workflow`, `feature-planning`, `testing`, `debugging`, `api-design`, `refactoring`, `architecture-review`, `code-style`, `communication`
+- **Published:** `workflow`, `feature-planning`, `testing`, `debugging`, `api-design`, `refactoring`, `architecture-review`, `code-style`, `communication`, `domain-language-alignment`
 - **Backlog:** v0 already covers the core set; new entries flow through the Evolution Layer.
 
 ## governance
