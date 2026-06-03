@@ -79,7 +79,7 @@ def parse_items(path: Path, collection_key: str) -> list[dict[str, object]]:
 
 def load_skill_ids(root: Path) -> set[str]:
     ids: set[str] = set()
-    for path in sorted(root.glob('skills/*/*/SKILL.md')):
+    for path in sorted(root.glob('skills/*/SKILL.md')):
         ids.add(path.parent.name)
     for path in sorted(root.glob('domain-packs/*/skills/*/SKILL.md')):
         ids.add(path.parent.name)

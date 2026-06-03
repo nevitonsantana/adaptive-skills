@@ -89,6 +89,17 @@ jobs:
       - name: Run validate_knowledge_deps.py
         run: python3 scripts/validate_knowledge_deps.py
 
+  validate-capabilities:
+    name: Validate Capabilities (catalog + profiles + routes + relationships)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.11'
+      - name: Run validate_capabilities.py
+        run: python3 scripts/validate_capabilities.py
+
   projection-status:
     name: Projection Status Report
     runs-on: ubuntu-latest
@@ -131,6 +142,7 @@ jobs:
       - validate-evolution
       - validate-evolution-experiments
       - validate-knowledge-deps
+      - validate-capabilities
       - projection-status
       - projection-dry-run
       - projection-check
