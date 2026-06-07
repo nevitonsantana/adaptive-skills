@@ -56,6 +56,15 @@ Operational worksheets that pair with the engineering skills (see [`../docs/engi
 - [`module-depth-review.md`](module-depth-review.md) — pairs with `architecture-review` (Module depth review): decide whether a module earns its interface or just relocates complexity.
 - [`domain-language-alignment-record.md`](domain-language-alignment-record.md) — pairs with `domain-language-alignment`: record canonical, ambiguous, and conflicting terms before implementation.
 
+## Harness templates
+
+Fill-in worksheets for the **harness** envelope a skill runs inside (see [`../docs/skill-harness-boundaries.md`](../docs/skill-harness-boundaries.md) and AletheIA's Agent Harness Contract). Like the engineering templates, these are filled out *per task*, not per skill.
+
+- [`agent-harness-contract.yaml`](agent-harness-contract.yaml) — the per-task operating envelope (autonomy, tools, gates, sensors, rollback, human review). Field names mirror the AletheIA schema.
+- [`aci-tool-guideline.md`](aci-tool-guideline.md) — document one tool against the Agent-Computer Interface design bar before listing it in a contract.
+- [`context-rot-checkpoint.md`](context-rot-checkpoint.md) — checkpoint a long session to keep it reviewable and restartable.
+- [`harness-trace-summary.md`](harness-trace-summary.md) — human-readable summary of what the agent did within its contract.
+
 ## See also
 
 - [`../docs/skill-model.md`](../docs/skill-model.md) — the Core + Modules + Triggers skill model.

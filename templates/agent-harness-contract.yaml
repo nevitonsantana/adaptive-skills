@@ -1,0 +1,72 @@
+# Agent Harness Contract — fill-in template
+#
+# The per-task operating envelope an agent runs within. Field names and enum values
+# mirror the AletheIA schema (schemas/agent-harness-contract.schema.json) exactly.
+# This is a declaration: it does not execute or authorize. See
+# ../docs/skill-harness-boundaries.md and AletheIA docs/contracts/agent-harness-contract.md.
+
+agent_harness_contract:
+  contract_id: ahc-001
+  task_id: <task-id>
+  agent_id: <agent-or-runtime>
+  date: <YYYY-MM-DD>
+  autonomy_level: observe | advise | act_with_approval | autonomous_within_bounds
+
+  task_boundary:
+    objective: <what the agent is allowed to accomplish>
+    non_goals:
+      - <what the agent must not do>
+    risk_level: low | medium | high | critical
+    reversibility: reversible | partially_reversible | hard_to_reverse
+
+  allowed_skills:
+    - <skill-id>
+  blocked_skills:
+    - <skill-id>
+
+  allowed_tools:
+    - name: <tool-name>
+      permission: read | write | execute
+      constraints:
+        - <constraint>
+
+  blocked_actions:
+    - <action>          # required (>=1) when autonomy_level is autonomous_within_bounds
+
+  context_policy:
+    allowed_knowledge_packs:
+      - <pack-id@version>
+    retrieval_mode: capsule_first | excerpt_only | metadata_only | none
+    max_context_scope: task_only | project | repository | workspace
+
+  gates:
+    before_write: true            # required true when risk_level >= medium and a tool can write/execute
+    before_delete: true
+    before_external_call: true
+    before_structural_change: true
+    before_final_answer: true
+
+  sensors:
+    computational:
+      - test_suite
+      - linter
+      - typecheck
+      - schema_validation
+    inferential:
+      - review_skill
+      - architecture_review
+      - risk_review
+
+  observability:
+    trace_required: true
+    tool_log_required: true
+    decision_log_required: true
+    evidence_required: true
+
+  rollback:
+    required: true                # required true when reversibility is hard_to_reverse, or autonomy is autonomous_within_bounds
+    strategy: git_diff | revert_commit | feature_flag | manual_restore
+
+  human_review:
+    required: true                # required true when reversibility is hard_to_reverse
+    reviewer_role: product | design | engineering | governance | security
