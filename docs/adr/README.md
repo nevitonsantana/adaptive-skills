@@ -51,3 +51,4 @@ Followed by numbered sections:
 | [ADR-004](ADR-004-agentskills-io-conformance.md) | `agentskills.io` conformance strategy | Accepted |
 | [ADR-005](ADR-005-apm-packaging-strategy.md) | APM packaging strategy | Accepted |
 | [ADR-006](ADR-006-knowledge-aware-skills-boundary.md) | Knowledge-aware skills boundary | Accepted |
+| [ADR-007](ADR-007-per-skill-harness-requirements.md) | Per-skill harness requirements (declarative layer) | Accepted |

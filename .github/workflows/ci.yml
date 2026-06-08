@@ -89,6 +89,19 @@ jobs:
       - name: Run validate_knowledge_deps.py
         run: python3 scripts/validate_knowledge_deps.py
 
+  validate-harness-requirements:
+    name: Validate Harness Requirements (per-skill declarations)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.11'
+      - name: Install PyYAML
+        run: pip install 'pyyaml==6.0.2'
+      - name: Run validate_harness_requirements.py
+        run: python3 scripts/validate_harness_requirements.py
+
   validate-capabilities:
     name: Validate Capabilities (catalog + profiles + routes + relationships)
     runs-on: ubuntu-latest
@@ -142,6 +155,7 @@ jobs:
       - validate-evolution
       - validate-evolution-experiments
       - validate-knowledge-deps
+      - validate-harness-requirements
       - validate-capabilities
       - projection-status
       - projection-dry-run

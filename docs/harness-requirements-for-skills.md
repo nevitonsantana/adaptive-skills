@@ -140,6 +140,7 @@ forcing that evolution now.
 
 ## See also
 
+- [adr/ADR-007-per-skill-harness-requirements.md](adr/ADR-007-per-skill-harness-requirements.md) — why this layer exists and what it is not.
 - [skill-harness-boundaries.md](skill-harness-boundaries.md)
 - [skill-knowledge-boundaries.md](skill-knowledge-boundaries.md)
 - [using-skills-inside-harnesses.md](using-skills-inside-harnesses.md)
