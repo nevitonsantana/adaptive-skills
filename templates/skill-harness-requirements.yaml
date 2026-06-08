@@ -1,0 +1,57 @@
+# Skill Harness Requirements — fill-in template
+#
+# A per-SKILL declaration of the operating envelope a skill needs to run safely.
+# This is a DECLARATION: it does not execute, authorize, or block anything.
+# Enforcement belongs to the harness/runtime; the policy contracts live in
+# AletheIA (docs/contracts/agent-harness-governance-extension.md and related).
+#
+# Distinct from templates/agent-harness-contract.yaml, which is the per-TASK
+# operating envelope. This file is per-skill; that one is per-task.
+# See ../docs/harness-requirements-for-skills.md and ../docs/skill-harness-boundaries.md.
+#
+# autonomy enum values mirror AletheIA canonical-vocabulary.md exactly.
+
+harness_requirements:
+  skill_id:
+  version:
+
+  autonomy:
+    floor: observe | advise | act_with_approval | autonomous_within_bounds
+    ceiling: observe | advise | act_with_approval | autonomous_within_bounds
+    rationale:
+
+  expected_tools:
+    - name:
+      purpose:
+      risk_class: low | medium | high | critical
+
+  restricted_tools:
+    - name:
+      restriction: deny | require_approval | transform | log_only
+      rationale:
+
+  approval_gates:
+    - before_destructive_action
+    - before_external_side_effect
+    - before_schema_or_contract_change
+    - before_dependency_upgrade
+    - before_sensitive_context_use
+
+  required_evidence:
+    - evidence_name
+
+  escalation_triggers:
+    - touches_auth
+    - touches_data_model
+    - modifies_policy
+    - uses_restricted_context
+    - changes_public_contract
+    - creates_external_side_effect
+
+  audit_requirements:
+    log_skill_id: true
+    log_task_id: true
+    log_tool_calls: true
+    log_policy_verdict: true
+    log_evidence_refs: true
+    log_human_approval: when_required

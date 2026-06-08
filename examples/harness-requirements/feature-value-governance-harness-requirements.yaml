@@ -1,0 +1,59 @@
+# Example — harness requirements declared by the `feature-value-governance` skill.
+# Declaration only. Enforcement belongs to the harness; see
+# ../../docs/harness-requirements-for-skills.md.
+#
+# Consultative: this skill produces a governed recommendation/verdict. It must
+# NOT look like authorization to act — it cannot move the roadmap, create issues,
+# or write project files. Floor and ceiling are both `advise`.
+
+harness_requirements:
+  skill_id: feature-value-governance
+  version: 0.1.0
+
+  autonomy:
+    floor: advise
+    ceiling: advise
+    rationale: "This skill produces a governed recommendation, not an automatic roadmap action."
+
+  expected_tools:
+    - name: knowledge.resolve
+      purpose: "Resolve authorized knowledge packs."
+      risk_class: medium
+    - name: docs.read
+      purpose: "Read authorized capsules or excerpts."
+      risk_class: low
+
+  restricted_tools:
+    - name: roadmap.update
+      restriction: deny
+      rationale: "The skill advises; it does not alter roadmap state."
+    - name: issue.create
+      restriction: require_approval
+      rationale: "Creating work items is an external workflow action."
+    - name: filesystem.write
+      restriction: deny
+      rationale: "The skill should not write project files directly."
+
+  approval_gates:
+    - before_external_side_effect
+    - before_sensitive_context_use
+
+  required_evidence:
+    - source_pack_versions
+    - unsatisfied_slots
+    - conflicts_and_resolution
+    - verdict_rationale
+    - review_required_flag
+
+  escalation_triggers:
+    - uses_restricted_context
+    - modifies_policy
+    - creates_external_side_effect
+
+  audit_requirements:
+    log_skill_id: true
+    log_task_id: true
+    log_tool_calls: true
+    log_policy_verdict: true
+    log_evidence_refs: true
+    log_human_approval: when_required
