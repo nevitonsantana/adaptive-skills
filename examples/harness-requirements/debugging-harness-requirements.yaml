@@ -1,0 +1,60 @@
+# Example — harness requirements declared by the `debugging` skill.
+# Declaration only. Enforcement belongs to the harness; see
+# ../../docs/harness-requirements-for-skills.md.
+
+harness_requirements:
+  skill_id: debugging
+  version: 0.1.0
+
+  autonomy:
+    floor: advise
+    ceiling: act_with_approval
+    rationale: "Debugging may require bounded test execution and local edits, but structural or destructive changes require approval."
+
+  expected_tools:
+    - name: filesystem.read
+      purpose: "Inspect relevant files."
+      risk_class: low
+    - name: shell.test
+      purpose: "Run repro or test command."
+      risk_class: medium
+    - name: git.diff
+      purpose: "Review changes before handoff."
+      risk_class: low
+
+  restricted_tools:
+    - name: filesystem.delete
+      restriction: require_approval
+      rationale: "Deletion is destructive."
+    - name: secret.read
+      restriction: deny
+      rationale: "Secrets are not needed for normal debugging."
+    - name: network.external_write
+      restriction: require_approval
+      rationale: "External side effects require human approval."
+
+  approval_gates:
+    - before_destructive_action
+    - before_schema_or_contract_change
+    - before_dependency_upgrade
+
+  required_evidence:
+    - repro_path
+    - likely_root_cause
+    - validated_fix
+    - recurrence_guard_or_rationale
+    - validation_gap_if_any
+
+  escalation_triggers:
+    - touches_auth
+    - touches_data_model
+    - modifies_policy
+    - changes_public_contract
+
+  audit_requirements:
+    log_skill_id: true
+    log_task_id: true
+    log_tool_calls: true
+    log_policy_verdict: true
+    log_evidence_refs: true
+    log_human_approval: when_required

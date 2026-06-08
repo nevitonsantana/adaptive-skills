@@ -58,9 +58,10 @@ Operational worksheets that pair with the engineering skills (see [`../docs/engi
 
 ## Harness templates
 
-Fill-in worksheets for the **harness** envelope a skill runs inside (see [`../docs/skill-harness-boundaries.md`](../docs/skill-harness-boundaries.md) and AletheIA's Agent Harness Contract). Like the engineering templates, these are filled out *per task*, not per skill.
+Fill-in worksheets for the **harness** envelope a skill runs inside (see [`../docs/skill-harness-boundaries.md`](../docs/skill-harness-boundaries.md) and AletheIA's Agent Harness Contract).
 
-- [`agent-harness-contract.yaml`](agent-harness-contract.yaml) — the per-task operating envelope (autonomy, tools, gates, sensors, rollback, human review). Field names mirror the AletheIA schema.
+- [`agent-harness-contract.yaml`](agent-harness-contract.yaml) — the per-**task** operating envelope (autonomy, tools, gates, sensors, rollback, human review). Field names mirror the AletheIA schema.
+- [`skill-harness-requirements.yaml`](skill-harness-requirements.yaml) — the per-**skill** declaration of what operating envelope a skill needs (autonomy floor/ceiling, expected/restricted tools, approval gates, required evidence, audit). A declaration, not enforcement — see [`../docs/harness-requirements-for-skills.md`](../docs/harness-requirements-for-skills.md). Worked examples in [`../examples/harness-requirements/`](../examples/harness-requirements/).
 - [`aci-tool-guideline.md`](aci-tool-guideline.md) — document one tool against the Agent-Computer Interface design bar before listing it in a contract.
 - [`context-rot-checkpoint.md`](context-rot-checkpoint.md) — checkpoint a long session to keep it reviewable and restartable.
 - [`harness-trace-summary.md`](harness-trace-summary.md) — human-readable summary of what the agent did within its contract.

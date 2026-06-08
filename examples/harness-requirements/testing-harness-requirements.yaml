@@ -1,0 +1,59 @@
+# Example — harness requirements declared by the `testing` skill.
+# Declaration only. Enforcement belongs to the harness; see
+# ../../docs/harness-requirements-for-skills.md.
+#
+# Operational-but-bounded: testing may run tests and read coverage, but must
+# not change implementation. Implementation changes belong to another skill.
+
+harness_requirements:
+  skill_id: testing
+  version: 0.1.0
+
+  autonomy:
+    floor: advise
+    ceiling: act_with_approval
+    rationale: "Testing may run tests and read coverage locally, but must not change implementation without another skill."
+
+  expected_tools:
+    - name: shell.test
+      purpose: "Run the test suite or a targeted test."
+      risk_class: medium
+    - name: coverage.read
+      purpose: "Inspect local coverage to find untested behavior."
+      risk_class: low
+    - name: git.diff
+      purpose: "Review the change under test before handoff."
+      risk_class: low
+
+  restricted_tools:
+    - name: filesystem.write
+      restriction: require_approval
+      rationale: "Implementation changes belong to another skill, not to testing."
+    - name: network.external_write
+      restriction: require_approval
+      rationale: "External side effects require human approval."
+    - name: secret.read
+      restriction: deny
+      rationale: "Secrets are not needed to run or read tests."
+
+  approval_gates:
+    - before_destructive_action
+    - before_external_side_effect
+
+  required_evidence:
+    - proof_strategy
+    - executed_evidence
+    - validation_gaps
+
+  escalation_triggers:
+    - modifies_policy
+    - changes_public_contract
+    - creates_external_side_effect
+
+  audit_requirements:
+    log_skill_id: true
+    log_task_id: true
+    log_tool_calls: true
+    log_policy_verdict: true
+    log_evidence_refs: true
+    log_human_approval: when_required

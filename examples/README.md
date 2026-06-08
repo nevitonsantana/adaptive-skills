@@ -11,6 +11,12 @@ These examples show how to combine a small set of skills in realistic work.
 - `engineering/module-depth-review-example.md` — use `architecture-review + api-design` to check whether a module earns its interface
 - `engineering/domain-language-alignment-example.md` — use `domain-language-alignment + feature-planning` to reconcile vocabulary before implementation
 
+### Harness requirements
+Per-skill `harness_requirements` declarations (declaration only — enforcement belongs to the harness; see [`../docs/harness-requirements-for-skills.md`](../docs/harness-requirements-for-skills.md)).
+- `harness-requirements/debugging-harness-requirements.yaml` — operational skill, `act_with_approval`
+- `harness-requirements/testing-harness-requirements.yaml` — operational-but-bounded (no implementation changes)
+- `harness-requirements/feature-value-governance-harness-requirements.yaml` — consultative skill, `advise` only
+
 ### Design
 - `design/ux-copy-clarity.md` — use `ux-writing + heuristic-audit`
 
