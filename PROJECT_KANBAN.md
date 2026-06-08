@@ -1,8 +1,8 @@
 # 📋 Adaptive Skills - Project Kanban
 
-> **Última atualização:** 2026-05-25 (Épico 5 — APM packaging — ready for review)
-> **Status do Sprint:** Sprint 2/3 do plano cross-repo — Épicos 1, 2, 3 mergeados; Épico 4 mergeado no AletheIA; Épico 5 em PR
-> **Foco atual:** Empacotamento APM (Adaptive Skills) e preparação para Épico 6 (documentação adoptável AletheIA)
+> **Última atualização:** 2026-06-05 (reconciliação cross-repo — Épicos 5/6/7 entregues)
+> **Status do Sprint:** Sprint 3 do plano cross-repo concluído — Épicos 1, 2, 3, 5, 7 mergeados (Adaptive Skills); Épicos 4, 6 mergeados (AletheIA); Épico 8 (soft-launch) em preparação no AletheIA
+> **Foco atual:** Knowledge/Feature-Value Governance + Skill Evolution Validation implementados; Engineering Skills Hardening Pack e sync do skill-catalog (30 skills) concluídos
 >
 > **Plano vigente:** [`aletheia-adaptive-skills-plano-cross-repo.md`](../Downloads/_Uteis/AI/AletheIA-Adaptative-Skills/aletheia-adaptive-skills-plano-cross-repo.md) (8 épicos, gates explícitos)
 
@@ -91,7 +91,12 @@
 | D17 | Épico 1 — ADRs cross-repo + ecosystem-map | 2026-05-22 ([#37](https://github.com/nevitonsantana/adaptive-skills/pull/37)) | Alto | Posicionamento ecossistêmico fixado: ADR-001/002/003 + mapa sincronizado com AletheIA |
 | D18 | Épico 2 — Despoluição Crisis Monitor de conteúdo canônico | 2026-05-22 ([#38](https://github.com/nevitonsantana/adaptive-skills/pull/38)) | Alto | Crisis Monitor agora aparece exclusivamente em `domain-packs/` e `docs/crisis-monitor-case-study.md` |
 | D19 | Épico 3 — Auditoria agentskills.io + ADR-004 (Caso A) | 2026-05-22 ([#39](https://github.com/nevitonsantana/adaptive-skills/pull/39)) | Crítico | Estratégia de conformância decidida: alta conformância via remediação cosmética; remediação efetiva em Épico 5 |
-| **R01** | **Épico 5 — APM packaging + ADR-004 lockstep — ready for review** | 2026-05-25 (branch `feat/apm-package`) | Crítico | Flatten para Skill Collection layout + 24 SKILL.md remediados + apm.yml + ADR-005. PR pendente. |
+| D20 | Épico 5 — APM packaging + ADR-004 lockstep — mergeado | 2026-06-01 ([#41](https://github.com/nevitonsantana/adaptive-skills/pull/41)) | Crítico | Flatten para Skill Collection layout + 24 SKILL.md remediados + `apm.yml` + ADR-005. |
+| D21 | Épico 7 — getting-started four-doc adoption entry point | 2026-05-26 (`c887835`) | Alto | Entry-point de adoção do Adaptive Skills (par do Épico 6 do AletheIA, PRs AletheIA #157/#148) |
+| D22 | Knowledge-aware skills boundary (ADR-006) + 3 governance skills | 2026 ([#43](https://github.com/nevitonsantana/adaptive-skills/pull/43)/[#45](https://github.com/nevitonsantana/adaptive-skills/pull/45)) | Alto | Superfície skill-side da Knowledge Governance Layer (par do AletheIA ADR-008) |
+| D23 | `feature-value-governance` — primeiro consumidor knowledge-aware | 2026 ([#44](https://github.com/nevitonsantana/adaptive-skills/pull/44)) | Alto | Par do AletheIA ADR-009 (Feature Value Governance Pack) |
+| D24 | Skill Evolution Validation Layer + CI + Fases 5/6 | 2026 ([#49](https://github.com/nevitonsantana/adaptive-skills/pull/49)-[#53](https://github.com/nevitonsantana/adaptive-skills/pull/53)) | Alto | Validação docs-first, CI, auto-detecção de skills knowledge-aware (par do AletheIA #176) |
+| D25 | Engineering Skills Hardening Pack + skill-catalog (30 skills) | 2026 ([#55](https://github.com/nevitonsantana/adaptive-skills/pull/55)/[#57](https://github.com/nevitonsantana/adaptive-skills/pull/57)) | Médio | Pack de endurecimento + sync do catálogo com todas as skills genéricas do registry |
 
 ---
 
@@ -201,7 +206,13 @@ graph LR
 - **Gates cumpridos:** H5 (Crisis Monitor sai do core sem perda) ✅; decisão A/B/C para conformance (Caso A) ✅.
 - **Falsificação parcial registrada:** H2 (APM acelera adoção sem custo de manutenção excessivo) — AletheIA ADR-007 documentou fluxo em dois passos; Adaptive Skills evita o mesmo problema porque skills são primitivos APM nativos.
 
+### Semana de 26 Mai – 05 Jun 2026 — Sprint 3 concluído + frentes de governança
+- **Mergeados (Adaptive Skills):** Épico 5 (PR #41, `apm.yml`), Épico 7 (`c887835`, getting-started), Knowledge-aware boundary ADR-006 (#43/#45), `feature-value-governance` (#44), Product Value Governance pack (#47), Skill Evolution Validation Layer (#49-#53), Engineering Skills Hardening Pack (#55) + skill-catalog 30 skills (#57).
+- **Mergeados (AletheIA):** Épico 6 (PRs #157/#148), Knowledge Governance Layer ADR-008 + engine (#160-#173), Feature Value Governance ADR-009 (#174), Skill Evolution Validation contrato (#176).
+- **Em preparação (AletheIA):** Épico 8 — soft-launch prep (#159).
+
 ### Decisões Recentes
+00. **2026-06-05:** Reconciliação cross-repo — Épicos 6/7 confirmados entregues (a nota anterior dizia "Épico 6 não iniciado"); três frentes casadas (Knowledge Governance, Feature Value Governance, Skill Evolution Validation) implementadas nos dois repos.
 0. **2026-05-25:** Épico 5 — decisões A1 (flatten skills/), C1 (version 0.1.0), D3 (domain-packs fora do APM payload) registradas em ADR-005 do Adaptive Skills.
 1. **2026-05-21:** Onda 0 fechada — kanban e roadmap reconciliados com estado real (último update real era 2026-04-15, 36 dias stale).
 2. **2026-05-21:** Aposentados P02 (testing-strategy-validation), P04 (code-review-patterns), P06 (policy superfícies protegidas), P07 (Evolution Cycle #4 forma original). WIP 7 → 3.

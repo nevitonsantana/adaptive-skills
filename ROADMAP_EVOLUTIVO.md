@@ -11,7 +11,9 @@
 > **Nota 2026-05-25 — execução do plano cross-repo até aqui:**
 > - **Sprint 1** (Fronteira + Despoluição): Épico 1 (PR #37, ADR-001/002/003 + ecosystem-map), Épico 2 (PR #38, despoluição Crisis Monitor) — ambos mergeados.
 > - **Sprint 2** (Padrões + Empacotamento AletheIA): Épico 3 (PR #39, ADR-004 Caso A para `agentskills.io`), Épico 4 (AletheIA PR #151, tag `v0.1.0-alpha`) — ambos mergeados.
-> - **Sprint 3** (Empacotamento Adaptive Skills + Doc AletheIA): Épico 5 — APM packaging do Adaptive Skills (branch `feat/apm-package`, 2 commits, PR pending). Decisões A1/C1/D3 registradas em ADR-005. Épico 6 (doc AletheIA) ainda não iniciado.
+> - **Sprint 3** (Empacotamento Adaptive Skills + Doc AletheIA): Épico 5 — APM packaging do Adaptive Skills mergeado (`apm.yml` no repo; PR #41). Decisões A1/C1/D3 registradas em ADR-005. Épico 6 (doc AletheIA) **entregue** no repo AletheIA (PR #157 — getting-started four-doc; PR #148 — minimal-overlay preset bundle; ecosystem-map + ADR-005 via PR #149). Épico 7 (getting-started Adaptive Skills) também entregue.
+>
+> **Nota 2026-06-05 — reconciliação cross-repo:** Knowledge Governance Layer (AletheIA ADR-008 + engine ↔ Adaptive Skills ADR-006 + governance skills), Feature Value Governance (AletheIA ADR-009 ↔ skill `feature-value-governance`) e Skill Evolution Validation Layer (ambos os lados) implementados. No Adaptive Skills, posterior: Engineering Skills Hardening Pack (PR #55) + skill-catalog sincronizado com as 30 skills genéricas (PR #57). AletheIA com soft-launch prep em curso (Épico 8, PR #159).
 
 ---
 
