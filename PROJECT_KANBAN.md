@@ -1,7 +1,7 @@
 # 📋 Adaptive Skills - Project Kanban
 
-> **Última atualização:** 2026-06-05 (reconciliação cross-repo — Épicos 5/6/7 entregues)
-> **Status do Sprint:** Sprint 3 do plano cross-repo concluído — Épicos 1, 2, 3, 5, 7 mergeados (Adaptive Skills); Épicos 4, 6 mergeados (AletheIA); Épico 8 (soft-launch) em preparação no AletheIA
+> **Última atualização:** 2026-06-08 (Agent Harness Enforcement Addendum entregue — D26)
+> **Status do Sprint:** Sprint 3 do plano cross-repo concluído — Épicos 1, 2, 3, 5, 7 mergeados (Adaptive Skills); Épicos 4, 6 mergeados (AletheIA); Épico 8 (soft-launch) em preparação no AletheIA. Addendum docs-first de harness enforcement mergeado nos dois repos (AS #60/#61, AletheIA #188/#189).
 > **Foco atual:** Knowledge/Feature-Value Governance + Skill Evolution Validation implementados; Engineering Skills Hardening Pack e sync do skill-catalog (30 skills) concluídos
 >
 > **Plano vigente:** [`aletheia-adaptive-skills-plano-cross-repo.md`](../Downloads/_Uteis/AI/AletheIA-Adaptative-Skills/aletheia-adaptive-skills-plano-cross-repo.md) (8 épicos, gates explícitos)
@@ -97,6 +97,7 @@
 | D23 | `feature-value-governance` — primeiro consumidor knowledge-aware | 2026 ([#44](https://github.com/nevitonsantana/adaptive-skills/pull/44)) | Alto | Par do AletheIA ADR-009 (Feature Value Governance Pack) |
 | D24 | Skill Evolution Validation Layer + CI + Fases 5/6 | 2026 ([#49](https://github.com/nevitonsantana/adaptive-skills/pull/49)-[#53](https://github.com/nevitonsantana/adaptive-skills/pull/53)) | Alto | Validação docs-first, CI, auto-detecção de skills knowledge-aware (par do AletheIA #176) |
 | D25 | Engineering Skills Hardening Pack + skill-catalog (30 skills) | 2026 ([#55](https://github.com/nevitonsantana/adaptive-skills/pull/55)/[#57](https://github.com/nevitonsantana/adaptive-skills/pull/57)) | Médio | Pack de endurecimento + sync do catálogo com todas as skills genéricas do registry |
+| D26 | Agent Harness Enforcement Addendum — camada declarativa `harness_requirements` + validador CI + ADR-007 | 2026-06-08 ([#60](https://github.com/nevitonsantana/adaptive-skills/pull/60)/[#61](https://github.com/nevitonsantana/adaptive-skills/pull/61)) | Alto | Skills declaram envelope operacional (autonomia, tools, gates, evidência); enforcement permanece no harness. Par do AletheIA ADR-014 (#188/#189). `harness-readiness-check` fica como candidata futura. |
 
 ---
 
