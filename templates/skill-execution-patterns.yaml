@@ -1,0 +1,49 @@
+# Skill Execution Patterns — fill-in template
+#
+# A per-SKILL declaration of which execution patterns (topologies) the skill can
+# and cannot run in. This is a DECLARATION: it does not select patterns and does
+# not execute or block anything. Pattern selection belongs to AletheIA
+# (docs/contracts/execution-pattern-selection.md); enforcement belongs to the
+# harness. See ../docs/execution-patterns-for-skills.md and
+# ../docs/pattern-compatibility-guidelines.md.
+#
+# Pattern enum (owned by AletheIA docs/concepts/execution-pattern-library.md):
+#   manual_prompt | single_agent | classify_and_act | fan_out_and_synthesize |
+#   adversarial_verification | generate_and_filter | tournament_compare |
+#   loop_until_done | scheduled_stateful_loop | human_led_workflow
+#
+# Unlisted patterns are treated as "not evaluated" (effectively incompatible
+# until declared). Loop compatibility requires an objective gate and a bound.
+
+skill_execution_patterns:
+  skill_id:
+  version:
+
+  compatible_patterns:
+    - pattern:
+      conditions:           # concrete — when does this compatibility hold?
+      required_controls:    # >=1 control, e.g. objective_gate_required, max_iterations,
+                            # maker_checker_required, explicit_filter_criteria,
+                            # human_review_before_merge, audit_record_required
+
+  incompatible_patterns:
+    - pattern:
+      rationale:            # required — the negative space reviewers rely on
+
+  required_evidence_by_pattern:
+    pattern:
+      evidence:
+        - evidence_name     # reuse harness_requirements.required_evidence names where they overlap
+
+  escalation_triggers:
+    - objective_gate_missing      # never remove if any loop compatibility is declared
+    - touches_sensitive_area
+    - judgment_required
+    - recurring_failure
+    - comprehension_debt_risk
+
+  audit_requirements:
+    log_skill_id: true
+    log_pattern: true
+    log_controls: true
+    log_evidence_refs: true

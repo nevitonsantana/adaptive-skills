@@ -1,0 +1,67 @@
+# Example — execution pattern compatibility declared by the `testing` skill.
+# Testing has natural objective gates (suites pass or fail), so loop
+# compatibility is broader than for judgment skills — but still bounded.
+# Declaration only. See ../../docs/execution-patterns-for-skills.md.
+
+skill_execution_patterns:
+  skill_id: testing
+  version: 0.1.0
+
+  compatible_patterns:
+    - pattern: single_agent
+      conditions: "Write or extend tests for a bounded, declared scope."
+      required_controls:
+        - evidence_required
+    - pattern: loop_until_done
+      conditions: "Drive coverage or fix flaky tests only while the suite provides the stop condition (target reached or suite green)."
+      required_controls:
+        - objective_gate_required
+        - max_iterations
+        - token_budget_required
+    - pattern: fan_out_and_synthesize
+      conditions: "Generate test cases per module in independent units, then synthesize into one suite review."
+      required_controls:
+        - explicit_synthesis_stage
+        - audit_record_required
+    - pattern: adversarial_verification
+      conditions: "Act as checker for changes produced by another skill (tests confront the change)."
+      required_controls:
+        - maker_checker_required
+
+  incompatible_patterns:
+    - pattern: scheduled_stateful_loop
+      rationale: "Recurring autonomous test rewriting erodes suite intent; recurring runs belong to CI, not to the skill."
+    - pattern: tournament_compare
+      rationale: "Competing test suites add volume without a comparison rubric better than coverage and mutation signals."
+
+  required_evidence_by_pattern:
+    single_agent:
+      evidence:
+        - scope_declaration
+        - suite_run_result
+    loop_until_done:
+      evidence:
+        - stop_condition_definition
+        - iteration_count
+        - final_suite_run
+    fan_out_and_synthesize:
+      evidence:
+        - unit_list
+        - synthesis_review
+    adversarial_verification:
+      evidence:
+        - change_under_test
+        - verification_verdict
+
+  escalation_triggers:
+    - objective_gate_missing
+    - touches_sensitive_area
+    - judgment_required
+    - recurring_failure
+    - comprehension_debt_risk
+
+  audit_requirements:
+    log_skill_id: true
+    log_pattern: true
+    log_controls: true
+    log_evidence_refs: true
