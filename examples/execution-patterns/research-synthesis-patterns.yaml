@@ -1,0 +1,62 @@
+# Example — execution pattern compatibility for a research synthesis capability.
+# ILLUSTRATIVE: no published `research-synthesis` skill exists in /skills yet;
+# this example shows the declaration such a skill would ship, because research
+# synthesis is the canonical fan-out workload (many independent inputs, one
+# synthesis) and the canonical comprehension-debt risk.
+# Declaration only. See ../../docs/execution-patterns-for-skills.md.
+
+skill_execution_patterns:
+  skill_id: research-synthesis   # illustrative — not yet a published skill
+  version: 0.1.0
+
+  compatible_patterns:
+    - pattern: fan_out_and_synthesize
+      conditions: "Many independent inputs (interviews, tickets, papers) processed in batches, then canonicalized into one synthesis."
+      required_controls:
+        - explicit_synthesis_stage
+        - token_budget_required
+        - audit_record_required
+    - pattern: generate_and_filter
+      conditions: "Deduplicate and keep only findings meeting explicit criteria after synthesis."
+      required_controls:
+        - explicit_filter_criteria
+        - audit_record_required
+    - pattern: adversarial_verification
+      conditions: "A checker traces synthesized claims back to raw sources before the synthesis is used."
+      required_controls:
+        - maker_checker_required
+        - source_trace_required
+
+  incompatible_patterns:
+    - pattern: loop_until_done
+      rationale: "There is no objective stop condition for 'the synthesis is good'; quality is judged, not verified."
+    - pattern: scheduled_stateful_loop
+      rationale: "Recurring autonomous synthesis accumulates unread output — comprehension debt without a reader."
+
+  required_evidence_by_pattern:
+    fan_out_and_synthesize:
+      evidence:
+        - input_inventory
+        - batch_records
+        - synthesis_artifact
+    generate_and_filter:
+      evidence:
+        - filter_criteria
+        - survivor_rationale
+    adversarial_verification:
+      evidence:
+        - claim_to_source_trace
+        - checker_verdict
+
+  escalation_triggers:
+    - objective_gate_missing
+    - touches_sensitive_area
+    - judgment_required
+    - recurring_failure
+    - comprehension_debt_risk
+
+  audit_requirements:
+    log_skill_id: true
+    log_pattern: true
+    log_controls: true
+    log_evidence_refs: true

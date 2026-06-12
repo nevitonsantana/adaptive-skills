@@ -1,0 +1,61 @@
+# Example — execution pattern boundaries declared by the `architecture-review`
+# skill. Architecture review is judgment-heavy: it can verify and compare, but
+# it must not loop, and its comparisons end in a human decision.
+# Declaration only. See ../../docs/execution-patterns-for-skills.md.
+
+skill_execution_patterns:
+  skill_id: architecture-review
+  version: 0.1.0
+
+  compatible_patterns:
+    - pattern: adversarial_verification
+      conditions: "Confront a proposed design against constraints, ADRs, and known failure modes; reviewer is not the design author."
+      required_controls:
+        - maker_checker_required
+        - human_review_required
+    - pattern: tournament_compare
+      conditions: "Compare competing architecture options head-to-head when more than one is plausible; comparison beats absolute scoring."
+      required_controls:
+        - human_final_decision
+        - trade_off_record_required
+    - pattern: single_agent
+      conditions: "Bounded review of a single component or decision with declared scope."
+      required_controls:
+        - evidence_required
+
+  incompatible_patterns:
+    - pattern: loop_until_done
+      rationale: "Design quality has no objective stop condition; looping launders judgment through iteration."
+    - pattern: scheduled_stateful_loop
+      rationale: "Recurring automated architecture verdicts would concentrate structural decisions nobody reviews."
+    - pattern: generate_and_filter
+      rationale: "Generating many architectures to filter optimizes for volume; architecture exploration needs few, deeply argued options."
+
+  required_evidence_by_pattern:
+    adversarial_verification:
+      evidence:
+        - constraint_checklist
+        - adr_references
+        - findings_record
+    tournament_compare:
+      evidence:
+        - compared_options
+        - trade_off_record
+        - human_decision_ref
+    single_agent:
+      evidence:
+        - scope_declaration
+        - review_notes
+
+  escalation_triggers:
+    - objective_gate_missing
+    - touches_sensitive_area
+    - judgment_required
+    - recurring_failure
+    - comprehension_debt_risk
+
+  audit_requirements:
+    log_skill_id: true
+    log_pattern: true
+    log_controls: true
+    log_evidence_refs: true

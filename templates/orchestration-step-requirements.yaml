@@ -1,0 +1,43 @@
+# Orchestration Step Requirements — fill-in template
+#
+# What a skill requires to participate as a STAGE in an orchestration contract.
+# The orchestration contract itself (stages, routing, scoring, filter, rerun,
+# budget, safety, audit) is owned by AletheIA (docs/contracts/orchestration-contract.md);
+# this template declares the skill-side participation requirements for one stage.
+# See ../docs/skills-in-orchestrated-workflows.md.
+#
+# Stage field names mirror the orchestration contract's stages block.
+
+orchestration_step_requirements:
+  skill_id:
+  version:
+  pattern:                    # the pattern this stage runs under (library enum)
+
+  stage:
+    input:                    # what the stage consumes — declared, nothing more
+    output:                   # the output contract downstream stages depend on
+    model_or_agent_profile:   # profile expectation, if any (e.g. checker must differ from maker)
+    gate:                     # the gate that verifies output before handoff
+    evidence_required:
+      - evidence_name
+
+  failure_behavior:
+    on_partial_failure:       # produce declared output shape with failure marked
+    on_assumption_break:      # escalate via trigger, do not improvise
+
+  escalation_triggers:
+    - objective_gate_missing
+    - touches_sensitive_area
+    - judgment_required
+    - recurring_failure
+    - comprehension_debt_risk
+
+  handoff:
+    deliver:                  # declared output + evidence refs (not a transcript)
+    owner:                    # who receives escalations from this stage
+
+  audit_requirements:
+    log_skill_id: true
+    log_pattern: true
+    log_controls: true
+    log_evidence_refs: true
