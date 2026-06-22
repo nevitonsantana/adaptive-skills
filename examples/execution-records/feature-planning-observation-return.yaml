@@ -1,0 +1,50 @@
+version: "0.1"
+observation_id: obs-feature-planning-s5-001
+work_slice_id: slice-observation-governance-s5
+
+skill:
+  id: feature-planning
+  mode: generic
+  execution_profile: workflow/extended
+  modules_used:
+    - ambiguity-check
+    - scope-boundary
+    - smallest-viable-slice
+
+result:
+  observation_class: planning
+  outcome: usable
+  compact_summary: The request was reduced to a docs-first observation contract with explicit non-goals and acceptance evidence.
+
+evidence_used:
+  - type: user_input
+    ref: backlog://aletheia-adaptive-skills/S5
+    scope: excerpt
+  - type: source_record
+    ref: examples/execution-records/feature-planning-execution-record.md
+    scope: full
+
+risks:
+  - Automatic adapters could be mistaken for part of this slice if non-goals are not preserved.
+  - A skill outcome could be mistaken for Work Slice success if authority boundaries are omitted.
+
+handoff:
+  signal: review
+  reason: AletheIA must validate the contract and evidence before changing the Work Slice posture.
+
+recovery:
+  lossiness: lossy_with_recovery
+  pointer: examples/execution-records/feature-planning-execution-record.md
+  sensitivity: internal
+
+metrics:
+  raw_output_size:
+    value: null
+    provenance: unavailable
+  compact_output_size:
+    value: null
+    provenance: unavailable
+
+source_refs:
+  - examples/execution-records/feature-planning-execution-record.md
+  - https://github.com/nevitonsantana/AletheIA/blob/main/docs/contracts/observation-governance-contract.md
