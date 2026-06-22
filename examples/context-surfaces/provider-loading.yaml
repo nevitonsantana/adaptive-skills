@@ -1,0 +1,90 @@
+# Consumer-side example for AletheIA's Context Surface Registry contract.
+# This is advisory metadata, not a loader or routing engine.
+
+context_surface_registry:
+  version: "0.1"
+  owner: Adaptive Skills maintainers
+  reviewed_at: 2026-06-22
+  surfaces:
+    - id: adaptive-skills-feature-planning
+      title: Feature planning method
+      type: skill_provider
+      path: skills/feature-planning/SKILL.md
+      owner: Adaptive Skills maintainers
+      provider: adaptive_skills
+      scope: capability
+      load_mode: capability_scoped
+      priority: high
+      activation_conditions:
+        - condition: a task requires bounded feature decomposition, non-goals, risks, acceptance criteria, or incremental slices
+          rationale: feature-planning is the smallest fitting method for the active planning need
+          expected_extraction: core moves, expected output, verification, handoff signals, and only justified modules
+      freshness:
+        last_reviewed: 2026-06-22
+        review_interval_days: 90
+      budget:
+        max_lines: unavailable
+        max_tokens: unavailable
+        origin: unavailable
+      allowed_content:
+        - reusable planning method
+        - verification and handoff signals
+      must_not_contain:
+        - AletheIA gate decisions
+        - project secrets
+        - runtime approval authority
+      evidence_required:
+        - skill id and version
+        - activated modules
+        - output and evidence references
+
+    - id: adaptive-skills-debugging
+      title: Debugging method
+      type: skill_provider
+      path: skills/debugging/SKILL.md
+      owner: Adaptive Skills maintainers
+      provider: adaptive_skills
+      scope: capability
+      load_mode: capability_scoped
+      priority: high
+      activation_conditions:
+        - condition: a reproducible failure requires cause isolation and corrective evidence
+          rationale: debugging should load only for an observed failure, not for generic planning
+          expected_extraction: hypotheses, reproduction, validation gate, stop conditions, and handoff signals
+      freshness:
+        last_reviewed: 2026-06-22
+        review_interval_days: 90
+      budget:
+        max_lines: unavailable
+        max_tokens: unavailable
+        origin: unavailable
+      allowed_content:
+        - reusable debugging method
+        - objective evidence guidance
+      must_not_contain:
+        - inferred permission to modify code
+        - AletheIA pattern selection
+        - automatic skill evolution
+      evidence_required:
+        - reproduction evidence
+        - validation result
+        - escalation or handoff when limits are reached
+
+provider_loading_decision:
+  work_slice_id: mission-control-pattern-context-unavailable
+  capability_needed: feature planning and traceability
+  selected:
+    surface_id: adaptive-skills-feature-planning
+    reason: the Work Slice required dependency, risk, scope, and validation planning
+    load_scope:
+      - core method
+      - dependencies-map module
+      - risk-review module
+      - traceability-and-anti-overengineering module
+      - scope-boundaries module
+    evidence_ref: examples/execution-records/feature-planning-execution-record.md
+  intentionally_not_loaded:
+    - surface_id: adaptive-skills-debugging
+      reason: no reproducible failure or debugging capability need existed in this Work Slice
+  authority_boundary: AletheIA retains pattern, gate, autonomy, and closure decisions
+
