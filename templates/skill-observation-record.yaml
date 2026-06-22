@@ -1,0 +1,41 @@
+version: "0.1"
+observation_id: <stable-observation-id>
+work_slice_id: <work-slice-id>
+
+skill:
+  id: <skill-id>
+  mode: <generic|knowledge_aware|execution_only>
+  execution_profile: <consumer-profile-or-unavailable>
+  modules_used: []
+
+result:
+  observation_class: <planning|decision_support|validation|review|handoff>
+  outcome: <usable|partial|failed|unknown|unavailable>
+  compact_summary: <what-matters-for-the-next-decision>
+
+evidence_used:
+  - type: <artifact|user_input|runtime_output|knowledge_pack|source_record>
+    ref: <authoritative-reference>
+    scope: <metadata|capsule|excerpt|full|unavailable>
+
+risks: []
+
+handoff:
+  signal: <continue|review|escalate|stop|restart_ready|unavailable>
+  reason: <why-this-signal-was-returned>
+
+recovery:
+  lossiness: <lossless|lossy_with_recovery|unavailable>
+  pointer: <governed-pointer-or-null>
+  sensitivity: <public|internal|confidential|restricted>
+
+metrics:
+  raw_output_size:
+    value: null
+    provenance: unavailable
+  compact_output_size:
+    value: null
+    provenance: unavailable
+
+source_refs:
+  - <skill-execution-record>

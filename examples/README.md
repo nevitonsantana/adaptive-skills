@@ -42,6 +42,9 @@ Per-skill `harness_requirements` declarations (declaration only — enforcement 
 ### Context surfaces
 - `context-surfaces/provider-loading.yaml` — load only the selected capability method and record why an unrelated skill stayed out of context
 
+### Observation returns
+- `execution-records/feature-planning-observation-return.yaml` — compact feature-planning result with evidence refs, advisory handoff, and governed recovery
+
 ## Reading guidance
 
 Examples are intentionally short.
