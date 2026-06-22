@@ -38,6 +38,7 @@ Follow this sequence:
 - `specification-facilitation.md` — compose `workflow + feature-planning + premortem` for clarify/spec/plan/tasks/readiness support
 - `aletheia-first-test.md` — first test structure
 - [AletheIA + Adaptive Skills integrated evolution backlog](https://github.com/nevitonsantana/AletheIA/blob/main/docs/roadmaps/evolution-backlog-aletheia-adaptive-skills.md) — canonical cross-repository dependency graph and ten-pack traceability
+- [`../examples/context-surfaces/provider-loading.yaml`](../examples/context-surfaces/provider-loading.yaml) — capability-scoped provider-loading example for AletheIA's Context Surface Registry
 
 ## Capability layer
 

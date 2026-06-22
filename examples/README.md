@@ -39,6 +39,9 @@ Per-skill `harness_requirements` declarations (declaration only — enforcement 
 - `aletheia/crisis-monitor-two-round-pilot.md` — real two-round pilot in Crisis Monitor using AletheIA + Adaptive Skills
 - `aletheia/role-to-skill-consumption.md` — example of AletheIA roles consuming skills without collapsing macro and micro layers
 
+### Context surfaces
+- `context-surfaces/provider-loading.yaml` — load only the selected capability method and record why an unrelated skill stayed out of context
+
 ## Reading guidance
 
 Examples are intentionally short.
