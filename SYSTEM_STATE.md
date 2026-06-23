@@ -35,7 +35,7 @@ Authoritative entrypoints:
 
 ## Active and planned evolution
 
-- **Active:** S15 — compact repository state compatible with AletheIA continuity governance.
+- **Active:** no repository-local implementation slice open; S15 is delivered.
 - **Planned through AletheIA backlog:** intent-to-evidence support, capability routing reconciliation, Design System pilot and agent-role pilot.
 - **Deferred:** automatic routing, self-editing skills, comparative rankings and broad telemetry until repeated evidence exists.
 
@@ -63,7 +63,7 @@ Backlog authority: [AletheIA integrated evolution backlog](https://github.com/ne
 
 ## Next safe steps
 
-1. Complete S15 cross-repository validation and backlog closure.
+1. Support AletheIA S8 with portable intent-clarification methods only when requested.
 2. Keep skill use source-backed through execution/observation return records.
 3. Implement only dependency-valid backlog slices; do not create an automatic routing engine.
 4. Reassess documentation health during the later explainable-language and first-use pilot.
@@ -71,5 +71,5 @@ Backlog authority: [AletheIA integrated evolution backlog](https://github.com/ne
 ## Last reviewed
 
 - **Date:** 2026-06-23
-- **Evidence baseline:** Adaptive Skills `feafc03`; AletheIA backlog through S14
+- **Evidence baseline:** Adaptive Skills `baf4a4a`; AletheIA `ec9e9af`; integrated backlog through S15
 - **Review trigger:** accepted skill-model, capability, evolution, projection, maturity or roadmap change
