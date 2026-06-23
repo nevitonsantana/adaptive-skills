@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+- add a compact `SYSTEM_STATE.md` first-load index, context-surface entry and validator for S15 continuity governance; canonical skills, capabilities, evolution records and evidence remain authoritative
+
 - sync indexes and root `README.md` after the Engineering Skills Hardening Pack: list the four hardening templates in `templates/README.md` and the four engineering examples in `examples/README.md`, add `domain-language-alignment` to the engineering roster in `docs/skill-categories.md`, and correct stale README facts (product/governance no longer skeleton-only, domains 10/10, validated-skills count, catalog pointer)
 - add the **Engineering Skills Hardening Pack** (`debugging`, `testing`, `architecture-review` hardened with operational modules; new transversal skill `domain-language-alignment`): append-only modules preserving protected surfaces and existing verifications — `debugging` gains Feedback loop construction; `testing` gains Behavior-first test design and Vertical test slice; `architecture-review` gains Module depth review. Ships four worksheet templates, four synthetic examples, a pack doc, and a `mattpocock/skills` reference map (external inspiration only, no content copied). Registers `domain-language-alignment` in the projection and evolution registries (`manual-assisted`, pilot `hold`); `feature-planning` left unchanged (deferred candidate)
 - add `templates/README.md` indexing the template inventory and documenting when to use each model; flags that `knowledge-aware-skill-template.md` is a content guide (its illustrative headings fail `validate_skills.py` if copied verbatim) and that the real `SKILL.md` must keep the 11 required sections

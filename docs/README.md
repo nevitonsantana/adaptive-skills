@@ -13,6 +13,7 @@ The recommended path is:
 ## Start here
 
 - `../README.md` — project overview and value proposition
+- [`../SYSTEM_STATE.md`](../SYSTEM_STATE.md) — compact current-state index; source records and canonical files remain authoritative
 - `skill-model.md` — Core + Modules + Triggers model
 - `how-to-use-a-skill.md` — practical guide for choosing and using a skill
 - `domain-taxonomy.md` — generic skills vs. domain packs
