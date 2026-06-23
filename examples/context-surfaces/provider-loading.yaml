@@ -6,6 +6,38 @@ context_surface_registry:
   owner: Adaptive Skills maintainers
   reviewed_at: 2026-06-22
   surfaces:
+    - id: adaptive-skills-system-state
+      title: Adaptive Skills repository state index
+      type: project_doc
+      path: SYSTEM_STATE.md
+      owner: Adaptive Skills maintainers
+      provider: adaptive_skills
+      scope: repository
+      load_mode: on_demand
+      priority: high
+      activation_conditions:
+        - condition: entering, resuming, or planning repository-level Adaptive Skills work
+          rationale: establish current boundaries, open risks, and next safe steps before loading detailed methods
+          expected_extraction: repository posture, authoritative source refs, open risks, and next safe steps
+      freshness:
+        last_reviewed: 2026-06-23
+        review_interval_days: 30
+      budget:
+        max_lines: 120
+        max_tokens: unavailable
+        origin: unavailable
+      allowed_content:
+        - compact repository-state metadata
+        - references to authoritative sources
+      must_not_contain:
+        - full skill methods
+        - prompts
+        - secrets
+        - project-local governance decisions
+      evidence_required:
+        - review date and evidence baseline
+        - local source refs resolve
+
     - id: adaptive-skills-feature-planning
       title: Feature planning method
       type: skill_provider

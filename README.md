@@ -199,6 +199,7 @@ See:
 Run the repository checks:
 
 ```bash
+python3 scripts/validate_system_state.py
 python3 scripts/validate_skills.py
 python3 scripts/validate_evolution.py
 python3 scripts/report_projection_status.py

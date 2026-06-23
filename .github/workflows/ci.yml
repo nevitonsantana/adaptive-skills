@@ -16,6 +16,17 @@ concurrency:
 
 jobs:
 
+  validate-system-state:
+    name: Validate SYSTEM_STATE (authority + budget + refs)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.11'
+      - name: Run validate_system_state.py
+        run: python3 scripts/validate_system_state.py
+
   validate-skills:
     name: Validate Skills (frontmatter + 11 required sections + forbidden refs)
     runs-on: ubuntu-latest
@@ -150,6 +161,7 @@ jobs:
     name: Quality Gate (aggregator)
     runs-on: ubuntu-latest
     needs:
+      - validate-system-state
       - validate-skills
       - validate-skills-ref
       - validate-evolution
