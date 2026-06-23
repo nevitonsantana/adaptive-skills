@@ -37,7 +37,8 @@ Follow this sequence:
 - `agent-role-integration.md` — role-to-skill consumption without collapsing roles and skills
 - `specification-facilitation.md` — compose `workflow + feature-planning + premortem` for clarify/spec/plan/tasks/readiness support
 - `aletheia-first-test.md` — first test structure
-- [AletheIA + Adaptive Skills integrated evolution backlog](https://github.com/nevitonsantana/AletheIA/blob/main/docs/roadmaps/evolution-backlog-aletheia-adaptive-skills.md) — canonical cross-repository dependency graph and ten-pack traceability
+- [AletheIA + Adaptive Skills integrated evolution backlog](https://github.com/nevitonsantana/AletheIA/blob/main/docs/roadmaps/evolution-backlog-aletheia-adaptive-skills.md) — canonical P0–P11 dependency graph, source registry, and requirement traceability
+- [AletheIA + Adaptive Skills ecosystem territory map](https://github.com/nevitonsantana/AletheIA/blob/main/docs/concepts/ecosystem-territory-map.md) — non-normative north-star view; current contracts and records remain authoritative
 - [`../examples/context-surfaces/provider-loading.yaml`](../examples/context-surfaces/provider-loading.yaml) — capability-scoped provider-loading example for AletheIA's Context Surface Registry
 - [`skill-observation-return-pattern.md`](skill-observation-return-pattern.md) — portable, recoverable skill return without Work Slice authority
 - [`../examples/execution-records/feature-planning-observation-return.yaml`](../examples/execution-records/feature-planning-observation-return.yaml) — worked source-backed return
