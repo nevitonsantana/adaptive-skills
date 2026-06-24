@@ -32,11 +32,12 @@ Authoritative entrypoints:
 - Governed Evolution Layer with human-reviewed outcomes.
 - Experimental capability graph and execution-pattern compatibility declarations.
 - Recoverable skill observation return pattern.
+- Consultative `intent-clarification` capability for AletheIA S8, with advise-only harness requirements.
 
 ## Active and planned evolution
 
-- **Active:** S8 Intent-to-Evidence support through the consultative `intent-clarification` skill; S15 is delivered.
-- **Planned through AletheIA backlog:** intent-to-evidence support, capability routing reconciliation, Design System pilot and agent-role pilot.
+- **Active:** no repository-local implementation slice open; S8 and S15 are delivered.
+- **Planned through AletheIA backlog:** capability routing reconciliation, Design System pilot, coding-safety support and agent-role pilot.
 - **Deferred:** automatic routing, self-editing skills, comparative rankings and broad telemetry until repeated evidence exists.
 
 Backlog authority: [AletheIA integrated evolution backlog](https://github.com/nevitonsantana/AletheIA/blob/main/docs/roadmaps/evolution-backlog-aletheia-adaptive-skills.md).
@@ -63,7 +64,7 @@ Backlog authority: [AletheIA integrated evolution backlog](https://github.com/ne
 
 ## Next safe steps
 
-1. Validate and review the S8 `intent-clarification` counterpart with AletheIA; keep it consultative.
+1. Preserve the accepted S8 `intent-clarification` boundary: consultative evidence only, never Work Slice or gate authority.
 2. Keep skill use source-backed through execution/observation return records.
 3. Implement only dependency-valid backlog slices; do not create an automatic routing engine.
 4. Reassess documentation health during the later explainable-language and first-use pilot.
@@ -71,5 +72,5 @@ Backlog authority: [AletheIA integrated evolution backlog](https://github.com/ne
 ## Last reviewed
 
 - **Date:** 2026-06-23
-- **Evidence baseline:** Adaptive Skills `baf4a4a`; AletheIA `ec9e9af`; integrated backlog through S15
+- **Evidence baseline:** Adaptive Skills `59c0f41`; AletheIA `2575e07`; integrated backlog through S8
 - **Review trigger:** accepted skill-model, capability, evolution, projection, maturity or roadmap change
