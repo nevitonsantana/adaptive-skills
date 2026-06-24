@@ -36,7 +36,7 @@ Authoritative entrypoints:
 
 ## Active and planned evolution
 
-- **Active:** no repository-local implementation slice open; S8 and S15 are delivered.
+- **Active:** S17 first-use and explainable-language guidance, coordinated with AletheIA.
 - **Planned through AletheIA backlog:** capability routing reconciliation, Design System pilot, coding-safety support and agent-role pilot.
 - **Deferred:** automatic routing, self-editing skills, comparative rankings and broad telemetry until repeated evidence exists.
 
