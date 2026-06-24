@@ -11,6 +11,7 @@ Reusable starting points for authoring skills, declaring knowledge dependencies,
 | capsuling a framework or knowledge source | [`framework-capsule-template.md`](framework-capsule-template.md) |
 | reporting on a consumer or efficiency pilot | [`pilot/`](pilot/) |
 | running an engineering skill on a real task | [engineering hardening templates](#engineering-hardening-templates) (feedback loop, behavior-first test, module depth, domain language) |
+| clarifying human-owned intent before planning | [`intent-clarification-record.md`](intent-clarification-record.md) |
 | returning a compact skill observation to a compatible harness | [`skill-observation-record.yaml`](skill-observation-record.yaml) |
 
 ## The templates
@@ -56,6 +57,10 @@ Operational worksheets that pair with the engineering skills (see [`../docs/engi
 - [`behavior-first-test-plan.md`](behavior-first-test-plan.md) — pairs with `testing` (Behavior-first test design / Vertical test slice): design a test around public behavior that survives refactoring.
 - [`module-depth-review.md`](module-depth-review.md) — pairs with `architecture-review` (Module depth review): decide whether a module earns its interface or just relocates complexity.
 - [`domain-language-alignment-record.md`](domain-language-alignment-record.md) — pairs with `domain-language-alignment`: record canonical, ambiguous, and conflicting terms before implementation.
+
+## Planning and clarification template
+
+- [`intent-clarification-record.md`](intent-clarification-record.md) — records outcome, boundaries, expectations, assumptions, evidence holes, guessing risk, and human confirmation without granting execution authority.
 
 ## Observation return template
 

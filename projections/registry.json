@@ -693,6 +693,28 @@
         "mode": "manual",
         "target_path": ".claude/skills/restricted-context-check.md"
       }
+    },
+    {
+      "id": "intent-clarification",
+      "source_path": "skills/intent-clarification/SKILL.md",
+      "category": "planning",
+      "status": "active",
+      "portability_tags": [
+        "planning",
+        "generic",
+        "consultative"
+      ],
+      "codex_projection": {
+        "enabled": true,
+        "target_name": "intent-clarification",
+        "generate_openai_yaml": true,
+        "default_prompt": "Use $intent-clarification when the human-owned outcome or definition of success needs clarification before planning or execution."
+      },
+      "claude_projection": {
+        "enabled": true,
+        "mode": "available-not-default",
+        "target_path": null
+      }
     }
   ]
 }
