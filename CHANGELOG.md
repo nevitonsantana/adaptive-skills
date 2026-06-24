@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+- add `intent-clarification` as the consultative Adaptive Skills counterpart for AletheIA S8 Intent-to-Evidence: human-owned outcome and expectations, explicit evidence holes and guessing risk, portable record template, worked example, advise-only harness declaration, and projection/evolution registration; the skill cannot approve, execute, or govern a Work Slice
+
 - add a compact `SYSTEM_STATE.md` first-load index, context-surface entry and validator for S15 continuity governance; canonical skills, capabilities, evolution records and evidence remain authoritative
 
 - sync indexes and root `README.md` after the Engineering Skills Hardening Pack: list the four hardening templates in `templates/README.md` and the four engineering examples in `examples/README.md`, add `domain-language-alignment` to the engineering roster in `docs/skill-categories.md`, and correct stale README facts (product/governance no longer skeleton-only, domains 10/10, validated-skills count, catalog pointer)

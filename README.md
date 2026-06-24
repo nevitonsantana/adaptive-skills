@@ -76,7 +76,8 @@ Generic skills live flat under `/skills` as `skills/<skill-name>/SKILL.md`, conf
 Current examples include:
 
 - `workflow` — keep work bounded, explicit, and reviewable;
-- `feature-planning` — turn vague intent into an executable slice;
+- `feature-planning` — turn confirmed intent into an executable slice;
+- `intent-clarification` — make the human-owned outcome, expectations, and critical ambiguity explicit before planning;
 - `testing` — define useful validation instead of shallow confidence;
 - `debugging` — isolate causes before changing code;
 - `domain-language-alignment` — reconcile vocabulary across product, domain, docs, ADRs, and code before implementation;
@@ -192,7 +193,7 @@ See:
 - **Metrics** — observable, decision-linked signals
 - **Cross-functional** — triad-style checks for multi-function decisions
 - **Efficiency** — chunking, checkpoints, handoff discipline, and bounded execution patterns
-- **Planning** — premortem analysis before consequential plans or commitments
+- **Planning** — intent clarification and premortem analysis before consequential plans or commitments
 
 ## Quick start
 

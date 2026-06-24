@@ -1,0 +1,51 @@
+# Example — consultative harness requirements for intent-clarification.
+# Declaration only. Enforcement belongs to the harness.
+
+harness_requirements:
+  skill_id: intent-clarification
+  version: 0.1.0
+
+  autonomy:
+    floor: advise
+    ceiling: advise
+    rationale: "The human owns intent; the skill may clarify but cannot decide, approve, or execute."
+
+  expected_tools:
+    - name: docs.read
+      purpose: "Read authorized request context and source references."
+      risk_class: low
+
+  restricted_tools:
+    - name: filesystem.write
+      restriction: deny
+      rationale: "Clarification must not mutate project state."
+    - name: issue.create
+      restriction: deny
+      rationale: "The skill does not create work items."
+    - name: code.execute
+      restriction: deny
+      rationale: "The skill does not execute or validate implementation."
+
+  approval_gates:
+    - before_sensitive_context_use
+
+  required_evidence:
+    - desired_outcome
+    - observable_success
+    - observable_failure
+    - evidence_holes
+    - guessing_risk
+    - human_confirmation_status
+
+  escalation_triggers:
+    - high_guessing_risk
+    - conflicting_human_intents
+    - critical_confirmation_missing
+
+  audit_requirements:
+    log_skill_id: true
+    log_task_id: true
+    log_tool_calls: true
+    log_policy_verdict: false
+    log_evidence_refs: true
+    log_human_approval: when_required

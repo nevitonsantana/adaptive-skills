@@ -35,7 +35,7 @@ Authoritative entrypoints:
 
 ## Active and planned evolution
 
-- **Active:** no repository-local implementation slice open; S15 is delivered.
+- **Active:** S8 Intent-to-Evidence support through the consultative `intent-clarification` skill; S15 is delivered.
 - **Planned through AletheIA backlog:** intent-to-evidence support, capability routing reconciliation, Design System pilot and agent-role pilot.
 - **Deferred:** automatic routing, self-editing skills, comparative rankings and broad telemetry until repeated evidence exists.
 
@@ -63,7 +63,7 @@ Backlog authority: [AletheIA integrated evolution backlog](https://github.com/ne
 
 ## Next safe steps
 
-1. Support AletheIA S8 with portable intent-clarification methods only when requested.
+1. Validate and review the S8 `intent-clarification` counterpart with AletheIA; keep it consultative.
 2. Keep skill use source-backed through execution/observation return records.
 3. Implement only dependency-valid backlog slices; do not create an automatic routing engine.
 4. Reassess documentation health during the later explainable-language and first-use pilot.

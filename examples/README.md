@@ -30,6 +30,7 @@ Per-skill `harness_requirements` declarations (declaration only — enforcement 
 
 ### Planning
 - `../skills/premortem/examples/quality-gates-ai-code.md` — use `premortem` before a consequential plan with meaningful cost of failure
+- `planning/intent-clarification-example.md` — use `intent-clarification` to expose unavailable evidence and avoid invented success rates
 
 ### AletheIA
 - `aletheia/first-test-report.md` — capture the first macro/micro test with AletheIA

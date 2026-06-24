@@ -57,7 +57,7 @@ Metrics-domain skills for observable systems, decision-oriented telemetry, and o
 
 Skills for structuring, stress-testing, and de-risking plans before execution begins.
 
-- **Published:** `premortem`
+- **Published:** `premortem`, `intent-clarification`
 - **Backlog:** —
 
 ## product
