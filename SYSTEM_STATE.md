@@ -36,7 +36,7 @@ Authoritative entrypoints:
 
 ## Active and planned evolution
 
-- **Active:** S17 first-use and explainable-language guidance, coordinated with AletheIA.
+- **Active:** no repository-local implementation slice open; S17 is delivered.
 - **Planned through AletheIA backlog:** capability routing reconciliation, Design System pilot, coding-safety support and agent-role pilot.
 - **Deferred:** automatic routing, self-editing skills, comparative rankings and broad telemetry until repeated evidence exists.
 
@@ -53,7 +53,7 @@ Backlog authority: [AletheIA integrated evolution backlog](https://github.com/ne
 - README and docs index: current for the present architecture boundary.
 - CHANGELOG: current through the unreleased hardening baseline; S15 adds a documentation-only state entry.
 - Projection and evolution validation: covered by repository scripts.
-- First-use and language-depth coherence: not assessed by S15; planned for later P11 work.
+- First-use and language-depth coherence: delivered through the accepted S17 cross-repository pilot.
 
 ## Cognitive debt and open risks
 
@@ -64,7 +64,7 @@ Backlog authority: [AletheIA integrated evolution backlog](https://github.com/ne
 
 ## Next safe steps
 
-1. Preserve the accepted S8 `intent-clarification` boundary: consultative evidence only, never Work Slice or gate authority.
+1. Preserve the accepted S8 intent and S17 explanation-depth boundaries; neither grants Work Slice or gate authority.
 2. Keep skill use source-backed through execution/observation return records.
 3. Implement only dependency-valid backlog slices; do not create an automatic routing engine.
 4. Reassess documentation health during the later explainable-language and first-use pilot.
@@ -72,5 +72,5 @@ Backlog authority: [AletheIA integrated evolution backlog](https://github.com/ne
 ## Last reviewed
 
 - **Date:** 2026-06-23
-- **Evidence baseline:** Adaptive Skills `59c0f41`; AletheIA `2575e07`; integrated backlog through S8
+- **Evidence baseline:** Adaptive Skills `e4a5591`; AletheIA `6dba175`; integrated backlog through S17
 - **Review trigger:** accepted skill-model, capability, evolution, projection, maturity or roadmap change
