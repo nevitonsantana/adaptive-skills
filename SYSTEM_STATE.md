@@ -36,7 +36,7 @@ Authoritative entrypoints:
 
 ## Active and planned evolution
 
-- **Active:** no repository-local implementation slice open; S17 is delivered.
+- **Active:** S10-A capability routing boundary alignment, coordinated with AletheIA.
 - **Planned through AletheIA backlog:** capability routing reconciliation, Design System pilot, coding-safety support and agent-role pilot.
 - **Deferred:** automatic routing, self-editing skills, comparative rankings and broad telemetry until repeated evidence exists.
 
@@ -66,7 +66,7 @@ Backlog authority: [AletheIA integrated evolution backlog](https://github.com/ne
 
 1. Preserve the accepted S8 intent and S17 explanation-depth boundaries; neither grants Work Slice or gate authority.
 2. Keep skill use source-backed through execution/observation return records.
-3. Implement only dependency-valid backlog slices; do not create an automatic routing engine.
+3. Implement only dependency-valid backlog slices; do not create an automatic routing engine or global provider selector.
 4. Reassess documentation health during the later explainable-language and first-use pilot.
 
 ## Last reviewed
