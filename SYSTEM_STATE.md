@@ -36,8 +36,8 @@ Authoritative entrypoints:
 
 ## Active and planned evolution
 
-- **Active:** S10-A capability routing boundary alignment, coordinated with AletheIA.
-- **Planned through AletheIA backlog:** capability routing reconciliation, Design System pilot, coding-safety support and agent-role pilot.
+- **Active:** S20 Lean Skill Doctrine and Skill Catalog Governance, coordinated with AletheIA.
+- **Planned through AletheIA backlog:** S20 catalog doctrine, S21 validation hardening, Design System pilot, coding-safety support and agent-role pilot.
 - **Deferred:** automatic routing, self-editing skills, comparative rankings and broad telemetry until repeated evidence exists.
 
 Backlog authority: [AletheIA integrated evolution backlog](https://github.com/nevitonsantana/AletheIA/blob/main/docs/roadmaps/evolution-backlog-aletheia-adaptive-skills.md).
@@ -57,20 +57,20 @@ Backlog authority: [AletheIA integrated evolution backlog](https://github.com/ne
 
 ## Cognitive debt and open risks
 
-- **Current level:** medium — capability, evolution and projection concepts require guided explanation for new users.
+- **Current level:** medium — capability, evolution, projection and catalog governance concepts require guided explanation for new users.
 - SYSTEM_STATE can become stale; source files and accepted evidence always win.
 - No usage percentage, success rate or skill ranking is admissible without comparable reviewed records.
 - Provider naming retains historical `adaptative-skills` paths in some local integrations; GitHub redirects preserve compatibility.
 
 ## Next safe steps
 
-1. Preserve the accepted S8 intent and S17 explanation-depth boundaries; neither grants Work Slice or gate authority.
-2. Keep skill use source-backed through execution/observation return records.
-3. Implement only dependency-valid backlog slices; do not create an automatic routing engine or global provider selector.
-4. Reassess documentation health during the later explainable-language and first-use pilot.
+1. Finish S20 by validating the lean doctrine, quality gate and catalog governance boundary.
+2. Do not create `lean-implementation` until the quality gate is accepted.
+3. Keep skill use source-backed through execution/observation return records.
+4. Do not create an automatic routing engine, global provider selector or skill self-edit loop.
 
 ## Last reviewed
 
-- **Date:** 2026-06-23
-- **Evidence baseline:** Adaptive Skills `e4a5591`; AletheIA `6dba175`; integrated backlog through S17
+- **Date:** 2026-06-29
+- **Evidence baseline:** Adaptive Skills `156dc9c` after S10-A; AletheIA `bb342fc` after S19; S20 in local review
 - **Review trigger:** accepted skill-model, capability, evolution, projection, maturity or roadmap change

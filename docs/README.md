@@ -15,6 +15,8 @@ The recommended path is:
 - `../README.md` — project overview and value proposition
 - [`../SYSTEM_STATE.md`](../SYSTEM_STATE.md) — compact current-state index; source records and canonical files remain authoritative
 - `skill-model.md` — Core + Modules + Triggers model
+- `skill-design-principles/lean-skill-doctrine.md` — S20 doctrine for necessary, distinct, proportional, verifiable and governable skills
+- `skill-catalog-governance.md` — catalog lifecycle, intake, merge/split/deprecation and quality-gate flow
 - `how-to-use-a-skill.md` — practical guide for choosing and using a skill
 - `domain-taxonomy.md` — generic skills vs. domain packs
 - `capability-model.md` — skills, capabilities, workflows, runtime, harness, and governance boundaries
@@ -61,6 +63,7 @@ The Capability Graph is an experimental metadata overlay. It makes routing, comp
 
 ## Evolve the library
 
+- `skill-catalog-governance.md` — quality gate and catalog lifecycle before canon changes
 - `evolution-layer.md` — governed evolution model
 - `../evolution/README.md` — observations, proposals, and reviews
 - `telemetry.md` — signal model for usage and improvement
