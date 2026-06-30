@@ -4,6 +4,8 @@ Adaptive Skills tags every published skill with a `metadata.category` value in t
 
 This document is the canonical narrative for each category and tracks its backlog. The machine-readable mapping is in [`projections/registry.json`](../projections/registry.json) under each skill's `category` field.
 
+Category growth is governed by [Skill Catalog Governance](skill-catalog-governance.md): backlog entries are candidates, not authorization to create skills. New categories or category moves should pass the [Skill Quality Gate](../templates/skill-quality-gate.md) when they change skill boundaries.
+
 ## business
 
 Business-domain skills for strategic framing, value logic, and operating-model thinking.

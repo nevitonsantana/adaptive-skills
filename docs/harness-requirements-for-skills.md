@@ -23,6 +23,8 @@ This sits alongside:
 Together they keep a skill free of embedded environment, embedded content, **and** embedded
 enforcement.
 
+Catalog-level creation and expansion decisions are governed separately by [Skill Catalog Governance](skill-catalog-governance.md) and the [Lean Skill Doctrine](skill-design-principles/lean-skill-doctrine.md). A harness declaration can describe required operating conditions, but it cannot justify a new skill by itself.
+
 ---
 
 ## Three layers, never merged
