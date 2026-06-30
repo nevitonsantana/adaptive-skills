@@ -80,6 +80,7 @@ Current examples include:
 - `intent-clarification` — make the human-owned outcome, expectations, and critical ambiguity explicit before planning;
 - `testing` — define useful validation instead of shallow confidence;
 - `debugging` — isolate causes before changing code;
+- `lean-implementation` — make the smallest safe change after scope and validation are clear;
 - `domain-language-alignment` — reconcile vocabulary across product, domain, docs, ADRs, and code before implementation;
 - `ux-writing` — improve product language and semantic clarity;
 - `triad-check` — coordinate product, design, and technical reasoning;
