@@ -33,11 +33,12 @@ Authoritative entrypoints:
 - Experimental capability graph and execution-pattern compatibility declarations.
 - Recoverable skill observation return pattern.
 - Consultative `intent-clarification` capability for AletheIA S8, with advise-only harness requirements.
+- Lean Implementation Skill — in local S22 review as a bounded engineering skill.
 
 ## Active and planned evolution
 
-- **Active:** S20 Lean Skill Doctrine and Skill Catalog Governance, coordinated with AletheIA.
-- **Planned through AletheIA backlog:** S20 catalog doctrine, S21 validation hardening, Design System pilot, coding-safety support and agent-role pilot.
+- **Active:** S22 Lean Implementation Skill, coordinated with AletheIA backlog.
+- **Planned through AletheIA backlog:** Design System pilot, coding-safety support and agent-role pilot.
 - **Deferred:** automatic routing, self-editing skills, comparative rankings and broad telemetry until repeated evidence exists.
 
 Backlog authority: [AletheIA integrated evolution backlog](https://github.com/nevitonsantana/AletheIA/blob/main/docs/roadmaps/evolution-backlog-aletheia-adaptive-skills.md).
@@ -64,13 +65,13 @@ Backlog authority: [AletheIA integrated evolution backlog](https://github.com/ne
 
 ## Next safe steps
 
-1. Finish S20 by validating the lean doctrine, quality gate and catalog governance boundary.
-2. Do not create `lean-implementation` until the quality gate is accepted.
+1. Finish S22 by validating `lean-implementation` against the Skill Quality Gate.
+2. Keep `lean-implementation` bounded: it does not replace debugging, testing, refactoring, architecture review or governance.
 3. Keep skill use source-backed through execution/observation return records.
 4. Do not create an automatic routing engine, global provider selector or skill self-edit loop.
 
 ## Last reviewed
 
 - **Date:** 2026-06-29
-- **Evidence baseline:** Adaptive Skills `156dc9c` after S10-A; AletheIA `bb342fc` after S19; S20 in local review
-- **Review trigger:** accepted skill-model, capability, evolution, projection, maturity or roadmap change
+- **Evidence baseline:** Adaptive Skills `4f37e29` after S20 merge; AletheIA `5431887` after S23 closure; S22 in local review
+- **Review trigger:** S22 Lean Implementation Skill started

@@ -261,6 +261,43 @@
       ]
     },
     {
+      "skill_id": "lean-implementation",
+      "scope": "generic",
+      "domain": "engineering",
+      "automation_level": "governed-autoevolution",
+      "pilot_priority": "later",
+      "protected_surfaces": [
+        "name",
+        "description",
+        "When to Use",
+        "When NOT to Use",
+        "Core Moves",
+        "skill-domain",
+        "skill-category",
+        "skill-merge-split",
+        "skill-thesis"
+      ],
+      "proposal_targets": [
+        "Activation Triggers",
+        "Optional Modules",
+        "Verification",
+        "Anti-patterns",
+        "templates/",
+        "checklists/",
+        "examples/",
+        "references/",
+        "changelog.md"
+      ],
+      "result_modes": [
+        "reinforced",
+        "no-change",
+        "proposal-created",
+        "new-module-candidate",
+        "new-skill-candidate",
+        "rejected"
+      ]
+    },
+    {
       "skill_id": "architecture-review",
       "scope": "generic",
       "domain": "engineering",

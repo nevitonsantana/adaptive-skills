@@ -19,6 +19,7 @@ Start from the task, not from the list. Identify the dominant need of the work, 
 | [`debugging`](#debugging) | Runtime bug; failing test; inconsistent behavior | Reproduce, isolate, fix, and guard against recurrence |
 | [`api-design`](#api-design) | Designing or reviewing a contract between components | Shape a clear, stable API contract before implementation |
 | [`refactoring`](#refactoring) | Improving structure without changing behavior | Restructure code with explicit scope and a safety net |
+| [`lean-implementation`](#lean-implementation) | Confirmed plan; small safe change; implementation sprawl risk | Implement the smallest safe change with validation and handoff evidence |
 | [`architecture-review`](#architecture-review) | Evaluating a design decision with long-term consequences | Surface tradeoffs, risks, and alternatives before committing |
 | [`code-style`](#code-style) | Code review; style inconsistency; style guide creation | Enforce consistent style with explicit criteria, not instinct |
 | [`communication`](#communication) | Writing an update, decision, or explanation for a mixed audience | Shape technical communication for the right audience and purpose |
@@ -176,6 +177,21 @@ Start from the task, not from the list. Identify the dominant need of the work, 
 2. State the specific structural goal.
 3. Make one type of change at a time (rename, extract, move, simplify).
 4. Verify behavior is preserved after each step.
+
+---
+
+### lean-implementation
+
+**When to use:** A bounded plan or Work Slice is ready for implementation and the main risk is scope expansion.
+
+**When NOT to use:** Intent is unclear, the task is debugging, test strategy, refactoring-only, or unresolved architecture/security/accessibility/data-governance decisions remain.
+
+**Core moves:**
+1. Restate the smallest acceptable change and boundary.
+2. Inspect the existing pattern before editing.
+3. Make one coherent change without opportunistic refactors.
+4. Run the minimum reliable validation and record gaps.
+5. Handoff what changed, why, evidence, and the next safe step.
 
 ---
 
