@@ -53,6 +53,7 @@ The Capability Graph is an experimental metadata overlay. It makes routing, comp
 
 - `capability-model.md` — terms and boundaries for skills, capabilities, workflows, runtime, harness, and governance
 - `capability-routing-boundary.md` — what Adaptive Skills may declare versus what remains with AletheIA/harness governance
+- `design-system-intelligence-pulso-pilot.md` — S24 Pulso pilot boundary for source-backed design-system review without scanners or promotion authority
 - `capability-graph.md` — graph structure and advisory routing model
 - `operational-runtime.md` — runtime contract, checkpointing, resumability, and approval boundaries
 - `execution-modes.md` — basic, extended, high-risk, multi-agent, and debugging depth profiles

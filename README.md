@@ -186,7 +186,7 @@ See:
 ## Current domains
 
 - **Engineering** — implementation, contracts, testing, debugging, structural review, domain-language alignment
-- **Design** — UX strategy, critique, provocation, UX writing
+- **Design** — UX strategy, critique, provocation, UX writing, and design-system intelligence
 - **Business** — strategic framing and synthesis
 - **Product** — feature value governance and opportunity-tree alignment
 - **Governance** — complexity audits, sunset decisions, and knowledge-boundary checks
