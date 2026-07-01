@@ -33,11 +33,11 @@ Authoritative entrypoints:
 - Experimental capability graph and execution-pattern compatibility declarations.
 - Recoverable skill observation return pattern.
 - Consultative `intent-clarification` capability for AletheIA S8, with advise-only harness requirements.
-- Lean Implementation Skill — in local S22 review as a bounded engineering skill.
+- Lean Implementation Skill — delivered through Adaptive Skills PR #79 as a bounded engineering skill.
 
 ## Active and planned evolution
 
-- **Active:** S22 Lean Implementation Skill, coordinated with AletheIA backlog.
+- **Active:** none.
 - **Planned through AletheIA backlog:** Design System pilot, coding-safety support and agent-role pilot.
 - **Deferred:** automatic routing, self-editing skills, comparative rankings and broad telemetry until repeated evidence exists.
 
@@ -65,13 +65,13 @@ Backlog authority: [AletheIA integrated evolution backlog](https://github.com/ne
 
 ## Next safe steps
 
-1. Finish S22 by validating `lean-implementation` against the Skill Quality Gate.
-2. Keep `lean-implementation` bounded: it does not replace debugging, testing, refactoring, architecture review or governance.
-3. Keep skill use source-backed through execution/observation return records.
+1. Keep `lean-implementation` bounded: it does not replace debugging, testing, refactoring, architecture review or governance.
+2. Keep skill use source-backed through execution/observation return records.
+3. Coordinate the next ordered slice from the AletheIA backlog before adding new skills.
 4. Do not create an automatic routing engine, global provider selector or skill self-edit loop.
 
 ## Last reviewed
 
-- **Date:** 2026-06-29
-- **Evidence baseline:** Adaptive Skills `4f37e29` after S20 merge; AletheIA `5431887` after S23 closure; S22 in local review
-- **Review trigger:** S22 Lean Implementation Skill started
+- **Date:** 2026-07-01
+- **Evidence baseline:** Adaptive Skills `95408c4` after S22 skill merge; AletheIA `9bc12f9` after S22 compatibility merge
+- **Review trigger:** S22 Lean Implementation Skill merged and local state synchronized
