@@ -65,3 +65,16 @@ routes:
       ownership_boundary_crossed: true
     mode: workflow/extended
     escalation_hint: use_handoff_summary_or_aletheia
+
+  - id: route.design-system-intelligence.pulso-review
+    activates:
+      - design-system-intelligence
+    when:
+      task_shape: design_system_review
+      design_system_ref: available
+      artifact_claims_alignment: true
+    mode: workflow/extended
+    modules:
+      - pulso-pilot-mode
+      - pattern-candidate-review
+    escalation_hint: aletheia_design_system_intelligence_review

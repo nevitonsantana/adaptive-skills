@@ -33,6 +33,7 @@ Start from the task, not from the list. Identify the dominant need of the work, 
 | [`ux-provocation`](#ux-provocation) | Design review; design that feels safe or predictable | Challenge design assumptions to surface stronger alternatives |
 | [`heuristic-audit`](#heuristic-audit) | Evaluating an existing UI for usability gaps | Review an interface against established usability heuristics |
 | [`ux-writing`](#ux-writing) | UI copy; error messages; labels; onboarding content | Improve product language for clarity, tone, and intent |
+| [`design-system-intelligence`](#design-system-intelligence) | Reviewing an artifact against a declared design system source | Classify conformance, exceptions, and pattern candidates without promotion authority |
 
 ### Planning
 
@@ -275,6 +276,20 @@ Start from the task, not from the list. Identify the dominant need of the work, 
 2. Flag violations with the heuristic, the location, and the severity.
 3. Distinguish critical issues (breaks the task) from minor ones (creates friction).
 4. Prioritize by user impact.
+
+---
+
+### design-system-intelligence
+
+**When to use:** Reviewing an artifact against a declared design system source bundle. Checking whether a UI, prototype, or implementation follows source-backed tokens, components, layout rules, or documented exceptions.
+
+**When NOT to use:** Final design approval, automatic scanning, package adoption, or pattern promotion without owner review.
+
+**Core moves:**
+1. Identify artifact refs, design-system refs, scope, and non-goals.
+2. Compare only source-backed primitives and examples.
+3. Classify conformance, intentional exceptions, candidate issues, and candidate patterns.
+4. Apply the Pattern Generalization Gate before recommending reusable pattern review.
 
 ---
 

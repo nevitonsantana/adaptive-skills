@@ -74,6 +74,34 @@ capabilities:
       - cross_system_failure
       - human_approval_required
 
+
+  - id: design-system-intelligence
+    kind: micro-capability
+    source_skill: skills/design-system-intelligence/SKILL.md
+    category: design
+    stable: false
+    default_mode: workflow/extended
+    allowed_modes:
+      - workflow/extended
+      - workflow/high-risk
+    intent: "Review an artifact against a declared design system source bundle without promotion authority."
+    modules:
+      - pulso-pilot-mode
+      - accessibility-evidence-check
+      - pattern-candidate-review
+      - observation-return
+    evidence:
+      - design_system_ref
+      - artifact_refs
+      - conformance_observations
+      - candidate_findings
+      - pattern_generalization_gate
+      - owner_review_need
+    escalate_to_aletheia_if:
+      - design_system_owner_decision_required
+      - pattern_promotion_requested
+      - restricted_source_boundary
+
   - id: checkpoint-review
     kind: micro-capability
     source_skill: skills/checkpoint-review/SKILL.md

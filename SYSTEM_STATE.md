@@ -34,11 +34,12 @@ Authoritative entrypoints:
 - Recoverable skill observation return pattern.
 - Consultative `intent-clarification` capability for AletheIA S8, with advise-only harness requirements.
 - Lean Implementation Skill — delivered through Adaptive Skills PR #79 as a bounded engineering skill.
+- Design System Intelligence Skill — in local S24 review as a bounded Pulso pilot method.
 
 ## Active and planned evolution
 
-- **Active:** none.
-- **Planned through AletheIA backlog:** Design System pilot, coding-safety support and agent-role pilot.
+- **Active:** S24 Design System Intelligence / Pulso pilot, coordinated with AletheIA backlog.
+- **Planned through AletheIA backlog:** coding-safety support and agent-role pilot after the current Design System pilot.
 - **Deferred:** automatic routing, self-editing skills, comparative rankings and broad telemetry until repeated evidence exists.
 
 Backlog authority: [AletheIA integrated evolution backlog](https://github.com/nevitonsantana/AletheIA/blob/main/docs/roadmaps/evolution-backlog-aletheia-adaptive-skills.md).
@@ -67,11 +68,11 @@ Backlog authority: [AletheIA integrated evolution backlog](https://github.com/ne
 
 1. Keep `lean-implementation` bounded: it does not replace debugging, testing, refactoring, architecture review or governance.
 2. Keep skill use source-backed through execution/observation return records.
-3. Coordinate the next ordered slice from the AletheIA backlog before adding new skills.
+3. Finish S24 by validating `design-system-intelligence` against the Skill Quality Gate and AletheIA pilot contract.
 4. Do not create an automatic routing engine, global provider selector or skill self-edit loop.
 
 ## Last reviewed
 
 - **Date:** 2026-07-01
-- **Evidence baseline:** Adaptive Skills `95408c4` after S22 skill merge; AletheIA `9bc12f9` after S22 compatibility merge
-- **Review trigger:** S22 Lean Implementation Skill merged and local state synchronized
+- **Evidence baseline:** Adaptive Skills `833a389` after S22 closure; AletheIA `2fffe2b` after S22 closure; S24 in local review
+- **Review trigger:** S24 Design System Intelligence / Pulso pilot started
