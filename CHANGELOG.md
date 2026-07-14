@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+- clarify that GitHub Project documentation is maintainer-facing operational support, not required setup for Adaptive Skills consumers
+
 - repair stale documentation links in the ecosystem map and knowledge-source-evaluation workflow so local Markdown references resolve correctly
 
 - add `intent-clarification` as the consultative Adaptive Skills counterpart for AletheIA S8 Intent-to-Evidence: human-owned outcome and expectations, explicit evidence holes and guessing risk, portable record template, worked example, advise-only harness declaration, and projection/evolution registration; the skill cannot approve, execute, or govern a Work Slice
