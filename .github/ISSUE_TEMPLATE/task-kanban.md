@@ -41,7 +41,7 @@ assignees: ''
 
 ### ⚠️ Antes de Começar
 
-Lembre-se de seguir o protocolo do [GitHub Project Operations](./.github/GITHUB_PROJECT_OPERATIONS.md):
+Lembre-se de seguir o protocolo do [GitHub Project Operations](../GITHUB_PROJECT_OPERATIONS.md):
 
 1. Verificar se há issue similar já existente
 2. Garantir vínculo com o Project #3

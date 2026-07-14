@@ -9,7 +9,7 @@
 
 ## 🎯 Objetivo
 
-Usar o [GitHub Project](https://github.com/users/nevitonsantana/projects/3) como sistema oficial de:
+Usar o [GitHub Project](https://github.com/users/nevitonsantana/projects/3) como apoio operacional dos mantenedores para:
 
 - roadmap
 - backlog
@@ -22,9 +22,9 @@ Usar o [GitHub Project](https://github.com/users/nevitonsantana/projects/3) como
 **Regra central:**
 
 > Nada relevante deve existir só no chat. Se algo virou tarefa real, iniciativa, discovery, handoff ou mudança de estado, ele precisa deixar rastro em:
-> - GitHub Project
 > - Issue correspondente
 > - docs do repositório, quando aplicável
+> - GitHub Project, quando os mantenedores estiverem usando o Project para coordenação
 
 ---
 

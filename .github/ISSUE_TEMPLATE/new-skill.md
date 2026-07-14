@@ -73,7 +73,7 @@ Antes de marcar como ready:
 
 ### ⚠️ Protocolo de Evolução
 
-Esta skill seguirá o [Evolution Layer v1.1](./evolution/EVOLUTION_LAYER_V1.1.md):
+Esta skill seguirá o [Evolution Layer v1.1](../../evolution/README.md):
 
 - Superfícies protegidas: nome, core moves
 - Proposta-seguras: triggers, módulos opcionais
