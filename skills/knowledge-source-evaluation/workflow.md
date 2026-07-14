@@ -57,7 +57,7 @@ List the task families and decisions this source should inform. Narrow scope is 
 
 Default to `capsule_first` for any large or sensitive source. Use `excerpt_only` for policies. Use `full_source_allowed` only for `public` sources.
 
-If `capsule_first` is chosen and no capsule exists, the candidate is not yet eligible for `register_governed`. Use the [framework-capsule-template](../../../templates/framework-capsule-template.md) to author one.
+If `capsule_first` is chosen and no capsule exists, the candidate is not yet eligible for `register_governed`. Use the [framework-capsule-template](../../templates/framework-capsule-template.md) to author one.
 
 ---
 
