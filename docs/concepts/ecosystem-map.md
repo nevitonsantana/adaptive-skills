@@ -54,7 +54,7 @@ The ecosystem is organized by **what question each layer answers**, not by vendo
 
 ## Source ADRs
 
-- AletheIA: [ADR-004 — Operating overlay](../adr/ADR-004-aletheia-as-operating-overlay.md), [ADR-005 — Positioning in agentic ecosystem](../adr/ADR-005-positioning-in-agentic-ecosystem.md), [ADR-006 — Domain agnosticism](../adr/ADR-006-domain-agnosticism.md).
+- AletheIA: [ADR-004 — Operating overlay](https://github.com/nevitonsantana/AletheIA/blob/main/docs/adr/ADR-004-aletheia-as-operating-overlay.md), [ADR-005 — Positioning in agentic ecosystem](https://github.com/nevitonsantana/AletheIA/blob/main/docs/adr/ADR-005-positioning-in-agentic-ecosystem.md), [ADR-006 — Domain agnosticism](https://github.com/nevitonsantana/AletheIA/blob/main/docs/adr/ADR-006-domain-agnosticism.md).
 - Adaptive Skills: [ADR-001 — Adaptive Skills as capability library](https://github.com/nevitonsantana/adaptive-skills/blob/main/docs/adr/ADR-001-adaptive-skills-as-capability-library.md), [ADR-002 — Domain agnosticism](https://github.com/nevitonsantana/adaptive-skills/blob/main/docs/adr/ADR-002-domain-agnosticism.md), [ADR-003 — Relationship with AletheIA](https://github.com/nevitonsantana/adaptive-skills/blob/main/docs/adr/ADR-003-relationship-with-aletheia.md).
 
 ## Revision
