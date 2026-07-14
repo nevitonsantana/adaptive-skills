@@ -24,7 +24,7 @@ Este diretório documenta a operação opcional do GitHub Project usado pelos ma
 
 ```
 .github/
-├── README.md                      # Este arquivo
+├── PROJECT_OPERATIONS.md          # Este arquivo
 ├── GITHUB_PROJECT_OPERATIONS.md   # Regras completas de operação (baseado no Crisis Monitor)
 ├── SETUP_PROJECT.md               # Guia de setup passo-a-passo (30-45 min)
 ├── labels-reference.md            # Referência completa de labels
