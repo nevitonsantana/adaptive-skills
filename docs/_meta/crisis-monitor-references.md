@@ -59,7 +59,7 @@ Each match was classified as:
 | `examples/aletheia/crisis-monitor-two-round-pilot.md` | examples | Examples layer. |
 | `examples/efficiency/crisis-monitor-efficiency-reference.md` | examples | Examples layer. |
 | `examples/README.md`, `examples/efficiency/README.md` | examples | Examples layer indexes. |
-| `.github/README.md`, `.github/GITHUB_PROJECT_OPERATIONS.md` | project mgmt | GitHub Project tooling docs; not adopter-facing. |
+| `.github/PROJECT_OPERATIONS.md`, `.github/GITHUB_PROJECT_OPERATIONS.md` | project mgmt | GitHub Project tooling docs; not adopter-facing. |
 | `PROJECT_KANBAN.md`, `ROADMAP_EVOLUTIVO.md`, `CHANGELOG.md` | meta | Already reconciled in Onda 0 (2026-05-21, commit `fb586e7`). |
 
 ## Validation against acceptance criteria

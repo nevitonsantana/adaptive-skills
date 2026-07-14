@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+- rename the maintainer-facing `.github/README.md` to `.github/PROJECT_OPERATIONS.md` so GitHub renders the root Adaptive Skills README on the repository homepage
+
 - clarify that GitHub Project documentation is maintainer-facing operational support, not required setup for Adaptive Skills consumers
 
 - repair stale documentation links in the ecosystem map and knowledge-source-evaluation workflow so local Markdown references resolve correctly
