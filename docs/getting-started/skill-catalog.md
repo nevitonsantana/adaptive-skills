@@ -19,6 +19,7 @@ Start from the task, not from the list. Identify the dominant need of the work, 
 | [`debugging`](#debugging) | Runtime bug; failing test; inconsistent behavior | Reproduce, isolate, fix, and guard against recurrence |
 | [`api-design`](#api-design) | Designing or reviewing a contract between components | Shape a clear, stable API contract before implementation |
 | [`refactoring`](#refactoring) | Improving structure without changing behavior | Restructure code with explicit scope and a safety net |
+| [`lean-implementation`](#lean-implementation) | Confirmed plan; small safe change; implementation sprawl risk | Implement the smallest safe change with validation and handoff evidence |
 | [`architecture-review`](#architecture-review) | Evaluating a design decision with long-term consequences | Surface tradeoffs, risks, and alternatives before committing |
 | [`code-style`](#code-style) | Code review; style inconsistency; style guide creation | Enforce consistent style with explicit criteria, not instinct |
 | [`communication`](#communication) | Writing an update, decision, or explanation for a mixed audience | Shape technical communication for the right audience and purpose |
@@ -32,6 +33,7 @@ Start from the task, not from the list. Identify the dominant need of the work, 
 | [`ux-provocation`](#ux-provocation) | Design review; design that feels safe or predictable | Challenge design assumptions to surface stronger alternatives |
 | [`heuristic-audit`](#heuristic-audit) | Evaluating an existing UI for usability gaps | Review an interface against established usability heuristics |
 | [`ux-writing`](#ux-writing) | UI copy; error messages; labels; onboarding content | Improve product language for clarity, tone, and intent |
+| [`design-system-intelligence`](#design-system-intelligence) | Reviewing an artifact against a declared design system source | Classify conformance, exceptions, and pattern candidates without promotion authority |
 
 ### Planning
 
@@ -179,6 +181,21 @@ Start from the task, not from the list. Identify the dominant need of the work, 
 
 ---
 
+### lean-implementation
+
+**When to use:** A bounded plan or Work Slice is ready for implementation and the main risk is scope expansion.
+
+**When NOT to use:** Intent is unclear, the task is debugging, test strategy, refactoring-only, or unresolved architecture/security/accessibility/data-governance decisions remain.
+
+**Core moves:**
+1. Restate the smallest acceptable change and boundary.
+2. Inspect the existing pattern before editing.
+3. Make one coherent change without opportunistic refactors.
+4. Run the minimum reliable validation and record gaps.
+5. Handoff what changed, why, evidence, and the next safe step.
+
+---
+
 ### architecture-review
 
 **When to use:** Evaluating a design decision with long-term consequences. Choosing between structural approaches. Reviewing a proposal before committing to implementation.
@@ -259,6 +276,20 @@ Start from the task, not from the list. Identify the dominant need of the work, 
 2. Flag violations with the heuristic, the location, and the severity.
 3. Distinguish critical issues (breaks the task) from minor ones (creates friction).
 4. Prioritize by user impact.
+
+---
+
+### design-system-intelligence
+
+**When to use:** Reviewing an artifact against a declared design system source bundle. Checking whether a UI, prototype, or implementation follows source-backed tokens, components, layout rules, or documented exceptions.
+
+**When NOT to use:** Final design approval, automatic scanning, package adoption, or pattern promotion without owner review.
+
+**Core moves:**
+1. Identify artifact refs, design-system refs, scope, and non-goals.
+2. Compare only source-backed primitives and examples.
+3. Classify conformance, intentional exceptions, candidate issues, and candidate patterns.
+4. Apply the Pattern Generalization Gate before recommending reusable pattern review.
 
 ---
 

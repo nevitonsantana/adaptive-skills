@@ -1,4 +1,4 @@
-# 📋 GitHub Project Setup - Adaptive Skills
+# 📋 GitHub Project Operations - Adaptive Skills
 
 > **Project Kanban:** https://github.com/users/nevitonsantana/projects/3/views/1  
 > **Baseado em:** Crisis Monitor Project Operations  
@@ -9,14 +9,14 @@
 
 ## 🎯 Objetivo
 
-Este diretório contém toda a configuração necessária para operar o GitHub Project do Adaptive Skills como sistema oficial de:
+Este diretório documenta a operação opcional do GitHub Project usado pelos mantenedores do Adaptive Skills para:
 
 - Roadmap e backlog
 - Discovery e priorização
 - Execução e bloqueios
 - Ownership e handoffs
 
-**Regra central:** Nada relevante deve existir só no chat. Tudo deve deixar rastro no Project + Issues + docs.
+**Regra central:** trabalho real deve deixar rastro em Issues e docs quando aplicável. O GitHub Project é apoio operacional dos mantenedores, não requisito para instalar ou consumir o Adaptive Skills.
 
 ---
 
@@ -24,7 +24,7 @@ Este diretório contém toda a configuração necessária para operar o GitHub P
 
 ```
 .github/
-├── README.md                      # Este arquivo
+├── PROJECT_OPERATIONS.md          # Este arquivo
 ├── GITHUB_PROJECT_OPERATIONS.md   # Regras completas de operação (baseado no Crisis Monitor)
 ├── SETUP_PROJECT.md               # Guia de setup passo-a-passo (30-45 min)
 ├── labels-reference.md            # Referência completa de labels
@@ -42,10 +42,10 @@ Este diretório contém toda a configuração necessária para operar o GitHub P
 
 ## 🚀 Quick Start
 
-### Para Novos Contributors
+### Para maintainers que usam o Project
 
-1. **Leia as regras:** [GITHUB_PROJECT_OPERATIONS.md](./GITHUB_PROJECT_OPERATIONS.md)
-2. **Faça setup:** Siga [SETUP_PROJECT.md](./SETUP_PROJECT.md) (30-45 min)
+1. **Leia as regras operacionais:** [GITHUB_PROJECT_OPERATIONS.md](./GITHUB_PROJECT_OPERATIONS.md)
+2. **Configure o Project apenas se for manter este repositório:** [SETUP_PROJECT.md](./SETUP_PROJECT.md)
 3. **Crie sua primeira issue:** Use um dos templates abaixo
 
 ### Para Iniciar Tarefa Existente
@@ -235,7 +235,7 @@ gh project item-edit --project-id "PVT_kwDO..." --id "<id>" \
 
 - **Project Kanban:** https://github.com/users/nevitonsantana/projects/3/views/1
 - **Regras Completas:** [GITHUB_PROJECT_OPERATIONS.md](./GITHUB_PROJECT_OPERATIONS.md)
-- **Guia de Setup:** [SETUP_PROJECT.md](./SETUP_PROJECT.md)
+- **Setup opcional para maintainers:** [SETUP_PROJECT.md](./SETUP_PROJECT.md)
 - **Labels:** [labels-reference.md](./labels-reference.md)
 - **Kanban Atual:** [../PROJECT_KANBAN.md](../PROJECT_KANBAN.md)
 - **Roadmap:** [../ROADMAP_EVOLUTIVO.md](../ROADMAP_EVOLUTIVO.md)

@@ -107,7 +107,7 @@ assignees: ''
 
 ### ⚠️ Protocolo de Evolução
 
-Este registro segue o [Evolution Layer v1.1](./evolution/EVOLUTION_LAYER_V1.1.md):
+Este registro segue o [Evolution Layer v1.1](../../evolution/README.md):
 
 **Loop de 8 passos:**
 1. Observe ✓ (este registro)

@@ -81,6 +81,8 @@ Use this order:
 
 See `docs/how-to-use-a-skill.md` for a practical usage guide.
 
+Catalog growth is governed by the [Lean Skill Doctrine](skill-design-principles/lean-skill-doctrine.md) and [Skill Catalog Governance](skill-catalog-governance.md). A new skill, module, merge, split or deprecation should pass the [Skill Quality Gate](../templates/skill-quality-gate.md) before canon changes.
+
 
 ## Governed evolution
 

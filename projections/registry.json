@@ -149,6 +149,27 @@
       }
     },
     {
+      "id": "lean-implementation",
+      "source_path": "skills/lean-implementation/SKILL.md",
+      "category": "engineering",
+      "status": "active",
+      "portability_tags": [
+        "engineering",
+        "generic"
+      ],
+      "codex_projection": {
+        "enabled": true,
+        "target_name": "lean-implementation",
+        "generate_openai_yaml": true,
+        "default_prompt": "Use $lean-implementation when the task matches lean implementation work."
+      },
+      "claude_projection": {
+        "enabled": true,
+        "mode": "available-not-default",
+        "target_path": null
+      }
+    },
+    {
       "id": "architecture-review",
       "source_path": "skills/architecture-review/SKILL.md",
       "category": "engineering",
@@ -272,6 +293,28 @@
         "enabled": true,
         "mode": "manual",
         "target_path": ".claude/skills/heuristic-audit.md"
+      }
+    },
+    {
+      "id": "design-system-intelligence",
+      "source_path": "skills/design-system-intelligence/SKILL.md",
+      "category": "design",
+      "status": "active",
+      "portability_tags": [
+        "design",
+        "design-system",
+        "generic"
+      ],
+      "codex_projection": {
+        "enabled": true,
+        "target_name": "design-system-intelligence",
+        "generate_openai_yaml": true,
+        "default_prompt": "Use $design-system-intelligence when the task matches design system intelligence work."
+      },
+      "claude_projection": {
+        "enabled": true,
+        "mode": "available-not-default",
+        "target_path": null
       }
     },
     {

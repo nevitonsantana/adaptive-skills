@@ -80,6 +80,7 @@ Current examples include:
 - `intent-clarification` — make the human-owned outcome, expectations, and critical ambiguity explicit before planning;
 - `testing` — define useful validation instead of shallow confidence;
 - `debugging` — isolate causes before changing code;
+- `lean-implementation` — make the smallest safe change after scope and validation are clear;
 - `domain-language-alignment` — reconcile vocabulary across product, domain, docs, ADRs, and code before implementation;
 - `ux-writing` — improve product language and semantic clarity;
 - `triad-check` — coordinate product, design, and technical reasoning;
@@ -185,7 +186,7 @@ See:
 ## Current domains
 
 - **Engineering** — implementation, contracts, testing, debugging, structural review, domain-language alignment
-- **Design** — UX strategy, critique, provocation, UX writing
+- **Design** — UX strategy, critique, provocation, UX writing, and design-system intelligence
 - **Business** — strategic framing and synthesis
 - **Product** — feature value governance and opportunity-tree alignment
 - **Governance** — complexity audits, sunset decisions, and knowledge-boundary checks

@@ -40,3 +40,18 @@ escalation_boundaries:
     owner: agent runtime or harness
   - signal: skill_contract_change
     owner: Adaptive Skills Evolution Layer
+
+  - from: design-system-intelligence
+    to: heuristic-audit
+    relation: optional-usability-deepening
+    reason: "A design-system review may surface usability risks that need heuristic review rather than pattern promotion."
+
+  - from: design-system-intelligence
+    to: restricted-context-check
+    relation: optional-source-boundary-check
+    reason: "Design-system sources can be proprietary or restricted and may require metadata-only handling."
+
+  - from: design-system-intelligence
+    to: checkpoint-review
+    relation: owner-review-escalation
+    reason: "Pattern candidates or missing source evidence should pause for owner or governance review."

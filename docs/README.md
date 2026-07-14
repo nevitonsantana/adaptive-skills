@@ -15,10 +15,13 @@ The recommended path is:
 - `../README.md` — project overview and value proposition
 - [`../SYSTEM_STATE.md`](../SYSTEM_STATE.md) — compact current-state index; source records and canonical files remain authoritative
 - `skill-model.md` — Core + Modules + Triggers model
+- `skill-design-principles/lean-skill-doctrine.md` — S20 doctrine for necessary, distinct, proportional, verifiable and governable skills
+- `skill-catalog-governance.md` — catalog lifecycle, intake, merge/split/deprecation and quality-gate flow
 - `how-to-use-a-skill.md` — practical guide for choosing and using a skill
 - `domain-taxonomy.md` — generic skills vs. domain packs
 - `capability-model.md` — skills, capabilities, workflows, runtime, harness, and governance boundaries
 - `capability-graph.md` — experimental graph overlay for composition and routing
+- `capability-routing-boundary.md` — S10 boundary note aligning capability fit with AletheIA routing governance
 
 ## Adopt in another project
 
@@ -49,6 +52,8 @@ Follow this sequence:
 The Capability Graph is an experimental metadata overlay. It makes routing, composition, execution modes, and evidence expectations explicit without moving existing skills or introducing a runtime engine.
 
 - `capability-model.md` — terms and boundaries for skills, capabilities, workflows, runtime, harness, and governance
+- `capability-routing-boundary.md` — what Adaptive Skills may declare versus what remains with AletheIA/harness governance
+- `design-system-intelligence-pulso-pilot.md` — S24 Pulso pilot boundary for source-backed design-system review without scanners or promotion authority
 - `capability-graph.md` — graph structure and advisory routing model
 - `operational-runtime.md` — runtime contract, checkpointing, resumability, and approval boundaries
 - `execution-modes.md` — basic, extended, high-risk, multi-agent, and debugging depth profiles
@@ -59,6 +64,7 @@ The Capability Graph is an experimental metadata overlay. It makes routing, comp
 
 ## Evolve the library
 
+- `skill-catalog-governance.md` — quality gate and catalog lifecycle before canon changes
 - `evolution-layer.md` — governed evolution model
 - `../evolution/README.md` — observations, proposals, and reviews
 - `telemetry.md` — signal model for usage and improvement

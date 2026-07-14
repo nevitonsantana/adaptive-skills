@@ -4,6 +4,19 @@ Adaptive Skills works best when a skill is treated as a small execution aid, not
 
 Use this guide when adopting a skill in another project or when deciding which skill should guide a specific task.
 
+## Confirm explanation depth
+
+Before the first skill-assisted task, ask the user to confirm one explanation mode. Do not infer expertise from job title, vocabulary, or previous messages.
+
+| Mode | Guidance style |
+|---|---|
+| `plain` | Explain impact first and define technical terms before relying on them. |
+| `guided` | Explain the term, why it matters, and where it appears in the task. |
+| `professional` | Use technical terms with short contextual anchors. |
+| `expert` | Be concise; explain only project-specific or ambiguous terms. |
+
+The selected mode changes explanation depth, not risk, evidence, autonomy, or approval boundaries.
+
 ## 1. Start from the task, not from the catalog
 
 Do not ask: "Which skills are available?"
@@ -137,3 +150,15 @@ That should use a writing or review skill, not `premortem`.
 Start small.
 
 A useful adoption is not one where every task uses a skill. It is one where the right skill improves clarity, proof, handoff, or decision quality at the right moment.
+
+For a safe first use:
+
+1. choose a low-risk, reversible task;
+2. use at most one dominant skill;
+3. state the expected output before activation;
+4. record whether the skill was actually used;
+5. verify the output with the skill's `Verification` section;
+6. preserve unavailable evidence instead of estimating success;
+7. stop and request the appropriate technical reviewer if risk or scope changes.
+
+If the desired outcome or definition of success is unclear, use `intent-clarification` first. Its recommendation remains consultative and does not authorize execution.

@@ -33,11 +33,13 @@ Authoritative entrypoints:
 - Experimental capability graph and execution-pattern compatibility declarations.
 - Recoverable skill observation return pattern.
 - Consultative `intent-clarification` capability for AletheIA S8, with advise-only harness requirements.
+- Lean Implementation Skill — delivered through Adaptive Skills PR #79 as a bounded engineering skill.
+- Design System Intelligence Skill — delivered through Adaptive Skills PR #81 as a bounded Pulso pilot method.
 
 ## Active and planned evolution
 
-- **Active:** no repository-local implementation slice open; S8 and S15 are delivered.
-- **Planned through AletheIA backlog:** capability routing reconciliation, Design System pilot, coding-safety support and agent-role pilot.
+- **Active:** none.
+- **Planned through AletheIA backlog:** human expertise and evidence-based learning, coding-safety support and agent-role pilot.
 - **Deferred:** automatic routing, self-editing skills, comparative rankings and broad telemetry until repeated evidence exists.
 
 Backlog authority: [AletheIA integrated evolution backlog](https://github.com/nevitonsantana/AletheIA/blob/main/docs/roadmaps/evolution-backlog-aletheia-adaptive-skills.md).
@@ -53,24 +55,24 @@ Backlog authority: [AletheIA integrated evolution backlog](https://github.com/ne
 - README and docs index: current for the present architecture boundary.
 - CHANGELOG: current through the unreleased hardening baseline; S15 adds a documentation-only state entry.
 - Projection and evolution validation: covered by repository scripts.
-- First-use and language-depth coherence: not assessed by S15; planned for later P11 work.
+- First-use and language-depth coherence: delivered through the accepted S17 cross-repository pilot.
 
 ## Cognitive debt and open risks
 
-- **Current level:** medium — capability, evolution and projection concepts require guided explanation for new users.
+- **Current level:** medium — capability, evolution, projection and catalog governance concepts require guided explanation for new users.
 - SYSTEM_STATE can become stale; source files and accepted evidence always win.
 - No usage percentage, success rate or skill ranking is admissible without comparable reviewed records.
 - Provider naming retains historical `adaptative-skills` paths in some local integrations; GitHub redirects preserve compatibility.
 
 ## Next safe steps
 
-1. Preserve the accepted S8 `intent-clarification` boundary: consultative evidence only, never Work Slice or gate authority.
+1. Keep `lean-implementation` bounded: it does not replace debugging, testing, refactoring, architecture review or governance.
 2. Keep skill use source-backed through execution/observation return records.
-3. Implement only dependency-valid backlog slices; do not create an automatic routing engine.
-4. Reassess documentation health during the later explainable-language and first-use pilot.
+3. Coordinate the next ordered slice from the AletheIA backlog before adding new skills.
+4. Do not create an automatic routing engine, global provider selector or skill self-edit loop.
 
 ## Last reviewed
 
-- **Date:** 2026-06-23
-- **Evidence baseline:** Adaptive Skills `59c0f41`; AletheIA `2575e07`; integrated backlog through S8
-- **Review trigger:** accepted skill-model, capability, evolution, projection, maturity or roadmap change
+- **Date:** 2026-07-01
+- **Evidence baseline:** Adaptive Skills `a7c5dc2` after S24 skill merge; AletheIA `e180f0a` after S24 pilot contract merge
+- **Review trigger:** S24 Design System Intelligence / Pulso pilot merged and local state synchronized
