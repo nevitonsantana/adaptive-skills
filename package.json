@@ -1,0 +1,26 @@
+{
+  "name": "adaptive-skills",
+  "version": "0.1.2",
+  "description": "Portable library of micro-skills for disciplined AI-assisted work.",
+  "private": true,
+  "type": "module",
+  "license": "Apache-2.0",
+  "homepage": "https://github.com/nevitonsantana/adaptive-skills",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nevitonsantana/adaptive-skills.git"
+  },
+  "bugs": {
+    "url": "https://github.com/nevitonsantana/adaptive-skills/issues"
+  },
+  "engines": {
+    "node": ">=20.0.0",
+    "pnpm": ">=8.0.0"
+  },
+  "packageManager": "pnpm@11.9.0",
+  "scripts": {
+    "docs:dev": "pnpm --filter @adaptive-skills/docs dev",
+    "docs:build": "pnpm --filter @adaptive-skills/docs build",
+    "docs:validate": "pnpm --filter @adaptive-skills/docs validate"
+  }
+}

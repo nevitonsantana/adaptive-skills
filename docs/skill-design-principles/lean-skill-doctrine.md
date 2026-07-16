@@ -206,4 +206,4 @@ Before accepting a catalog change, confirm:
 - [Harness Requirements for Skills](../harness-requirements-for-skills.md)
 - [Evolution Layer](../evolution-layer.md)
 - [Capability Routing Boundary](../capability-routing-boundary.md)
-- [Skill Quality Gate template](../../templates/skill-quality-gate.md)
+- [Skill Quality Gate template](https://github.com/nevitonsantana/adaptive-skills/blob/main/templates/skill-quality-gate.md)

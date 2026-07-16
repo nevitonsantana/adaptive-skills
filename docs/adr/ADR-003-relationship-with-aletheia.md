@@ -11,7 +11,7 @@
 
 ## 1. Context
 
-Both Adaptive Skills and [AletheIA](https://github.com/nevitonsantana/AletheIA) were developed by the same author in roughly the same period, often against the same consumer project (Crisis Monitor). Existing docs already cross-reference the two — see [`docs/aletheia-integration.md`](../aletheia-integration.md), [`docs/aletheia-first-test.md`](../aletheia-first-test.md), and the "Integration with AletheIA" milestone in [`ROADMAP_EVOLUTIVO.md`](../../ROADMAP_EVOLUTIVO.md).
+Both Adaptive Skills and [AletheIA](https://github.com/nevitonsantana/AletheIA) were developed by the same author in roughly the same period, often against the same consumer project (Crisis Monitor). Existing docs already cross-reference the two — see [`docs/aletheia-integration.md`](../aletheia-integration.md), [`docs/aletheia-first-test.md`](../aletheia-first-test.md), and the "Integration with AletheIA" milestone in [`ROADMAP_EVOLUTIVO.md`](https://github.com/nevitonsantana/adaptive-skills/blob/main/ROADMAP_EVOLUTIVO.md).
 
 This cross-referencing is useful but creates a question: *can Adaptive Skills be used without AletheIA, and vice versa? Are they the same product split into two repos, or two products that happen to share a context?*
 

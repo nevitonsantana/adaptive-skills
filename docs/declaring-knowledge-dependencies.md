@@ -4,7 +4,7 @@
 
 Explain how a skill declares the knowledge it needs **without** binding to a specific source.
 
-The full contract lives in the AletheIA repository: see [skill-knowledge-dependency-contract](../../aletheia/docs/contracts/skill-knowledge-dependency-contract.md). This document is the author-facing guide for the Adaptative Skills side.
+The full contract lives in the AletheIA repository: see [skill-knowledge-dependency-contract](https://github.com/nevitonsantana/AletheIA/blob/main/docs/contracts/skill-knowledge-dependency-contract.md). This document is the author-facing guide for the Adaptative Skills side.
 
 ---
 
@@ -35,7 +35,7 @@ Pick `required_when` when a slot activates by task shape (interface change, cont
 
 ## Choosing `accepted_types`
 
-Use the source taxonomy in [knowledge-source-contract](../../aletheia/docs/contracts/knowledge-source-contract.md). Prefer the **broadest set** of types that genuinely satisfy the slot:
+Use the source taxonomy in [knowledge-source-contract](https://github.com/nevitonsantana/AletheIA/blob/main/docs/contracts/knowledge-source-contract.md). Prefer the **broadest set** of types that genuinely satisfy the slot:
 
 - `strategic_framework` may accept `proprietary_framework`, `product_strategy`, `business_design_framework`.
 - `accessibility_guidelines` should usually accept only `accessibility_guideline`.
@@ -77,7 +77,7 @@ A skill output should make the knowledge picture reconstructable:
 - list which restrictions were active (capsule-only, no verbatim, etc.)
 - list any conflicts detected and how precedence resolved them
 
-This is what makes the [knowledge audit log](../../aletheia/docs/contracts/knowledge-audit-log-spec.md) buildable from the skill output alone.
+This is what makes the [knowledge audit log](https://github.com/nevitonsantana/AletheIA/blob/main/docs/contracts/knowledge-audit-log-spec.md) buildable from the skill output alone.
 
 ---
 
@@ -94,4 +94,4 @@ This is what makes the [knowledge audit log](../../aletheia/docs/contracts/knowl
 
 - [skill-knowledge-boundaries.md](skill-knowledge-boundaries.md)
 - [using-proprietary-frameworks-safely.md](using-proprietary-frameworks-safely.md)
-- [skill-knowledge-dependency.yaml](../templates/skill-knowledge-dependency.yaml)
+- [skill-knowledge-dependency.yaml](https://github.com/nevitonsantana/adaptive-skills/blob/main/templates/skill-knowledge-dependency.yaml)

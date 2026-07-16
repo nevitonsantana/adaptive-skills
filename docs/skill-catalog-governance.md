@@ -55,7 +55,7 @@ A new skill proposal must include:
 - reason an optional module is insufficient;
 - expected output and verification;
 - boundary statement showing it declares rather than enforces;
-- completed [Skill Quality Gate](../templates/skill-quality-gate.md).
+- completed [Skill Quality Gate](https://github.com/nevitonsantana/adaptive-skills/blob/main/templates/skill-quality-gate.md).
 
 ## Module proposal flow
 
@@ -149,7 +149,7 @@ the changed files.
 ## Related docs
 
 - [Lean Skill Doctrine](skill-design-principles/lean-skill-doctrine.md)
-- [Skill Quality Gate](../templates/skill-quality-gate.md)
+- [Skill Quality Gate](https://github.com/nevitonsantana/adaptive-skills/blob/main/templates/skill-quality-gate.md)
 - [Skill Model](skill-model.md)
 - [Skill Categories](skill-categories.md)
 - [Harness Requirements for Skills](harness-requirements-for-skills.md)

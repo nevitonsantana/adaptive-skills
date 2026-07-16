@@ -38,7 +38,7 @@ Authoritative entrypoints:
 
 ## Active and planned evolution
 
-- **Active:** none.
+- **Active:** AS-DOC-3 Blume documentation shell decision.
 - **Delivered:** official documentation readiness review recorded in `docs/official-docs-readiness.md`.
 - **Delivered:** AS-DOC-1 public documentation map curation aligned `README.md` and `docs/README.md`.
 - **Delivered:** AS-DOC-2 route/link readiness classification recorded in `docs/official-docs-link-readiness.md`.
@@ -55,7 +55,7 @@ Backlog authority: [AletheIA integrated evolution backlog](https://github.com/ne
 
 ## Documentation health
 
-- README and docs index: current for the present architecture boundary; public docs link readiness is classified.
+- README and docs index: current for the present architecture boundary; AS-DOC-3 is introducing a manual Blume docs shell.
 - CHANGELOG: current through the unreleased hardening baseline; S15 adds a documentation-only state entry.
 - Projection and evolution validation: covered by repository scripts.
 - First-use and language-depth coherence: delivered through the accepted S17 cross-repository pilot.
@@ -77,5 +77,5 @@ Backlog authority: [AletheIA integrated evolution backlog](https://github.com/ne
 ## Last reviewed
 
 - **Date:** 2026-07-16
-- **Evidence baseline:** Adaptive Skills `406a4aa` after AS-DOC-2 link-readiness merge; AletheIA `f3d0a69` after S82 publication-evidence closure
-- **Review trigger:** AS-DOC-2 closure after PR #90 merge
+- **Evidence baseline:** Adaptive Skills `0ceb6a6` after AS-DOC-2 closure merge; AletheIA `f3d0a69` after S82 publication-evidence closure
+- **Review trigger:** AS-DOC-3 Blume documentation shell decision

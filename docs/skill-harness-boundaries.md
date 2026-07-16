@@ -37,7 +37,7 @@ content) — together they keep a skill free of both embedded content and embedd
 - the rollback strategy and human-review requirement.
 
 The harness is declared in an **Agent Harness Contract** (AletheIA: `docs/contracts/agent-harness-contract.md`),
-with a fill-in template at [`../templates/agent-harness-contract.yaml`](../templates/agent-harness-contract.yaml).
+with a fill-in template at [`../templates/agent-harness-contract.yaml`](https://github.com/nevitonsantana/adaptive-skills/blob/main/templates/agent-harness-contract.yaml).
 
 ---
 

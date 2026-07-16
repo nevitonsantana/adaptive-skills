@@ -21,7 +21,7 @@ Each stage in an orchestration contract declares, among other fields: `input`, `
   `required_evidence_by_pattern` declaration.
 
 A participation template is available:
-[orchestration-step-requirements.yaml](../templates/orchestration-step-requirements.yaml).
+[orchestration-step-requirements.yaml](https://github.com/nevitonsantana/adaptive-skills/blob/main/templates/orchestration-step-requirements.yaml).
 
 ## Escalation and handoff
 
@@ -29,7 +29,7 @@ A stage does not improvise when its assumptions break. The skill's `escalation_t
 (`objective_gate_missing`, `touches_sensitive_area`, `judgment_required`, `recurring_failure`,
 `comprehension_debt_risk`) route the run back to the orchestration owner — pausing the stage, not
 silently degrading it. Handoff between stages follows the same discipline as
-[handoff-summary](../skills/handoff-summary/SKILL.md)-style compact handoffs: the next stage gets
+[handoff-summary](https://github.com/nevitonsantana/adaptive-skills/blob/main/skills/handoff-summary/SKILL.md)-style compact handoffs: the next stage gets
 the declared output plus evidence refs, not a transcript.
 
 ## Maker-checker inside orchestrations

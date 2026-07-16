@@ -6,7 +6,7 @@ Show how an ordinary skill runs *inside* a declared Agent Harness Contract (AHC)
 the skill itself. The harness sets the envelope; the skill executes within it.
 
 The AHC is declared in AletheIA (`docs/contracts/agent-harness-contract.md`); a fill-in template
-lives at [`../templates/agent-harness-contract.yaml`](../templates/agent-harness-contract.yaml).
+lives at [`../templates/agent-harness-contract.yaml`](https://github.com/nevitonsantana/adaptive-skills/blob/main/templates/agent-harness-contract.yaml).
 
 ---
 
@@ -20,7 +20,7 @@ lives at [`../templates/agent-harness-contract.yaml`](../templates/agent-harness
 3. **`sensors`** — the *sensor-before-judgment* rule: a skill should run its computational sensors
    (tests, linters, type checks) before consulting an inferential one (a review skill).
 4. **`observability`** — the skill's decisions and evidence feed the harness trace (see
-   [`../templates/harness-trace-summary.md`](../templates/harness-trace-summary.md)).
+   [`../templates/harness-trace-summary.md`](https://github.com/nevitonsantana/adaptive-skills/blob/main/templates/harness-trace-summary.md)).
 5. **`rollback` / `human_review`** — for risky or irreversible work, the skill's output stays a
    draft until the contract's human review clears it.
 

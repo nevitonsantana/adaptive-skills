@@ -41,12 +41,12 @@ If any precondition is missing at run time, the skill's `escalation_triggers` mu
 | Volume | uncertain, finite | recurring, open-ended |
 | State | within-run only | persistent loop state across runs |
 | Skill must declare | objective gate + `max_iterations` | the above + state read/write expectations + audit per run |
-| Typical skills | [debugging](../examples/execution-patterns/debugging-patterns.yaml) with a failing-test gate | triage-style classification with a queue-empty condition |
+| Typical skills | [debugging](https://github.com/nevitonsantana/adaptive-skills/blob/main/examples/execution-patterns/debugging-patterns.yaml) with a failing-test gate | triage-style classification with a queue-empty condition |
 
 ## Skills that must not loop
 
 Judgment-heavy skills declare loop patterns as **incompatible**, with the rationale recorded —
-e.g. [feature-value-governance](../examples/execution-patterns/feature-value-governance-patterns.yaml):
+e.g. [feature-value-governance](https://github.com/nevitonsantana/adaptive-skills/blob/main/examples/execution-patterns/feature-value-governance-patterns.yaml):
 feature judgment has no objective stop condition, and a recurring automated roadmap action would
 create governance risk. Incompatibility is a declaration, not a runtime block; enforcement stays
 with the harness.

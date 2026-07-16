@@ -48,10 +48,10 @@ tool-risk taxonomy, policy verdicts, and the audit record are all defined there.
 
 ## The `harness_requirements` block
 
-Fill-in template: [`../templates/skill-harness-requirements.yaml`](../templates/skill-harness-requirements.yaml).
+Fill-in template: [`../templates/skill-harness-requirements.yaml`](https://github.com/nevitonsantana/adaptive-skills/blob/main/templates/skill-harness-requirements.yaml).
 
 This is **per-skill**. It is distinct from
-[`../templates/agent-harness-contract.yaml`](../templates/agent-harness-contract.yaml), which is the
+[`../templates/agent-harness-contract.yaml`](https://github.com/nevitonsantana/adaptive-skills/blob/main/templates/agent-harness-contract.yaml), which is the
 **per-task** operating envelope. A skill says "this is what I generally need"; a task contract says
 "this is the envelope for this specific run."
 
@@ -87,15 +87,15 @@ They must **not look like authorization to act**. `feature-value-governance` may
 whether a feature should advance, but it must not move the roadmap, create an issue, alter the
 backlog, or execute a decision. Such a skill declares `ceiling: advise` and marks
 `roadmap.update` / `issue.create` / `filesystem.write` as `deny` or `require_approval`.
-See [`../examples/harness-requirements/feature-value-governance-harness-requirements.yaml`](../examples/harness-requirements/feature-value-governance-harness-requirements.yaml).
+See [`../examples/harness-requirements/feature-value-governance-harness-requirements.yaml`](https://github.com/nevitonsantana/adaptive-skills/blob/main/examples/harness-requirements/feature-value-governance-harness-requirements.yaml).
 
 **Operational skills** may perform bounded action, but always with: an expected tool set, declared
 risk, minimum evidence, a gate before any destructive action, and a handoff when the risk class
 changes. `debugging` may run tests and propose a diff (`ceiling: act_with_approval`) but must escalate
 structural or destructive changes. `testing` may run tests and read coverage but must not change
 implementation — that belongs to another skill.
-See [`../examples/harness-requirements/debugging-harness-requirements.yaml`](../examples/harness-requirements/debugging-harness-requirements.yaml)
-and [`../examples/harness-requirements/testing-harness-requirements.yaml`](../examples/harness-requirements/testing-harness-requirements.yaml).
+See [`../examples/harness-requirements/debugging-harness-requirements.yaml`](https://github.com/nevitonsantana/adaptive-skills/blob/main/examples/harness-requirements/debugging-harness-requirements.yaml)
+and [`../examples/harness-requirements/testing-harness-requirements.yaml`](https://github.com/nevitonsantana/adaptive-skills/blob/main/examples/harness-requirements/testing-harness-requirements.yaml).
 
 ---
 
