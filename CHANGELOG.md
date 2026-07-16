@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+- add official docs readiness review and link it from the docs index
+
 - rename the maintainer-facing `.github/README.md` to `.github/PROJECT_OPERATIONS.md` so GitHub renders the root Adaptive Skills README on the repository homepage
 
 - clarify that GitHub Project documentation is maintainer-facing operational support, not required setup for Adaptive Skills consumers

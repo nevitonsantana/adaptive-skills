@@ -38,9 +38,10 @@ Authoritative entrypoints:
 
 ## Active and planned evolution
 
-- **Active:** none.
+- **Active:** Adaptive Skills official docs readiness review.
+- **Planned:** official documentation readiness review before any generated docs site or publication workflow.
 - **Planned through AletheIA backlog:** human expertise and evidence-based learning, coding-safety support and agent-role pilot.
-- **Deferred:** automatic routing, self-editing skills, comparative rankings and broad telemetry until repeated evidence exists.
+- **Deferred:** automatic routing, self-editing skills, comparative rankings, broad telemetry and docs auto-publishing until repeated evidence exists.
 
 Backlog authority: [AletheIA integrated evolution backlog](https://github.com/nevitonsantana/AletheIA/blob/main/docs/roadmaps/evolution-backlog-aletheia-adaptive-skills.md).
 
@@ -52,7 +53,7 @@ Backlog authority: [AletheIA integrated evolution backlog](https://github.com/ne
 
 ## Documentation health
 
-- README and docs index: current for the present architecture boundary.
+- README and docs index: current for the present architecture boundary; official docs readiness is in review.
 - CHANGELOG: current through the unreleased hardening baseline; S15 adds a documentation-only state entry.
 - Projection and evolution validation: covered by repository scripts.
 - First-use and language-depth coherence: delivered through the accepted S17 cross-repository pilot.
@@ -73,6 +74,6 @@ Backlog authority: [AletheIA integrated evolution backlog](https://github.com/ne
 
 ## Last reviewed
 
-- **Date:** 2026-07-01
-- **Evidence baseline:** Adaptive Skills `a7c5dc2` after S24 skill merge; AletheIA `e180f0a` after S24 pilot contract merge
-- **Review trigger:** S24 Design System Intelligence / Pulso pilot merged and local state synchronized
+- **Date:** 2026-07-16
+- **Evidence baseline:** Adaptive Skills `main` after README/GitHub operations repair; AletheIA `f3d0a69` after S82 publication-evidence closure
+- **Review trigger:** official documentation readiness review after AletheIA docs publication
