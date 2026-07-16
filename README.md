@@ -222,28 +222,19 @@ python3 scripts/project_to_codex.py --skill premortem
 
 ## Adopt in another project
 
-### New here? Start with these four documents
+### Official documentation path
 
-1. [`docs/getting-started/overview.md`](docs/getting-started/overview.md) — what Adaptive Skills is, who it's for, when to use it
-2. [`docs/getting-started/installation-guide.md`](docs/getting-started/installation-guide.md) — step-by-step install via APM
-3. [`docs/getting-started/skill-catalog.md`](docs/getting-started/skill-catalog.md) — published skills with trigger signals and composite flows
-4. [`docs/getting-started/faq.md`](docs/getting-started/faq.md) — common questions about setup, skill selection, and teamwork
+For a public reader, use this order:
 
-### Deeper adoption reference
+1. **Overview** — start with this README and [`docs/getting-started/overview.md`](docs/getting-started/overview.md).
+2. **Install / consume** — use [`docs/getting-started/installation-guide.md`](docs/getting-started/installation-guide.md), [`docs/guides/install-via-apm.md`](docs/guides/install-via-apm.md), [`docs/codex-consumer-setup.md`](docs/codex-consumer-setup.md), and [`docs/claude-consumer-setup.md`](docs/claude-consumer-setup.md).
+3. **Choose a skill** — use [`docs/getting-started/skill-catalog.md`](docs/getting-started/skill-catalog.md), [`docs/how-to-use-a-skill.md`](docs/how-to-use-a-skill.md), and [`docs/skill-categories.md`](docs/skill-categories.md).
+4. **Understand the model** — use [`docs/skill-model.md`](docs/skill-model.md), [`docs/domain-taxonomy.md`](docs/domain-taxonomy.md), and [`docs/skill-catalog-governance.md`](docs/skill-catalog-governance.md).
+5. **Use with AletheIA** — use [`docs/aletheia-integration.md`](docs/aletheia-integration.md), [`docs/agent-role-integration.md`](docs/agent-role-integration.md), and [`docs/specification-facilitation.md`](docs/specification-facilitation.md).
+6. **Advanced overlays** — use [`docs/capability-model.md`](docs/capability-model.md), [`docs/capability-graph.md`](docs/capability-graph.md), [`docs/operational-runtime.md`](docs/operational-runtime.md), and [`docs/evolution-layer.md`](docs/evolution-layer.md).
+7. **Evidence and decisions** — use [`docs/adr/README.md`](docs/adr/README.md), [`docs/_meta/`](docs/_meta/), [`examples/README.md`](examples/README.md), and [`evolution/README.md`](evolution/README.md).
 
-For the full documentation map, start with:
-
-- `docs/README.md`
-
-Start with:
-
-- `docs/consumer-adoption.md`
-- `docs/how-to-use-a-skill.md`
-- `docs/codex-consumer-setup.md`
-- `docs/claude-consumer-setup.md`
-- `docs/first-consumer-pilot.md`
-- `examples/README.md`
-- `docs/agent-role-integration.md`
+For the complete documentation map, see [`docs/README.md`](docs/README.md). The publication-readiness record is [`docs/official-docs-readiness.md`](docs/official-docs-readiness.md).
 
 Recommended first bundle for a new consumer:
 

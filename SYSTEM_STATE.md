@@ -38,7 +38,7 @@ Authoritative entrypoints:
 
 ## Active and planned evolution
 
-- **Active:** none.
+- **Active:** AS-DOC-1 public documentation map curation.
 - **Delivered:** official documentation readiness review recorded in `docs/official-docs-readiness.md`.
 - **Planned through AletheIA backlog:** human expertise and evidence-based learning, coding-safety support and agent-role pilot.
 - **Deferred:** automatic routing, self-editing skills, comparative rankings, broad telemetry and docs auto-publishing until repeated evidence exists.
@@ -53,7 +53,7 @@ Backlog authority: [AletheIA integrated evolution backlog](https://github.com/ne
 
 ## Documentation health
 
-- README and docs index: current for the present architecture boundary; official docs readiness review is recorded.
+- README and docs index: current for the present architecture boundary; AS-DOC-1 is aligning the public reader path.
 - CHANGELOG: current through the unreleased hardening baseline; S15 adds a documentation-only state entry.
 - Projection and evolution validation: covered by repository scripts.
 - First-use and language-depth coherence: delivered through the accepted S17 cross-repository pilot.
@@ -75,5 +75,5 @@ Backlog authority: [AletheIA integrated evolution backlog](https://github.com/ne
 ## Last reviewed
 
 - **Date:** 2026-07-16
-- **Evidence baseline:** Adaptive Skills `f215de6` after official docs readiness review merge; AletheIA `f3d0a69` after S82 publication-evidence closure
-- **Review trigger:** official documentation readiness review closure after PR #86 merge
+- **Evidence baseline:** Adaptive Skills `c516815` after official docs readiness closure merge; AletheIA `f3d0a69` after S82 publication-evidence closure
+- **Review trigger:** AS-DOC-1 public documentation map curation
