@@ -38,10 +38,11 @@ Authoritative entrypoints:
 
 ## Active and planned evolution
 
-- **Active:** AS-DOC-3 Blume documentation shell decision.
+- **Active:** none.
 - **Delivered:** official documentation readiness review recorded in `docs/official-docs-readiness.md`.
 - **Delivered:** AS-DOC-1 public documentation map curation aligned `README.md` and `docs/README.md`.
 - **Delivered:** AS-DOC-2 route/link readiness classification recorded in `docs/official-docs-link-readiness.md`.
+- **Delivered:** AS-DOC-3 Blume documentation shell recorded in `docs/official-docs-blume-shell.md`.
 - **Planned through AletheIA backlog:** human expertise and evidence-based learning, coding-safety support and agent-role pilot.
 - **Deferred:** automatic routing, self-editing skills, comparative rankings, broad telemetry and docs auto-publishing until repeated evidence exists.
 
@@ -55,7 +56,7 @@ Backlog authority: [AletheIA integrated evolution backlog](https://github.com/ne
 
 ## Documentation health
 
-- README and docs index: current for the present architecture boundary; AS-DOC-3 is introducing a manual Blume docs shell.
+- README and docs index: current for the present architecture boundary; manual Blume docs shell is available.
 - CHANGELOG: current through the unreleased hardening baseline; S15 adds a documentation-only state entry.
 - Projection and evolution validation: covered by repository scripts.
 - First-use and language-depth coherence: delivered through the accepted S17 cross-repository pilot.
@@ -77,5 +78,5 @@ Backlog authority: [AletheIA integrated evolution backlog](https://github.com/ne
 ## Last reviewed
 
 - **Date:** 2026-07-16
-- **Evidence baseline:** Adaptive Skills `0ceb6a6` after AS-DOC-2 closure merge; AletheIA `f3d0a69` after S82 publication-evidence closure
-- **Review trigger:** AS-DOC-3 Blume documentation shell decision
+- **Evidence baseline:** Adaptive Skills `3b7b9a3` after AS-DOC-3 Blume shell merge; AletheIA `f3d0a69` after S82 publication-evidence closure
+- **Review trigger:** AS-DOC-3 closure after PR #92 merge
