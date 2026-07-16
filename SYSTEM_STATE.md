@@ -38,7 +38,7 @@ Authoritative entrypoints:
 
 ## Active and planned evolution
 
-- **Active:** none.
+- **Active:** AS-DOC-2 route/link readiness classification.
 - **Delivered:** official documentation readiness review recorded in `docs/official-docs-readiness.md`.
 - **Delivered:** AS-DOC-1 public documentation map curation aligned `README.md` and `docs/README.md`.
 - **Planned through AletheIA backlog:** human expertise and evidence-based learning, coding-safety support and agent-role pilot.
@@ -54,7 +54,7 @@ Backlog authority: [AletheIA integrated evolution backlog](https://github.com/ne
 
 ## Documentation health
 
-- README and docs index: current for the present architecture boundary; public reader path is aligned.
+- README and docs index: current for the present architecture boundary; AS-DOC-2 is classifying route/link readiness.
 - CHANGELOG: current through the unreleased hardening baseline; S15 adds a documentation-only state entry.
 - Projection and evolution validation: covered by repository scripts.
 - First-use and language-depth coherence: delivered through the accepted S17 cross-repository pilot.
@@ -76,5 +76,5 @@ Backlog authority: [AletheIA integrated evolution backlog](https://github.com/ne
 ## Last reviewed
 
 - **Date:** 2026-07-16
-- **Evidence baseline:** Adaptive Skills `598e58c` after AS-DOC-1 public docs map merge; AletheIA `f3d0a69` after S82 publication-evidence closure
-- **Review trigger:** AS-DOC-1 closure after PR #88 merge
+- **Evidence baseline:** Adaptive Skills `22a883d` after AS-DOC-1 closure merge; AletheIA `f3d0a69` after S82 publication-evidence closure
+- **Review trigger:** AS-DOC-2 route/link readiness classification

@@ -6,7 +6,7 @@
 > **Horizonte de Planejamento:** Q2-Q3 2026 (Abril-Setembro)
 > **Princípio Guia:** "Evolução governada, não auto-edição"
 >
-> **Nota 2026-05-21:** As Fases 1-4 abaixo refletem o planejamento original de 2026-04-15. A partir de 2026-05-21, o roadmap operacional passa a ser conduzido pelo [plano cross-repo AletheIA + Adaptive Skills](../Downloads/_Uteis/AI/AletheIA-Adaptative-Skills/aletheia-adaptive-skills-plano-cross-repo.md) (8 épicos, gates explícitos). Os marcos abaixo permanecem como referência histórica de intenção, com status reconciliados; novas datas e prioridades vêm dos sprints do plano cross-repo.
+> **Nota 2026-05-21:** As Fases 1-4 abaixo refletem o planejamento original de 2026-04-15. A partir de 2026-05-21, o roadmap operacional passa a ser conduzido pelo [plano cross-repo AletheIA + Adaptive Skills](https://github.com/nevitonsantana/AletheIA/blob/main/docs/roadmaps/evolution-backlog-aletheia-adaptive-skills.md) (8 épicos, gates explícitos). Os marcos abaixo permanecem como referência histórica de intenção, com status reconciliados; novas datas e prioridades vêm dos sprints do plano cross-repo.
 >
 > **Nota 2026-05-25 — execução do plano cross-repo até aqui:**
 > - **Sprint 1** (Fronteira + Despoluição): Épico 1 (PR #37, ADR-001/002/003 + ecosystem-map), Épico 2 (PR #38, despoluição Crisis Monitor) — ambos mergeados.
@@ -293,9 +293,9 @@ Abril 2026          Maio 2026           Junho 2026          Julho 2026
 ## 🔗 Referências
 
 - [Project Kanban](./PROJECT_KANBAN.md)
-- [Evolution Layer v1.1](./evolution/EVOLUTION_LAYER_V1.1.md)
-- [Skills Registry](./projections/SKILLS_REGISTRY.md)
-- [Crisis Monitor Case Study](./domain-packs/crisis-management/CASE_STUDY.md)
+- [Evolution Layer v1.1](./evolution/README.md)
+- [Skills Registry](./projections/registry.json)
+- [Crisis Monitor Case Study](./domain-packs/crisis-management/README.md)
 - [AletheIA Macro Layer](https://github.com/nevitonsantana/AletheIA) *(referência externa)*
 
 ---

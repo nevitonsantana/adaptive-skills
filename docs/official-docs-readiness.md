@@ -36,7 +36,7 @@ Use this order for a first official docs experience:
 | Slice | Goal | Acceptance | Non-goals |
 |---|---|---|---|
 | AS-DOC-1 | Curate the official docs map | `docs/README.md` and root README agree on the public reader path | Static site, publishing automation |
-| AS-DOC-2 | Check route/link readiness | Broken or raw-local Markdown links are classified and repaired or explicitly kept as source links | Bulk rewrite |
+| AS-DOC-2 | Check route/link readiness | Delivered in [`official-docs-link-readiness.md`](official-docs-link-readiness.md): local broken links repaired, source links classified | Bulk rewrite |
 | AS-DOC-3 | Choose publication shell | Decide whether to reuse Blume, another static docs shell, or keep GitHub-rendered Markdown for now | Deploy before validation |
 | AS-DOC-4 | Manual publication proof | If a site shell is chosen, publish manually and smoke-test representative routes | Automatic publishing on merge |
 

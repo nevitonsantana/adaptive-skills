@@ -4,7 +4,7 @@
 > **Status do Sprint:** Sprint 3 do plano cross-repo concluído — Épicos 1, 2, 3, 5, 7 mergeados (Adaptive Skills); Épicos 4, 6 mergeados (AletheIA); Épico 8 (soft-launch) em preparação no AletheIA. Addendum docs-first de harness enforcement mergeado nos dois repos (AS #60/#61, AletheIA #188/#189).
 > **Foco atual:** Knowledge/Feature-Value Governance + Skill Evolution Validation implementados; Engineering Skills Hardening Pack e sync do skill-catalog (30 skills) concluídos
 >
-> **Plano vigente:** [`aletheia-adaptive-skills-plano-cross-repo.md`](../Downloads/_Uteis/AI/AletheIA-Adaptative-Skills/aletheia-adaptive-skills-plano-cross-repo.md) (8 épicos, gates explícitos)
+> **Plano vigente:** [`aletheia-adaptive-skills-plano-cross-repo.md`](https://github.com/nevitonsantana/AletheIA/blob/main/docs/roadmaps/evolution-backlog-aletheia-adaptive-skills.md) (8 épicos, gates explícitos)
 
 ---
 
@@ -230,9 +230,9 @@ graph LR
 
 - [Roadmap Evolutivo](./ROADMAP_EVOLUTIVO.md)
 - [Evolution Backlog](./EVOLUTION_BACKLOG.md)
-- [Evolution Layer v1.1](./evolution/EVOLUTION_LAYER_V1.1.md)
-- [Skills Registry](./projections/SKILLS_REGISTRY.md)
-- [Crisis Monitor Case Study](./domain-packs/crisis-management/CASE_STUDY.md)
+- [Evolution Layer v1.1](./evolution/README.md)
+- [Skills Registry](./projections/registry.json)
+- [Crisis Monitor Case Study](./domain-packs/crisis-management/README.md)
 
 ---
 
