@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+- close AS-DOC-3 Blume docs shell state after PR #92 merge
+
 - add a manual Blume documentation shell for Adaptive Skills official docs
 
 - close AS-DOC-2 link readiness state after PR #90 merge
