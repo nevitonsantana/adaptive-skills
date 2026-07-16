@@ -45,6 +45,10 @@ After a manual run succeeds, smoke-test these representative routes:
 
 Publication remains manual-first. Automatic publishing on merge requires a separate explicit governance decision.
 
+## First run note
+
+The first manual run may need to enable GitHub Pages for the repository. The workflow passes `enablement: true` to `actions/configure-pages` so the Pages setup can be initialized by the manual publication flow.
+
 ## Pending evidence
 
 After this workflow is merged, run it manually and record:
