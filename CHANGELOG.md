@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+- close AS-DOC-2 link readiness state after PR #90 merge
+
 - classify official docs link readiness and repair legacy local documentation links
 
 - close AS-DOC-1 public documentation map state after PR #88 merge
