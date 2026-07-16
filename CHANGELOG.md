@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+- add a manual Blume documentation shell for Adaptive Skills official docs
+
 - close AS-DOC-2 link readiness state after PR #90 merge
 
 - classify official docs link readiness and repair legacy local documentation links

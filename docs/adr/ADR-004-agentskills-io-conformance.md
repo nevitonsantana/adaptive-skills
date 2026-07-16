@@ -6,14 +6,14 @@
 | Date | 2026-05-21 |
 | Author | Neviton Santana |
 | Deciders | Neviton Santana |
-| Related | ADR-001 (Adaptive Skills as capability library), [`_meta/agentskills-io-conformance-audit.md`](../_meta/agentskills-io-conformance-audit.md) |
+| Related | ADR-001 (Adaptive Skills as capability library), [`_meta/agentskills-io-conformance-audit.md`](https://github.com/nevitonsantana/adaptive-skills/blob/main/docs/_meta/agentskills-io-conformance-audit.md) |
 | Supersedes | — |
 
 ## 1. Context
 
 ADR-001 declared a *posture* toward [`agentskills.io`](https://agentskills.io/specification): Adaptive Skills aims at conformance with the open standard for the capability-library layer. The *strategy* was deferred to this ADR pending a real gap analysis.
 
-Epic 3 of the 2026-05-21 cross-repo plan produced that gap analysis (see [`_meta/agentskills-io-conformance-audit.md`](../_meta/agentskills-io-conformance-audit.md)). The audit was performed manually and confirmed by running the reference validator [`skills-ref==0.1.0`](https://github.com/agentskills/agentskills/tree/main/skills-ref) against all 21 skills.
+Epic 3 of the 2026-05-21 cross-repo plan produced that gap analysis (see [`_meta/agentskills-io-conformance-audit.md`](https://github.com/nevitonsantana/adaptive-skills/blob/main/docs/_meta/agentskills-io-conformance-audit.md)). The audit was performed manually and confirmed by running the reference validator [`skills-ref==0.1.0`](https://github.com/agentskills/agentskills/tree/main/skills-ref) against all 21 skills.
 
 Findings (full detail in the audit doc):
 
@@ -88,7 +88,7 @@ The reference validator should run in the CI Quality Gate (already established b
 
 **Positive.** Adaptive Skills moves from "high-conformance-with-caveat" to "validator-clean" with mechanical edits. APM packaging (Epic 5) unblocked: skills install on any spec-compliant harness without a translation step. The library's identity — governance, evolution, body convention — is fully preserved.
 
-**Negative — lockstep update required.** The repo's internal validator [`scripts/validate_skills.py`](../../scripts/validate_skills.py) currently enforces `REQUIRED_FRONTMATTER = {'name', 'description', 'version', 'owner'}` and runs in the Quality Gate CI (PR [#21](https://github.com/nevitonsantana/adaptive-skills/pull/21)). Moving `version`/`owner` into `metadata` without updating this validator in the same PR would break CI. The remediation PR (Epic 5 or a standalone) therefore MUST:
+**Negative — lockstep update required.** The repo's internal validator [`scripts/validate_skills.py`](https://github.com/nevitonsantana/adaptive-skills/blob/main/scripts/validate_skills.py) currently enforces `REQUIRED_FRONTMATTER = {'name', 'description', 'version', 'owner'}` and runs in the Quality Gate CI (PR [#21](https://github.com/nevitonsantana/adaptive-skills/pull/21)). Moving `version`/`owner` into `metadata` without updating this validator in the same PR would break CI. The remediation PR (Epic 5 or a standalone) therefore MUST:
 
 1. Edit all 21 `SKILL.md` files per §2.2.
 2. Edit `scripts/validate_skills.py` to drop `version`/`owner` from `REQUIRED_FRONTMATTER` (or move them to a `metadata`-aware check).
@@ -107,7 +107,7 @@ External consumers depending on the old top-level shape (if any exist outside th
 
 ## 5. Relationship
 
-ADR-001 declared the *posture*; this ADR settles the *strategy*. ADR-002 (domain agnosticism) and ADR-003 (relationship with AletheIA) are orthogonal. The audit doc [`_meta/agentskills-io-conformance-audit.md`](../_meta/agentskills-io-conformance-audit.md) is the empirical basis; this ADR is the decision.
+ADR-001 declared the *posture*; this ADR settles the *strategy*. ADR-002 (domain agnosticism) and ADR-003 (relationship with AletheIA) are orthogonal. The audit doc [`_meta/agentskills-io-conformance-audit.md`](https://github.com/nevitonsantana/adaptive-skills/blob/main/docs/_meta/agentskills-io-conformance-audit.md) is the empirical basis; this ADR is the decision.
 
 **Downstream:** Epic 5 of the cross-repo plan (APM packaging) implements section 2.2 + 2.4 as part of its scope.
 

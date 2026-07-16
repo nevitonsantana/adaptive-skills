@@ -4,14 +4,14 @@
 
 Explain how a skill can use a proprietary framework — strategic, design, or analytical — without copying it into the skill and without exposing it inappropriately at runtime.
 
-The mechanism is: **capsule + manifest + dependency declaration**, governed by AletheIA's [Knowledge Governance Layer](../../aletheia/docs/concepts/knowledge-governance-layer.md).
+The mechanism is: **capsule + manifest + dependency declaration**, governed by AletheIA's [Knowledge Governance Layer](https://github.com/nevitonsantana/AletheIA/blob/main/docs/concepts/knowledge-governance-layer.md).
 
 ---
 
 ## The three artifacts
 
-1. **Knowledge pack manifest** — declares ownership, version, sensitivity, authority, scope, retrieval mode, and usage policy. Lives in the project / org, not in the skill. See [knowledge-pack-manifest](../../aletheia/docs/contracts/knowledge-pack-manifest.md).
-2. **Framework capsule** — operational summary of the framework. The default surface a skill consumes. See [framework-capsules](../../aletheia/docs/concepts/framework-capsules.md).
+1. **Knowledge pack manifest** — declares ownership, version, sensitivity, authority, scope, retrieval mode, and usage policy. Lives in the project / org, not in the skill. See [knowledge-pack-manifest](https://github.com/nevitonsantana/AletheIA/blob/main/docs/contracts/knowledge-pack-manifest.md).
+2. **Framework capsule** — operational summary of the framework. The default surface a skill consumes. See [framework-capsules](https://github.com/nevitonsantana/AletheIA/blob/main/docs/concepts/framework-capsules.md).
 3. **Skill knowledge dependency** — the skill says *"I need a strategic framework"*, not *"I need framework X"*. The resolver decides which pack satisfies the slot.
 
 ---
@@ -20,7 +20,7 @@ The mechanism is: **capsule + manifest + dependency declaration**, governed by A
 
 1. Identify the framework you intend to use.
 2. Confirm its owner. If you are not the owner, get authorization to capsule it.
-3. Write a capsule that is **operational, not narrative**. Use the [framework-capsule-template](../templates/framework-capsule-template.md).
+3. Write a capsule that is **operational, not narrative**. Use the [framework-capsule-template](https://github.com/nevitonsantana/adaptive-skills/blob/main/templates/framework-capsule-template.md).
 4. Write the manifest with sensitivity, authority, retrieval mode, and exposure rules.
 5. In the skill, declare a knowledge dependency on the *type* (`proprietary_framework`, `product_strategy`, etc.), not on the pack id.
 6. Choose a `preferred_retrieval_mode` of `capsule_first` unless there is a strong reason to consult the full source.
@@ -50,7 +50,7 @@ When a knowledge-aware skill runs:
 - the skill reasons from the capsule
 - the skill cites the pack `id@version` in its output
 - the skill marks any restrictions active (no verbatim, no export, etc.)
-- the skill writes audit entries per [knowledge-audit-log-spec](../../aletheia/docs/contracts/knowledge-audit-log-spec.md)
+- the skill writes audit entries per [knowledge-audit-log-spec](https://github.com/nevitonsantana/AletheIA/blob/main/docs/contracts/knowledge-audit-log-spec.md)
 
 If the framework is `confidential` or higher, the skill must:
 
@@ -76,5 +76,5 @@ Skills must refuse to absorb un-encapsulated content as a shortcut.
 
 - [skill-knowledge-boundaries.md](skill-knowledge-boundaries.md)
 - [declaring-knowledge-dependencies.md](declaring-knowledge-dependencies.md)
-- [framework-capsule-template](../templates/framework-capsule-template.md)
-- [knowledge-aware-skill-template](../templates/knowledge-aware-skill-template.md)
+- [framework-capsule-template](https://github.com/nevitonsantana/adaptive-skills/blob/main/templates/framework-capsule-template.md)
+- [knowledge-aware-skill-template](https://github.com/nevitonsantana/adaptive-skills/blob/main/templates/knowledge-aware-skill-template.md)

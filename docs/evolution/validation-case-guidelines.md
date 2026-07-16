@@ -51,7 +51,7 @@ involving a knowledge-aware skill:
 
 ## Anatomy of a validation case
 
-See [`../../evolution/validation-cases/templates/validation-case-template.md`](../../evolution/validation-cases/templates/validation-case-template.md).
+See [`../../evolution/validation-cases/templates/validation-case-template.md`](https://github.com/nevitonsantana/adaptive-skills/blob/main/evolution/validation-cases/templates/validation-case-template.md).
 Required frontmatter fields:
 
 - `id`, `skill_id`, `case_type`, `sensitivity`, `source_policy`

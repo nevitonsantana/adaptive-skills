@@ -51,7 +51,7 @@ Each match was classified as:
 | `docs/adr/ADR-001-adaptive-skills-as-capability-library.md` | adr | Mentions CM as first validation case — designed for this. |
 | `docs/adr/ADR-002-domain-agnosticism.md` | adr | Topic *is* the reclassification. |
 | `docs/adr/ADR-003-relationship-with-aletheia.md` | adr | Mentions CM as context. |
-| `evolution/observations/*` (multiple) | evolution | Historical observations; reclassification is the reformulated Evolution Cycle #4 (2026-05-21 → 2026-06-30) per [`ROADMAP_EVOLUTIVO.md`](../../ROADMAP_EVOLUTIVO.md). |
+| `evolution/observations/*` (multiple) | evolution | Historical observations; reclassification is the reformulated Evolution Cycle #4 (2026-05-21 → 2026-06-30) per [`ROADMAP_EVOLUTIVO.md`](https://github.com/nevitonsantana/adaptive-skills/blob/main/ROADMAP_EVOLUTIVO.md). |
 | `evolution/proposals/deferred/*` | evolution | Same. |
 | `evolution/reviews/*` | evolution | Same. |
 | `evolution/README.md` | evolution | Layer overview; references are by design. |

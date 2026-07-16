@@ -1,7 +1,7 @@
 # Pattern Compatibility Guidelines
 
 How to fill a `skill_execution_patterns` declaration
-([template](../templates/skill-execution-patterns.yaml)). The governing rule: **a skill does not
+([template](https://github.com/nevitonsantana/adaptive-skills/blob/main/templates/skill-execution-patterns.yaml)). The governing rule: **a skill does not
 decide alone that it can run in any topology.** It declares compatible and incompatible patterns;
 AletheIA selects, the harness enforces.
 
@@ -57,6 +57,6 @@ remove `objective_gate_missing` from a skill that declares any loop compatibilit
 
 - [execution-patterns-for-skills.md](execution-patterns-for-skills.md)
 - [looping-models-for-skills.md](looping-models-for-skills.md)
-- worked declarations: [debugging](../examples/execution-patterns/debugging-patterns.yaml),
-  [feature-value-governance](../examples/execution-patterns/feature-value-governance-patterns.yaml),
-  [testing](../examples/execution-patterns/testing-patterns.yaml)
+- worked declarations: [debugging](https://github.com/nevitonsantana/adaptive-skills/blob/main/examples/execution-patterns/debugging-patterns.yaml),
+  [feature-value-governance](https://github.com/nevitonsantana/adaptive-skills/blob/main/examples/execution-patterns/feature-value-governance-patterns.yaml),
+  [testing](https://github.com/nevitonsantana/adaptive-skills/blob/main/examples/execution-patterns/testing-patterns.yaml)

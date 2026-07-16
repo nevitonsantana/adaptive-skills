@@ -34,7 +34,7 @@ All of these can be written without referencing any proprietary content.
 - examples drawn from real, identifiable engagements
 - detailed scoring tables that encode an organization's specific carve-outs
 
-If a skill needs that content, it declares a **knowledge dependency** (see [declaring-knowledge-dependencies.md](declaring-knowledge-dependencies.md)) and lets AletheIA's [Knowledge Governance Layer](../../aletheia/docs/concepts/knowledge-governance-layer.md) resolve it.
+If a skill needs that content, it declares a **knowledge dependency** (see [declaring-knowledge-dependencies.md](declaring-knowledge-dependencies.md)) and lets AletheIA's [Knowledge Governance Layer](https://github.com/nevitonsantana/AletheIA/blob/main/docs/concepts/knowledge-governance-layer.md) resolve it.
 
 ---
 
@@ -70,4 +70,4 @@ A skill that cannot run in generic mode must say so loudly in its `fallback_beha
 
 - [declaring-knowledge-dependencies.md](declaring-knowledge-dependencies.md)
 - [using-proprietary-frameworks-safely.md](using-proprietary-frameworks-safely.md)
-- [knowledge-aware-skill-template](../templates/knowledge-aware-skill-template.md)
+- [knowledge-aware-skill-template](https://github.com/nevitonsantana/adaptive-skills/blob/main/templates/knowledge-aware-skill-template.md)

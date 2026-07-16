@@ -32,7 +32,7 @@ Two filled examples live in AletheIA:
 - `examples/harness/codex-debugging-harness.md` — `debugging` + `testing`, `act_with_approval`, gated writes.
 - `examples/harness/codex-testing-harness.md` — `testing`, low risk, light gates.
 
-Start from [`../templates/agent-harness-contract.yaml`](../templates/agent-harness-contract.yaml)
+Start from [`../templates/agent-harness-contract.yaml`](https://github.com/nevitonsantana/adaptive-skills/blob/main/templates/agent-harness-contract.yaml)
 and the table above when authoring a new one.
 
 ---

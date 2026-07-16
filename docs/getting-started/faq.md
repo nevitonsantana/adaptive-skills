@@ -123,7 +123,7 @@ Start with the recommended starter bundle (`workflow`, `feature-planning`, `test
 Yes, but with a cost: output consistency decreases when different people use different approaches. If a task type is recurring and shared (e.g., all PRs go through `qa-review`), standardize it in the policy file so the team converges.
 
 **How do we contribute a skill back to the library?**  
-Through the evolution layer: file an evolution proposal in `evolution/proposals/`. See [`docs/evolution-layer.md`](../evolution-layer.md) and [`CONTRIBUTING.md`](../../CONTRIBUTING.md) for the process. Proposals go through review before any change reaches the canon.
+Through the evolution layer: file an evolution proposal in `evolution/proposals/`. See [`docs/evolution-layer.md`](../evolution-layer.md) and [`CONTRIBUTING.md`](https://github.com/nevitonsantana/adaptive-skills/blob/main/CONTRIBUTING.md) for the process. Proposals go through review before any change reaches the canon.
 
 **Should we use the same `apm.lock.yaml` across all projects?**  
 No — lockfiles are per-project. Each project pins the version it depends on. This is intentional: different projects can use different versions of the library without conflicts.

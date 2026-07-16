@@ -29,7 +29,7 @@ The library — what each is and when to use it — is owned by the AletheIA rep
 ## What a skill declares
 
 A skill ships a `skill_execution_patterns` declaration
-([template](../templates/skill-execution-patterns.yaml)):
+([template](https://github.com/nevitonsantana/adaptive-skills/blob/main/templates/skill-execution-patterns.yaml)):
 
 - **compatible_patterns** — patterns the skill can run in, each with conditions and the controls
   that pattern requires (e.g. `loop_until_done` only with an objective gate and `max_iterations`);

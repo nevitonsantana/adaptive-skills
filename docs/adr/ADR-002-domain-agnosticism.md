@@ -11,7 +11,7 @@
 
 ## 1. Context
 
-Adaptive Skills was developed and validated through Q1–Q2 2026 with **Crisis Monitor** as the primary consumer project. Most existing evolution observations (`evolution/observations/`) reference Crisis-Monitor-specific situations; the [Crisis Management domain pack](../../domain-packs/crisis-management/) is the most mature domain pack; and the original README treated the case study as central evidence.
+Adaptive Skills was developed and validated through Q1–Q2 2026 with **Crisis Monitor** as the primary consumer project. Most existing evolution observations (`evolution/observations/`) reference Crisis-Monitor-specific situations; the [Crisis Management domain pack](https://github.com/nevitonsantana/adaptive-skills/blob/main/domain-packs/crisis-management) is the most mature domain pack; and the original README treated the case study as central evidence.
 
 PR [#31](https://github.com/nevitonsantana/adaptive-skills/pull/31) (2026-05-18) already moved Crisis Monitor from "active backlog" to "team-owned field evidence." This ADR formalizes that shift and extends it: the entire library is domain-agnostic, not just the README.
 
@@ -60,7 +60,7 @@ For any canonical skill or doc, the test is: *if a new adopter from a different 
 
 ## 5. Relationship
 
-ADR-001 fixed *what* Adaptive Skills is (capability library). This ADR fixes *what it applies to* (any domain). ADR-003 fixes the relationship with AletheIA. Epic 2 of the cross-repo plan implements section 2.1 by auditing and reclassifying Crisis Monitor references. The reformulated Evolution Cycle #4 (period 2026-05-21 → 2026-06-30, see [`ROADMAP_EVOLUTIVO.md`](../../ROADMAP_EVOLUTIVO.md)) reclassifies existing observations against this criterion.
+ADR-001 fixed *what* Adaptive Skills is (capability library). This ADR fixes *what it applies to* (any domain). ADR-003 fixes the relationship with AletheIA. Epic 2 of the cross-repo plan implements section 2.1 by auditing and reclassifying Crisis Monitor references. The reformulated Evolution Cycle #4 (period 2026-05-21 → 2026-06-30, see [`ROADMAP_EVOLUTIVO.md`](https://github.com/nevitonsantana/adaptive-skills/blob/main/ROADMAP_EVOLUTIVO.md)) reclassifies existing observations against this criterion.
 
 The mirror ADR in the AletheIA repo (ADR-006) carries the same principle for the overlay layer.
 
