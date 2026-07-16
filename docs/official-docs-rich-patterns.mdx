@@ -1,0 +1,101 @@
+# Official Docs Rich Patterns
+
+This page defines the first approved rich-content patterns for the Adaptive Skills Blume documentation site.
+
+The goal is to make the official docs easier to scan, navigate, and understand without changing the underlying skills, projections, or governance model.
+
+:::note[Scope]
+These patterns are presentation-only. They do not activate new Adaptive Skills behavior, runtime behavior, automation, or publishing policy.
+:::
+
+## Approved patterns
+
+<CardGroup cols={2}>
+  <Card title="Navigation cards" icon="layout-grid">
+    Use cards on landing pages and section indexes when readers need to choose a path.
+  </Card>
+  <Card title="Ordered steps" icon="list-ordered">
+    Use steps for setup flows, publication flows, validation paths, and other ordered processes.
+  </Card>
+  <Card title="Accordions" icon="chevrons-up-down">
+    Use accordions for optional explanations, FAQs, and supporting context that would otherwise interrupt the main path.
+  </Card>
+  <Card title="Panels and badges" icon="badge-check">
+    Use panels and badges to make status, audience, maturity, and manual gates visible.
+  </Card>
+</CardGroup>
+
+## Reader-first usage rules
+
+<Steps>
+  <Step title="Start with the decision the reader needs to make">
+    Prefer a small set of high-signal choices over a decorative grid. A card should answer: “where should I go next?”
+  </Step>
+  <Step title="Keep governance explicit">
+    Use badges, panels, and callouts to show whether a page is advisory, validated, manual, experimental, or source-backed.
+  </Step>
+  <Step title="Use interactivity to reduce clutter">
+    Accordions are useful when detail is valid but secondary. Do not hide required instructions inside optional areas.
+  </Step>
+  <Step title="Keep Markdown agent-readable">
+    Rich components should improve the web experience while preserving clear text for generated Markdown, search, and `llms.txt` surfaces.
+  </Step>
+</Steps>
+
+## Pattern examples
+
+<Tabs>
+  <Tab title="Landing page">
+    Use a `CardGroup` for four to six entry points, followed by a short `Steps` section that explains the recommended reading order.
+  </Tab>
+  <Tab title="Setup guide">
+    Use `Steps` for the main path, `CodeGroup` for alternative commands, and a warning callout for irreversible or manual gates.
+  </Tab>
+  <Tab title="Governance note">
+    Use badges for status and panels for boundaries, assumptions, and follow-up evidence.
+  </Tab>
+</Tabs>
+
+## Component fit matrix
+
+| Pattern | Best used for | Avoid when |
+|---|---|---|
+| `CardGroup` / `Card` | Entry points, section indexes, recommended paths | The page only has one obvious next step |
+| `Steps` / `Step` | Ordered setup, validation, publication, adoption | The items are unordered concepts |
+| `Tabs` / `Tab` | Equivalent alternatives, such as agent or environment variants | The tabs hide different levels of importance |
+| `Accordion` / `AccordionItem` | Optional detail, FAQs, secondary context | The content is required for safe execution |
+| `Panel` | Boundary notes, summaries, supporting context | It repeats the main paragraph without adding meaning |
+| `Badge` | Status, maturity, manual/automatic gates | It creates vague marketing labels |
+
+## Example authoring snippet
+
+```mdx docs/example.mdx
+<CardGroup cols={2}>
+  <Card title="Overview" href="/adaptive-skills/getting-started/overview/" icon="compass">
+    Start with the model and reading path.
+  </Card>
+  <Card title="Skill catalog" href="/adaptive-skills/getting-started/skill-catalog/" icon="library">
+    Choose a skill by capability and use case.
+  </Card>
+</CardGroup>
+
+<Steps>
+  <Step title="Read the model">Understand the boundary first.</Step>
+  <Step title="Choose the skill">Pick only the capability needed for the work slice.</Step>
+  <Step title="Validate the change">Run the repository gates before opening a PR.</Step>
+</Steps>
+```
+
+## Guardrails
+
+<Accordion>
+  <AccordionItem title="Do not convert every page at once">
+    Use this pattern incrementally. Each conversion should improve one page or one section and keep review small.
+  </AccordionItem>
+  <AccordionItem title="Do not use rich components to overclaim maturity">
+    A visual badge does not create evidence. It should reflect an existing validation, publication state, or documented boundary.
+  </AccordionItem>
+  <AccordionItem title="Keep source Markdown clear">
+    If the raw `.mdx` becomes harder to review than the rendered page, split the change or simplify the component use.
+  </AccordionItem>
+</Accordion>
