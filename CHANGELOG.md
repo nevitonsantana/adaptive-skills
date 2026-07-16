@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+- add manual GitHub Pages publication workflow and smoke-test plan for Adaptive Skills docs
+
 - close AS-DOC-3 Blume docs shell state after PR #92 merge
 
 - add a manual Blume documentation shell for Adaptive Skills official docs
