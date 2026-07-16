@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+- classify official docs link readiness and repair legacy local documentation links
+
 - close AS-DOC-1 public documentation map state after PR #88 merge
 
 - align the root README and docs index on the official public documentation path

@@ -16,6 +16,7 @@ The recommended public reader path is:
 
 - `../README.md` — project overview and value proposition
 - [`official-docs-readiness.md`](official-docs-readiness.md) — publication-readiness map for turning the Markdown corpus into official docs
+- [`official-docs-link-readiness.md`](official-docs-link-readiness.md) — route and link readiness classification for official docs
 - [`../SYSTEM_STATE.md`](../SYSTEM_STATE.md) — compact current-state index; source records and canonical files remain authoritative
 - `skill-model.md` — Core + Modules + Triggers model
 - `skill-design-principles/lean-skill-doctrine.md` — S20 doctrine for necessary, distinct, proportional, verifiable and governable skills
