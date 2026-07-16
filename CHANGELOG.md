@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+- close official docs readiness review state after PR #86 merge
+
 - add official docs readiness review and link it from the docs index
 
 - rename the maintainer-facing `.github/README.md` to `.github/PROJECT_OPERATIONS.md` so GitHub renders the root Adaptive Skills README on the repository homepage
