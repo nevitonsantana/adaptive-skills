@@ -15,6 +15,7 @@ The recommended public reader path is:
 ## Start here
 
 - `../README.md` — project overview and value proposition
+- [`index.md`](index.md) — public documentation homepage
 - [`official-docs-readiness.md`](official-docs-readiness.md) — publication-readiness map for turning the Markdown corpus into official docs
 - [`official-docs-link-readiness.md`](official-docs-link-readiness.md) — route and link readiness classification for official docs
 - [`official-docs-blume-shell.md`](official-docs-blume-shell.md) — decision record for the manual Blume documentation shell

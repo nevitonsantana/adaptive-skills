@@ -31,7 +31,7 @@ After a manual run succeeds, smoke-test these representative routes:
 
 | Route | Why it matters |
 |---|---|
-| `/adaptive-skills/` | public site root |
+| `/adaptive-skills/` | public site root, served by `docs/index.md` |
 | `/adaptive-skills/README/` | generated docs index route |
 | `/adaptive-skills/getting-started/overview/` | first-reader overview |
 | `/adaptive-skills/getting-started/installation-guide/` | install path |
