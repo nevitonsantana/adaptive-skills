@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+- close AS-DOC-1 public documentation map state after PR #88 merge
+
 - align the root README and docs index on the official public documentation path
 
 - close official docs readiness review state after PR #86 merge
