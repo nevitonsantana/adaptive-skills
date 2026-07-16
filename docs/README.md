@@ -18,6 +18,7 @@ The recommended public reader path is:
 - [`official-docs-readiness.md`](official-docs-readiness.md) — publication-readiness map for turning the Markdown corpus into official docs
 - [`official-docs-link-readiness.md`](official-docs-link-readiness.md) — route and link readiness classification for official docs
 - [`official-docs-blume-shell.md`](official-docs-blume-shell.md) — decision record for the manual Blume documentation shell
+- [`official-docs-publication-proof.md`](official-docs-publication-proof.md) — manual GitHub Pages publication and smoke-test plan
 - [`../SYSTEM_STATE.md`](https://github.com/nevitonsantana/adaptive-skills/blob/main/SYSTEM_STATE.md) — compact current-state index; source records and canonical files remain authoritative
 - `skill-model.md` — Core + Modules + Triggers model
 - `skill-design-principles/lean-skill-doctrine.md` — S20 doctrine for necessary, distinct, proportional, verifiable and governable skills
