@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+- align the root README and docs index on the official public documentation path
+
 - close official docs readiness review state after PR #86 merge
 
 - add official docs readiness review and link it from the docs index

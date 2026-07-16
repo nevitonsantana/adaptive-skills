@@ -2,13 +2,15 @@
 
 Use this page as the documentation map for Adaptive Skills.
 
-The recommended path is:
+The recommended public reader path is:
 
-1. understand the model;
-2. choose the right skill;
-3. set up only the skills you need;
-4. run a small pilot;
-5. capture evidence before changing the canon.
+1. **Overview** — [`../README.md`](../README.md) and [`getting-started/overview.md`](getting-started/overview.md).
+2. **Install / consume** — [`getting-started/installation-guide.md`](getting-started/installation-guide.md), [`guides/install-via-apm.md`](guides/install-via-apm.md), [`codex-consumer-setup.md`](codex-consumer-setup.md), and [`claude-consumer-setup.md`](claude-consumer-setup.md).
+3. **Choose a skill** — [`getting-started/skill-catalog.md`](getting-started/skill-catalog.md), [`how-to-use-a-skill.md`](how-to-use-a-skill.md), and [`skill-categories.md`](skill-categories.md).
+4. **Understand the model** — [`skill-model.md`](skill-model.md), [`domain-taxonomy.md`](domain-taxonomy.md), and [`skill-catalog-governance.md`](skill-catalog-governance.md).
+5. **Use with AletheIA** — [`aletheia-integration.md`](aletheia-integration.md), [`agent-role-integration.md`](agent-role-integration.md), and [`specification-facilitation.md`](specification-facilitation.md).
+6. **Advanced overlays** — [`capability-model.md`](capability-model.md), [`capability-graph.md`](capability-graph.md), [`operational-runtime.md`](operational-runtime.md), and [`evolution-layer.md`](evolution-layer.md).
+7. **Evidence and decisions** — [`adr/README.md`](adr/README.md), [`_meta/`](_meta/), [`../examples/README.md`](../examples/README.md), and [`../evolution/README.md`](../evolution/README.md).
 
 ## Start here
 
@@ -26,7 +28,7 @@ The recommended path is:
 
 ## Official documentation path
 
-The current repository documentation is Markdown-first. [`official-docs-readiness.md`](official-docs-readiness.md) records the recommended public reader path and the gated slices needed before adding a generated documentation site or publication workflow.
+The current repository documentation is Markdown-first. The path above is the curated public-doc map for GitHub-rendered documentation. [`official-docs-readiness.md`](official-docs-readiness.md) records the remaining gated slices before adding a generated documentation site or publication workflow.
 
 ## Adopt in another project
 
