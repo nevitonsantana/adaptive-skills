@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+- add a Blume docs homepage so the published Pages root resolves
+
 - allow the manual docs Pages workflow to initialize GitHub Pages when needed
 
 - add manual GitHub Pages publication workflow and smoke-test plan for Adaptive Skills docs
