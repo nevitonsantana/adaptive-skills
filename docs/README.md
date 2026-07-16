@@ -13,6 +13,7 @@ The recommended path is:
 ## Start here
 
 - `../README.md` — project overview and value proposition
+- [`official-docs-readiness.md`](official-docs-readiness.md) — publication-readiness map for turning the Markdown corpus into official docs
 - [`../SYSTEM_STATE.md`](../SYSTEM_STATE.md) — compact current-state index; source records and canonical files remain authoritative
 - `skill-model.md` — Core + Modules + Triggers model
 - `skill-design-principles/lean-skill-doctrine.md` — S20 doctrine for necessary, distinct, proportional, verifiable and governable skills
@@ -22,6 +23,10 @@ The recommended path is:
 - `capability-model.md` — skills, capabilities, workflows, runtime, harness, and governance boundaries
 - `capability-graph.md` — experimental graph overlay for composition and routing
 - `capability-routing-boundary.md` — S10 boundary note aligning capability fit with AletheIA routing governance
+
+## Official documentation path
+
+The current repository documentation is Markdown-first. [`official-docs-readiness.md`](official-docs-readiness.md) records the recommended public reader path and the gated slices needed before adding a generated documentation site or publication workflow.
 
 ## Adopt in another project
 
