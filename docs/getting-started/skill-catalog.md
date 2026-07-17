@@ -39,6 +39,7 @@ Start from the task, not from the list. Identify the dominant need of the work, 
 
 | Skill | Trigger signal | One-line description |
 |---|---|---|
+| [`intent-clarification`](#intent-clarification) | Desired outcome, success, or constraints remain ambiguous | Clarify human-owned intent before planning or execution without deciding it for the human |
 | [`premortem`](#premortem) | Consequential plan; launch; commitment; high cost of failure | Assume failure already happened; work backwards to causes |
 
 ### Efficiency
@@ -304,6 +305,20 @@ Start from the task, not from the list. Identify the dominant need of the work, 
 2. Write for the mental state of the moment — not the ideal, calm user.
 3. Prefer action over description: "Try again" not "An error has occurred."
 4. Check for jargon, passive voice, and assumed knowledge.
+
+---
+
+### intent-clarification
+
+**When to use:** The desired outcome, observable success, constraints, or non-goals remain unclear enough that proceeding would require consequential guessing.
+
+**When NOT to use:** The intent and acceptance evidence are already explicit, or the task is a low-risk mechanical change that can proceed reversibly.
+
+**Core moves:**
+1. Restate the desired outcome without embedding an implementation choice.
+2. Separate human decisions, working assumptions, and unavailable information.
+3. Define observable success and failure.
+4. Ask only the questions that materially change outcome, risk, or validation.
 
 ---
 

@@ -58,16 +58,18 @@ See [`docs/adr/ADR-001-adaptive-skills-as-capability-library.md`](../adr/ADR-001
 
 ---
 
-## Current library (21 skills, 9 domains)
+## Current library (33 skills, 10 domains)
 
 | Domain | Skills |
 |---|---|
-| Engineering | `workflow`, `feature-planning`, `testing`, `debugging`, `api-design`, `refactoring`, `architecture-review`, `code-style`, `communication` |
-| Design | `ux-strategy`, `ux-provocation`, `heuristic-audit`, `ux-writing` |
-| Planning | `premortem` |
+| Engineering | `workflow`, `feature-planning`, `testing`, `debugging`, `api-design`, `refactoring`, `lean-implementation`, `architecture-review`, `code-style`, `communication`, `domain-language-alignment` |
+| Design | `ux-strategy`, `ux-provocation`, `heuristic-audit`, `ux-writing`, `design-system-intelligence` |
+| Planning | `intent-clarification`, `premortem` |
 | Efficiency | `task-chunking`, `checkpoint-review`, `handoff-summary` |
 | Cross-functional | `triad-check` |
-| Business | `business-design` |
+| Product | `feature-value-governance`, `opportunity-tree-alignment` |
+| Business | `business-design`, `revenue-lever-mapping` |
+| Governance | `feature-complexity-audit`, `sunset-decision`, `knowledge-source-evaluation`, `knowledge-conflict-resolution`, `restricted-context-check` |
 | Quality | `qa-review` |
 | Metrics | `observability-review` |
 

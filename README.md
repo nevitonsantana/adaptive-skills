@@ -256,7 +256,7 @@ Add `premortem` when plans have meaningful cost of failure and can still be chan
 
 | Dimension | Status | Next delivery posture |
 |----------|--------|-----------------------|
-| Validated skills | 30 generic + 3 domain-pack | Expand only when evidence justifies it |
+| Validated skills | 33 generic + 3 domain-pack | Expand only when evidence justifies it |
 | Active pilots | 5 | Keep follow-ups evidence-gated |
 | Evolution cycle | #3 — Observations | Start Cycle #4 only after reviewable signals |
 | Domains | 10/10 | All categories now have at least one published skill |

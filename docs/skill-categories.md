@@ -10,7 +10,7 @@ Category growth is governed by [Skill Catalog Governance](skill-catalog-governan
 
 Business-domain skills for strategic framing, value logic, and operating-model thinking.
 
-- **Published:** `business-design`
+- **Published:** `business-design`, `revenue-lever-mapping`
 - **Backlog:** `stakeholder-mapping`, `value-proposition`, `operating-model`
 
 ## cross-functional
@@ -43,9 +43,9 @@ Reusable execution skills for engineering work. These skills should work across 
 
 ## governance
 
-Governance-domain placeholder. No published generic skills yet.
+Skills for reviewing permanent cost, lifecycle decisions, and governed knowledge use without taking project-level decision authority.
 
-- **Published:** —
+- **Published:** `feature-complexity-audit`, `sunset-decision`, `knowledge-source-evaluation`, `knowledge-conflict-resolution`, `restricted-context-check`
 - **Backlog:** `decision-log`, `handoff-governance`, `ai-safety-review`
 
 ## metrics
@@ -64,9 +64,9 @@ Skills for structuring, stress-testing, and de-risking plans before execution be
 
 ## product
 
-Product-domain placeholder. No published generic skills yet.
+Product-domain skills for deciding whether opportunities and feature investments are connected to user, business, and outcome evidence.
 
-- **Published:** —
+- **Published:** `feature-value-governance`, `opportunity-tree-alignment`
 - **Backlog:** `product-discovery`, `roadmap-thinking`, `prioritization`, `hypothesis-design`
 
 ## quality

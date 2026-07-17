@@ -7,7 +7,7 @@
     "dev": "ASTRO_TELEMETRY_DISABLED=1 blume dev",
     "build": "ASTRO_TELEMETRY_DISABLED=1 blume build",
     "check": "ASTRO_TELEMETRY_DISABLED=1 blume check",
-    "validate": "ASTRO_TELEMETRY_DISABLED=1 blume validate"
+    "validate": "python3 ../../scripts/validate_docs_truth.py && ASTRO_TELEMETRY_DISABLED=1 blume validate"
   },
   "devDependencies": {
     "@astrojs/mdx": "^7.0.3",

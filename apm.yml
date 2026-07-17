@@ -1,7 +1,7 @@
 # Adaptive Skills — APM package manifest
 #
 # Adaptive Skills is an agentskills.io-conformant capability library. The
-# repo lays out 21 generic skills as a flat APM Skill Collection
+# repo lays out 33 generic skills as a flat APM Skill Collection
 # (`skills/<name>/SKILL.md`) so adopters can install the full library or a
 # single skill:
 #
@@ -20,7 +20,7 @@
 name: adaptive-skills
 version: 0.1.0
 description: >
-  Adaptive Skills capability library — 21 portable, domain-agnostic micro-skills
+  Adaptive Skills capability library — 33 portable, domain-agnostic micro-skills
   for AI-assisted work, conforming to the agentskills.io specification. Ships
   as a flat APM Skill Collection installable in full or per-skill.
 author: Neviton Santana
