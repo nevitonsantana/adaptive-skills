@@ -1,127 +1,131 @@
-# Adaptive Skills — Overview
-
-Adaptive Skills is a portable **capability library**: a collection of small, reusable micro-skills for AI-assisted work. Each skill defines exactly when to use it, what to do, and what a good output looks like — so agents and teams can execute with discipline instead of improvisation.
-
 ---
+title: Adaptive Skills Overview
+description: Understand what Adaptive Skills is, what problem it solves, how a skill works, and where it fits with AletheIA.
+---
+
+Adaptive Skills is a portable library of small capabilities for AI-assisted work. A capability is a reusable way to approach one kind of problem, such as clarifying intent, planning a feature, debugging a failure, reviewing an interface, testing a change, or handing work to another person or agent.
+
+The library helps make AI-assisted work less improvised while keeping human judgment and project rules in control.
 
 ## The problem it solves
 
-AI-assisted work tends to fail in predictable ways:
+AI-assisted work often fails because the agent uses the wrong approach, hides assumptions, produces an output nobody can verify, or loses useful context after the session ends.
 
-- The agent picks the wrong mode for the problem — debugging when it should be planning, or reviewing when it should be executing.
-- Risks and assumptions stay implicit until they surface as failures.
-- Useful patterns from one session disappear after the thread ends.
-- Generic prompts absorb project-specific rules, making them unmaintainable.
-- Teams cannot tell whether a given output was systematic or improvised.
+Adaptive Skills turns repeated working practices into inspectable `SKILL.md` files. Each skill explains:
 
-Adaptive Skills turns repeated work patterns into small, inspectable assets. Instead of one large prompt or a vague instruction like "be strategic", you invoke the smallest skill that fits the dominant need — and it brings structure without bureaucracy.
+- when it is useful;
+- when it should not be used;
+- the essential moves;
+- optional depth for special situations;
+- the output it should leave behind;
+- how to verify that output.
 
----
+## A simple example
 
-## What a skill is
+Imagine that a team asks an AI agent to “build a new onboarding flow.” Different needs may be hidden inside that request:
 
-Every skill in the library defines:
-
-| Element | What it answers |
+| Dominant need | Appropriate skill |
 |---|---|
-| **When to use** | What signal says this skill is the right fit |
-| **When NOT to use** | What this skill should not replace |
-| **Core moves** | The few actions that should almost always happen |
-| **Optional modules** | Add-ons that activate only when the context needs them |
-| **Verification** | What a good output looks like |
-| **Handoff signals** | When and how to pass work forward |
+| The intended outcome is unclear | `intent-clarification` |
+| The feature needs a small delivery plan | `feature-planning` |
+| The team wants to expose failure risks first | `premortem` |
+| The interface needs usability review | `heuristic-audit` |
+| The implementation needs proof | `testing` |
+| Work must continue in another session | `handoff-summary` |
 
-Skills are designed to be read and invoked directly — paste the skill into a session, reference it by name in an agent context, or install it via APM so your harness loads it automatically.
+The goal is not to run all these skills. It is to choose the smallest one that improves the current decision or output.
 
----
+## What Adaptive Skills is
 
-## What Adaptive Skills is not
+Adaptive Skills is:
 
-- **Not an operating overlay.** Adaptive Skills provides capabilities — it does not legislate how a project decides, validates, or reports. That is AletheIA's responsibility.
-- **Not an agent runtime.** The library ships SKILL.md files, not a process runner or session manager.
-- **Not a squad bundle.** Skills are individual capabilities; the library does not configure a pre-built squad the way BMAD or SDD do.
+- a reusable capability library;
+- readable by people and AI agents;
+- installable in consumer projects;
+- independent of any single product domain;
+- usable with or without AletheIA;
+- governed through explicit review and evolution records.
 
-See [`docs/adr/ADR-001-adaptive-skills-as-capability-library.md`](../adr/ADR-001-adaptive-skills-as-capability-library/) for the formal definition.
+## What it is not
 
----
+Adaptive Skills is not:
 
-## Practical daily benefits
+- an autonomous agent or runtime;
+- a replacement for product, design, engineering, or business judgment;
+- a project-management or approval system;
+- a reason to add process to every task;
+- a mechanism that silently changes its own skills.
 
-| Without Adaptive Skills | With Adaptive Skills |
+A skill provides method and output discipline. The surrounding project or harness controls permissions, tools, approvals, and operational policy.
+
+## How a skill works
+
+Every skill follows a common shape:
+
+1. **When to Use** identifies signals that the skill fits.
+2. **When NOT to Use** prevents unnecessary or incorrect activation.
+3. **Core Moves** defines the essential actions.
+4. **Optional Modules** adds depth only when a matching condition exists.
+5. **Expected Output** makes the result reviewable.
+6. **Verification** defines the minimum proof before closure.
+7. **Handoff Signals** explains when another capability or human decision is needed.
+
+This model is called **Core + Modules + Triggers**. You do not need to understand the deeper architecture before using your first skill.
+
+## Current library
+
+The canonical library currently contains **33 generic skills across 10 categories**:
+
+- engineering;
+- design;
+- planning;
+- efficiency;
+- cross-functional;
+- product;
+- business;
+- governance;
+- quality;
+- metrics.
+
+The [skill catalog](skill-catalog/) lists every skill, the signal that suggests using it, and its expected contribution.
+
+## Use it standalone
+
+Adaptive Skills works without AletheIA. Install one or more skills in a compatible AI environment, choose the capability that fits the task, and use its verification section before accepting the result.
+
+This is the simplest adoption path.
+
+## Use it with AletheIA
+
+AletheIA and Adaptive Skills operate at different levels:
+
+> AletheIA governs the work; Adaptive Skills provides reusable execution capabilities inside that work.
+
+AletheIA may frame a Work Slice, require evidence, preserve continuity, or control a review gate. An Adaptive Skill may help plan, inspect, test, communicate, or return a structured observation. The skill does not take AletheIA's authority.
+
+Read [AletheIA integration](../aletheia-integration/) when you need this deeper operating model.
+
+## Who should read what
+
+| Reader | Recommended path |
 |---|---|
-| Agent improvises the approach for each task | Invoke the right skill for the dominant need |
-| Risks assumed away without visibility | `premortem` surfaces failure modes before execution starts |
-| Session ends, all operating context is lost | `handoff-summary` packages state explicitly |
-| Long sessions drift — wrong decisions compound | `checkpoint-review` inserts deliberate pauses |
-| Cross-functional decisions collapse into one lens | `triad-check` surfaces product, design, and technical perspectives |
-| Validation is informal — "looks right" | `testing` and `qa-review` calibrate the right level of proof |
-
----
-
-## Current library (33 skills, 10 domains)
-
-| Domain | Skills |
-|---|---|
-| Engineering | `workflow`, `feature-planning`, `testing`, `debugging`, `api-design`, `refactoring`, `lean-implementation`, `architecture-review`, `code-style`, `communication`, `domain-language-alignment` |
-| Design | `ux-strategy`, `ux-provocation`, `heuristic-audit`, `ux-writing`, `design-system-intelligence` |
-| Planning | `intent-clarification`, `premortem` |
-| Efficiency | `task-chunking`, `checkpoint-review`, `handoff-summary` |
-| Cross-functional | `triad-check` |
-| Product | `feature-value-governance`, `opportunity-tree-alignment` |
-| Business | `business-design`, `revenue-lever-mapping` |
-| Governance | `feature-complexity-audit`, `sunset-decision`, `knowledge-source-evaluation`, `knowledge-conflict-resolution`, `restricted-context-check` |
-| Quality | `qa-review` |
-| Metrics | `observability-review` |
-
-Full breakdown with trigger signals and composite flows: [`skill-catalog.md`](skill-catalog/).
-
----
-
-## Use with or without AletheIA
-
-**Without AletheIA:** Adaptive Skills works standalone. Install via APM and invoke skills in any Claude Code, Codex, or conformant harness session. You get reusable, consistent execution discipline.
-
-**With AletheIA:** AletheIA governs the work loop (scope, gates, handoffs, learnings); Adaptive Skills provides the specialist capabilities inside that loop. Together:
-
-```
-AletheIA decides the flow → Adaptive Skills shapes what gets done
-```
-
-See [`docs/aletheia-integration.md`](../aletheia-integration/) for the combined setup.
-
----
-
-## Telemetry and observability
-
-Adaptive Skills includes a lightweight telemetry model so you can tell whether skills are being used, which ones generate friction, and which outputs are worth promoting to the evolution layer.
-
-Three signals to watch:
-
-1. **Invocation frequency** — which skills get called most often? Frequently-invoked skills are candidates for evolution.
-2. **Module activation rate** — which optional modules get activated? High rates suggest a module should move into core.
-3. **Handoff quality** — does the output of a skill give the next operator enough to start without re-deriving context?
-
-You do not need instrumentation to track these — a simple evolution observation (see `evolution/observations/`) captures enough signal for the governed evolution loop.
-
-Full model: [`docs/telemetry.md`](../telemetry/).
-
----
+| New to the project | Overview → Quickstart → First skill |
+| Practitioner | Skill catalog → How to use a skill → Harness setup |
+| Team adopting the library | Consumer adoption → First pilot → Evaluation checklist |
+| Advanced reader | Skill model → Concepts → AletheIA integration |
+| Maintainer | Evolution layer → Governance → ADRs |
 
 ## Risks and cautions
 
-**Skills are not roles.** Do not assign a skill to an agent as if it were a persona. Invoke a skill for a task, then let the agent return to its default operating mode.
-
-**Do not force a skill that does not fit.** Every skill has an explicit "When NOT to use" section. A weak fit produces a worse output than no skill at all.
-
-**The library does not self-edit.** Changes to skills go through the evolution loop (observation → proposal → review). If you modify a skill locally, that change is not reflected upstream. Keep local adaptations in `ops/ai/skills/` in your consumer project, not inside the installed skill files.
-
-**Domain packs are case studies, not canonical skills.** `domain-packs/crisis-management/` is field evidence from the first validation case. It is useful as a reference, but it is not the generic capability layer. See [`docs/adr/ADR-002-domain-agnosticism.md`](../adr/ADR-002-domain-agnosticism/).
-
----
+- Do not use a skill when its “When NOT to Use” section matches the task.
+- Do not assume a skill grants access to tools, files, secrets, or external systems.
+- Do not copy project-specific policy into the generic library.
+- Do not treat a polished AI response as evidence that the skill succeeded.
+- Do not activate several skills when one is enough.
 
 ## Next steps
 
-- Install the library: [`installation-guide.md`](installation-guide/)
-- Browse all skills with trigger signals and composite flows: [`skill-catalog.md`](skill-catalog/)
-- Questions? [`faq.md`](faq/)
-- Deep dive: [`docs/how-to-use-a-skill.md`](../how-to-use-a-skill/), [`docs/skill-model.md`](../skill-model/)
+1. [Complete the quickstart](quickstart/).
+2. [Run your first skill](first-skill/).
+3. [Browse the complete catalog](skill-catalog/).
+4. [Read the FAQ](faq/) if you have adoption or installation questions.

@@ -1,0 +1,93 @@
+---
+title: Quickstart
+description: Install a small starter set and use Adaptive Skills on a first low-risk task.
+---
+
+This quickstart takes you from an empty consumer project to one skill-assisted task.
+
+<Badge variant="success">Beginner</Badge> <Badge>About 10 minutes</Badge>
+
+## 1. Choose a project
+
+Use an existing project or create a temporary directory:
+
+```bash
+mkdir adaptive-skills-first-use
+cd adaptive-skills-first-use
+git init
+```
+
+## 2. Install the starter set
+
+```bash
+apm install nevitonsantana/adaptive-skills \
+  --skill workflow \
+  --skill feature-planning \
+  --skill testing
+```
+
+:::note[Why only three?]
+A small starter set makes it easier to understand which skill is influencing the work. Add more only when a real task needs them.
+:::
+
+## 3. Confirm the installation
+
+For the Claude target:
+
+```bash
+ls .claude/skills/
+```
+
+You should find `workflow`, `feature-planning`, and `testing`, each with a `SKILL.md` file.
+
+## 4. Pick a low-risk task
+
+Choose a reversible task whose result can be reviewed. Good first examples:
+
+- plan a small documentation improvement;
+- define tests for an existing behavior;
+- frame a contained maintenance task;
+- clarify the acceptance criteria for a minor feature.
+
+Avoid deployments, destructive changes, credentials, sensitive data, or irreversible decisions for the first exercise.
+
+## 5. Invoke one skill
+
+Try:
+
+<Prompt description="Copy a safe first-use prompt for the `workflow` skill.">
+Use the workflow skill to frame this task. Return the goal, in-scope and out-of-scope boundaries, the evidence needed to close it, and the next safe action. Do not execute changes yet.
+</Prompt>
+
+## 6. Review the result
+
+Check that the response includes:
+
+- one clear goal;
+- explicit scope boundaries;
+- evidence appropriate to the task;
+- a concrete next action;
+- no invented permissions or hidden execution.
+
+If these elements are missing, identify the missing Core Move and request a correction.
+
+## 7. Decide whether to continue
+
+The skill has done its job when the next action is clearer and reviewable. You can now continue normally, choose a second skill only if the task changes mode, or stop if the task should not proceed.
+
+## Next steps
+
+<CardGroup cols={2}>
+  <Card title="Run your first skill" href="/adaptive-skills/getting-started/first-skill/" icon="play">
+    Follow a complete worked exercise using `workflow`.
+  </Card>
+  <Card title="Installation details" href="/adaptive-skills/getting-started/installation-guide/" icon="download">
+    Review package, verification, update, and troubleshooting guidance.
+  </Card>
+  <Card title="Choose another skill" href="/adaptive-skills/getting-started/skill-catalog/" icon="library">
+    Find the right capability by dominant task need.
+  </Card>
+  <Card title="Understand skill anatomy" href="/adaptive-skills/skill-model/" icon="layers">
+    Learn Core Moves, Modules, Triggers, outputs, and verification.
+  </Card>
+</CardGroup>

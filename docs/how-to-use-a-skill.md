@@ -1,164 +1,124 @@
-# How to Use a Skill
+---
+title: How to Use a Skill
+description: Choose the smallest fitting skill, apply its core moves, use optional depth selectively, and verify the result.
+---
 
-Adaptive Skills works best when a skill is treated as a small execution aid, not as a role, a full process, or a replacement for judgment.
+Use a skill when it gives a task a clearer method, output, or verification standard. Do not use a skill merely because it exists.
 
-Use this guide when adopting a skill in another project or when deciding which skill should guide a specific task.
+## The basic loop
 
-## Confirm explanation depth
+1. Identify the dominant need of the task.
+2. Choose the smallest skill that addresses that need.
+3. Check its “When to Use” and “When NOT to Use” sections.
+4. Apply its Core Moves.
+5. Activate only modules with a matching trigger.
+6. Produce the Expected Output.
+7. Check Verification before closing or handing off.
 
-Before the first skill-assisted task, ask the user to confirm one explanation mode. Do not infer expertise from job title, vocabulary, or previous messages.
+## Start from the task
 
-| Mode | Guidance style |
+Ask what the work needs now:
+
+| Need | Example skill |
 |---|---|
-| `plain` | Explain impact first and define technical terms before relying on them. |
-| `guided` | Explain the term, why it matters, and where it appears in the task. |
-| `professional` | Use technical terms with short contextual anchors. |
-| `expert` | Be concise; explain only project-specific or ambiguous terms. |
+| Clarify the intended outcome | `intent-clarification` |
+| Plan a feature | `feature-planning` |
+| Diagnose an unknown failure | `debugging` |
+| Implement without scope expansion | `lean-implementation` |
+| Test a meaningful change | `testing` |
+| Review usability | `heuristic-audit` |
+| Examine architecture trade-offs | `architecture-review` |
+| Preserve work for another session | `handoff-summary` |
 
-The selected mode changes explanation depth, not risk, evidence, autonomy, or approval boundaries.
+If no skill clearly fits, proceed without one. A forced skill adds ceremony and can make the result worse.
 
-## 1. Start from the task, not from the catalog
+## Check the fit
 
-Do not ask: "Which skills are available?"
+Before invoking a skill, read:
 
-Ask:
+- **When to Use** — signals that the skill addresses the current need;
+- **When NOT to Use** — conditions where another method or no skill is better.
 
-- What is the task trying to accomplish?
-- What could fail if we execute poorly?
-- Is the main need planning, implementation, review, handoff, debugging, communication, or risk reduction?
-- Is this generic work, or is it domain-specific?
+Also confirm that project policy allows the intended action. A skill does not grant permissions or override a review gate.
 
-Then choose the smallest skill that matches the dominant need.
+## State the expected result
 
-Examples:
+Tell the agent what the skill should help produce.
 
-- unclear execution slice -> `feature-planning`
-- bug with unknown cause -> `debugging`
-- uncertain validation quality -> `testing`
-- cross-functional decision -> `triad-check`
-- consequential plan with hidden assumptions -> `premortem`
+Good:
 
-## 2. Check whether the skill should be used
+> Use `feature-planning` to propose the smallest testable slice for this request. Keep unresolved product decisions visible and return scope, risks, acceptance evidence, and the next safe step.
 
-Before using a skill, read:
+Weak:
 
-- `When to Use`
-- `When NOT to Use`
+> Run every planning skill.
 
-This prevents two common mistakes:
+The first instruction names the capability, purpose, and output. The second encourages unnecessary process.
 
-- using a heavy skill on a simple task;
-- using a generic skill where a project-local rule or domain pack should govern the work.
+## Apply Core Moves
 
-If the fit is weak, do not force the skill. Pick a smaller one or proceed without a skill.
+Core Moves are the essential discipline of a skill. They should shape the work, not be copied mechanically into the response.
 
-## 3. Run the core moves
+A good application:
 
-`Core Moves` are the invariant part of the skill.
+- adapts the moves to the real task;
+- makes assumptions visible;
+- produces a concrete artifact;
+- stays proportional to risk and complexity.
 
-They should usually happen unless there is a clear reason to skip one. Do not expand them into a rigid ceremony. Their purpose is to keep the work grounded, not to slow it down.
+## Use optional modules selectively
 
-Good use:
+Optional Modules add depth when their Activation Triggers match the task. Examples include security impact, multiple stakeholders, missing evidence, irreversible change, or unclear success criteria.
 
-- follow the core moves to structure thinking;
-- keep outputs short and reviewable;
-- make assumptions visible.
+Do not treat every module as a required phase.
 
-Bad use:
+## Verify before closure
 
-- copy the whole skill into the response;
-- treat every bullet as a mandatory phase;
-- run multiple skills when one would be enough.
+Use the skill's Verification section to ask:
 
-## 4. Activate only the needed modules
+- Does the output answer the actual task?
+- Are assumptions and unavailable evidence visible?
+- Are boundaries and risks clear?
+- Is the result reviewable?
+- Is the next action explicit?
 
-Optional modules are not default steps.
+For consequential work, the project's tests, reviewers, approvals, and source evidence remain authoritative.
 
-Use them only when the task has a matching trigger, such as:
+## Use more than one skill only when necessary
 
-- high risk;
-- multiple stakeholders;
-- security, privacy, data, or reputation impact;
-- unclear success criteria;
-- missing rollback path;
-- weak evidence;
-- cross-functional dependency.
+Skills can form a short sequence when the task genuinely changes mode. For example:
 
-For example, `premortem` can stay lightweight for a reversible plan, but should move toward High-Assurance depth when the plan affects data, security, reputation, or AI autonomy.
+```text
+intent-clarification → feature-planning → premortem
+```
 
-## 5. Produce a concrete output
+This sequence first confirms the desired outcome, then plans a bounded slice, then stress-tests a consequential plan. Stop when the current need is satisfied.
 
-A skill should leave behind something reviewable:
+## Match explanation depth to the reader
 
-- a plan;
-- a checklist;
-- a diagnosis;
-- a revised brief;
-- a risk gate;
-- a handoff note;
-- a recommendation with assumptions and limits.
+The same skill can communicate at different depths:
 
-If the output is only a generic discussion, the skill probably was not used well.
+| Mode | Communication style |
+|---|---|
+| Plain | Explain impact first and define technical terms. |
+| Guided | Explain the term, why it matters, and where it appears. |
+| Professional | Use technical terms with short context. |
+| Expert | Focus on project-specific decisions and ambiguity. |
 
-## 6. Verify closure
+Explanation depth does not change risk, permissions, evidence, or approval requirements.
 
-Use the skill's `Verification` section before treating the work as done.
+## Common mistakes
 
-Ask:
+- Selecting from the catalog before understanding the task.
+- Running several skills to appear thorough.
+- Copying the entire skill into the output.
+- Skipping Core Moves because the answer appears obvious.
+- Treating optional modules as mandatory.
+- Accepting polished language instead of verification.
+- Letting a skill replace human or project authority.
 
-- Did the output answer the actual task?
-- Are assumptions visible?
-- Are the limits clear?
-- Is there a next action?
-- Did we avoid pulling project-local rules into the generic canon?
+## Next steps
 
-## Example: using `premortem`
-
-Use `premortem` before executing a plan that still can change and has a meaningful cost of failure.
-
-Good trigger:
-
-> "We are about to roll out a quality gate process for AI-assisted code. It affects engineering, security, UX, accessibility, agent behavior, and human approval."
-
-Why `premortem` fits:
-
-- there is a concrete plan;
-- the cost of a bad gate is meaningful;
-- assumptions are likely hidden;
-- the plan can still be adjusted;
-- failure modes should become gates before execution.
-
-Expected output:
-
-- likely failure modes;
-- most probable failure;
-- most dangerous failure;
-- hidden assumption;
-- warning signals;
-- hard gates, soft gates, review triggers, and human decision gates;
-- revised plan;
-- pre-execution checklist.
-
-Bad trigger:
-
-> "Can you rewrite this sentence?"
-
-That should use a writing or review skill, not `premortem`.
-
-## Healthy adoption rule
-
-Start small.
-
-A useful adoption is not one where every task uses a skill. It is one where the right skill improves clarity, proof, handoff, or decision quality at the right moment.
-
-For a safe first use:
-
-1. choose a low-risk, reversible task;
-2. use at most one dominant skill;
-3. state the expected output before activation;
-4. record whether the skill was actually used;
-5. verify the output with the skill's `Verification` section;
-6. preserve unavailable evidence instead of estimating success;
-7. stop and request the appropriate technical reviewer if risk or scope changes.
-
-If the desired outcome or definition of success is unclear, use `intent-clarification` first. Its recommendation remains consultative and does not authorize execution.
+- Try the guided [first skill exercise](getting-started/first-skill/).
+- Use the [skill catalog](getting-started/skill-catalog/) to choose by trigger.
+- Read the [skill model](skill-model/) for the deeper Core + Modules + Triggers design.

@@ -1,80 +1,94 @@
 ---
-title: Adaptive Skills Documentation Home
-description: Start here to understand Adaptive Skills, install or consume skills, choose a capability, and review publication evidence.
+title: Adaptive Skills
+description: Choose a learning path, install the library, use your first skill, or explore the architecture and governance behind Adaptive Skills.
 ---
 
-Adaptive Skills is a portable library of micro-skills for disciplined AI-assisted work.
+Adaptive Skills is a portable library of small, reusable capabilities for disciplined AI-assisted work.
 
-Use this documentation site to understand the model, install or consume skills, choose the right skill, and review the evidence behind the official docs publication path.
+It helps people and AI agents choose an appropriate way to approach a task, produce a reviewable result, and avoid turning every request into improvised prompting.
 
-<Badge variant="success">Published with Blume</Badge> <Badge>Manual publication</Badge> <Badge variant="accent">AI-readable docs</Badge>
+<Badge variant="success">33 portable skills</Badge> <Badge>Works standalone</Badge> <Badge variant="accent">Integrates with AletheIA</Badge>
 
-## Start here
+## Choose your path
 
-<CardGroup cols={2}>
-  <Card title="Overview" href="/adaptive-skills/getting-started/overview/" icon="compass">
-    Understand what Adaptive Skills are, where they fit, and how to read this documentation.
+<CardGroup cols={3}>
+  <Card title="I am new" href="/adaptive-skills/getting-started/overview/" icon="compass">
+    Understand what Adaptive Skills is, what problem it solves, and whether it fits your work.
   </Card>
-  <Card title="Installation guide" href="/adaptive-skills/getting-started/installation-guide/" icon="download">
-    Follow the consumer setup path before using the skills in another project.
+  <Card title="I want to use a skill" href="/adaptive-skills/getting-started/quickstart/" icon="rocket">
+    Install a small starter set and apply one skill to a real, low-risk task.
   </Card>
-  <Card title="Skill catalog" href="/adaptive-skills/getting-started/skill-catalog/" icon="library">
-    Find the right skill by capability, use case, and decision context.
-  </Card>
-  <Card title="Documentation map" href="/adaptive-skills/README/" icon="map">
-    Browse the current official documentation corpus and publication evidence.
+  <Card title="I want to go deeper" href="/adaptive-skills/skill-model/" icon="layers">
+    Explore skill anatomy, capability boundaries, AletheIA integration, evidence, and evolution.
   </Card>
 </CardGroup>
 
-## How to read the system
-
-<Steps>
-  <Step title="Start with the model">
-    Read the overview first. It explains Adaptive Skills as portable micro-capabilities, not a runtime engine.
-  </Step>
-  <Step title="Choose a path">
-    Use the installation and catalog pages when you want to consume skills; use ADRs when you need the design rationale.
-  </Step>
-  <Step title="Check the evidence">
-    Publication, link-readiness, and Blume-shell pages show what is official, what was validated, and what remains manual.
-  </Step>
-</Steps>
-
-## Key documentation surfaces
+## What it helps you do
 
 <Columns cols={2}>
   <Column>
-    <Panel title="For first-time readers">
-      Use the getting-started pages to understand the purpose, setup path, and available skills before opening deeper architecture notes.
+    <Panel title="Choose deliberately">
+      Start from the task and select the smallest skill that addresses its dominant need.
     </Panel>
   </Column>
   <Column>
-    <Panel title="For maintainers">
-      Use the ADRs, governance pages, and publication proof pages to preserve boundaries, validation evidence, and change history.
+    <Panel title="Work transparently">
+      Keep assumptions, constraints, expected outputs, and validation visible to reviewers.
+    </Panel>
+  </Column>
+  <Column>
+    <Panel title="Reuse proven practices">
+      Carry useful planning, debugging, testing, design, business, and governance patterns across projects.
+    </Panel>
+  </Column>
+  <Column>
+    <Panel title="Evolve safely">
+      Improve the library through observations, proposals, and human review instead of silent self-editing.
     </Panel>
   </Column>
 </Columns>
 
-## Documentation shell
+## Your first successful use
+
+<Steps>
+  <Step title="Understand the boundary">
+    Adaptive Skills provides reusable execution guidance. It is not an autonomous agent, runtime, project manager, or approval authority.
+  </Step>
+  <Step title="Install a small set">
+    Begin with `workflow`, `feature-planning`, and `testing`, or install only the one skill needed for your task.
+  </Step>
+  <Step title="Choose from the task">
+    Identify the dominant need: clarify intent, plan, implement, debug, review, validate, communicate, or hand off.
+  </Step>
+  <Step title="Apply and verify">
+    Use the skill's core moves, produce its expected output, and check its verification criteria before closing the task.
+  </Step>
+</Steps>
 
 <CardGroup cols={2}>
-  <Card title="Blume shell decision" href="/adaptive-skills/official-docs-blume-shell/" icon="book-open">
-    Review why Blume is used as a manual documentation shell for this repository.
+  <Card title="Quickstart" href="/adaptive-skills/getting-started/quickstart/" icon="play">
+    Go from zero to a first skill-assisted task.
   </Card>
-  <Card title="Publication proof" href="/adaptive-skills/official-docs-publication-proof/" icon="badge-check">
-    Check the manual publication path, smoke-test routes, and follow-up evidence.
+  <Card title="Browse all skills" href="/adaptive-skills/getting-started/skill-catalog/" icon="library">
+    Find all 33 skills by task, trigger, and category.
+  </Card>
+  <Card title="Use with AletheIA" href="/adaptive-skills/aletheia-integration/" icon="workflow">
+    Understand the macro-governance and micro-capability relationship.
+  </Card>
+  <Card title="Frequently asked questions" href="/adaptive-skills/getting-started/faq/" icon="circle-help">
+    Resolve common adoption, installation, security, and usage questions.
   </Card>
 </CardGroup>
 
-<Accordion>
-  <AccordionItem title="Is this documentation automatically published?">
-    No. Publication remains manual. A maintainer runs the docs workflow after a focused documentation PR is merged.
-  </AccordionItem>
-  <AccordionItem title="Does this site change skill behavior?">
-    No. The documentation site presents the existing skills, metadata, and governance evidence. It does not activate a new runtime or projection behavior.
-  </AccordionItem>
-</Accordion>
+## Important boundary
 
-## Source repository
+:::note[Skills guide work; they do not authorize it]
+A skill can recommend a method, output, or handoff. It does not grant permissions, approve a decision, execute tools by itself, or replace human and project governance.
+:::
 
-The canonical source remains the [Adaptive Skills GitHub repository](https://github.com/nevitonsantana/adaptive-skills).
+## Next steps
+
+- New reader: [What is Adaptive Skills?](getting-started/overview/)
+- Ready to try it: [Quickstart](getting-started/quickstart/)
+- Looking for a specific capability: [Skill catalog](getting-started/skill-catalog/)
+- Maintaining the library: [Architecture Decision Records](adr/README/)

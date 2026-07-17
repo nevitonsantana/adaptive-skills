@@ -1,0 +1,83 @@
+---
+title: Run Your First Skill
+description: Apply the workflow skill to a small real task and review whether it improved clarity and proof.
+---
+
+This exercise uses `workflow`, a general skill for framing non-trivial work before execution.
+
+<Badge variant="success">Guided exercise</Badge> <Badge>Low risk</Badge>
+
+## Exercise
+
+Use a real but reversible task, such as improving a short documentation page.
+
+<Steps>
+  <Step title="Describe the task">
+    Write one or two sentences about the change you are considering. Do not pre-write the full solution.
+  </Step>
+  <Step title="Invoke workflow">
+    Ask the agent to use `workflow` and return the goal, scope, closure evidence, and next action without editing files.
+  </Step>
+  <Step title="Inspect the framing">
+    Confirm that the result reflects your task, makes exclusions visible, and asks for no unnecessary process.
+  </Step>
+  <Step title="Correct assumptions">
+    If the agent guessed intent or scope, correct it before authorizing implementation.
+  </Step>
+  <Step title="Choose the next mode">
+    Continue directly if the task is clear, or select a specialist skill only when another dominant need appears.
+  </Step>
+</Steps>
+
+## Copyable prompt
+
+<Prompt description="Copy the guided exercise prompt.">
+Use the workflow skill to frame the following task before execution: [describe the task]. Return: goal, in scope, out of scope, closure evidence, assumptions, and the next safe action. Do not edit files or take state-changing actions yet.
+</Prompt>
+
+## Example result shape
+
+```md
+## Goal
+Improve the installation guide so a new reader can verify setup without reading maintainer documentation.
+
+## In scope
+- clarify the beginner verification step
+- link to deeper troubleshooting
+
+## Out of scope
+- change APM behavior
+- change harness permissions
+- redesign the entire documentation site
+
+## Closure evidence
+- documentation validation passes
+- all links resolve
+- a reader can identify the expected installed files
+
+## Next safe action
+Inspect the current installation and troubleshooting sections before proposing edits.
+```
+
+## What to evaluate
+
+| Question | Healthy signal |
+|---|---|
+| Did the skill clarify the task? | The goal and next action are more specific than the original request. |
+| Did it stay proportional? | The framing is short and does not invent a large project. |
+| Are assumptions visible? | Unconfirmed facts are labeled instead of presented as decisions. |
+| Is proof defined? | Closure depends on observable evidence, not confidence. |
+| Did it preserve authority? | No edit, approval, or execution happened without permission. |
+
+## When the exercise fails
+
+- **The response is generic:** provide the actual task context and request task-specific framing.
+- **The scope becomes large:** restate the smallest useful outcome and exclusions.
+- **The agent starts editing:** stop and restore the read-only framing boundary.
+- **Another skill is suggested:** use it only if the task has genuinely moved into planning, debugging, testing, review, or another specialist mode.
+
+## Next steps
+
+- Learn the complete [usage loop](../how-to-use-a-skill/).
+- Browse the [skill catalog](skill-catalog/).
+- For team adoption, continue to the [consumer adoption guide](../consumer-adoption/).
