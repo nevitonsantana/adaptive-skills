@@ -8,7 +8,9 @@ The classification preserves existing public routes while the content is progres
 
 - `docs/index.mdx`
 - `docs/getting-started/overview.md`
+- `docs/getting-started/quickstart.mdx`
 - `docs/getting-started/installation-guide.md`
+- `docs/getting-started/first-skill.mdx`
 - `docs/how-to-use-a-skill.md`
 - `docs/getting-started/faq.md`
 

@@ -19,7 +19,9 @@ export default defineConfig({
           label: "Start here",
           items: [
             "/getting-started/overview",
+            "/getting-started/quickstart",
             "/getting-started/installation-guide",
+            "/getting-started/first-skill",
             "/how-to-use-a-skill",
             "/getting-started/faq",
           ],

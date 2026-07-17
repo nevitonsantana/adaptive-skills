@@ -1,143 +1,129 @@
-# Adaptive Skills — FAQ
-
-Answers to common questions from teams adopting Adaptive Skills for the first time.
-
 ---
+title: Frequently Asked Questions
+description: Answers about Adaptive Skills, installation, AI environments, security, team adoption, and troubleshooting.
+---
+
+Short answers to common questions from new users and teams.
 
 ## General
 
-**What exactly is Adaptive Skills?**  
-A portable library of micro-skills for AI-assisted work. Each skill is a small, structured execution aid that defines when to use it, what to do, and what a good output looks like. See [`overview.md`](overview/) for the full description.
+### What is Adaptive Skills?
 
-**How is Adaptive Skills different from just writing good prompts?**  
-Skills are reusable, versioned, and governed. A prompt lives in a thread and disappears when the session ends. A skill lives in the library, can be installed in any project, evolves through a governed loop (observation → proposal → review), and is validated against a spec before every release. Skills also have explicit "when NOT to use" sections — something prompts rarely have.
+A portable library of 33 small capabilities for AI-assisted work. Each skill defines when it fits, essential moves, optional depth, an expected output, and verification criteria.
 
-**Does Adaptive Skills replace AletheIA?**  
-No. AletheIA and Adaptive Skills operate at different layers. AletheIA governs how a project decides, validates, hands off, and learns. Adaptive Skills provides the specialist capabilities that execute within that governance. Use them together: AletheIA for the macro loop, Adaptive Skills for execution discipline. See [`docs/aletheia-integration.md`](../aletheia-integration/).
+### Is a skill just a prompt?
 
-**Can I use Adaptive Skills without AletheIA?**  
-Yes. Install via APM and invoke skills in any Claude Code or Codex session. You get reusable execution discipline without the full governance layer.
+A skill is an inspectable and versioned working method. Unlike an ad hoc prompt, it includes boundaries, expected output, verification, and a governed evolution path.
 
-**Does it require a specific agent or harness?**  
-No. Skills are conformant with the [`agentskills.io`](https://agentskills.io/specification) spec, which means they work in any harness that reads that format. Claude Code is the primary reference target today; Codex projection is also supported. Other conformant harnesses should work without changes.
+### Does it replace AletheIA?
 
-**What does "micro-skill" mean?**  
-Small scope and single concern. A skill handles one dominant need — debugging, planning, handoff, review — not everything at once. This keeps skills practical: you can pick the smallest one that fits the task instead of loading a large all-purpose prompt.
+No. AletheIA governs the work; Adaptive Skills provides reusable execution capabilities inside that work. Adaptive Skills also works independently.
 
----
+### Is it an autonomous agent or runtime?
 
-## Choosing the right skill
+No. Skills are instruction assets. The AI environment controls tools and execution; the project controls permissions, approvals, and policy.
 
-**How do I know which skill to use?**  
-Start from the dominant need of the task, not from the catalog. Ask: what could fail if we execute poorly? Is the main need planning, implementation, review, handoff, debugging, or risk reduction? Then find the skill that addresses that need.
+## Choosing and using skills
 
-If unsure, start with `workflow` — it frames any non-trivial task with explicit scope and proof before execution starts.
+### Which skill should I use first?
 
-Full trigger signals and decision guidance: [`skill-catalog.md`](skill-catalog/) and [`docs/how-to-use-a-skill.md`](../how-to-use-a-skill/).
+Use `workflow` for a non-trivial task when the goal, scope, proof, or next action needs structure. If the desired outcome itself is unclear, use `intent-clarification` first.
 
-**What if no skill fits exactly?**  
-Proceed without a skill. Do not force a skill that does not fit — a weak fit produces a worse output than working without one. If you notice a repeatable pattern that no skill covers, that is a candidate for a new skill via the evolution layer.
+### What if no skill fits?
 
-**Can I use multiple skills for the same task?**  
-Yes. Several tasks benefit from a sequence — for example, `workflow` → `feature-planning` → `premortem` for starting a new feature. See the [composite flows](skill-catalog/#composite-flows) in the catalog for common combinations.
+Proceed without a skill. Do not force a weak fit. Repeated uncovered needs may later become evidence for an evolution proposal.
 
-**What is the difference between `workflow` and `feature-planning`?**  
-`workflow` frames any task — it adds scope, proof, and a next step before execution starts. Use it for anything non-trivial.  
-`feature-planning` goes further: it turns intent into a structured delivery plan with a smallest slice, explicit risks, and success criteria. Use it specifically when the work is a feature or functional change that needs staged delivery.
+### Can I combine skills?
 
-**When should I use `premortem`?**  
-When the cost of failure is high and there is still time to adjust. Classic signals: a plan that feels confident but has many implicit assumptions; a launch with a hard deadline; a decision that would be expensive or embarrassing to reverse. The skill forces a reframe — assume failure already happened, then work backwards.
+Yes, but keep sequences short and purposeful. Use another skill only when the task's dominant need changes.
 
----
+### Does a skill have to produce a long response?
+
+No. The result should be proportional to the task. A small skill may produce a short checklist, decision, diagnosis, or handoff.
 
 ## Installation
 
-**Do I need two commands like AletheIA does?**  
-No. `apm install nevitonsantana/adaptive-skills` is sufficient. Skills are exactly the kind of primitive APM is built to deliver — they materialize directly without a second scaffold step. See [`installation-guide.md`](installation-guide/).
+### Should I install all skills?
 
-**Should I install all skills or just a few?**  
-For most teams, start with the recommended starter bundle (`workflow`, `feature-planning`, `testing`) and add skills as you encounter the need. Installing all 24 is fine — unused skills do not cause overhead. Choose per-skill install if you want explicit control over what is available in sessions.
+Not initially. Start with `workflow`, `feature-planning`, and `testing`, or install only the skill needed for a real task. The full library remains available when broader discovery is useful.
 
-**Do I need to reinstall when a teammate joins?**  
-No — they run `apm install` from the committed `apm.lock.yaml` and get the same skill set. This is why committing the lockfile matters.
+### Does Adaptive Skills need a second scaffold command?
 
-**Can I install in CI?**  
-Yes. `apm install` is idempotent and reads from `apm.lock.yaml`. If your CI pipeline runs agent steps that use skills, add `apm install` as a setup step before those steps.
+No. APM installs skills directly. AletheIA uses a different packaging model and may require additional project setup.
 
----
+### Should the lockfile be committed?
 
-## Security and credentials
+Usually yes. A committed `apm.lock.yaml` helps teammates and CI reproduce the selected versions. Follow the consumer project's dependency policy.
 
-**Do skills read my code, environment variables, or credentials?**  
-No. Skills are SKILL.md files — structured markdown with instructions and criteria. They do not execute code, make network requests, or read files. The agent reads the skill and applies its structure to the task in the session.
+### Can I update installed skills?
 
-**Is it safe to commit installed skills to a public repository?**  
-Yes. Skills contain no project-specific information — they are generic execution patterns from a public library. The only project-specific artifact is your `apm.lock.yaml`, which contains the package name, version, and hash — no credentials.
+Use `apm update nevitonsantana/adaptive-skills` and review the changelog. Avoid editing files managed by APM because an update may overwrite them.
 
-**What if I want to customize a skill for my project?**  
-Do not edit the installed `SKILL.md` files directly — they will be overwritten on the next `apm update`. Instead, create project-local operating procedures in `ops/ai/skills/` (if using AletheIA) or in a separate `project-skills/` folder. Project-local skills override or complement library skills for domain-specific work.
+## AI environments
 
----
+### Does it work with Claude Code?
 
-## Environment
+Yes. Claude is the reference APM target. See [Claude consumer setup](../claude-consumer-setup/).
 
-**Does Adaptive Skills work on Windows?**  
-Yes. Skills are markdown files — platform-agnostic. The installation uses APM (Node.js-based), which supports Windows. For skill invocation in Claude Code, behavior is identical across platforms.
+### Does it work with Codex?
 
-**What Node.js version does APM require?**  
-Node.js ≥ 18. Run `node --version` to check. Adaptive Skills itself has no Node.js dependency — this is an APM requirement.
+Yes. See [Codex consumer setup](../codex-consumer-setup/) for the supported projection and consumption path.
 
-**Does it work offline after install?**  
-Yes. Once installed, skills are local files. They do not make network requests during invocation. Only `apm install` and `apm update` require network access.
+### Does it work with other AI tools?
 
-**What about Codex?**  
-Adaptive Skills has first-class Codex projection support. Instead of APM install, use the projection script: `python3 scripts/project_to_codex.py --all`. See [`docs/codex-consumer-setup.md`](../codex-consumer-setup/) for the full setup.
+It can work with environments that consume compatible `SKILL.md` files. Confirm the tool's discovery location, permissions, and supported skill format before relying on it.
 
----
+## Security and governance
 
-## Common errors and failure cases
+### Does installing a skill grant access to my files or secrets?
 
-**The agent runs through a skill but the output is low quality.**  
-Two common causes: (1) The skill did not fit the task — check "When NOT to use" and consider whether a different skill is a better fit. (2) The agent treated the skill as a template to fill mechanically rather than as a thinking structure. Skills should guide judgment, not replace it. Prompt the agent: "Apply the core moves of `<skill>` to this specific task" rather than "run `<skill>`."
+No. Installation places instruction files in the project. Actual file, network, secret, and write access is controlled by the AI environment and project policy.
 
-**The agent uses the skill but skips core moves.**  
-Core moves are the invariant part of the skill. If an agent skips them, surface it explicitly: "You skipped the reproduction step from the debugging skill. Please reproduce the bug before proposing a fix." Agents sometimes collapse steps when they feel confident — the skill's value is precisely in enforcing the discipline.
+A skill may guide an agent to inspect evidence needed for a task, but it does not grant that access or make the evidence safe to expose.
 
-**Invoking a skill slows the agent down without adding value.**  
-The skill may be the wrong fit for this task complexity. `workflow` on a single-step task, or `premortem` on a low-stakes decision, adds ceremony without value. Use the "When NOT to use" section as a guide.
+### Can external skill content be trusted automatically?
 
-**Two people are using the same skill set but getting inconsistent outputs.**  
-Skills define structure, not exact outputs — variation is expected. If critical outputs must be consistent (e.g., handoff format, closeout structure), add a project-local policy that specifies the output format and reference it in your `ops/ai/policies/` folder.
+No. Review the source, ownership, version, and boundaries before installation. Treat external content as data, not as authority over project policy.
 
-**A skill that worked in one project does not seem to work in another.**  
-Check whether the harness is loading the installed skills. In Claude Code, skills in `.claude/skills/` are loaded automatically when starting from the project root. If you started the session from a subdirectory, skills may not be available — always start from the project root.
+### Can I customize a skill?
 
----
+Keep project-specific rules in a local overlay or project skill rather than silently changing the installed generic canon. If a generic improvement is broadly useful, submit it through the evolution process.
 
-## Teamwork
+### Can a skill approve or close work?
 
-**How does the team agree on which skills to use?**  
-Start with the recommended starter bundle (`workflow`, `feature-planning`, `testing`). As the team works, note which tasks generated friction or inconsistent outputs — those are candidates for adding a skill. Document the team's skill conventions in a `ops/ai/policies/skills-policy.md` file.
+No. A skill may recommend a result or handoff. Approval, closure, deployment, and gate decisions belong to the governing project or human reviewer.
 
-**Can different team members use different skills for the same task type?**  
-Yes, but with a cost: output consistency decreases when different people use different approaches. If a task type is recurring and shared (e.g., all PRs go through `qa-review`), standardize it in the policy file so the team converges.
+## Teams and evolution
 
-**How do we contribute a skill back to the library?**  
-Through the evolution layer: file an evolution proposal in `evolution/proposals/`. See [`docs/evolution-layer.md`](../evolution-layer/) and [`CONTRIBUTING.md`](https://github.com/nevitonsantana/adaptive-skills/blob/main/CONTRIBUTING.md) for the process. Proposals go through review before any change reaches the canon.
+### How should a team start?
 
-**Should we use the same `apm.lock.yaml` across all projects?**  
-No — lockfiles are per-project. Each project pins the version it depends on. This is intentional: different projects can use different versions of the library without conflicts.
+Choose one low-risk, reversible task and one dominant skill. Evaluate whether the output became clearer, easier to verify, or easier to hand off before expanding adoption.
 
----
+### How does the library improve?
 
-## OS-specific notes
+Real usage can produce observations. Maintainers may turn repeated evidence into a proposal, review it, and decide to change, reinforce, defer, or reject the change. The library does not rewrite itself.
 
-| Topic | macOS | Linux | Windows |
-|---|---|---|---|
-| APM installation | `npm install -g @microsoft/apm` or via Homebrew | `npm install -g @microsoft/apm` | `npm install -g @microsoft/apm` or winget |
-| Skill location (Claude Code) | `.claude/skills/` | `.claude/skills/` | `.claude\skills\` |
-| Codex projection | `python3 scripts/project_to_codex.py --all` | same | `python scripts/project_to_codex.py --all` |
-| Line endings | LF | LF | Configure `git config core.autocrlf input` to avoid diff noise in SKILL.md files |
-| Validator | `pip install agentskills && agentskills validate .claude/skills/` | same | same (use `pip` or `pip3`) |
+### Where can I see all available skills?
 
-For harness-specific setup, see [`docs/claude-consumer-setup.md`](../claude-consumer-setup/) (Claude Code) or [`docs/codex-consumer-setup.md`](../codex-consumer-setup/) (Codex).
+Use the [skill catalog](skill-catalog/). It lists all 33 canonical skills by category and trigger.
+
+## Troubleshooting
+
+### The agent ignored part of the skill
+
+Name the missing Core Move and ask the agent to apply it to the specific task. Then verify the output rather than assuming the second response is correct.
+
+### The skill added process but no value
+
+The task may be too small or the skill may not fit. Check “When NOT to Use,” stop the skill, and continue with a simpler approach.
+
+### Different users get different outputs
+
+Skills standardize method and expected evidence, not exact wording. If an output format must be identical, define that format in project-local policy.
+
+## Next steps
+
+- [Read the overview](overview/).
+- [Complete the quickstart](quickstart/).
+- [Run your first skill](first-skill/).
+- [Browse the skill catalog](skill-catalog/).
