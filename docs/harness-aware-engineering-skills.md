@@ -3,7 +3,7 @@
 ## Goal
 
 Connect the engineering skills hardened in the
-[Engineering Skills Hardening Pack](engineering-skills-hardening-pack.md) to the harness envelope:
+[Engineering Skills Hardening Pack](engineering-skills-hardening-pack/) to the harness envelope:
 which skills expect which **sensors** and **gates** when run under an Agent Harness Contract.
 
 This does not modify any `SKILL.md`. It documents the harness shape each engineering skill works
@@ -39,6 +39,6 @@ and the table above when authoring a new one.
 
 ## See also
 
-- [engineering-skills-hardening-pack.md](engineering-skills-hardening-pack.md)
-- [skill-harness-boundaries.md](skill-harness-boundaries.md)
-- [using-skills-inside-harnesses.md](using-skills-inside-harnesses.md)
+- [engineering-skills-hardening-pack.md](engineering-skills-hardening-pack/)
+- [skill-harness-boundaries.md](skill-harness-boundaries/)
+- [using-skills-inside-harnesses.md](using-skills-inside-harnesses/)

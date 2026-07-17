@@ -13,7 +13,7 @@ Each stage in an orchestration contract declares, among other fields: `input`, `
 
 - **Declared input** — the skill consumes only the stage input it declared; it does not reach into
   other stages' context (knowledge boundaries still apply, see
-  [skill-knowledge-boundaries.md](skill-knowledge-boundaries.md));
+  [skill-knowledge-boundaries.md](skill-knowledge-boundaries/));
 - **Declared output** — the stage output is a contract: the next stage (or the synthesis) depends
   on its shape, so the skill must produce it even on partial failure (with failure marked);
 - **Gate before handoff** — the stage gate verifies the output before it flows downstream;
@@ -49,6 +49,6 @@ comprehension-debt review (who reads all this output?) has something to review.
 
 ## Related
 
-- [execution-patterns-for-skills.md](execution-patterns-for-skills.md) — the pattern axis and what skills declare
-- [pattern-compatibility-guidelines.md](pattern-compatibility-guidelines.md) — filling the declaration
-- [harness-requirements-for-skills.md](harness-requirements-for-skills.md) — the authority envelope each stage still runs within
+- [execution-patterns-for-skills.md](execution-patterns-for-skills/) — the pattern axis and what skills declare
+- [pattern-compatibility-guidelines.md](pattern-compatibility-guidelines/) — filling the declaration
+- [harness-requirements-for-skills.md](harness-requirements-for-skills/) — the authority envelope each stage still runs within

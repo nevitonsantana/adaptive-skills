@@ -103,7 +103,7 @@ The selection is persisted in your project's `apm.yml` and lockfile. Teammates r
 | `docs/guides/install-via-apm.md` | `projections/`, `capabilities/`, `templates/` |
 | `LICENSE`, `README.md` | Validation scripts (`scripts/validate_skills.py`, etc.) |
 
-**Domain packs:** `domain-packs/crisis-management/` is excluded from the standard package — it is a case study, not the generic capability surface (see [ADR-002](../adr/ADR-002-domain-agnosticism.md)). To use it manually:
+**Domain packs:** `domain-packs/crisis-management/` is excluded from the standard package — it is a case study, not the generic capability surface (see [ADR-002](../adr/ADR-002-domain-agnosticism/)). To use it manually:
 
 ```bash
 git clone https://github.com/nevitonsantana/adaptive-skills.git
@@ -126,7 +126,7 @@ or simply:
 run workflow
 ```
 
-For harnesses other than Claude Code, see [`docs/codex-consumer-setup.md`](../codex-consumer-setup.md) for Codex projection or [`docs/how-to-use-a-skill.md`](../how-to-use-a-skill.md) for the general invocation pattern.
+For harnesses other than Claude Code, see [`docs/codex-consumer-setup.md`](../codex-consumer-setup/) for Codex projection or [`docs/how-to-use-a-skill.md`](../how-to-use-a-skill/) for the general invocation pattern.
 
 ---
 
@@ -179,8 +179,8 @@ The installed skill is not spec-conformant. This is a library regression — ope
 
 ## What to do next
 
-1. Pick your first skill: [`skill-catalog.md`](skill-catalog.md) — start with `workflow` if unsure
-2. Learn how to invoke skills effectively: [`docs/how-to-use-a-skill.md`](../how-to-use-a-skill.md)
-3. See composite flows (multiple skills for one task): [`skill-catalog.md#composite-flows`](skill-catalog.md#composite-flows)
-4. Technical reference for this install: [`docs/guides/install-via-apm.md`](../guides/install-via-apm.md)
-5. Using Adaptive Skills with AletheIA: [`docs/aletheia-integration.md`](../aletheia-integration.md)
+1. Pick your first skill: [`skill-catalog.md`](skill-catalog/) — start with `workflow` if unsure
+2. Learn how to invoke skills effectively: [`docs/how-to-use-a-skill.md`](../how-to-use-a-skill/)
+3. See composite flows (multiple skills for one task): [`skill-catalog.md#composite-flows`](skill-catalog/#composite-flows)
+4. Technical reference for this install: [`docs/guides/install-via-apm.md`](../guides/install-via-apm/)
+5. Using Adaptive Skills with AletheIA: [`docs/aletheia-integration.md`](../aletheia-integration/)

@@ -7,13 +7,13 @@ Answers to common questions from teams adopting Adaptive Skills for the first ti
 ## General
 
 **What exactly is Adaptive Skills?**  
-A portable library of micro-skills for AI-assisted work. Each skill is a small, structured execution aid that defines when to use it, what to do, and what a good output looks like. See [`overview.md`](overview.md) for the full description.
+A portable library of micro-skills for AI-assisted work. Each skill is a small, structured execution aid that defines when to use it, what to do, and what a good output looks like. See [`overview.md`](overview/) for the full description.
 
 **How is Adaptive Skills different from just writing good prompts?**  
 Skills are reusable, versioned, and governed. A prompt lives in a thread and disappears when the session ends. A skill lives in the library, can be installed in any project, evolves through a governed loop (observation → proposal → review), and is validated against a spec before every release. Skills also have explicit "when NOT to use" sections — something prompts rarely have.
 
 **Does Adaptive Skills replace AletheIA?**  
-No. AletheIA and Adaptive Skills operate at different layers. AletheIA governs how a project decides, validates, hands off, and learns. Adaptive Skills provides the specialist capabilities that execute within that governance. Use them together: AletheIA for the macro loop, Adaptive Skills for execution discipline. See [`docs/aletheia-integration.md`](../aletheia-integration.md).
+No. AletheIA and Adaptive Skills operate at different layers. AletheIA governs how a project decides, validates, hands off, and learns. Adaptive Skills provides the specialist capabilities that execute within that governance. Use them together: AletheIA for the macro loop, Adaptive Skills for execution discipline. See [`docs/aletheia-integration.md`](../aletheia-integration/).
 
 **Can I use Adaptive Skills without AletheIA?**  
 Yes. Install via APM and invoke skills in any Claude Code or Codex session. You get reusable execution discipline without the full governance layer.
@@ -33,13 +33,13 @@ Start from the dominant need of the task, not from the catalog. Ask: what could 
 
 If unsure, start with `workflow` — it frames any non-trivial task with explicit scope and proof before execution starts.
 
-Full trigger signals and decision guidance: [`skill-catalog.md`](skill-catalog.md) and [`docs/how-to-use-a-skill.md`](../how-to-use-a-skill.md).
+Full trigger signals and decision guidance: [`skill-catalog.md`](skill-catalog/) and [`docs/how-to-use-a-skill.md`](../how-to-use-a-skill/).
 
 **What if no skill fits exactly?**  
 Proceed without a skill. Do not force a skill that does not fit — a weak fit produces a worse output than working without one. If you notice a repeatable pattern that no skill covers, that is a candidate for a new skill via the evolution layer.
 
 **Can I use multiple skills for the same task?**  
-Yes. Several tasks benefit from a sequence — for example, `workflow` → `feature-planning` → `premortem` for starting a new feature. See the [composite flows](skill-catalog.md#composite-flows) in the catalog for common combinations.
+Yes. Several tasks benefit from a sequence — for example, `workflow` → `feature-planning` → `premortem` for starting a new feature. See the [composite flows](skill-catalog/#composite-flows) in the catalog for common combinations.
 
 **What is the difference between `workflow` and `feature-planning`?**  
 `workflow` frames any task — it adds scope, proof, and a next step before execution starts. Use it for anything non-trivial.  
@@ -53,7 +53,7 @@ When the cost of failure is high and there is still time to adjust. Classic sign
 ## Installation
 
 **Do I need two commands like AletheIA does?**  
-No. `apm install nevitonsantana/adaptive-skills` is sufficient. Skills are exactly the kind of primitive APM is built to deliver — they materialize directly without a second scaffold step. See [`installation-guide.md`](installation-guide.md).
+No. `apm install nevitonsantana/adaptive-skills` is sufficient. Skills are exactly the kind of primitive APM is built to deliver — they materialize directly without a second scaffold step. See [`installation-guide.md`](installation-guide/).
 
 **Should I install all skills or just a few?**  
 For most teams, start with the recommended starter bundle (`workflow`, `feature-planning`, `testing`) and add skills as you encounter the need. Installing all 24 is fine — unused skills do not cause overhead. Choose per-skill install if you want explicit control over what is available in sessions.
@@ -91,7 +91,7 @@ Node.js ≥ 18. Run `node --version` to check. Adaptive Skills itself has no Nod
 Yes. Once installed, skills are local files. They do not make network requests during invocation. Only `apm install` and `apm update` require network access.
 
 **What about Codex?**  
-Adaptive Skills has first-class Codex projection support. Instead of APM install, use the projection script: `python3 scripts/project_to_codex.py --all`. See [`docs/codex-consumer-setup.md`](../codex-consumer-setup.md) for the full setup.
+Adaptive Skills has first-class Codex projection support. Instead of APM install, use the projection script: `python3 scripts/project_to_codex.py --all`. See [`docs/codex-consumer-setup.md`](../codex-consumer-setup/) for the full setup.
 
 ---
 
@@ -123,7 +123,7 @@ Start with the recommended starter bundle (`workflow`, `feature-planning`, `test
 Yes, but with a cost: output consistency decreases when different people use different approaches. If a task type is recurring and shared (e.g., all PRs go through `qa-review`), standardize it in the policy file so the team converges.
 
 **How do we contribute a skill back to the library?**  
-Through the evolution layer: file an evolution proposal in `evolution/proposals/`. See [`docs/evolution-layer.md`](../evolution-layer.md) and [`CONTRIBUTING.md`](https://github.com/nevitonsantana/adaptive-skills/blob/main/CONTRIBUTING.md) for the process. Proposals go through review before any change reaches the canon.
+Through the evolution layer: file an evolution proposal in `evolution/proposals/`. See [`docs/evolution-layer.md`](../evolution-layer/) and [`CONTRIBUTING.md`](https://github.com/nevitonsantana/adaptive-skills/blob/main/CONTRIBUTING.md) for the process. Proposals go through review before any change reaches the canon.
 
 **Should we use the same `apm.lock.yaml` across all projects?**  
 No — lockfiles are per-project. Each project pins the version it depends on. This is intentional: different projects can use different versions of the library without conflicts.
@@ -140,4 +140,4 @@ No — lockfiles are per-project. Each project pins the version it depends on. T
 | Line endings | LF | LF | Configure `git config core.autocrlf input` to avoid diff noise in SKILL.md files |
 | Validator | `pip install agentskills && agentskills validate .claude/skills/` | same | same (use `pip` or `pip3`) |
 
-For harness-specific setup, see [`docs/claude-consumer-setup.md`](../claude-consumer-setup.md) (Claude Code) or [`docs/codex-consumer-setup.md`](../codex-consumer-setup.md) (Codex).
+For harness-specific setup, see [`docs/claude-consumer-setup.md`](../claude-consumer-setup/) (Claude Code) or [`docs/codex-consumer-setup.md`](../codex-consumer-setup/) (Codex).

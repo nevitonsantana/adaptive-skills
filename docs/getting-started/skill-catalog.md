@@ -648,8 +648,8 @@ handoff-summary   → Document the decision to ship with open items captured
 
 ## What is not in this catalog
 
-**Domain packs** (e.g., `crisis-management`) are case studies for specific domains, not generic capability surface. They are excluded from the standard APM package. See [`docs/adr/ADR-002-domain-agnosticism.md`](../adr/ADR-002-domain-agnosticism.md).
+**Domain packs** (e.g., `crisis-management`) are case studies for specific domains, not generic capability surface. They are excluded from the standard APM package. See [`docs/adr/ADR-002-domain-agnosticism.md`](../adr/ADR-002-domain-agnosticism/).
 
 **Product and governance skills** are now published and included above.
 
-**Evolution layer** (`evolution/`) is not a skill — it is the process by which the library improves over time. See [`docs/evolution-layer.md`](../evolution-layer.md).
+**Evolution layer** (`evolution/`) is not a skill — it is the process by which the library improves over time. See [`docs/evolution-layer.md`](../evolution-layer/).

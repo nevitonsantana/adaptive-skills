@@ -5,7 +5,7 @@
 Define how Adaptive Skills reviews new skills, optional modules, merges, splits and deprecations
 without turning the catalog into a runtime, policy engine or AletheIA replacement.
 
-This document operationalizes the [Lean Skill Doctrine](skill-design-principles/lean-skill-doctrine.md).
+This document operationalizes the [Lean Skill Doctrine](skill-design-principles/lean-skill-doctrine/).
 
 ## Scope
 
@@ -148,9 +148,9 @@ the changed files.
 
 ## Related docs
 
-- [Lean Skill Doctrine](skill-design-principles/lean-skill-doctrine.md)
+- [Lean Skill Doctrine](skill-design-principles/lean-skill-doctrine/)
 - [Skill Quality Gate](https://github.com/nevitonsantana/adaptive-skills/blob/main/templates/skill-quality-gate.md)
-- [Skill Model](skill-model.md)
-- [Skill Categories](skill-categories.md)
-- [Harness Requirements for Skills](harness-requirements-for-skills.md)
-- [Evolution Layer](evolution-layer.md)
+- [Skill Model](skill-model/)
+- [Skill Categories](skill-categories/)
+- [Harness Requirements for Skills](harness-requirements-for-skills/)
+- [Evolution Layer](evolution-layer/)

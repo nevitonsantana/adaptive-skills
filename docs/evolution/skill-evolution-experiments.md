@@ -2,10 +2,10 @@
 
 A **skill evolution experiment** compares a skill as it is today (**baseline**) against a
 proposed change (**candidate**) using one or more
-[validation cases](validation-case-guidelines.md), checks for regression, and records a
+[validation cases](validation-case-guidelines/), checks for regression, and records a
 recommendation. It produces evidence — never a decision.
 
-Read [optimization-boundaries.md](optimization-boundaries.md) first.
+Read [optimization-boundaries.md](optimization-boundaries/) first.
 
 ## The authorized flow
 

@@ -61,7 +61,7 @@ The payload is the capability surface a consumer executes, not the governance an
 
 ## Domain packs (`crisis-management`)
 
-`domain-packs/crisis-management/` is the first validation case for the domain-pack pattern. It is **deliberately excluded** from the main APM package for v0.1.0 — domain packs are case studies, not canonical capability surface (see [ADR-002 — Domain agnosticism](../adr/ADR-002-domain-agnosticism.md) and [Épico 2 of the cross-repo plan](../adr/ADR-005-apm-packaging-strategy.md)).
+`domain-packs/crisis-management/` is the first validation case for the domain-pack pattern. It is **deliberately excluded** from the main APM package for v0.1.0 — domain packs are case studies, not canonical capability surface (see [ADR-002 — Domain agnosticism](../adr/ADR-002-domain-agnosticism/) and [Épico 2 of the cross-repo plan](../adr/ADR-005-apm-packaging-strategy/)).
 
 If you want the crisis-management skills today, consume them via `git clone`:
 
@@ -95,7 +95,7 @@ If you have used [AletheIA's APM install](https://github.com/nevitonsantana/Alet
 
 ## Related documents
 
-- [ADR-004 — agentskills.io conformance strategy](../adr/ADR-004-agentskills-io-conformance.md)
-- [ADR-005 — APM packaging strategy](../adr/ADR-005-apm-packaging-strategy.md)
-- [`docs/skill-categories.md`](../skill-categories.md) — category taxonomy and per-category backlog
-- [`docs/how-to-use-a-skill.md`](../how-to-use-a-skill.md) — invocation patterns once skills are installed
+- [ADR-004 — agentskills.io conformance strategy](../adr/ADR-004-agentskills-io-conformance/)
+- [ADR-005 — APM packaging strategy](../adr/ADR-005-apm-packaging-strategy/)
+- [`docs/skill-categories.md`](../skill-categories/) — category taxonomy and per-category backlog
+- [`docs/how-to-use-a-skill.md`](../how-to-use-a-skill/) — invocation patterns once skills are installed

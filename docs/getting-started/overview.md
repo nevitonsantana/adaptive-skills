@@ -41,7 +41,7 @@ Skills are designed to be read and invoked directly — paste the skill into a s
 - **Not an agent runtime.** The library ships SKILL.md files, not a process runner or session manager.
 - **Not a squad bundle.** Skills are individual capabilities; the library does not configure a pre-built squad the way BMAD or SDD do.
 
-See [`docs/adr/ADR-001-adaptive-skills-as-capability-library.md`](../adr/ADR-001-adaptive-skills-as-capability-library.md) for the formal definition.
+See [`docs/adr/ADR-001-adaptive-skills-as-capability-library.md`](../adr/ADR-001-adaptive-skills-as-capability-library/) for the formal definition.
 
 ---
 
@@ -71,7 +71,7 @@ See [`docs/adr/ADR-001-adaptive-skills-as-capability-library.md`](../adr/ADR-001
 | Quality | `qa-review` |
 | Metrics | `observability-review` |
 
-Full breakdown with trigger signals and composite flows: [`skill-catalog.md`](skill-catalog.md).
+Full breakdown with trigger signals and composite flows: [`skill-catalog.md`](skill-catalog/).
 
 ---
 
@@ -85,7 +85,7 @@ Full breakdown with trigger signals and composite flows: [`skill-catalog.md`](sk
 AletheIA decides the flow → Adaptive Skills shapes what gets done
 ```
 
-See [`docs/aletheia-integration.md`](../aletheia-integration.md) for the combined setup.
+See [`docs/aletheia-integration.md`](../aletheia-integration/) for the combined setup.
 
 ---
 
@@ -101,7 +101,7 @@ Three signals to watch:
 
 You do not need instrumentation to track these — a simple evolution observation (see `evolution/observations/`) captures enough signal for the governed evolution loop.
 
-Full model: [`docs/telemetry.md`](../telemetry.md).
+Full model: [`docs/telemetry.md`](../telemetry/).
 
 ---
 
@@ -113,13 +113,13 @@ Full model: [`docs/telemetry.md`](../telemetry.md).
 
 **The library does not self-edit.** Changes to skills go through the evolution loop (observation → proposal → review). If you modify a skill locally, that change is not reflected upstream. Keep local adaptations in `ops/ai/skills/` in your consumer project, not inside the installed skill files.
 
-**Domain packs are case studies, not canonical skills.** `domain-packs/crisis-management/` is field evidence from the first validation case. It is useful as a reference, but it is not the generic capability layer. See [`docs/adr/ADR-002-domain-agnosticism.md`](../adr/ADR-002-domain-agnosticism.md).
+**Domain packs are case studies, not canonical skills.** `domain-packs/crisis-management/` is field evidence from the first validation case. It is useful as a reference, but it is not the generic capability layer. See [`docs/adr/ADR-002-domain-agnosticism.md`](../adr/ADR-002-domain-agnosticism/).
 
 ---
 
 ## Next steps
 
-- Install the library: [`installation-guide.md`](installation-guide.md)
-- Browse all skills with trigger signals and composite flows: [`skill-catalog.md`](skill-catalog.md)
-- Questions? [`faq.md`](faq.md)
-- Deep dive: [`docs/how-to-use-a-skill.md`](../how-to-use-a-skill.md), [`docs/skill-model.md`](../skill-model.md)
+- Install the library: [`installation-guide.md`](installation-guide/)
+- Browse all skills with trigger signals and composite flows: [`skill-catalog.md`](skill-catalog/)
+- Questions? [`faq.md`](faq/)
+- Deep dive: [`docs/how-to-use-a-skill.md`](../how-to-use-a-skill/), [`docs/skill-model.md`](../skill-model/)
