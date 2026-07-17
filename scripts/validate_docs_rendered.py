@@ -44,8 +44,8 @@ def main() -> int:
                 continue
             if not parsed.path:
                 continue
-            target = parsed.path.lower()
-            if target.endswith((".md", ".mdx")):
+            target = parsed.path
+            if target.lower().endswith((".md", ".mdx")):
                 errors.append(f"{relative}: local link opens Markdown instead of a rendered route: {href}")
                 continue
 
