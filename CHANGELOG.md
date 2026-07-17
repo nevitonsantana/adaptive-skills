@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+- separate current state, consumer changes, evolution, evidence, roadmaps, and maintainer references into explicit public journeys
+
 - clarify the progressive AletheIA integration journey and add a concepts entrypoint across skills, composition, capabilities, harnesses, and knowledge
 
 - reorganize skill discovery into a concise 33-skill catalog, a task-based selection guide, and reusable workflow recipes

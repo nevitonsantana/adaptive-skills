@@ -73,6 +73,7 @@ The classification preserves existing public routes while the content is progres
 
 ## Public evidence and cases
 
+- `docs/cases/index.md`
 - `docs/crisis-monitor-case-study.md`
 - `docs/design-system-intelligence-pulso-pilot.md`
 - `docs/efficiency-layer-crisis-monitor-reference.md`
@@ -83,6 +84,9 @@ The classification preserves existing public routes while the content is progres
 
 ## Public advanced — updates and evolution
 
+- `docs/updates/index.md`
+- `docs/updates/current-state.md`
+- `docs/updates/changelog.md`
 - `docs/evolution-layer.md`
 - `docs/telemetry.md`
 - `docs/evolution/optimization-boundaries.md`
@@ -95,6 +99,7 @@ The classification preserves existing public routes while the content is progres
 
 ## Public maintainer reference
 
+- `docs/maintainers/index.md`
 - `docs/adr/README.md`
 - `docs/adr/ADR-001-adaptive-skills-as-capability-library.md`
 - `docs/adr/ADR-002-domain-agnosticism.md`

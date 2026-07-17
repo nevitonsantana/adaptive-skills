@@ -100,6 +100,7 @@ export default defineConfig({
         {
           label: "Cases and evidence",
           items: [
+            "/cases/index",
             "/crisis-monitor-case-study",
             "/design-system-intelligence-pulso-pilot",
             "/efficiency-layer-crisis-monitor-reference",
@@ -112,6 +113,9 @@ export default defineConfig({
         {
           label: "Updates and evolution",
           items: [
+            "/updates/index",
+            "/updates/current-state",
+            "/updates/changelog",
             "/evolution-layer",
             "/telemetry",
             "/evolution/optimization-boundaries",
@@ -126,6 +130,7 @@ export default defineConfig({
         {
           label: "Maintainer reference",
           items: [
+            "/maintainers/index",
             "/adr/README",
             "/adr/ADR-001-adaptive-skills-as-capability-library",
             "/adr/ADR-002-domain-agnosticism",
