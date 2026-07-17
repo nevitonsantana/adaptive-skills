@@ -1,4 +1,7 @@
-# Adaptive Skills Docs
+---
+title: "Adaptive Skills Docs"
+description: "Reference documentation for Adaptive Skills Docs in Adaptive Skills."
+---
 
 Use this page as the documentation map for Adaptive Skills.
 

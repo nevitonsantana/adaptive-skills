@@ -1,4 +1,7 @@
-# Using Proprietary Frameworks Safely
+---
+title: "Using Proprietary Frameworks Safely"
+description: "Reference documentation for Using Proprietary Frameworks Safely in Adaptive Skills."
+---
 
 ## Goal
 

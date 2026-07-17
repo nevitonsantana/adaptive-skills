@@ -1,4 +1,7 @@
-# Capability Routing Boundary
+---
+title: "Capability Routing Boundary"
+description: "Reference documentation for Capability Routing Boundary in Adaptive Skills."
+---
 
 Adaptive Skills can help a consumer decide which capability or skill appears to fit a task, but it
 does not own global routing, approval, execution or closure.

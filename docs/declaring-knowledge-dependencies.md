@@ -1,4 +1,7 @@
-# Declaring Knowledge Dependencies
+---
+title: "Declaring Knowledge Dependencies"
+description: "Reference documentation for Declaring Knowledge Dependencies in Adaptive Skills."
+---
 
 ## Goal
 

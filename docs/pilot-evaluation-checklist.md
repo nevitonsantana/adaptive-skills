@@ -1,4 +1,7 @@
-# Pilot Evaluation Checklist
+---
+title: "Pilot Evaluation Checklist"
+description: "Reference documentation for Pilot Evaluation Checklist in Adaptive Skills."
+---
 
 Use this checklist at the end of a first consumer pilot.
 

@@ -1,4 +1,7 @@
-# Efficiency Layer — First Candidate Skills
+---
+title: "Efficiency Layer — First Candidate Skills"
+description: "Reference documentation for Efficiency Layer — First Candidate Skills in Adaptive Skills."
+---
 
 ## Why these three come first
 

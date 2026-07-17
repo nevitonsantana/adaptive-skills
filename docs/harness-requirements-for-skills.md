@@ -1,4 +1,7 @@
-# Harness Requirements for Skills
+---
+title: "Harness Requirements for Skills"
+description: "Reference documentation for Harness Requirements for Skills in Adaptive Skills."
+---
 
 > AletheIA governs. Harness enforces. Adaptative Skills declares requirements.
 > Knowledge Governance limits context. Audit proves.

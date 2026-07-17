@@ -1,4 +1,7 @@
-# ADR 005 — Adaptive Skills: APM packaging strategy
+---
+title: "ADR 005 — Adaptive Skills: APM packaging strategy"
+description: "Reference documentation for ADR 005 — Adaptive Skills: APM packaging strategy in Adaptive Skills."
+---
 
 | Field | Value |
 |---|---|

@@ -1,4 +1,7 @@
-# Lean Skill Doctrine
+---
+title: "Lean Skill Doctrine"
+description: "Reference documentation for Lean Skill Doctrine in Adaptive Skills."
+---
 
 ## Purpose
 

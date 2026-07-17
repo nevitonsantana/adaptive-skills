@@ -1,4 +1,7 @@
-# Design System Intelligence — Pulso Pilot
+---
+title: "Design System Intelligence — Pulso Pilot"
+description: "Reference documentation for Design System Intelligence — Pulso Pilot in Adaptive Skills."
+---
 
 This note describes the first Adaptive Skills side of S24. It introduces one bounded skill, `design-system-intelligence`, for manual design-system review.
 

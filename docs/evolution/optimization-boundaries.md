@@ -1,4 +1,7 @@
-# Optimization Boundaries
+---
+title: "Optimization Boundaries"
+description: "Reference documentation for Optimization Boundaries in Adaptive Skills."
+---
 
 > **Optimization is evidence, not authority. Governance outranks optimization.**
 

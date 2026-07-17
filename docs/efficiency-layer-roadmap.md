@@ -1,4 +1,7 @@
-# Efficiency Layer Roadmap
+---
+title: "Efficiency Layer Roadmap"
+description: "Reference documentation for Efficiency Layer Roadmap in Adaptive Skills."
+---
 
 ## Goal
 

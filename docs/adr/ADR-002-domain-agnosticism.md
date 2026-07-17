@@ -1,4 +1,7 @@
-# ADR 002 — Adaptive Skills: domain agnosticism
+---
+title: "ADR 002 — Adaptive Skills: domain agnosticism"
+description: "Reference documentation for ADR 002 — Adaptive Skills: domain agnosticism in Adaptive Skills."
+---
 
 | Field | Value |
 |---|---|

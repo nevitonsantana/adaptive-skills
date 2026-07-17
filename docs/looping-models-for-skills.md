@@ -1,4 +1,7 @@
-# Looping Models for Skills
+---
+title: "Looping Models for Skills"
+description: "Reference documentation for Looping Models for Skills in Adaptive Skills."
+---
 
 Two of the ten execution patterns are loops: `loop_until_done` (repeat until an objective stop
 condition) and `scheduled_stateful_loop` (recurring runs with persistent state). This doc covers

@@ -1,4 +1,7 @@
-# Using Skills Inside Harnesses
+---
+title: "Using Skills Inside Harnesses"
+description: "Reference documentation for Using Skills Inside Harnesses in Adaptive Skills."
+---
 
 ## Goal
 

@@ -1,4 +1,7 @@
-# Claude Consumer Setup
+---
+title: "Claude Consumer Setup"
+description: "Reference documentation for Claude Consumer Setup in Adaptive Skills."
+---
 
 ## Goal
 

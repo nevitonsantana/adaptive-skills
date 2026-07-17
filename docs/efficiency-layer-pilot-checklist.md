@@ -1,4 +1,7 @@
-# Efficiency Layer Pilot Checklist
+---
+title: "Efficiency Layer Pilot Checklist"
+description: "Reference documentation for Efficiency Layer Pilot Checklist in Adaptive Skills."
+---
 
 Use this checklist at the end of an Efficiency Layer pilot.
 

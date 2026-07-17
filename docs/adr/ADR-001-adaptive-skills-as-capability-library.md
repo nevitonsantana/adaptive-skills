@@ -1,4 +1,7 @@
-# ADR 001 — Adaptive Skills as capability library
+---
+title: "ADR 001 — Adaptive Skills as capability library"
+description: "Reference documentation for ADR 001 — Adaptive Skills as capability library in Adaptive Skills."
+---
 
 | Field | Value |
 |---|---|

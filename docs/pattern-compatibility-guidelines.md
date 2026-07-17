@@ -1,4 +1,7 @@
-# Pattern Compatibility Guidelines
+---
+title: "Pattern Compatibility Guidelines"
+description: "Reference documentation for Pattern Compatibility Guidelines in Adaptive Skills."
+---
 
 How to fill a `skill_execution_patterns` declaration
 ([template](https://github.com/nevitonsantana/adaptive-skills/blob/main/templates/skill-execution-patterns.yaml)). The governing rule: **a skill does not

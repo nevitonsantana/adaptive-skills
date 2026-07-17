@@ -1,4 +1,7 @@
-# Agentic ecosystem map
+---
+title: "Agentic ecosystem map"
+description: "Reference documentation for Agentic ecosystem map in Adaptive Skills."
+---
 
 > **Synchronized document.** This file is maintained identically in two repositories:
 > [`AletheIA/docs/concepts/ecosystem-map.md`](https://github.com/nevitonsantana/AletheIA/blob/main/docs/concepts/ecosystem-map.md)

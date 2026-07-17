@@ -1,4 +1,7 @@
-# ADR 004 — Adaptive Skills: `agentskills.io` conformance strategy
+---
+title: "ADR 004 — Adaptive Skills: `agentskills.io` conformance strategy"
+description: "Reference documentation for ADR 004 — Adaptive Skills: `agentskills.io` conformance strategy in Adaptive Skills."
+---
 
 | Field | Value |
 |---|---|

@@ -1,4 +1,7 @@
-# Official docs publication proof
+---
+title: "Official docs publication proof"
+description: "Reference documentation for Official docs publication proof in Adaptive Skills."
+---
 
 ## Status
 
