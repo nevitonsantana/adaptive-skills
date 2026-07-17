@@ -27,11 +27,11 @@ The initial public library established portable generic skills, category and gov
 
 - Use this page for orientation.
 - Use root `CHANGELOG.md` for exact technical history.
-- Use [Current state](./current-state/) for present support claims.
+- Use [Current state](https://nevitonsantana.github.io/adaptive-skills/updates/current-state/) for present support claims.
 - Use roadmaps only for future candidates, not delivered capability.
 
 ## Next steps
 
-- Check [Current state](./current-state/).
-- Review [Cases and evidence](../cases/) for maturity context.
-- Read [Evolution](../evolution-layer/) to understand how future changes are governed.
+- Check [Current state](https://nevitonsantana.github.io/adaptive-skills/updates/current-state/).
+- Review [Cases and evidence](https://nevitonsantana.github.io/adaptive-skills/cases/) for maturity context.
+- Read [Evolution](https://nevitonsantana.github.io/adaptive-skills/evolution-layer/) to understand how future changes are governed.

@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+- repair public documentation routing across nested pages, validate every local published route after build, and add creator links for Neviton Santana
+
 - normalize rendered page titles across the documentation corpus and add a permanent build gate for duplicate H1s and local Markdown links
 
 - separate current state, consumer changes, evolution, evidence, roadmaps, and maintainer references into explicit public journeys

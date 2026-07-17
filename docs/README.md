@@ -7,22 +7,22 @@ Use this page as the documentation map for Adaptive Skills.
 
 The recommended public reader path is:
 
-1. **Overview** — [`../README.md`](https://github.com/nevitonsantana/adaptive-skills/blob/main/README.md) and [`getting-started/overview.md`](getting-started/overview/).
-2. **Install / consume** — [`getting-started/installation-guide.md`](getting-started/installation-guide/), [`guides/install-via-apm.md`](guides/install-via-apm/), [`codex-consumer-setup.md`](codex-consumer-setup/), and [`claude-consumer-setup.md`](claude-consumer-setup/).
-3. **Choose a skill** — [`getting-started/skill-catalog.md`](getting-started/skill-catalog/), [`how-to-use-a-skill.md`](how-to-use-a-skill/), and [`skill-categories.md`](skill-categories/).
-4. **Understand the model** — [`skill-model.md`](skill-model/), [`domain-taxonomy.md`](domain-taxonomy/), and [`skill-catalog-governance.md`](skill-catalog-governance/).
-5. **Use with AletheIA** — [`aletheia-integration.md`](aletheia-integration/), [`agent-role-integration.md`](agent-role-integration/), and [`specification-facilitation.md`](specification-facilitation/).
-6. **Advanced overlays** — [`capability-model.md`](capability-model/), [`capability-graph.md`](capability-graph/), [`operational-runtime.md`](operational-runtime/), and [`evolution-layer.md`](evolution-layer/).
-7. **Evidence and decisions** — [`adr/README.md`](adr/README/), [`_meta/`](https://github.com/nevitonsantana/adaptive-skills/blob/main/docs/_meta/), [`../examples/README.md`](https://github.com/nevitonsantana/adaptive-skills/blob/main/examples/README.md), and [`../evolution/README.md`](https://github.com/nevitonsantana/adaptive-skills/blob/main/evolution/README.md).
+1. **Overview** — [`../README.md`](https://github.com/nevitonsantana/adaptive-skills/blob/main/README.md) and [`getting-started/overview.md`](https://nevitonsantana.github.io/adaptive-skills/getting-started/overview/).
+2. **Install / consume** — [`getting-started/installation-guide.md`](https://nevitonsantana.github.io/adaptive-skills/getting-started/installation-guide/), [`guides/install-via-apm.md`](https://nevitonsantana.github.io/adaptive-skills/guides/install-via-apm/), [`codex-consumer-setup.md`](https://nevitonsantana.github.io/adaptive-skills/codex-consumer-setup/), and [`claude-consumer-setup.md`](https://nevitonsantana.github.io/adaptive-skills/claude-consumer-setup/).
+3. **Choose a skill** — [`getting-started/skill-catalog.md`](https://nevitonsantana.github.io/adaptive-skills/getting-started/skill-catalog/), [`how-to-use-a-skill.md`](https://nevitonsantana.github.io/adaptive-skills/how-to-use-a-skill/), and [`skill-categories.md`](https://nevitonsantana.github.io/adaptive-skills/skill-categories/).
+4. **Understand the model** — [`skill-model.md`](https://nevitonsantana.github.io/adaptive-skills/skill-model/), [`domain-taxonomy.md`](https://nevitonsantana.github.io/adaptive-skills/domain-taxonomy/), and [`skill-catalog-governance.md`](https://nevitonsantana.github.io/adaptive-skills/skill-catalog-governance/).
+5. **Use with AletheIA** — [`aletheia-integration.md`](https://nevitonsantana.github.io/adaptive-skills/aletheia-integration/), [`agent-role-integration.md`](https://nevitonsantana.github.io/adaptive-skills/agent-role-integration/), and [`specification-facilitation.md`](https://nevitonsantana.github.io/adaptive-skills/specification-facilitation/).
+6. **Advanced overlays** — [`capability-model.md`](https://nevitonsantana.github.io/adaptive-skills/capability-model/), [`capability-graph.md`](https://nevitonsantana.github.io/adaptive-skills/capability-graph/), [`operational-runtime.md`](https://nevitonsantana.github.io/adaptive-skills/operational-runtime/), and [`evolution-layer.md`](https://nevitonsantana.github.io/adaptive-skills/evolution-layer/).
+7. **Evidence and decisions** — [`adr/README.md`](https://nevitonsantana.github.io/adaptive-skills/adr/README/), [`_meta/`](https://github.com/nevitonsantana/adaptive-skills/blob/main/docs/_meta/), [`../examples/README.md`](https://github.com/nevitonsantana/adaptive-skills/blob/main/examples/README.md), and [`../evolution/README.md`](https://github.com/nevitonsantana/adaptive-skills/blob/main/evolution/README.md).
 
 ## Start here
 
 - `../README.md` — project overview and value proposition
-- [`index.mdx`](index/) — public documentation homepage
-- [`official-docs-readiness.md`](official-docs-readiness/) — publication-readiness map for turning the Markdown corpus into official docs
-- [`official-docs-link-readiness.md`](official-docs-link-readiness/) — route and link readiness classification for official docs
-- [`official-docs-blume-shell.md`](official-docs-blume-shell/) — decision record for the manual Blume documentation shell
-- [`official-docs-publication-proof.md`](official-docs-publication-proof/) — manual GitHub Pages publication and smoke-test plan
+- [`index.mdx`](https://nevitonsantana.github.io/adaptive-skills/./) — public documentation homepage
+- [`official-docs-readiness.md`](https://nevitonsantana.github.io/adaptive-skills/official-docs-readiness/) — publication-readiness map for turning the Markdown corpus into official docs
+- [`official-docs-link-readiness.md`](https://nevitonsantana.github.io/adaptive-skills/official-docs-link-readiness/) — route and link readiness classification for official docs
+- [`official-docs-blume-shell.md`](https://nevitonsantana.github.io/adaptive-skills/official-docs-blume-shell/) — decision record for the manual Blume documentation shell
+- [`official-docs-publication-proof.md`](https://nevitonsantana.github.io/adaptive-skills/official-docs-publication-proof/) — manual GitHub Pages publication and smoke-test plan
 - [`../SYSTEM_STATE.md`](https://github.com/nevitonsantana/adaptive-skills/blob/main/SYSTEM_STATE.md) — compact current-state index; source records and canonical files remain authoritative
 
 ## Internal authoring references
@@ -40,7 +40,7 @@ The recommended public reader path is:
 
 ## Official documentation path
 
-The current repository documentation is Markdown-first. The path above is the curated public-doc map for GitHub-rendered documentation. [`official-docs-readiness.md`](official-docs-readiness/) records the remaining gated slices before adding a generated documentation site or publication workflow.
+The current repository documentation is Markdown-first. The path above is the curated public-doc map for GitHub-rendered documentation. [`official-docs-readiness.md`](https://nevitonsantana.github.io/adaptive-skills/official-docs-readiness/) records the remaining gated slices before adding a generated documentation site or publication workflow.
 
 ## Adopt in another project
 
@@ -63,7 +63,7 @@ Follow this sequence:
 - [AletheIA + Adaptive Skills integrated evolution backlog](https://github.com/nevitonsantana/AletheIA/blob/main/docs/roadmaps/evolution-backlog-aletheia-adaptive-skills.md) — canonical P0–P11 dependency graph, source registry, and requirement traceability
 - [AletheIA + Adaptive Skills ecosystem territory map](https://github.com/nevitonsantana/AletheIA/blob/main/docs/concepts/ecosystem-territory-map.md) — non-normative north-star view; current contracts and records remain authoritative
 - [`../examples/context-surfaces/provider-loading.yaml`](https://github.com/nevitonsantana/adaptive-skills/blob/main/examples/context-surfaces/provider-loading.yaml) — capability-scoped provider-loading example for AletheIA's Context Surface Registry
-- [`skill-observation-return-pattern.md`](skill-observation-return-pattern/) — portable, recoverable skill return without Work Slice authority
+- [`skill-observation-return-pattern.md`](https://nevitonsantana.github.io/adaptive-skills/skill-observation-return-pattern/) — portable, recoverable skill return without Work Slice authority
 - [`../examples/execution-records/feature-planning-observation-return.yaml`](https://github.com/nevitonsantana/adaptive-skills/blob/main/examples/execution-records/feature-planning-observation-return.yaml) — worked source-backed return
 
 ## Capability layer
@@ -103,9 +103,9 @@ The Efficiency Layer is a separate track for context, checkpoint, handoff, and c
 
 How skills consume governed knowledge bases (frameworks, policies, personas) without carrying their content.
 
-- [`skill-knowledge-boundaries.md`](skill-knowledge-boundaries/) — skill carries procedure; knowledge pack carries content
-- [`declaring-knowledge-dependencies.md`](declaring-knowledge-dependencies/) — slot-based declaration of required, optional, and conditional knowledge
-- [`using-proprietary-frameworks-safely.md`](using-proprietary-frameworks-safely/) — capsule + manifest + dependency declaration
+- [`skill-knowledge-boundaries.md`](https://nevitonsantana.github.io/adaptive-skills/skill-knowledge-boundaries/) — skill carries procedure; knowledge pack carries content
+- [`declaring-knowledge-dependencies.md`](https://nevitonsantana.github.io/adaptive-skills/declaring-knowledge-dependencies/) — slot-based declaration of required, optional, and conditional knowledge
+- [`using-proprietary-frameworks-safely.md`](https://nevitonsantana.github.io/adaptive-skills/using-proprietary-frameworks-safely/) — capsule + manifest + dependency declaration
 - [`../templates/skill-knowledge-dependency.yaml`](https://github.com/nevitonsantana/adaptive-skills/blob/main/templates/skill-knowledge-dependency.yaml) — template for the dependency file
 - [`../templates/framework-capsule-template.md`](https://github.com/nevitonsantana/adaptive-skills/blob/main/templates/framework-capsule-template.md) — template for authoring a capsule
 - [`../templates/knowledge-aware-skill-template.md`](https://github.com/nevitonsantana/adaptive-skills/blob/main/templates/knowledge-aware-skill-template.md) — skill template supporting generic and knowledge-aware modes
@@ -124,9 +124,9 @@ The AletheIA-side contracts these depend on:
 
 ## Field evidence
 
-Adaptive Skills is domain-agnostic (see [`adr/ADR-002-domain-agnosticism.md`](adr/ADR-002-domain-agnosticism/)). The first validation case is Crisis Monitor — labeled evidence, not canonical reference:
+Adaptive Skills is domain-agnostic (see [`adr/ADR-002-domain-agnosticism.md`](https://nevitonsantana.github.io/adaptive-skills/adr/ADR-002-domain-agnosticism/)). The first validation case is Crisis Monitor — labeled evidence, not canonical reference:
 
-- [`crisis-monitor-case-study.md`](crisis-monitor-case-study/) — first-validation field case
-- [`efficiency-layer-crisis-monitor-reference.md`](efficiency-layer-crisis-monitor-reference/) — first-validation field reference for the Efficiency Layer
+- [`crisis-monitor-case-study.md`](https://nevitonsantana.github.io/adaptive-skills/crisis-monitor-case-study/) — first-validation field case
+- [`efficiency-layer-crisis-monitor-reference.md`](https://nevitonsantana.github.io/adaptive-skills/efficiency-layer-crisis-monitor-reference/) — first-validation field reference for the Efficiency Layer
 
 Field evidence is not active product backlog inside this repository.

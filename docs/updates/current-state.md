@@ -12,7 +12,7 @@ This page describes the repository state represented by current documentation an
 - Generic skills remain the reusable public capability library.
 - Domain-pack skills remain validation cases rather than part of the generic inventory.
 
-See the [complete skills catalog](../getting-started/skill-catalog/) for task triggers and expected outcomes.
+See the [complete skills catalog](https://nevitonsantana.github.io/adaptive-skills/getting-started/skill-catalog/) for task triggers and expected outcomes.
 
 ## Supporting metadata
 
@@ -49,6 +49,6 @@ pnpm run docs:validate
 
 ## Next steps
 
-- Browse [Cases and evidence](../cases/) for bounded maturity records.
-- Read [Changelog](./changelog/) for consumer-facing changes.
-- Read [Updates and evolution](./) before interpreting roadmap material.
+- Browse [Cases and evidence](https://nevitonsantana.github.io/adaptive-skills/cases/) for bounded maturity records.
+- Read [Changelog](https://nevitonsantana.github.io/adaptive-skills/updates/changelog/) for consumer-facing changes.
+- Read [Updates and evolution](https://nevitonsantana.github.io/adaptive-skills/updates/) before interpreting roadmap material.

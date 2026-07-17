@@ -6,6 +6,13 @@ It helps agents, teams, and AI-enabled workflows choose the right capability for
 
 The goal is simple: make AI work less improvised.
 
+## Creator
+
+Adaptive Skills was created and is maintained by **Neviton Santana**, a Staff/Principal Designer working across product design, complex systems, artificial intelligence, and governed AI-assisted work.
+
+- [GitHub — nevitonsantana](https://github.com/nevitonsantana)
+- [LinkedIn — Neviton Santana](https://www.linkedin.com/in/neviton)
+
 Instead of relying on one large prompt, a fixed agent role, or a vague instruction like "be strategic", Adaptive Skills breaks work into small, explicit capabilities such as planning, testing, debugging, UX critique, observability review, premortem analysis, handoff discipline, and domain-specific reasoning.
 
 ## Why this exists

@@ -14,7 +14,7 @@ description: "Reference documentation for ADR 003 — Adaptive Skills: relations
 
 ## 1. Context
 
-Both Adaptive Skills and [AletheIA](https://github.com/nevitonsantana/AletheIA) were developed by the same author in roughly the same period, often against the same consumer project (Crisis Monitor). Existing docs already cross-reference the two — see [`docs/aletheia-integration.md`](../aletheia-integration/), [`docs/aletheia-first-test.md`](../aletheia-first-test/), and the "Integration with AletheIA" milestone in [`ROADMAP_EVOLUTIVO.md`](https://github.com/nevitonsantana/adaptive-skills/blob/main/ROADMAP_EVOLUTIVO.md).
+Both Adaptive Skills and [AletheIA](https://github.com/nevitonsantana/AletheIA) were developed by the same author in roughly the same period, often against the same consumer project (Crisis Monitor). Existing docs already cross-reference the two — see [`docs/aletheia-integration.md`](https://nevitonsantana.github.io/adaptive-skills/aletheia-integration/), [`docs/aletheia-first-test.md`](https://nevitonsantana.github.io/adaptive-skills/aletheia-first-test/), and the "Integration with AletheIA" milestone in [`ROADMAP_EVOLUTIVO.md`](https://github.com/nevitonsantana/adaptive-skills/blob/main/ROADMAP_EVOLUTIVO.md).
 
 This cross-referencing is useful but creates a question: *can Adaptive Skills be used without AletheIA, and vice versa? Are they the same product split into two repos, or two products that happen to share a context?*
 
@@ -74,7 +74,7 @@ This promotion path mirrors AletheIA's own ADR-002 (memory and skill promotion p
 
 ## 5. Relationship
 
-ADR-001 settled Adaptive Skills' identity. ADR-002 settled its domain agnosticism. This ADR settles its cross-repo relationship. The mirror in AletheIA is ADR-005 (positioning in the ecosystem), which explicitly lists Adaptive Skills as a non-competitor. [`docs/concepts/ecosystem-map.md`](../concepts/ecosystem-map/) is the synchronized view of both repos.
+ADR-001 settled Adaptive Skills' identity. ADR-002 settled its domain agnosticism. This ADR settles its cross-repo relationship. The mirror in AletheIA is ADR-005 (positioning in the ecosystem), which explicitly lists Adaptive Skills as a non-competitor. [`docs/concepts/ecosystem-map.md`](https://nevitonsantana.github.io/adaptive-skills/concepts/ecosystem-map/) is the synchronized view of both repos.
 
 Epics 4 and 5 of the 2026-05-21 cross-repo plan implement section 2.2 by making both repos installable as independent APM packages — this ADR is prerequisite to both.
 

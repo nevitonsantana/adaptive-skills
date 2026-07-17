@@ -154,4 +154,4 @@ Use `docs/first-consumer-pilot.md` and `docs/pilot-evaluation-checklist.md` to r
 
 ## Real consumer reference
 
-For the first concrete small-lane pilot in production-like work, see [`docs/crisis-monitor-case-study.md`](crisis-monitor-case-study/). This is the first validation case (per [ADR-002](adr/ADR-002-domain-agnosticism/)), not the canonical reference — other consumer cases across other domains are expected.
+For the first concrete small-lane pilot in production-like work, see [`docs/crisis-monitor-case-study.md`](https://nevitonsantana.github.io/adaptive-skills/crisis-monitor-case-study/). This is the first validation case (per [ADR-002](https://nevitonsantana.github.io/adaptive-skills/adr/ADR-002-domain-agnosticism/)), not the canonical reference — other consumer cases across other domains are expected.

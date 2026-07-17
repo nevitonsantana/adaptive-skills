@@ -3,7 +3,7 @@ title: Skills catalog
 description: Browse all published Adaptive Skills by category, trigger, and expected outcome.
 ---
 
-Adaptive Skills currently publishes **33 generic skills**. Use this page when you already know the kind of help you need. If the task is still unclear, start with [Choose the right skill](../guides/skill-selection/).
+Adaptive Skills currently publishes **33 generic skills**. Use this page when you already know the kind of help you need. If the task is still unclear, start with [Choose the right skill](https://nevitonsantana.github.io/adaptive-skills/guides/skill-selection/).
 
 Each skill appears once in this catalog. Its `skills/<name>/SKILL.md` file remains the canonical instruction source.
 
@@ -98,7 +98,7 @@ Each skill appears once in this catalog. Its `skills/<name>/SKILL.md` file remai
 
 ## Next steps
 
-- [Choose the right skill](../guides/skill-selection/) when several options seem plausible.
-- [Use a skill](../how-to-use-a-skill/) for invocation and evidence-return guidance.
-- [Try workflow recipes](../guides/workflow-recipes/) when the task needs more than one skill.
+- [Choose the right skill](https://nevitonsantana.github.io/adaptive-skills/guides/skill-selection/) when several options seem plausible.
+- [Use a skill](https://nevitonsantana.github.io/adaptive-skills/how-to-use-a-skill/) for invocation and evidence-return guidance.
+- [Try workflow recipes](https://nevitonsantana.github.io/adaptive-skills/guides/workflow-recipes/) when the task needs more than one skill.
 - Read the canonical `skills/<name>/SKILL.md` in your installed copy before execution.

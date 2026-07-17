@@ -3,11 +3,11 @@ title: "Skill categories"
 description: "Reference documentation for Skill categories in Adaptive Skills."
 ---
 
-Adaptive Skills tags every published skill with a `metadata.category` value in the `SKILL.md` frontmatter. Categories are *attributes*, not directory structure — the on-disk layout is flat (`skills/<name>/SKILL.md`) to conform with the [`agentskills.io`](https://agentskills.io/specification) Skill Collection layout consumed by APM. See [ADR-005](adr/ADR-005-apm-packaging-strategy/) for the rationale behind the flatten.
+Adaptive Skills tags every published skill with a `metadata.category` value in the `SKILL.md` frontmatter. Categories are *attributes*, not directory structure — the on-disk layout is flat (`skills/<name>/SKILL.md`) to conform with the [`agentskills.io`](https://agentskills.io/specification) Skill Collection layout consumed by APM. See [ADR-005](https://nevitonsantana.github.io/adaptive-skills/adr/ADR-005-apm-packaging-strategy/) for the rationale behind the flatten.
 
 This document is the canonical narrative for each category and tracks its backlog. The machine-readable mapping is in [`projections/registry.json`](https://github.com/nevitonsantana/adaptive-skills/blob/main/projections/registry.json) under each skill's `category` field.
 
-Category growth is governed by [Skill Catalog Governance](skill-catalog-governance/): backlog entries are candidates, not authorization to create skills. New categories or category moves should pass the [Skill Quality Gate](https://github.com/nevitonsantana/adaptive-skills/blob/main/templates/skill-quality-gate.md) when they change skill boundaries.
+Category growth is governed by [Skill Catalog Governance](https://nevitonsantana.github.io/adaptive-skills/skill-catalog-governance/): backlog entries are candidates, not authorization to create skills. New categories or category moves should pass the [Skill Quality Gate](https://github.com/nevitonsantana/adaptive-skills/blob/main/templates/skill-quality-gate.md) when they change skill boundaries.
 
 ## business
 
@@ -35,7 +35,7 @@ Design-domain skills for experience framing, UX critique, content clarity, and b
 Skills that compound execution speed without sacrificing clarity — task chunking, handoff hygiene, mid-flight checkpoints.
 
 - **Published:** `task-chunking`, `handoff-summary`, `checkpoint-review`
-- **Backlog:** see [`docs/efficiency-layer-candidate-skills.md`](efficiency-layer-candidate-skills/)
+- **Backlog:** see [`docs/efficiency-layer-candidate-skills.md`](https://nevitonsantana.github.io/adaptive-skills/efficiency-layer-candidate-skills/)
 
 ## engineering
 

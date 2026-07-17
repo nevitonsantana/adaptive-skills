@@ -119,6 +119,6 @@ Explanation depth does not change risk, permissions, evidence, or approval requi
 
 ## Next steps
 
-- Try the guided [first skill exercise](getting-started/first-skill/).
-- Use the [skill catalog](getting-started/skill-catalog/) to choose by trigger.
-- Read the [skill model](skill-model/) for the deeper Core + Modules + Triggers design.
+- Try the guided [first skill exercise](https://nevitonsantana.github.io/adaptive-skills/getting-started/first-skill/).
+- Use the [skill catalog](https://nevitonsantana.github.io/adaptive-skills/getting-started/skill-catalog/) to choose by trigger.
+- Read the [skill model](https://nevitonsantana.github.io/adaptive-skills/skill-model/) for the deeper Core + Modules + Triggers design.

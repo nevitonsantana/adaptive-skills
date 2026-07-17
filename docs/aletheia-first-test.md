@@ -55,7 +55,7 @@ Capture:
 - known risks and missing values;
 - the advisory handoff signal.
 
-Use the [skill observation return pattern](skill-observation-return-pattern/) when a structured return helps. Do not infer unavailable values.
+Use the [skill observation return pattern](https://nevitonsantana.github.io/adaptive-skills/skill-observation-return-pattern/) when a structured return helps. Do not infer unavailable values.
 
 ## Step 4 — Let AletheIA evaluate closure
 
@@ -104,6 +104,6 @@ Stop and review when:
 
 ## Next steps
 
-- Compare the result with [Adaptive Skills and AletheIA](aletheia-integration/).
-- Read [Observation and evidence return](skill-observation-return-pattern/) before formalizing the record.
-- Use [Workflow recipes](guides/workflow-recipes/) for later tasks, while preserving AletheIA as the governing frame.
+- Compare the result with [Adaptive Skills and AletheIA](https://nevitonsantana.github.io/adaptive-skills/aletheia-integration/).
+- Read [Observation and evidence return](https://nevitonsantana.github.io/adaptive-skills/skill-observation-return-pattern/) before formalizing the record.
+- Use [Workflow recipes](https://nevitonsantana.github.io/adaptive-skills/guides/workflow-recipes/) for later tasks, while preserving AletheIA as the governing frame.

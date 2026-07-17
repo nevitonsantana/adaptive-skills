@@ -3,7 +3,7 @@ title: Installation Guide
 description: Install a focused starter set or the full Adaptive Skills library and verify the result safely.
 ---
 
-This guide installs Adaptive Skills in a consumer project. If you only want to understand the library first, read the [overview](overview/). If you want the shortest path to a first task, use the [quickstart](quickstart/).
+This guide installs Adaptive Skills in a consumer project. If you only want to understand the library first, read the [overview](https://nevitonsantana.github.io/adaptive-skills/getting-started/overview/). If you want the shortest path to a first task, use the [quickstart](https://nevitonsantana.github.io/adaptive-skills/getting-started/quickstart/).
 
 ## Before you begin
 
@@ -79,11 +79,11 @@ agentskills validate .claude/skills/
 
 ## Environment-specific setup
 
-- **Claude Code:** read [Claude consumer setup](../claude-consumer-setup/).
-- **Codex:** read [Codex consumer setup](../codex-consumer-setup/). The repository also provides a Codex projection script for maintainers and source consumers.
+- **Claude Code:** read [Claude consumer setup](https://nevitonsantana.github.io/adaptive-skills/claude-consumer-setup/).
+- **Codex:** read [Codex consumer setup](https://nevitonsantana.github.io/adaptive-skills/codex-consumer-setup/). The repository also provides a Codex projection script for maintainers and source consumers.
 - **Another compatible harness:** confirm where that harness expects `SKILL.md` files, then use the APM target or supported installation method for that location.
 
-The detailed package contract and payload boundaries are documented in [Install via APM](../guides/install-via-apm/).
+The detailed package contract and payload boundaries are documented in [Install via APM](https://nevitonsantana.github.io/adaptive-skills/guides/install-via-apm/).
 
 ## Update later
 
@@ -123,6 +123,6 @@ Always review external skill sources before installation and keep consequential 
 
 ## Next steps
 
-1. [Run your first skill](first-skill/).
-2. [Learn the general usage loop](../how-to-use-a-skill/).
-3. [Browse the complete skill catalog](skill-catalog/).
+1. [Run your first skill](https://nevitonsantana.github.io/adaptive-skills/getting-started/first-skill/).
+2. [Learn the general usage loop](https://nevitonsantana.github.io/adaptive-skills/how-to-use-a-skill/).
+3. [Browse the complete skill catalog](https://nevitonsantana.github.io/adaptive-skills/getting-started/skill-catalog/).

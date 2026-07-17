@@ -8,7 +8,7 @@ and context, what the skill *must do* and *must not do*, and how you would know 
 succeeded or failed.
 
 Validation cases are the unit of evidence the
-[Skill Evolution Validation Layer](optimization-boundaries/) runs experiments against.
+[Skill Evolution Validation Layer](https://nevitonsantana.github.io/adaptive-skills/evolution/optimization-boundaries/) runs experiments against.
 
 ## Synthetic-first
 

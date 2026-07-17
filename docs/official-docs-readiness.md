@@ -39,9 +39,9 @@ Use this order for a first official docs experience:
 | Slice | Goal | Acceptance | Non-goals |
 |---|---|---|---|
 | AS-DOC-1 | Curate the official docs map | `docs/README.md` and root README agree on the public reader path | Static site, publishing automation |
-| AS-DOC-2 | Check route/link readiness | Delivered in [`official-docs-link-readiness.md`](official-docs-link-readiness/): local broken links repaired, source links classified | Bulk rewrite |
-| AS-DOC-3 | Choose publication shell | Delivered in [`official-docs-blume-shell.md`](official-docs-blume-shell/): Blume selected and validated locally | Deploy before validation |
-| AS-DOC-4 | Manual publication proof | Manual Pages workflow and smoke-test plan recorded in [`official-docs-publication-proof.md`](official-docs-publication-proof/) | Automatic publishing on merge |
+| AS-DOC-2 | Check route/link readiness | Delivered in [`official-docs-link-readiness.md`](https://nevitonsantana.github.io/adaptive-skills/official-docs-link-readiness/): local broken links repaired, source links classified | Bulk rewrite |
+| AS-DOC-3 | Choose publication shell | Delivered in [`official-docs-blume-shell.md`](https://nevitonsantana.github.io/adaptive-skills/official-docs-blume-shell/): Blume selected and validated locally | Deploy before validation |
+| AS-DOC-4 | Manual publication proof | Manual Pages workflow and smoke-test plan recorded in [`official-docs-publication-proof.md`](https://nevitonsantana.github.io/adaptive-skills/official-docs-publication-proof/) | Automatic publishing on merge |
 
 ## Boundaries
 

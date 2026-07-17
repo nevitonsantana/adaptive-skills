@@ -39,6 +39,6 @@ lives at [`../templates/agent-harness-contract.yaml`](https://github.com/neviton
 
 ## See also
 
-- [skill-harness-boundaries.md](skill-harness-boundaries/)
-- [harness-aware-engineering-skills.md](harness-aware-engineering-skills/)
-- [execution-modes.md](execution-modes/)
+- [skill-harness-boundaries.md](https://nevitonsantana.github.io/adaptive-skills/skill-harness-boundaries/)
+- [harness-aware-engineering-skills.md](https://nevitonsantana.github.io/adaptive-skills/harness-aware-engineering-skills/)
+- [execution-modes.md](https://nevitonsantana.github.io/adaptive-skills/execution-modes/)

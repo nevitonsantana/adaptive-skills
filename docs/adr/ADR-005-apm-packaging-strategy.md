@@ -39,7 +39,7 @@ Three structural questions had to be answered before authoring `apm.yml`:
 
 `skills/<category>/<skill-name>/SKILL.md` is rewritten to `skills/<skill-name>/SKILL.md`. The category is preserved as a string attribute in the skill's frontmatter `metadata.category` field (already a string→string map by the agentskills.io spec). The on-disk taxonomy is replaced by a metadata-driven taxonomy.
 
-The category narrative and per-category backlog (previously held in `skills/<category>/README.md`) are consolidated into [`docs/skill-categories.md`](../skill-categories/), which is the canonical narrative source from this ADR forward. The machine-readable mapping continues to live in [`projections/registry.json`](https://github.com/nevitonsantana/adaptive-skills/blob/main/projections/registry.json) under each skill's `category` field.
+The category narrative and per-category backlog (previously held in `skills/<category>/README.md`) are consolidated into [`docs/skill-categories.md`](https://nevitonsantana.github.io/adaptive-skills/skill-categories/), which is the canonical narrative source from this ADR forward. The machine-readable mapping continues to live in [`projections/registry.json`](https://github.com/nevitonsantana/adaptive-skills/blob/main/projections/registry.json) under each skill's `category` field.
 
 ### 2.2 Version `0.1.0` (decision C1)
 
@@ -67,7 +67,7 @@ includes:
   - README.md
 ```
 
-Full file: [`apm.yml`](https://github.com/nevitonsantana/adaptive-skills/blob/main/apm.yml). Adopter-facing companion: [`docs/guides/install-via-apm.md`](../guides/install-via-apm/).
+Full file: [`apm.yml`](https://github.com/nevitonsantana/adaptive-skills/blob/main/apm.yml). Adopter-facing companion: [`docs/guides/install-via-apm.md`](https://nevitonsantana.github.io/adaptive-skills/guides/install-via-apm/).
 
 ## 3. Consequences
 

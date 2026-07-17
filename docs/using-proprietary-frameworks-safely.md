@@ -77,7 +77,7 @@ Skills must refuse to absorb un-encapsulated content as a shortcut.
 
 ## See also
 
-- [skill-knowledge-boundaries.md](skill-knowledge-boundaries/)
-- [declaring-knowledge-dependencies.md](declaring-knowledge-dependencies/)
+- [skill-knowledge-boundaries.md](https://nevitonsantana.github.io/adaptive-skills/skill-knowledge-boundaries/)
+- [declaring-knowledge-dependencies.md](https://nevitonsantana.github.io/adaptive-skills/declaring-knowledge-dependencies/)
 - [framework-capsule-template](https://github.com/nevitonsantana/adaptive-skills/blob/main/templates/framework-capsule-template.md)
 - [knowledge-aware-skill-template](https://github.com/nevitonsantana/adaptive-skills/blob/main/templates/knowledge-aware-skill-template.md)

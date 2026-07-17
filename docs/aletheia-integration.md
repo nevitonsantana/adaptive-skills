@@ -33,13 +33,13 @@ A role is not a skill.
 - An **Adaptive Skill** describes a reusable execution method.
 - A **projection or runtime adapter** makes either one available in a specific consumer environment.
 
-For example, an `implementer` role may consume `testing` and `debugging`. The role owns the responsibility boundary; the skills support how work is performed. See [Roles and skills](agent-role-integration/) for the recommended mapping.
+For example, an `implementer` role may consume `testing` and `debugging`. The role owns the responsibility boundary; the skills support how work is performed. See [Roles and skills](https://nevitonsantana.github.io/adaptive-skills/agent-role-integration/) for the recommended mapping.
 
 ## Orchestrated workflows
 
 When a skill participates as a stage in an AletheIA orchestration, it must respect the declared input, output, gate, and evidence contract. It does not reach into other stages, silently broaden its authority, or replace the orchestration owner.
 
-See [Skills in orchestrated workflows](skills-in-orchestrated-workflows/) for stage participation and escalation rules.
+See [Skills in orchestrated workflows](https://nevitonsantana.github.io/adaptive-skills/skills-in-orchestrated-workflows/) for stage participation and escalation rules.
 
 ## Returning observations and evidence
 
@@ -51,7 +51,7 @@ A skill may return a compact, source-backed observation to an AletheIA-compatibl
 - an advisory handoff signal;
 - a governed recovery pointer when output is lossy.
 
-The return is decision support, not replacement evidence. It cannot approve, block, close, restart, or mutate a Work Slice. See [Observation and evidence return](skill-observation-return-pattern/).
+The return is decision support, not replacement evidence. It cannot approve, block, close, restart, or mutate a Work Slice. See [Observation and evidence return](https://nevitonsantana.github.io/adaptive-skills/skill-observation-return-pattern/).
 
 ## First integration example
 
@@ -61,7 +61,7 @@ The smallest useful test uses one feature-like task with visible proof:
 2. `workflow`, `feature-planning`, and `testing` support micro execution.
 3. AletheIA evaluates closure evidence.
 
-Follow [Run the first AletheIA test](aletheia-first-test/) for the complete exercise.
+Follow [Run the first AletheIA test](https://nevitonsantana.github.io/adaptive-skills/aletheia-first-test/) for the complete exercise.
 
 ## Boundaries and non-goals
 
@@ -79,7 +79,7 @@ The Efficiency Layer remains a bounded Adaptive Skills track focused on lightwei
 
 ## Next steps
 
-- Read [Roles and skills](agent-role-integration/) to separate responsibility from method.
-- Read [Skills in orchestrated workflows](skills-in-orchestrated-workflows/) for stage contracts.
-- Read [Observation and evidence return](skill-observation-return-pattern/) for portable returns.
-- Run [the first AletheIA test](aletheia-first-test/) in a small real task.
+- Read [Roles and skills](https://nevitonsantana.github.io/adaptive-skills/agent-role-integration/) to separate responsibility from method.
+- Read [Skills in orchestrated workflows](https://nevitonsantana.github.io/adaptive-skills/skills-in-orchestrated-workflows/) for stage contracts.
+- Read [Observation and evidence return](https://nevitonsantana.github.io/adaptive-skills/skill-observation-return-pattern/) for portable returns.
+- Run [the first AletheIA test](https://nevitonsantana.github.io/adaptive-skills/aletheia-first-test/) in a small real task.
