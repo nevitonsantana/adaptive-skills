@@ -1,4 +1,7 @@
-# ADR 006 — Knowledge-aware skills boundary
+---
+title: "ADR 006 — Knowledge-aware skills boundary"
+description: "Reference documentation for ADR 006 — Knowledge-aware skills boundary in Adaptive Skills."
+---
 
 | Field | Value |
 |---|---|

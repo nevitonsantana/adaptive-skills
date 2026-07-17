@@ -1,4 +1,7 @@
-# First Consumer Pilot Guide
+---
+title: "First Consumer Pilot Guide"
+description: "Reference documentation for First Consumer Pilot Guide in Adaptive Skills."
+---
 
 ## Goal
 

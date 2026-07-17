@@ -1,4 +1,7 @@
-# Official docs Blume shell
+---
+title: "Official docs Blume shell"
+description: "Reference documentation for Official docs Blume shell in Adaptive Skills."
+---
 
 ## Status
 

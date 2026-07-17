@@ -1,4 +1,7 @@
-# Validation Case Guidelines
+---
+title: "Validation Case Guidelines"
+description: "Reference documentation for Validation Case Guidelines in Adaptive Skills."
+---
 
 A **validation case** is a concrete, reproducible expectation for a skill: given an input
 and context, what the skill *must do* and *must not do*, and how you would know it

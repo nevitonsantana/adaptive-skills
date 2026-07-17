@@ -1,4 +1,7 @@
-# Install Adaptive Skills via APM
+---
+title: "Install Adaptive Skills via APM"
+description: "Reference documentation for Install Adaptive Skills via APM in Adaptive Skills."
+---
 
 This guide covers installing the Adaptive Skills capability library through the [APM package manager](https://microsoft.github.io/apm/). Adaptive Skills ships as a flat APM **Skill Collection** — `skills/<name>/SKILL.md` — conformant with the [`agentskills.io`](https://agentskills.io/specification) specification. Each skill installs as an independent unit; you can install the whole library or pick individual skills.
 

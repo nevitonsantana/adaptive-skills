@@ -1,4 +1,7 @@
-# Skill Model
+---
+title: "Skill Model"
+description: "Reference documentation for Skill Model in Adaptive Skills."
+---
 
 ## Why this model exists
 

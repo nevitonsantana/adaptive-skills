@@ -1,4 +1,7 @@
-# Efficiency Layer — Next Signals for Reopening Expansion
+---
+title: "Efficiency Layer — Next Signals for Reopening Expansion"
+description: "Reference documentation for Efficiency Layer — Next Signals for Reopening Expansion in Adaptive Skills."
+---
 
 ## Purpose
 

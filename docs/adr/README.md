@@ -1,4 +1,7 @@
-# Architecture Decision Records (ADRs)
+---
+title: "Architecture Decision Records (ADRs)"
+description: "Reference documentation for Architecture Decision Records (ADRs) in Adaptive Skills."
+---
 
 This directory holds **durable architectural decisions** for Adaptive Skills. ADRs are written when a decision is hard to reverse, affects multiple parts of the library, or settles a recurring ambiguity that has cost time to re-litigate.
 

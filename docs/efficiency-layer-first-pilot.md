@@ -1,4 +1,7 @@
-# Efficiency Layer First Pilot Guide
+---
+title: "Efficiency Layer First Pilot Guide"
+description: "Reference documentation for Efficiency Layer First Pilot Guide in Adaptive Skills."
+---
 
 ## Goal
 

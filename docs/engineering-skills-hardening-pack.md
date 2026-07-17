@@ -1,4 +1,7 @@
-# Engineering Skills Hardening Pack
+---
+title: "Engineering Skills Hardening Pack"
+description: "Reference documentation for Engineering Skills Hardening Pack in Adaptive Skills."
+---
 
 ## Objective
 

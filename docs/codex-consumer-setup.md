@@ -1,4 +1,7 @@
-# Codex Consumer Setup
+---
+title: "Codex Consumer Setup"
+description: "Reference documentation for Codex Consumer Setup in Adaptive Skills."
+---
 
 ## Goal
 

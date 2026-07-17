@@ -1,4 +1,7 @@
-# Execution Modes
+---
+title: "Execution Modes"
+description: "Reference documentation for Execution Modes in Adaptive Skills."
+---
 
 Execution modes define how deep a capability should run.
 

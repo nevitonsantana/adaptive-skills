@@ -1,4 +1,7 @@
-# Recommended Telemetry
+---
+title: "Recommended Telemetry"
+description: "Reference documentation for Recommended Telemetry in Adaptive Skills."
+---
 
 This repository still does not implement runtime telemetry.
 What it now provides is a **governed telemetry shape** so real usage can feed the evolution layer without drifting into anecdote.

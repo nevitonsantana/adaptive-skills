@@ -1,4 +1,7 @@
-# Skill Catalog Governance
+---
+title: "Skill Catalog Governance"
+description: "Reference documentation for Skill Catalog Governance in Adaptive Skills."
+---
 
 ## Purpose
 

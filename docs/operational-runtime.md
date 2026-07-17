@@ -1,4 +1,7 @@
-# Operational Runtime Model
+---
+title: "Operational Runtime Model"
+description: "Reference documentation for Operational Runtime Model in Adaptive Skills."
+---
 
 Adaptive Skills should define runtime contracts before it builds runtime machinery.
 

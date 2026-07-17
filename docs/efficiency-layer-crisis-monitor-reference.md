@@ -1,4 +1,7 @@
-# Efficiency Layer — Crisis Monitor Reference
+---
+title: "Efficiency Layer — Crisis Monitor Reference"
+description: "Reference documentation for Efficiency Layer — Crisis Monitor Reference in Adaptive Skills."
+---
 
 ## Purpose
 

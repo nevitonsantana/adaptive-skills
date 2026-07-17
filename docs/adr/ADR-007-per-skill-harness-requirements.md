@@ -1,4 +1,7 @@
-# ADR 007 — Per-skill harness requirements (declarative layer)
+---
+title: "ADR 007 — Per-skill harness requirements (declarative layer)"
+description: "Reference documentation for ADR 007 — Per-skill harness requirements (declarative layer) in Adaptive Skills."
+---
 
 | Field | Value |
 |---|---|

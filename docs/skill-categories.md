@@ -1,4 +1,7 @@
-# Skill categories
+---
+title: "Skill categories"
+description: "Reference documentation for Skill categories in Adaptive Skills."
+---
 
 Adaptive Skills tags every published skill with a `metadata.category` value in the `SKILL.md` frontmatter. Categories are *attributes*, not directory structure — the on-disk layout is flat (`skills/<name>/SKILL.md`) to conform with the [`agentskills.io`](https://agentskills.io/specification) Skill Collection layout consumed by APM. See [ADR-005](adr/ADR-005-apm-packaging-strategy/) for the rationale behind the flatten.
 

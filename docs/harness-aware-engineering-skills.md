@@ -1,4 +1,7 @@
-# Harness-Aware Engineering Skills
+---
+title: "Harness-Aware Engineering Skills"
+description: "Reference documentation for Harness-Aware Engineering Skills in Adaptive Skills."
+---
 
 ## Goal
 

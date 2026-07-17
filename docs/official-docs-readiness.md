@@ -1,4 +1,7 @@
-# Official docs readiness
+---
+title: "Official docs readiness"
+description: "Reference documentation for Official docs readiness in Adaptive Skills."
+---
 
 ## Status
 

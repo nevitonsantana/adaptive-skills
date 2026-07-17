@@ -1,4 +1,7 @@
-# Crisis Monitor references — inventory and reclassification
+---
+title: "Crisis Monitor references — inventory and reclassification"
+description: "Reference documentation for Crisis Monitor references — inventory and reclassification in Adaptive Skills."
+---
 
 > **Purpose.** Track every reference to the first validation case (Crisis Monitor) across the Adaptive Skills repo, classify each by layer (canonical / example / meta / by-design), and record the action taken in Epic 2 of the 2026-05-21 cross-repo plan.
 >

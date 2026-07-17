@@ -1,4 +1,7 @@
-# `agentskills.io` conformance audit
+---
+title: "`agentskills.io` conformance audit"
+description: "Reference documentation for `agentskills.io` conformance audit in Adaptive Skills."
+---
 
 > **Purpose.** Gap analysis between the Adaptive Skills repo and the open [Agent Skills specification](https://agentskills.io/specification), produced under Epic 3 of the 2026-05-21 cross-repo plan. Decision strategy (Case A / B / C) is recorded separately in [ADR-004](../adr/ADR-004-agentskills-io-conformance.md).
 >

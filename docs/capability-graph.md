@@ -1,4 +1,7 @@
-# Capability Graph
+---
+title: "Capability Graph"
+description: "Reference documentation for Capability Graph in Adaptive Skills."
+---
 
 The Capability Graph describes how skills and modules relate during execution.
 

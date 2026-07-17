@@ -1,4 +1,7 @@
-# Skill Knowledge Boundaries
+---
+title: "Skill Knowledge Boundaries"
+description: "Reference documentation for Skill Knowledge Boundaries in Adaptive Skills."
+---
 
 ## Goal
 

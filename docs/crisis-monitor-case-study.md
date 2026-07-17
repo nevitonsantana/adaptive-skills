@@ -1,4 +1,7 @@
-# Crisis Monitor Case Study
+---
+title: "Crisis Monitor Case Study"
+description: "Reference documentation for Crisis Monitor Case Study in Adaptive Skills."
+---
 
 ## Why this case matters
 
@@ -137,4 +140,3 @@ Operationally:
 - Adaptive Skills keeps reusable execution patterns, projections, and evolution mechanics.
 - AletheIA remains the macro framework that can consume Adaptive Skills, but its framework decisions live outside the Crisis Monitor repository.
 - Any future Crisis Monitor re-entry must happen through an explicit integration Issue, not through background framework work.
-

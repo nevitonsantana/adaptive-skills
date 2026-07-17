@@ -1,4 +1,7 @@
-# Specification Facilitation
+---
+title: "Specification Facilitation"
+description: "Reference documentation for Specification Facilitation in Adaptive Skills."
+---
 
 Use this guide when a feature request needs light specification discipline before implementation, but does not need a new framework, CLI, or mandatory ritual.
 

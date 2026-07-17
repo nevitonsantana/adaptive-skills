@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+- normalize rendered page titles across the documentation corpus and add a permanent build gate for duplicate H1s and local Markdown links
+
 - separate current state, consumer changes, evolution, evidence, roadmaps, and maintainer references into explicit public journeys
 
 - clarify the progressive AletheIA integration journey and add a concepts entrypoint across skills, composition, capabilities, harnesses, and knowledge

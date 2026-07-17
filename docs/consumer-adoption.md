@@ -1,4 +1,7 @@
-# Consumer Adoption Guide
+---
+title: "Consumer Adoption Guide"
+description: "Reference documentation for Consumer Adoption Guide in Adaptive Skills."
+---
 
 ## What this repository gives you
 

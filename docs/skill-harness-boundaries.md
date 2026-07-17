@@ -1,4 +1,7 @@
-# Skill / Harness Boundaries
+---
+title: "Skill / Harness Boundaries"
+description: "Reference documentation for Skill / Harness Boundaries in Adaptive Skills."
+---
 
 ## Goal
 

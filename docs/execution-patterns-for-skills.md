@@ -1,4 +1,7 @@
-# Execution Patterns for Skills
+---
+title: "Execution Patterns for Skills"
+description: "Reference documentation for Execution Patterns for Skills in Adaptive Skills."
+---
 
 Execution patterns define **which shape of execution** a task runs in. They are selected by
 AletheIA before any skill executes (see the AletheIA repo,

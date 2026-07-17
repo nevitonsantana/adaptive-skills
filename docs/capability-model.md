@@ -1,4 +1,7 @@
-# Capability Model
+---
+title: "Capability Model"
+description: "Reference documentation for Capability Model in Adaptive Skills."
+---
 
 Adaptive Skills is evolving from a flat library of skills into a lightweight capability layer.
 

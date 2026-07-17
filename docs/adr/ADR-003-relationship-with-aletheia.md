@@ -1,4 +1,7 @@
-# ADR 003 — Adaptive Skills: relationship with AletheIA
+---
+title: "ADR 003 — Adaptive Skills: relationship with AletheIA"
+description: "Reference documentation for ADR 003 — Adaptive Skills: relationship with AletheIA in Adaptive Skills."
+---
 
 | Field | Value |
 |---|---|

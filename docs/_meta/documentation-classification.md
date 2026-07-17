@@ -1,4 +1,7 @@
-# Documentation classification
+---
+title: "Documentation classification"
+description: "Reference documentation for Documentation classification in Adaptive Skills."
+---
 
 This inventory classifies the Adaptive Skills documentation corpus by reader journey and publication role. It is an internal editorial control, not a public documentation entrypoint.
 

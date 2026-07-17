@@ -1,4 +1,7 @@
-# Skill Evolution Experiments
+---
+title: "Skill Evolution Experiments"
+description: "Reference documentation for Skill Evolution Experiments in Adaptive Skills."
+---
 
 A **skill evolution experiment** compares a skill as it is today (**baseline**) against a
 proposed change (**candidate**) using one or more

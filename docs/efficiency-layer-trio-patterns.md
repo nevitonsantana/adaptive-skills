@@ -1,4 +1,7 @@
-# Efficiency Layer Trio Patterns
+---
+title: "Efficiency Layer Trio Patterns"
+description: "Reference documentation for Efficiency Layer Trio Patterns in Adaptive Skills."
+---
 
 ## Purpose
 

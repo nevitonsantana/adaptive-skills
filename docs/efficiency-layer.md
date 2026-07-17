@@ -1,4 +1,7 @@
-# Efficiency Layer
+---
+title: "Efficiency Layer"
+description: "Reference documentation for Efficiency Layer in Adaptive Skills."
+---
 
 ## Why this is a separate track
 

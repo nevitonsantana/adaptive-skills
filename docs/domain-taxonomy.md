@@ -1,4 +1,7 @@
-# Domain Taxonomy
+---
+title: "Domain Taxonomy"
+description: "Reference documentation for Domain Taxonomy in Adaptive Skills."
+---
 
 ## Generic skills
 
