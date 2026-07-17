@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+- clarify the progressive AletheIA integration journey and add a concepts entrypoint across skills, composition, capabilities, harnesses, and knowledge
+
 - reorganize skill discovery into a concise 33-skill catalog, a task-based selection guide, and reusable workflow recipes
 
 - rewrite the beginner documentation journey with audience-based homepage paths, a concise overview, installation guidance, quickstart, first-skill exercise, usage guide, and current FAQ

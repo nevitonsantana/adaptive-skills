@@ -37,6 +37,8 @@ The classification preserves existing public routes while the content is progres
 
 ## Public advanced — concepts
 
+- `docs/concepts/index.md`
+
 ### Skills and composition
 
 - `docs/skill-model.md`
