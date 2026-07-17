@@ -52,7 +52,7 @@ Those remain local overlays or AletheIA-level macro posture.
 
 ## Reference case
 
-A first-validation reference case (Crisis Monitor) is available in [`docs/efficiency-layer-crisis-monitor-reference.md`](efficiency-layer-crisis-monitor-reference.md). Use it when you want one concrete field example of the trio mapped onto a real product lane without treating that product repo as the implementation target. Per [ADR-002](adr/ADR-002-domain-agnosticism.md), this is the first concrete instance, not the canonical pattern.
+A first-validation reference case (Crisis Monitor) is available in [`docs/efficiency-layer-crisis-monitor-reference.md`](efficiency-layer-crisis-monitor-reference/). Use it when you want one concrete field example of the trio mapped onto a real product lane without treating that product repo as the implementation target. Per [ADR-002](adr/ADR-002-domain-agnosticism/), this is the first concrete instance, not the canonical pattern.
 
 ## Suggested pilot loop
 

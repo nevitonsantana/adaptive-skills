@@ -49,4 +49,4 @@ Validated locally on 2026-07-16:
 
 This shell is manual-first. Publication remains gated.
 
-AS-DOC-4 adds a manual GitHub Pages workflow and records the smoke-test plan in [`official-docs-publication-proof.md`](official-docs-publication-proof.md).
+AS-DOC-4 adds a manual GitHub Pages workflow and records the smoke-test plan in [`official-docs-publication-proof.md`](official-docs-publication-proof/).

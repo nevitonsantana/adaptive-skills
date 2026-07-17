@@ -2,7 +2,7 @@
 
 ## Objective
 
-Harden the existing engineering skills of Adaptive Skills so they are more executable, testable, and useful in real code work — without inflating the library or weakening governance. The external repository `mattpocock/skills` is used as inspiration and evidence of useful patterns, not as a normative source (see [`reference-maps/mattpocock-engineering-skills-map.md`](reference-maps/mattpocock-engineering-skills-map.md)).
+Harden the existing engineering skills of Adaptive Skills so they are more executable, testable, and useful in real code work — without inflating the library or weakening governance. The external repository `mattpocock/skills` is used as inspiration and evidence of useful patterns, not as a normative source (see [`reference-maps/mattpocock-engineering-skills-map.md`](reference-maps/mattpocock-engineering-skills-map/)).
 
 ## Problem
 

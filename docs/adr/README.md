@@ -45,10 +45,10 @@ Followed by numbered sections:
 
 | ID | Title | Status |
 |---|---|---|
-| [ADR-001](ADR-001-adaptive-skills-as-capability-library.md) | Adaptive Skills as capability library | Accepted |
-| [ADR-002](ADR-002-domain-agnosticism.md) | Domain agnosticism | Accepted |
-| [ADR-003](ADR-003-relationship-with-aletheia.md) | Relationship with AletheIA | Accepted |
-| [ADR-004](ADR-004-agentskills-io-conformance.md) | `agentskills.io` conformance strategy | Accepted |
-| [ADR-005](ADR-005-apm-packaging-strategy.md) | APM packaging strategy | Accepted |
-| [ADR-006](ADR-006-knowledge-aware-skills-boundary.md) | Knowledge-aware skills boundary | Accepted |
-| [ADR-007](ADR-007-per-skill-harness-requirements.md) | Per-skill harness requirements (declarative layer) | Accepted |
+| [ADR-001](ADR-001-adaptive-skills-as-capability-library/) | Adaptive Skills as capability library | Accepted |
+| [ADR-002](ADR-002-domain-agnosticism/) | Domain agnosticism | Accepted |
+| [ADR-003](ADR-003-relationship-with-aletheia/) | Relationship with AletheIA | Accepted |
+| [ADR-004](ADR-004-agentskills-io-conformance/) | `agentskills.io` conformance strategy | Accepted |
+| [ADR-005](ADR-005-apm-packaging-strategy/) | APM packaging strategy | Accepted |
+| [ADR-006](ADR-006-knowledge-aware-skills-boundary/) | Knowledge-aware skills boundary | Accepted |
+| [ADR-007](ADR-007-per-skill-harness-requirements/) | Per-skill harness requirements (declarative layer) | Accepted |

@@ -53,6 +53,6 @@ with the harness.
 
 ## Related
 
-- [execution-patterns-for-skills.md](execution-patterns-for-skills.md) — the pattern axis
-- [pattern-compatibility-guidelines.md](pattern-compatibility-guidelines.md) — filling the declaration
-- [skills-in-orchestrated-workflows.md](skills-in-orchestrated-workflows.md) — stage participation
+- [execution-patterns-for-skills.md](execution-patterns-for-skills/) — the pattern axis
+- [pattern-compatibility-guidelines.md](pattern-compatibility-guidelines/) — filling the declaration
+- [skills-in-orchestrated-workflows.md](skills-in-orchestrated-workflows/) — stage participation

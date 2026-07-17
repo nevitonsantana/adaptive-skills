@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+- keep Blume rich-pattern guidance as an internal authoring reference instead of a public docs route
+
 - fix duplicate rendered titles on Blume MDX documentation pages
 
 - add a first Blume rich-content pattern guide and component-based documentation homepage

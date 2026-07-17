@@ -201,9 +201,9 @@ Before accepting a catalog change, confirm:
 
 ## Related docs
 
-- [Skill Model](../skill-model.md)
-- [Skill Catalog Governance](../skill-catalog-governance.md)
-- [Harness Requirements for Skills](../harness-requirements-for-skills.md)
-- [Evolution Layer](../evolution-layer.md)
-- [Capability Routing Boundary](../capability-routing-boundary.md)
+- [Skill Model](../skill-model/)
+- [Skill Catalog Governance](../skill-catalog-governance/)
+- [Harness Requirements for Skills](../harness-requirements-for-skills/)
+- [Evolution Layer](../evolution-layer/)
+- [Capability Routing Boundary](../capability-routing-boundary/)
 - [Skill Quality Gate template](https://github.com/nevitonsantana/adaptive-skills/blob/main/templates/skill-quality-gate.md)

@@ -12,7 +12,7 @@ what logs, what rollback.
 The two must not be merged. A skill should run unchanged inside a light harness or a strict one; a
 harness should govern any skill without rewriting it.
 
-This sits alongside [skill-knowledge-boundaries.md](skill-knowledge-boundaries.md) (skill vs.
+This sits alongside [skill-knowledge-boundaries.md](skill-knowledge-boundaries/) (skill vs.
 content) — together they keep a skill free of both embedded content and embedded environment.
 
 ---
@@ -47,7 +47,7 @@ Execution depth and autonomy are different questions. Do not collapse them.
 
 | Axis | Question | Where it lives |
 |---|---|---|
-| **Execution mode** | *how deep* should the work run? | [execution-modes.md](execution-modes.md) (basic / extended / high-risk / multi-agent) |
+| **Execution mode** | *how deep* should the work run? | [execution-modes.md](execution-modes/) (basic / extended / high-risk / multi-agent) |
 | **Autonomy level** | *how much authority* does the agent hold? | Agent Harness Contract (observe / advise / act_with_approval / autonomous_within_bounds) |
 
 A `debugging/root-cause` run (deep) can still be `act_with_approval` (gated authority). A
@@ -58,7 +58,7 @@ trivial. Pick each axis on its own evidence.
 
 ## See also
 
-- [skill-knowledge-boundaries.md](skill-knowledge-boundaries.md)
-- [execution-modes.md](execution-modes.md)
-- [using-skills-inside-harnesses.md](using-skills-inside-harnesses.md)
-- [harness-aware-engineering-skills.md](harness-aware-engineering-skills.md)
+- [skill-knowledge-boundaries.md](skill-knowledge-boundaries/)
+- [execution-modes.md](execution-modes/)
+- [using-skills-inside-harnesses.md](using-skills-inside-harnesses/)
+- [harness-aware-engineering-skills.md](harness-aware-engineering-skills/)
