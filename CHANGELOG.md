@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+- fix duplicate rendered titles on Blume MDX documentation pages
+
 - add a first Blume rich-content pattern guide and component-based documentation homepage
 
 - add a Blume docs homepage so the published Pages root resolves
