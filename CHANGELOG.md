@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+- organize the Blume sidebar into progressive reader journeys and classify the complete documentation corpus by audience and publication role
+
 - reconcile the public documentation with the 33-skill canon and add a validation gate for catalog and category coverage
 
 - keep Blume rich-pattern guidance as an internal authoring reference instead of a public docs route
