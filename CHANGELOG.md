@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+- reconcile the public documentation with the 33-skill canon and add a validation gate for catalog and category coverage
+
 - keep Blume rich-pattern guidance as an internal authoring reference instead of a public docs route
 
 - fix duplicate rendered titles on Blume MDX documentation pages

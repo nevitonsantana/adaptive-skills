@@ -35,7 +35,7 @@ apm install nevitonsantana/adaptive-skills
 What happens:
 
 - APM resolves the package from GitHub and writes `apm.lock.yaml`.
-- All 21 skills are materialized into `.claude/skills/` (for Claude Code) or the equivalent target for your harness.
+- All 33 skills are materialized into `.claude/skills/` (for Claude Code) or the equivalent target for your harness.
 
 **Commit the lockfile** so teammates and CI get the same skill versions:
 
@@ -54,10 +54,15 @@ You should see a folder per skill:
 
 ```
 api-design  architecture-review  business-design  checkpoint-review
-code-style  communication        debugging        feature-planning
-handoff-summary  heuristic-audit  observability-review  premortem
-qa-review   refactoring  task-chunking  testing  triad-check
-ux-provocation  ux-strategy  ux-writing  workflow
+code-style  communication  debugging  design-system-intelligence
+domain-language-alignment  feature-complexity-audit  feature-planning
+feature-value-governance  handoff-summary  heuristic-audit
+intent-clarification  knowledge-conflict-resolution
+knowledge-source-evaluation  lean-implementation  observability-review
+opportunity-tree-alignment  premortem  qa-review  refactoring
+restricted-context-check  revenue-lever-mapping  sunset-decision
+task-chunking  testing  triad-check  ux-provocation  ux-strategy
+ux-writing  workflow
 ```
 
 Each folder contains a single `SKILL.md`. If any folders are missing, see [Troubleshooting](#troubleshooting).
@@ -98,7 +103,7 @@ The selection is persisted in your project's `apm.yml` and lockfile. Teammates r
 
 | Included in the APM package | Not included |
 |---|---|
-| All 21 skills (`skills/**`) | `domain-packs/` (case studies — see below) |
+| All 33 skills (`skills/**`) | `domain-packs/` (case studies — see below) |
 | `docs/skill-categories.md` | `evolution/` (meta-process, not capability) |
 | `docs/guides/install-via-apm.md` | `projections/`, `capabilities/`, `templates/` |
 | `LICENSE`, `README.md` | Validation scripts (`scripts/validate_skills.py`, etc.) |

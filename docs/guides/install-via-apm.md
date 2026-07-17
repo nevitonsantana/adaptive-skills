@@ -21,14 +21,18 @@ After install, list what landed:
 ```bash
 ls .claude/skills/
 # api-design  architecture-review  business-design  checkpoint-review
-# code-style  communication       debugging           feature-planning
-# handoff-summary heuristic-audit  observability-review premortem
-# qa-review   refactoring         task-chunking        testing
-# triad-check ux-provocation      ux-strategy          ux-writing
-# workflow
+# code-style  communication  debugging  design-system-intelligence
+# domain-language-alignment  feature-complexity-audit  feature-planning
+# feature-value-governance  handoff-summary  heuristic-audit
+# intent-clarification  knowledge-conflict-resolution
+# knowledge-source-evaluation  lean-implementation  observability-review
+# opportunity-tree-alignment  premortem  qa-review  refactoring
+# restricted-context-check  revenue-lever-mapping  sunset-decision
+# task-chunking  testing  triad-check  ux-provocation  ux-strategy
+# ux-writing  workflow
 ```
 
-21 skills, one per directory, each with a single `SKILL.md`.
+33 skills, one per directory, each with a `SKILL.md` entrypoint.
 
 ## Install a single skill
 
@@ -50,7 +54,7 @@ The selection is persisted in your project's `apm.yml` and lockfile, so subseque
 
 | In the APM payload | Not in the APM payload |
 |---|---|
-| `skills/**` (all 21 skills) | `domain-packs/` (see below) |
+| `skills/**` (all 33 skills) | `domain-packs/` (see below) |
 | `apm.yml` | `evolution/` (meta-process, not capability) |
 | `docs/skill-categories.md` | `projections/`, `capabilities/`, `templates/`, `examples/` |
 | `docs/guides/install-via-apm.md` | `docs/concepts/`, `docs/_meta/`, internal docs |
@@ -81,7 +85,7 @@ pip install 'skills-ref==0.1.0'
 skills-ref validate .claude/skills/
 ```
 
-All 21 skills should report conformant.
+All 33 skills should report conformant.
 
 ## Two-step caveat (vs. AletheIA)
 
