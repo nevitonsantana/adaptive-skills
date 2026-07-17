@@ -95,6 +95,6 @@ This is what makes the [knowledge audit log](https://github.com/nevitonsantana/A
 
 ## See also
 
-- [skill-knowledge-boundaries.md](skill-knowledge-boundaries/)
-- [using-proprietary-frameworks-safely.md](using-proprietary-frameworks-safely/)
+- [skill-knowledge-boundaries.md](https://nevitonsantana.github.io/adaptive-skills/skill-knowledge-boundaries/)
+- [using-proprietary-frameworks-safely.md](https://nevitonsantana.github.io/adaptive-skills/using-proprietary-frameworks-safely/)
 - [skill-knowledge-dependency.yaml](https://github.com/nevitonsantana/adaptive-skills/blob/main/templates/skill-knowledge-dependency.yaml)

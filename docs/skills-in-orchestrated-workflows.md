@@ -16,7 +16,7 @@ Each stage in an orchestration contract declares, among other fields: `input`, `
 
 - **Declared input** — the skill consumes only the stage input it declared; it does not reach into
   other stages' context (knowledge boundaries still apply, see
-  [skill-knowledge-boundaries.md](skill-knowledge-boundaries/));
+  [skill-knowledge-boundaries.md](https://nevitonsantana.github.io/adaptive-skills/skill-knowledge-boundaries/));
 - **Declared output** — the stage output is a contract: the next stage (or the synthesis) depends
   on its shape, so the skill must produce it even on partial failure (with failure marked);
 - **Gate before handoff** — the stage gate verifies the output before it flows downstream;
@@ -32,7 +32,7 @@ A stage does not improvise when its assumptions break. The skill's `escalation_t
 (`objective_gate_missing`, `touches_sensitive_area`, `judgment_required`, `recurring_failure`,
 `comprehension_debt_risk`) route the run back to the orchestration owner — pausing the stage, not
 silently degrading it. Handoff between stages follows the same discipline as
-[handoff-summary](getting-started/skill-catalog/)-style compact handoffs: the next stage gets
+[handoff-summary](https://nevitonsantana.github.io/adaptive-skills/getting-started/skill-catalog/)-style compact handoffs: the next stage gets
 the declared output plus evidence refs, not a transcript.
 
 ## Maker-checker inside orchestrations
@@ -52,6 +52,6 @@ comprehension-debt review (who reads all this output?) has something to review.
 
 ## Related
 
-- [execution-patterns-for-skills.md](execution-patterns-for-skills/) — the pattern axis and what skills declare
-- [pattern-compatibility-guidelines.md](pattern-compatibility-guidelines/) — filling the declaration
-- [harness-requirements-for-skills.md](harness-requirements-for-skills/) — the authority envelope each stage still runs within
+- [execution-patterns-for-skills.md](https://nevitonsantana.github.io/adaptive-skills/execution-patterns-for-skills/) — the pattern axis and what skills declare
+- [pattern-compatibility-guidelines.md](https://nevitonsantana.github.io/adaptive-skills/pattern-compatibility-guidelines/) — filling the declaration
+- [harness-requirements-for-skills.md](https://nevitonsantana.github.io/adaptive-skills/harness-requirements-for-skills/) — the authority envelope each stage still runs within

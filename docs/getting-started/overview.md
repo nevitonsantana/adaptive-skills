@@ -87,7 +87,7 @@ The canonical library currently contains **33 generic skills across 10 categorie
 - quality;
 - metrics.
 
-The [skill catalog](skill-catalog/) lists every skill, the signal that suggests using it, and its expected contribution.
+The [skill catalog](https://nevitonsantana.github.io/adaptive-skills/getting-started/skill-catalog/) lists every skill, the signal that suggests using it, and its expected contribution.
 
 ## Use it standalone
 
@@ -103,7 +103,7 @@ AletheIA and Adaptive Skills operate at different levels:
 
 AletheIA may frame a Work Slice, require evidence, preserve continuity, or control a review gate. An Adaptive Skill may help plan, inspect, test, communicate, or return a structured observation. The skill does not take AletheIA's authority.
 
-Read [AletheIA integration](../aletheia-integration/) when you need this deeper operating model.
+Read [AletheIA integration](https://nevitonsantana.github.io/adaptive-skills/aletheia-integration/) when you need this deeper operating model.
 
 ## Who should read what
 
@@ -125,7 +125,7 @@ Read [AletheIA integration](../aletheia-integration/) when you need this deeper 
 
 ## Next steps
 
-1. [Complete the quickstart](quickstart/).
-2. [Run your first skill](first-skill/).
-3. [Browse the complete catalog](skill-catalog/).
-4. [Read the FAQ](faq/) if you have adoption or installation questions.
+1. [Complete the quickstart](https://nevitonsantana.github.io/adaptive-skills/getting-started/quickstart/).
+2. [Run your first skill](https://nevitonsantana.github.io/adaptive-skills/getting-started/first-skill/).
+3. [Browse the complete catalog](https://nevitonsantana.github.io/adaptive-skills/getting-started/skill-catalog/).
+4. [Read the FAQ](https://nevitonsantana.github.io/adaptive-skills/getting-started/faq/) if you have adoption or installation questions.

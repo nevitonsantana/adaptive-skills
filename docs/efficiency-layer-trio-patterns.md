@@ -13,7 +13,7 @@ The trio is:
 - `checkpoint-review`
 - `handoff-summary`
 
-This guide exists to make the combined pattern easier to reuse after the first pilot artifacts and the first-validation-case field reference (Crisis Monitor — see [`efficiency-layer-crisis-monitor-reference.md`](efficiency-layer-crisis-monitor-reference/)) landed.
+This guide exists to make the combined pattern easier to reuse after the first pilot artifacts and the first-validation-case field reference (Crisis Monitor — see [`efficiency-layer-crisis-monitor-reference.md`](https://nevitonsantana.github.io/adaptive-skills/efficiency-layer-crisis-monitor-reference/)) landed.
 
 ## Core idea
 

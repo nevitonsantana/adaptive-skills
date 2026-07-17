@@ -63,11 +63,11 @@ Use `apm update nevitonsantana/adaptive-skills` and review the changelog. Avoid 
 
 ### Does it work with Claude Code?
 
-Yes. Claude is the reference APM target. See [Claude consumer setup](../claude-consumer-setup/).
+Yes. Claude is the reference APM target. See [Claude consumer setup](https://nevitonsantana.github.io/adaptive-skills/claude-consumer-setup/).
 
 ### Does it work with Codex?
 
-Yes. See [Codex consumer setup](../codex-consumer-setup/) for the supported projection and consumption path.
+Yes. See [Codex consumer setup](https://nevitonsantana.github.io/adaptive-skills/codex-consumer-setup/) for the supported projection and consumption path.
 
 ### Does it work with other AI tools?
 
@@ -105,7 +105,7 @@ Real usage can produce observations. Maintainers may turn repeated evidence into
 
 ### Where can I see all available skills?
 
-Use the [skill catalog](skill-catalog/). It lists all 33 canonical skills by category and trigger.
+Use the [skill catalog](https://nevitonsantana.github.io/adaptive-skills/getting-started/skill-catalog/). It lists all 33 canonical skills by category and trigger.
 
 ## Troubleshooting
 
@@ -123,7 +123,7 @@ Skills standardize method and expected evidence, not exact wording. If an output
 
 ## Next steps
 
-- [Read the overview](overview/).
-- [Complete the quickstart](quickstart/).
-- [Run your first skill](first-skill/).
-- [Browse the skill catalog](skill-catalog/).
+- [Read the overview](https://nevitonsantana.github.io/adaptive-skills/getting-started/overview/).
+- [Complete the quickstart](https://nevitonsantana.github.io/adaptive-skills/getting-started/quickstart/).
+- [Run your first skill](https://nevitonsantana.github.io/adaptive-skills/getting-started/first-skill/).
+- [Browse the skill catalog](https://nevitonsantana.github.io/adaptive-skills/getting-started/skill-catalog/).

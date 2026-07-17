@@ -40,7 +40,7 @@ Leaving a pattern unlisted is not the same as declaring it incompatible: unliste
 Each declared pattern names the evidence the skill must produce in that topology (e.g.
 `loop_until_done` for debugging requires the failing test, the passing run, and the iteration
 count). Evidence names should reuse the skill's existing `required_evidence` vocabulary from its
-[harness requirements](harness-requirements-for-skills/) where they overlap.
+[harness requirements](https://nevitonsantana.github.io/adaptive-skills/harness-requirements-for-skills/) where they overlap.
 
 ## Escalation triggers
 
@@ -58,8 +58,8 @@ remove `objective_gate_missing` from a skill that declares any loop compatibilit
 
 ## Related
 
-- [execution-patterns-for-skills.md](execution-patterns-for-skills/)
-- [looping-models-for-skills.md](looping-models-for-skills/)
+- [execution-patterns-for-skills.md](https://nevitonsantana.github.io/adaptive-skills/execution-patterns-for-skills/)
+- [looping-models-for-skills.md](https://nevitonsantana.github.io/adaptive-skills/looping-models-for-skills/)
 - worked declarations: [debugging](https://github.com/nevitonsantana/adaptive-skills/blob/main/examples/execution-patterns/debugging-patterns.yaml),
   [feature-value-governance](https://github.com/nevitonsantana/adaptive-skills/blob/main/examples/execution-patterns/feature-value-governance-patterns.yaml),
   [testing](https://github.com/nevitonsantana/adaptive-skills/blob/main/examples/execution-patterns/testing-patterns.yaml)

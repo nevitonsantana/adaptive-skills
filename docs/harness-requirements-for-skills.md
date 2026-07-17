@@ -19,14 +19,14 @@ is decided by the harness/runtime, and the contracts that define those decisions
 not here.
 
 This sits alongside:
-- [skill-harness-boundaries.md](skill-harness-boundaries/) — *skill vs. environment* (a skill is a
+- [skill-harness-boundaries.md](https://nevitonsantana.github.io/adaptive-skills/skill-harness-boundaries/) — *skill vs. environment* (a skill is a
   procedure; a harness is an execution environment).
-- [skill-knowledge-boundaries.md](skill-knowledge-boundaries/) — *skill vs. content*.
+- [skill-knowledge-boundaries.md](https://nevitonsantana.github.io/adaptive-skills/skill-knowledge-boundaries/) — *skill vs. content*.
 
 Together they keep a skill free of embedded environment, embedded content, **and** embedded
 enforcement.
 
-Catalog-level creation and expansion decisions are governed separately by [Skill Catalog Governance](skill-catalog-governance/) and the [Lean Skill Doctrine](skill-design-principles/lean-skill-doctrine/). A harness declaration can describe required operating conditions, but it cannot justify a new skill by itself.
+Catalog-level creation and expansion decisions are governed separately by [Skill Catalog Governance](https://nevitonsantana.github.io/adaptive-skills/skill-catalog-governance/) and the [Lean Skill Doctrine](https://nevitonsantana.github.io/adaptive-skills/skill-design-principles/lean-skill-doctrine/). A harness declaration can describe required operating conditions, but it cannot justify a new skill by itself.
 
 ---
 
@@ -145,8 +145,8 @@ forcing that evolution now.
 
 ## See also
 
-- [adr/ADR-007-per-skill-harness-requirements.md](adr/ADR-007-per-skill-harness-requirements/) — why this layer exists and what it is not.
-- [skill-harness-boundaries.md](skill-harness-boundaries/)
-- [skill-knowledge-boundaries.md](skill-knowledge-boundaries/)
-- [using-skills-inside-harnesses.md](using-skills-inside-harnesses/)
-- [harness-aware-engineering-skills.md](harness-aware-engineering-skills/)
+- [adr/ADR-007-per-skill-harness-requirements.md](https://nevitonsantana.github.io/adaptive-skills/adr/ADR-007-per-skill-harness-requirements/) — why this layer exists and what it is not.
+- [skill-harness-boundaries.md](https://nevitonsantana.github.io/adaptive-skills/skill-harness-boundaries/)
+- [skill-knowledge-boundaries.md](https://nevitonsantana.github.io/adaptive-skills/skill-knowledge-boundaries/)
+- [using-skills-inside-harnesses.md](https://nevitonsantana.github.io/adaptive-skills/using-skills-inside-harnesses/)
+- [harness-aware-engineering-skills.md](https://nevitonsantana.github.io/adaptive-skills/harness-aware-engineering-skills/)

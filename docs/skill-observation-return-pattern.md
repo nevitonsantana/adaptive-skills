@@ -98,7 +98,7 @@ No rendering depth may hide an escalation signal or failed outcome.
 
 ## Related material
 
-- [AletheIA integration](aletheia-integration/)
-- [Using skills inside harnesses](using-skills-inside-harnesses/)
-- [Harness requirements for skills](harness-requirements-for-skills/)
+- [AletheIA integration](https://nevitonsantana.github.io/adaptive-skills/aletheia-integration/)
+- [Using skills inside harnesses](https://nevitonsantana.github.io/adaptive-skills/using-skills-inside-harnesses/)
+- [Harness requirements for skills](https://nevitonsantana.github.io/adaptive-skills/harness-requirements-for-skills/)
 - [AletheIA Observation Governance Contract](https://nevitonsantana.github.io/AletheIA/contracts/observation-governance-contract/)

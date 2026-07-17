@@ -49,7 +49,7 @@ request before any canonical skill changes.
 - ❌ Approve its own change. No experiment outcome may be `approved` or `merged`.
 - ❌ Copy proprietary, confidential, restricted, or regulated content into traces,
   prompts, examples, or any exportable artifact. See
-  [validation-case-guidelines.md](validation-case-guidelines/).
+  [validation-case-guidelines.md](https://nevitonsantana.github.io/adaptive-skills/evolution/validation-case-guidelines/).
 
 ## The only authorized path to a canonical change
 

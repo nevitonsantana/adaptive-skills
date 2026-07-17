@@ -5,10 +5,10 @@ description: "Reference documentation for Skill Evolution Experiments in Adaptiv
 
 A **skill evolution experiment** compares a skill as it is today (**baseline**) against a
 proposed change (**candidate**) using one or more
-[validation cases](validation-case-guidelines/), checks for regression, and records a
+[validation cases](https://nevitonsantana.github.io/adaptive-skills/evolution/validation-case-guidelines/), checks for regression, and records a
 recommendation. It produces evidence — never a decision.
 
-Read [optimization-boundaries.md](optimization-boundaries/) first.
+Read [optimization-boundaries.md](https://nevitonsantana.github.io/adaptive-skills/evolution/optimization-boundaries/) first.
 
 ## The authorized flow
 

@@ -7,17 +7,17 @@ This section is for people reviewing or evolving the library. Consumer guidance 
 
 ## Architecture decisions
 
-The [Architecture Decision Records index](../adr/README/) explains stable decisions behind the capability library, domain agnosticism, AletheIA relationship, conformance, packaging, knowledge boundaries, and harness requirements.
+The [Architecture Decision Records index](https://nevitonsantana.github.io/adaptive-skills/adr/README/) explains stable decisions behind the capability library, domain agnosticism, AletheIA relationship, conformance, packaging, knowledge boundaries, and harness requirements.
 
 ## Catalog governance
 
-[Skill catalog governance](../skill-catalog-governance/) defines intake, module proposals, merge, split, deprecation, protected surfaces, and validation expectations. A useful example does not bypass this lifecycle.
+[Skill catalog governance](https://nevitonsantana.github.io/adaptive-skills/skill-catalog-governance/) defines intake, module proposals, merge, split, deprecation, protected surfaces, and validation expectations. A useful example does not bypass this lifecycle.
 
 ## Compatibility
 
-[Pattern compatibility guidelines](../pattern-compatibility-guidelines/) explain how skills participate in execution patterns without becoming a workflow engine.
+[Pattern compatibility guidelines](https://nevitonsantana.github.io/adaptive-skills/pattern-compatibility-guidelines/) explain how skills participate in execution patterns without becoming a workflow engine.
 
-Related references include [Capability routing boundary](../capability-routing-boundary/), [Harness requirements](../harness-requirements-for-skills/), [Knowledge boundaries](../skill-knowledge-boundaries/), and [Evolution](../evolution-layer/).
+Related references include [Capability routing boundary](https://nevitonsantana.github.io/adaptive-skills/capability-routing-boundary/), [Harness requirements](https://nevitonsantana.github.io/adaptive-skills/harness-requirements-for-skills/), [Knowledge boundaries](https://nevitonsantana.github.io/adaptive-skills/skill-knowledge-boundaries/), and [Evolution](https://nevitonsantana.github.io/adaptive-skills/evolution-layer/).
 
 ## Internal publication records
 
@@ -34,6 +34,6 @@ Editorial audits, readiness records, publication proof, and Blume authoring patt
 
 ## Next steps
 
-- Review [Current state](../updates/current-state/).
-- Read the [ADR index](../adr/README/).
-- Follow [Skill catalog governance](../skill-catalog-governance/) for library changes.
+- Review [Current state](https://nevitonsantana.github.io/adaptive-skills/updates/current-state/).
+- Read the [ADR index](https://nevitonsantana.github.io/adaptive-skills/adr/README/).
+- Follow [Skill catalog governance](https://nevitonsantana.github.io/adaptive-skills/skill-catalog-governance/) for library changes.

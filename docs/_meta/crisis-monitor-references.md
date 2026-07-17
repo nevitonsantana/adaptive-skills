@@ -9,7 +9,7 @@ description: "Reference documentation for Crisis Monitor references — inventor
 >
 > **Scope.** Markdown / JSON / YAML content in the repo. Excludes `evolution/observations/` and `evolution/proposals/deferred/` (which the reformulated Evolution Cycle #4 will reclassify between 2026-05-21 and 2026-06-30).
 >
-> **Related ADR.** [ADR-002 — Domain agnosticism](../adr/ADR-002-domain-agnosticism.md).
+> **Related ADR.** [ADR-002 — Domain agnosticism](https://nevitonsantana.github.io/adaptive-skills/adr/ADR-002-domain-agnosticism/).
 >
 > **Prior work.** PR [#31](https://github.com/nevitonsantana/adaptive-skills/pull/31) (2026-05-18) already shifted Crisis Monitor from "active backlog" to "team-owned field evidence" in the README. This PR continues and completes that work across the canonical doc layer.
 

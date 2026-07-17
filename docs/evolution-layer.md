@@ -158,13 +158,13 @@ It focuses on:
 - `debugging`
 - `ux-writing`
 
-It also uses the first validation case (Crisis Monitor + AletheIA — see [`crisis-monitor-case-study.md`](crisis-monitor-case-study/) for the labeled field record) as seed evidence, especially where the library needs to distinguish:
+It also uses the first validation case (Crisis Monitor + AletheIA — see [`crisis-monitor-case-study.md`](https://nevitonsantana.github.io/adaptive-skills/crisis-monitor-case-study/) for the labeled field record) as seed evidence, especially where the library needs to distinguish:
 
 - a good local fix
 - a reinforced skill
 - a true proposal-worthy library gap
 
-Per [ADR-002](adr/ADR-002-domain-agnosticism/), this case is the first instance, not the canonical reference. New observations from other consumer projects are expected and prioritized — the reformulated Evolution Cycle #4 (2026-05-21 → 2026-06-30) reclassifies existing observations against the agnosticism criterion.
+Per [ADR-002](https://nevitonsantana.github.io/adaptive-skills/adr/ADR-002-domain-agnosticism/), this case is the first instance, not the canonical reference. New observations from other consumer projects are expected and prioritized — the reformulated Evolution Cycle #4 (2026-05-21 → 2026-06-30) reclassifies existing observations against the agnosticism criterion.
 
 ## Evolution Layer vs Efficiency Layer
 

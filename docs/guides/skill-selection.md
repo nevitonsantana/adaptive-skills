@@ -53,6 +53,6 @@ Use `ux-strategy` while choosing a direction, `ux-provocation` to challenge a do
 
 ## Next steps
 
-- Check the [complete skills catalog](../getting-started/skill-catalog/).
-- Follow [How to use a skill](../how-to-use-a-skill/) for a safe invocation pattern.
-- Use [Workflow recipes](./workflow-recipes/) for tested sequences.
+- Check the [complete skills catalog](https://nevitonsantana.github.io/adaptive-skills/getting-started/skill-catalog/).
+- Follow [How to use a skill](https://nevitonsantana.github.io/adaptive-skills/how-to-use-a-skill/) for a safe invocation pattern.
+- Use [Workflow recipes](https://nevitonsantana.github.io/adaptive-skills/guides/workflow-recipes/) for tested sequences.

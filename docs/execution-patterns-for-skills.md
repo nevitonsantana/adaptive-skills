@@ -13,8 +13,8 @@ compatibility** with them.
 | Axis | Question | Declared in |
 |---|---|---|
 | **Execution pattern** | *which shape* — topology (single agent? fan-out? loop? tournament?) | AletheIA pattern selection; skills declare compatibility here |
-| **Execution mode** | *how deep* — basic / extended / high-risk / multi-agent | [execution-modes.md](execution-modes/) |
-| **Autonomy level** | *how much authority* — observe / advise / act_with_approval / autonomous_within_bounds | [harness-requirements-for-skills.md](harness-requirements-for-skills/) |
+| **Execution mode** | *how deep* — basic / extended / high-risk / multi-agent | [execution-modes.md](https://nevitonsantana.github.io/adaptive-skills/execution-modes/) |
+| **Autonomy level** | *how much authority* — observe / advise / act_with_approval / autonomous_within_bounds | [harness-requirements-for-skills.md](https://nevitonsantana.github.io/adaptive-skills/harness-requirements-for-skills/) |
 
 Choosing a pattern says nothing about depth or authority. A skill running as one unit of a
 `fan_out_and_synthesize` stage still runs at its own mode and within its own autonomy envelope.
@@ -49,11 +49,11 @@ A skill ships a `skill_execution_patterns` declaration
 A skill does not decide alone that it can run in any topology, and it does not execute policy.
 The declaration is consumed upstream (AletheIA selects the pattern and verifies compatibility) and
 enforced downstream (harness and enforcement apply limits). This mirrors how
-[harness requirements](harness-requirements-for-skills/) work: declaration here, authority there.
+[harness requirements](https://nevitonsantana.github.io/adaptive-skills/harness-requirements-for-skills/) work: declaration here, authority there.
 
 ## Related
 
-- [pattern-compatibility-guidelines.md](pattern-compatibility-guidelines/) — how to fill the declaration
-- [looping-models-for-skills.md](looping-models-for-skills/) — the two loop patterns from the skill side
-- [skills-in-orchestrated-workflows.md](skills-in-orchestrated-workflows/) — being a stage in an orchestration
-- [execution-modes.md](execution-modes/) — the depth axis
+- [pattern-compatibility-guidelines.md](https://nevitonsantana.github.io/adaptive-skills/pattern-compatibility-guidelines/) — how to fill the declaration
+- [looping-models-for-skills.md](https://nevitonsantana.github.io/adaptive-skills/looping-models-for-skills/) — the two loop patterns from the skill side
+- [skills-in-orchestrated-workflows.md](https://nevitonsantana.github.io/adaptive-skills/skills-in-orchestrated-workflows/) — being a stage in an orchestration
+- [execution-modes.md](https://nevitonsantana.github.io/adaptive-skills/execution-modes/) — the depth axis

@@ -11,10 +11,10 @@ Skills are portable micro-execution assets. Each skill carries a focused method,
 
 Start with:
 
-- [Skill model](../skill-model/) — anatomy and selection discipline.
-- [Skill categories](../skill-categories/) — current organizational taxonomy.
-- [Domain taxonomy](../domain-taxonomy/) — generic skills versus domain packs.
-- [Lean skill doctrine](../skill-design-principles/lean-skill-doctrine/) — why skills stay small and composable.
+- [Skill model](https://nevitonsantana.github.io/adaptive-skills/skill-model/) — anatomy and selection discipline.
+- [Skill categories](https://nevitonsantana.github.io/adaptive-skills/skill-categories/) — current organizational taxonomy.
+- [Domain taxonomy](https://nevitonsantana.github.io/adaptive-skills/domain-taxonomy/) — generic skills versus domain packs.
+- [Lean skill doctrine](https://nevitonsantana.github.io/adaptive-skills/skill-design-principles/lean-skill-doctrine/) — why skills stay small and composable.
 
 ## Composition
 
@@ -22,10 +22,10 @@ Composition describes how multiple skills participate in one task without becomi
 
 Start with:
 
-- [Execution patterns](../execution-patterns-for-skills/) — supported participation patterns.
-- [Looping models](../looping-models-for-skills/) — bounded iteration and stop conditions.
-- [Workflow recipes](../guides/workflow-recipes/) — practitioner-oriented examples.
-- [Skills in orchestrated workflows](../skills-in-orchestrated-workflows/) — AletheIA stage participation.
+- [Execution patterns](https://nevitonsantana.github.io/adaptive-skills/execution-patterns-for-skills/) — supported participation patterns.
+- [Looping models](https://nevitonsantana.github.io/adaptive-skills/looping-models-for-skills/) — bounded iteration and stop conditions.
+- [Workflow recipes](https://nevitonsantana.github.io/adaptive-skills/guides/workflow-recipes/) — practitioner-oriented examples.
+- [Skills in orchestrated workflows](https://nevitonsantana.github.io/adaptive-skills/skills-in-orchestrated-workflows/) — AletheIA stage participation.
 
 ## Capabilities
 
@@ -33,10 +33,10 @@ Capability metadata helps consumers discover and route to skills. It is an advis
 
 Start with:
 
-- [Capability model](../capability-model/) — definitions and layer boundary.
-- [Capability graph](../capability-graph/) — relationships among capabilities.
-- [Capability routing boundary](../capability-routing-boundary/) — what routing may and may not decide.
-- [Execution modes](../execution-modes/) — declared ways capabilities participate.
+- [Capability model](https://nevitonsantana.github.io/adaptive-skills/capability-model/) — definitions and layer boundary.
+- [Capability graph](https://nevitonsantana.github.io/adaptive-skills/capability-graph/) — relationships among capabilities.
+- [Capability routing boundary](https://nevitonsantana.github.io/adaptive-skills/capability-routing-boundary/) — what routing may and may not decide.
+- [Execution modes](https://nevitonsantana.github.io/adaptive-skills/execution-modes/) — declared ways capabilities participate.
 
 ## Harnesses
 
@@ -44,10 +44,10 @@ Harnesses make skills available in a runtime. They own local loading, permission
 
 Start with:
 
-- [Skill and harness boundaries](../skill-harness-boundaries/).
-- [Using skills inside harnesses](../using-skills-inside-harnesses/).
-- [Harness requirements](../harness-requirements-for-skills/).
-- [Operational runtime](../operational-runtime/).
+- [Skill and harness boundaries](https://nevitonsantana.github.io/adaptive-skills/skill-harness-boundaries/).
+- [Using skills inside harnesses](https://nevitonsantana.github.io/adaptive-skills/using-skills-inside-harnesses/).
+- [Harness requirements](https://nevitonsantana.github.io/adaptive-skills/harness-requirements-for-skills/).
+- [Operational runtime](https://nevitonsantana.github.io/adaptive-skills/operational-runtime/).
 
 ## Knowledge
 
@@ -55,9 +55,9 @@ Knowledge-aware skills can use governed source material without embedding propri
 
 Start with:
 
-- [Skill knowledge boundaries](../skill-knowledge-boundaries/).
-- [Declaring knowledge dependencies](../declaring-knowledge-dependencies/).
-- [Using proprietary frameworks safely](../using-proprietary-frameworks-safely/).
+- [Skill knowledge boundaries](https://nevitonsantana.github.io/adaptive-skills/skill-knowledge-boundaries/).
+- [Declaring knowledge dependencies](https://nevitonsantana.github.io/adaptive-skills/declaring-knowledge-dependencies/).
+- [Using proprietary frameworks safely](https://nevitonsantana.github.io/adaptive-skills/using-proprietary-frameworks-safely/).
 
 ## How the families connect
 
@@ -69,6 +69,6 @@ Start with:
 
 ## Next steps
 
-- Use the [ecosystem map](./ecosystem-map/) for a compact system view.
-- Read [Adaptive Skills and AletheIA](../aletheia-integration/) for the macro/micro boundary.
-- Return to [Choose the right skill](../guides/skill-selection/) when your goal is practical selection rather than architecture.
+- Use the [ecosystem map](https://nevitonsantana.github.io/adaptive-skills/concepts/ecosystem-map/) for a compact system view.
+- Read [Adaptive Skills and AletheIA](https://nevitonsantana.github.io/adaptive-skills/aletheia-integration/) for the macro/micro boundary.
+- Return to [Choose the right skill](https://nevitonsantana.github.io/adaptive-skills/guides/skill-selection/) when your goal is practical selection rather than architecture.

@@ -64,7 +64,7 @@ Adaptive Skills targets conformance with [`agentskills.io`](https://agentskills.
 
 ## 5. Relationship
 
-ADR-002 fixes the orthogonal axis (domain agnosticism). ADR-003 fixes the relationship with AletheIA so the two repos can be used independently or together. Epic 3 of the cross-repo plan (`agentskills.io` conformance audit) and Epic 5 (APM packaging) both consume this ADR as prerequisite. [`docs/concepts/ecosystem-map.md`](../concepts/ecosystem-map/) is the public-facing context.
+ADR-002 fixes the orthogonal axis (domain agnosticism). ADR-003 fixes the relationship with AletheIA so the two repos can be used independently or together. Epic 3 of the cross-repo plan (`agentskills.io` conformance audit) and Epic 5 (APM packaging) both consume this ADR as prerequisite. [`docs/concepts/ecosystem-map.md`](https://nevitonsantana.github.io/adaptive-skills/concepts/ecosystem-map/) is the public-facing context.
 
 ## 6. Review
 

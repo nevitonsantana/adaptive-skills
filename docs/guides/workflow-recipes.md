@@ -67,6 +67,6 @@ Recipes are starting patterns, not automatic pipelines. Run one skill at a time,
 
 ## Next steps
 
-- Use [Choose the right skill](./skill-selection/) to adapt a recipe to the current bottleneck.
-- Read [How to use a skill](../how-to-use-a-skill/) before invoking the first skill.
+- Use [Choose the right skill](https://nevitonsantana.github.io/adaptive-skills/guides/skill-selection/) to adapt a recipe to the current bottleneck.
+- Read [How to use a skill](https://nevitonsantana.github.io/adaptive-skills/how-to-use-a-skill/) before invoking the first skill.
 - In AletheIA, keep the Work Slice as the governing frame and use skills only inside that boundary.
