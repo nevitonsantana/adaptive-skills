@@ -1,4 +1,7 @@
-# Skill Observation Return Pattern
+---
+title: Observation and evidence return
+description: Return compact source-backed skill observations without taking authority over AletheIA Work Slices.
+---
 
 ## Goal
 
@@ -98,4 +101,4 @@ No rendering depth may hide an escalation signal or failed outcome.
 - [AletheIA integration](aletheia-integration/)
 - [Using skills inside harnesses](using-skills-inside-harnesses/)
 - [Harness requirements for skills](harness-requirements-for-skills/)
-- [AletheIA Observation Governance Contract](https://github.com/nevitonsantana/AletheIA/blob/main/docs/contracts/observation-governance-contract.md)
+- [AletheIA Observation Governance Contract](https://nevitonsantana.github.io/AletheIA/contracts/observation-governance-contract/)

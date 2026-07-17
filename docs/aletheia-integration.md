@@ -1,70 +1,85 @@
-# AletheIA Integration
+---
+title: Adaptive Skills and AletheIA
+description: Understand how AletheIA governs work while Adaptive Skills supplies reusable execution capabilities.
+---
 
-## Macro versus micro
+**AletheIA governs the work; Adaptive Skills provides reusable execution capabilities inside that work.**
 
-AletheIA and Adaptive Skills are complementary, not interchangeable.
+They are complementary systems with different responsibilities. Neither needs to absorb the other.
 
-- **AletheIA** handles macro orchestration: framing, gates, review, handoffs, continuity, and learning.
-- **Adaptive Skills** handle micro execution: specialist heuristics, reusable workflows, output discipline, and failure signals.
+## The relationship at a glance
 
-## Integration points
+| Layer | Owns | Does not own |
+|---|---|---|
+| **AletheIA — macro governance** | Framing, Work Slice gates, review, handoffs, continuity, and governed learning | The internal method of every reusable skill |
+| **Adaptive Skills — micro execution** | Specialist heuristics, bounded workflows, output discipline, and failure signals | Work Slice approval, closure, routing authority, or project governance |
+| **Consumer harness** | Local loading, projection, runtime access, and execution evidence | The portable semantic definition of roles or skills |
 
-AletheIA may:
-1. suggest the most relevant skill
-2. suggest optional modules based on context
-3. require minimum proof before closure
-4. detect that a handoff is required
-5. turn repeated breakdowns into observations or proposals
-6. help carry learning across rounds when the same lane keeps exposing the same friction
+Adaptive Skills remains independently useful. This repository never assumes that AletheIA is installed, running, or required.
 
+## How a Work Slice uses skills
 
-## Agent-role consumption layer
+1. **AletheIA frames the Work Slice.** It establishes the goal, boundary, evidence expectations, and gates.
+2. **The consumer selects a small skill set.** Selection follows the immediate execution need, not a default bundle.
+3. **Each skill performs a bounded micro task.** It returns a method output, risks, evidence references, and an advisory handoff signal.
+4. **AletheIA evaluates the evidence.** The governing layer decides whether the Work Slice continues, changes, escalates, or closes.
+5. **Recurring friction may become an observation.** Adaptive Skills still owns any governed change to its library.
 
-AletheIA roles may consume Adaptive Skills without turning this repository into an agent framework.
+## Roles and skills
 
-Healthy reading model:
+A role is not a skill.
 
-- **AletheIA role** -> semantic responsibility
-- **Adaptive Skill** -> reusable micro-execution support
-- **projection / runtime adapter** -> consumer-local delivery mechanism
+- An **AletheIA role** describes a portable semantic responsibility.
+- An **Adaptive Skill** describes a reusable execution method.
+- A **projection or runtime adapter** makes either one available in a specific consumer environment.
 
-That means a consumer may keep the same role across Codex and Claude Code while changing only how the skills are loaded or projected locally.
+For example, an `implementer` role may consume `testing` and `debugging`. The role owns the responsibility boundary; the skills support how work is performed. See [Roles and skills](agent-role-integration/) for the recommended mapping.
 
-For the recommended role-to-skill matrix, see `docs/agent-role-integration.md`.
+## Orchestrated workflows
 
-## Important boundary
+When a skill participates as a stage in an AletheIA orchestration, it must respect the declared input, output, gate, and evidence contract. It does not reach into other stages, silently broaden its authority, or replace the orchestration owner.
 
-Skills remain useful without AletheIA.
+See [Skills in orchestrated workflows](skills-in-orchestrated-workflows/) for stage participation and escalation rules.
 
-This repository should never assume that AletheIA is installed, running, or required.
+## Returning observations and evidence
 
-## First practical test
+A skill may return a compact, source-backed observation to an AletheIA-compatible harness. The return can describe:
 
-If you want to try the macro/micro split in a real task, start with `docs/aletheia-first-test.md` and `examples/aletheia/first-test-report.md`.
+- the skill and modules used;
+- result and available evidence;
+- risks and missing information;
+- an advisory handoff signal;
+- a governed recovery pointer when output is lossy.
 
-## Real case reference
+The return is decision support, not replacement evidence. It cannot approve, block, close, restart, or mutate a Work Slice. See [Observation and evidence return](skill-observation-return-pattern/).
 
-If you want to see the model after two real rounds in a product lane, read:
+## First integration example
 
-- `docs/crisis-monitor-case-study.md`
-- `examples/aletheia/crisis-monitor-two-round-pilot.md`
+The smallest useful test uses one feature-like task with visible proof:
 
-## Evolution-layer boundary
+1. AletheIA frames the task.
+2. `workflow`, `feature-planning`, and `testing` support micro execution.
+3. AletheIA evaluates closure evidence.
 
-The evolution layer can be informed by AletheIA, but it should never depend on AletheIA to exist.
-AletheIA may surface recurring signals; the Adaptive Skills repository still owns the governed writeback through its own review process.
+Follow [Run the first AletheIA test](aletheia-first-test/) for the complete exercise.
 
-## Efficiency-layer boundary
+## Boundaries and non-goals
 
-A future Efficiency Layer may align closely with AletheIA because both care about handoffs, checkpoints, and bounded work. Even then, the Efficiency Layer should remain an Adaptive Skills track rather than becoming an AletheIA requirement.
+This integration does not:
 
-## Current Efficiency Layer focus
+- make AletheIA mandatory for Adaptive Skills;
+- turn Adaptive Skills into an agent framework;
+- give a skill Work Slice authority;
+- make role-to-skill mappings mandatory;
+- change projection or runtime behavior;
+- let observations replace authoritative source evidence;
+- reopen the Efficiency Layer as hidden orchestration.
 
-The current Efficiency Layer roadmap is intentionally narrow.
-Its first candidate skills are:
+The Efficiency Layer remains a bounded Adaptive Skills track focused on lightweight execution support such as `task-chunking`, `handoff-summary`, and `checkpoint-review`.
 
-- `task-chunking`
-- `handoff-summary`
-- `checkpoint-review`
+## Next steps
 
-These are intentionally lighter than model-routing or prompt-framing and should be easier to validate with real work before deeper overlap with AletheIA is considered.
+- Read [Roles and skills](agent-role-integration/) to separate responsibility from method.
+- Read [Skills in orchestrated workflows](skills-in-orchestrated-workflows/) for stage contracts.
+- Read [Observation and evidence return](skill-observation-return-pattern/) for portable returns.
+- Run [the first AletheIA test](aletheia-first-test/) in a small real task.

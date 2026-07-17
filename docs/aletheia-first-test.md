@@ -1,92 +1,109 @@
-# First AletheIA Test
+---
+title: Run the first AletheIA test
+description: Validate the macro-governance and micro-execution split with one small, evidence-producing task.
+---
 
-## Goal
+This exercise tests whether AletheIA and Adaptive Skills remain understandable when used together. It is an operating test, not a benchmark or runtime integration.
 
-Run a small, explicit test of how Adaptive Skills behaves when AletheIA is used as the macro layer.
+## Before you begin
 
-This is **not** a benchmark and not a runtime integration.
-It is a practical operating test for the macro/micro split:
+Choose one small feature-like task that:
 
-- **AletheIA** -> framing, proof expectations, review gates, handoff, continuity
-- **Adaptive Skills** -> micro execution pattern for the task itself
+- has a clear human owner;
+- can be completed in one bounded Work Slice;
+- produces visible proof;
+- does not require sensitive or restricted context for the first trial.
 
-## Recommended first test shape
+Use this initial skill set:
 
-Use one small feature-like task with visible proof.
+- `workflow`;
+- `feature-planning`;
+- `testing`.
 
-Recommended bundle:
-- `workflow`
-- `feature-planning`
-- `testing`
+Add `triad-check` only when the task genuinely crosses product, design, and engineering.
 
-Optional if the task crosses functions:
-- `triad-check`
+## Step 1 — Let AletheIA frame the task
 
-## What to test
+Record:
 
-You want to learn whether the split is understandable in real use.
+- the goal;
+- the immediate boundary;
+- explicit non-goals;
+- minimum closure evidence;
+- review or handoff gates;
+- known uncertainty.
 
-Questions to answer:
-- can AletheIA frame the task without absorbing the skill?
-- can the skill guide execution without becoming a mini-framework?
-- does proof stay clearer when AletheIA owns the gate and the skill owns the execution pattern?
-- does handoff stay explicit if a cross-functional step appears?
+Do not select a large skill bundle during framing.
 
-## Suggested flow
+## Step 2 — Use skills for micro execution
 
-### 1. AletheIA frames the task
+Run one skill at a time:
+
+1. `workflow` makes the local execution boundary and next step explicit.
+2. `feature-planning` defines the smallest useful delivery slice.
+3. `testing` defines proof proportionate to risk.
+
+Inspect each output before invoking the next skill. A skill may expose a reason to stop, review, or change the plan.
+
+## Step 3 — Return evidence
 
 Capture:
-- goal
-- dominant lane
-- immediate boundary
-- minimum proof
-- whether handoff risk exists
 
-### 2. Adaptive Skills drives the micro moves
+- which skill and modules were used;
+- the usable, partial, failed, or unavailable result;
+- authoritative evidence references;
+- known risks and missing values;
+- the advisory handoff signal.
 
-Use:
-- `workflow` to set local execution clarity
-- `feature-planning` to define the smallest useful slice
-- `testing` to define proportionate proof
+Use the [skill observation return pattern](skill-observation-return-pattern/) when a structured return helps. Do not infer unavailable values.
 
-### 3. AletheIA evaluates closure
+## Step 4 — Let AletheIA evaluate closure
 
-Check:
-- was the right skill bundle chosen?
-- was the proof explicit enough?
-- did a handoff become necessary?
-- did any repeated failure suggest a library improvement?
+The governing layer checks:
 
-## Expected output of the test
+- whether the selected skills matched the Work Slice;
+- whether evidence satisfies the declared gate;
+- whether a human review or handoff is required;
+- whether a repeated failure should become an observation;
+- whether the slice should continue, change, escalate, or close.
 
-At the end of the test, you should be able to write:
-- what AletheIA did
-- what the skills did
-- what stayed local to the consumer project
-- what felt clear
-- what felt redundant
-- what should change next
+The skill output informs this decision but does not make it.
+
+## Record what you learned
+
+At the end, write:
+
+- what AletheIA governed;
+- what each skill contributed;
+- what remained consumer-local;
+- what felt clear or redundant;
+- what evidence was available or missing;
+- the next safe improvement, if any.
+
+Use the repository's first-test report template in your local copy: `examples/aletheia/first-test-report.md`.
 
 ## Success criteria
 
-The test is successful if:
-- the macro/micro split remains legible
-- the task gets better framing and better proof with low overhead
-- the skill bundle stays small
-- no one confuses project-local rules with the generic library
+The trial succeeds when:
+
+- the macro/micro split remains legible;
+- framing and proof improve with low overhead;
+- the skill set stays small;
+- evidence remains source-backed;
+- project-local rules are not mistaken for generic library behavior.
 
 ## Failure signals
 
-- AletheIA starts duplicating the skill internals
-- the skill starts duplicating macro governance
-- the team cannot tell who owns proof versus execution guidance
-- the test needs too much setup for a small task
+Stop and review when:
 
-## Recommended artifact
+- AletheIA duplicates skill internals;
+- a skill starts deciding macro gates or closure;
+- proof ownership becomes unclear;
+- the setup is disproportionate to the task;
+- the workflow requires invented evidence or unavailable measurements.
 
-Use `examples/aletheia/first-test-report.md` as the output skeleton.
+## Next steps
 
-## Worked example
-
-If you want to see the test as a concrete scenario, read `examples/aletheia/feature-slice-worked-example.md` and `examples/aletheia/first-test-report-sample.md`.
+- Compare the result with [Adaptive Skills and AletheIA](aletheia-integration/).
+- Read [Observation and evidence return](skill-observation-return-pattern/) before formalizing the record.
+- Use [Workflow recipes](guides/workflow-recipes/) for later tasks, while preserving AletheIA as the governing frame.

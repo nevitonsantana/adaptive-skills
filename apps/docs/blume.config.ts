@@ -54,6 +54,7 @@ export default defineConfig({
         {
           label: "Concepts",
           items: [
+            "/concepts/index",
             {
               label: "Skills",
               items: [

@@ -1,4 +1,7 @@
-# Skills in Orchestrated Workflows
+---
+title: Skills in orchestrated workflows
+description: Understand the input, output, evidence, escalation, and authority boundaries for skills used as orchestration stages.
+---
 
 When the selected execution vehicle is an orchestrated workflow, a skill runs as a **stage** in an
 orchestration contract (owned by the AletheIA repo, `docs/contracts/orchestration-contract.md`).
@@ -29,7 +32,7 @@ A stage does not improvise when its assumptions break. The skill's `escalation_t
 (`objective_gate_missing`, `touches_sensitive_area`, `judgment_required`, `recurring_failure`,
 `comprehension_debt_risk`) route the run back to the orchestration owner — pausing the stage, not
 silently degrading it. Handoff between stages follows the same discipline as
-[handoff-summary](https://github.com/nevitonsantana/adaptive-skills/blob/main/skills/handoff-summary/SKILL.md)-style compact handoffs: the next stage gets
+[handoff-summary](getting-started/skill-catalog/)-style compact handoffs: the next stage gets
 the declared output plus evidence refs, not a transcript.
 
 ## Maker-checker inside orchestrations

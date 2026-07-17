@@ -1,4 +1,7 @@
-# Agent Role Integration
+---
+title: Roles and skills
+description: Keep AletheIA semantic responsibilities separate from reusable Adaptive Skills and runtime projections.
+---
 
 ## Goal
 
