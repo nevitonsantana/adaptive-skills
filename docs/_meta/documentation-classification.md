@@ -16,7 +16,9 @@ The classification preserves existing public routes while the content is progres
 
 ## Public practitioner — use Adaptive Skills
 
+- `docs/guides/skill-selection.md`
 - `docs/getting-started/skill-catalog.md`
+- `docs/guides/workflow-recipes.md`
 - `docs/guides/install-via-apm.md`
 - `docs/codex-consumer-setup.md`
 - `docs/claude-consumer-setup.md`

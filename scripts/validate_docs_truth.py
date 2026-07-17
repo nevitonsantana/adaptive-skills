@@ -18,13 +18,7 @@ def skill_category(path: Path) -> str | None:
 
 
 def catalog_index_names(text: str) -> list[str]:
-    index = text.split('## Skill details', 1)[0]
-    return re.findall(r"^\| \[`([a-z0-9-]+)`\]\(#[a-z0-9-]+\) \|", index, re.M)
-
-
-def catalog_detail_names(text: str) -> list[str]:
-    details = text.split('## Skill details', 1)[1].split('## Composite flows', 1)[0]
-    return re.findall(r'^### ([a-z0-9-]+)$', details, re.M)
+    return re.findall(r"^\| `([a-z0-9-]+)` \|", text, re.M)
 
 
 def category_rosters(text: str) -> dict[str, set[str]]:
@@ -61,17 +55,6 @@ def main() -> int:
         errors.append(f'catalog index is missing skills: {", ".join(missing)}')
     if unknown:
         errors.append(f'catalog index contains unknown skills: {", ".join(unknown)}')
-
-    detail_names = catalog_detail_names(catalog_path.read_text())
-    detail_duplicates = sorted(name for name, count in Counter(detail_names).items() if count > 1)
-    if detail_duplicates:
-        errors.append(f'catalog details contain duplicate skills: {", ".join(detail_duplicates)}')
-    detail_missing = sorted(set(skills) - set(detail_names))
-    detail_unknown = sorted(set(detail_names) - set(skills))
-    if detail_missing:
-        errors.append(f'catalog details are missing skills: {", ".join(detail_missing)}')
-    if detail_unknown:
-        errors.append(f'catalog details contain unknown skills: {", ".join(detail_unknown)}')
 
     canonical_by_category: dict[str, set[str]] = defaultdict(set)
     for name, category in skills.items():

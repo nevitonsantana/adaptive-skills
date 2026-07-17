@@ -29,7 +29,9 @@ export default defineConfig({
         {
           label: "Use Adaptive Skills",
           items: [
+            "/guides/skill-selection",
             "/getting-started/skill-catalog",
+            "/guides/workflow-recipes",
             "/guides/install-via-apm",
             "/codex-consumer-setup",
             "/claude-consumer-setup",
