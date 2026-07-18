@@ -20,6 +20,12 @@ Place AletheIA and Adaptive Skills inside the broader 2026 ecosystem of agent-as
 
 The ecosystem is organized by **what question each layer answers**, not by vendor or product family.
 
+### Adaptive Skills layer
+
+![Illustrated Adaptive Skills layer](../assets/layer-adaptive-skills.png)
+
+*Presentation reference: this illustration explains the intended capability-library model. Its visual metrics and outcome claims are illustrative, not product telemetry or delivery evidence.*
+
 | Layer | Question it answers | Ecosystem solutions | This ecosystem |
 |---|---|---|---|
 | Open standards | How do components interoperate? | `AGENTS.md`, `agentskills.io`, MCP | Conformance target |

@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+- add the illustrated Adaptive Skills layer to the ecosystem map with explicit presentation-only evidence boundaries
+
 - clarify the public category label as `documentation` with the canonical `docs` identifier
 
 - correct the public library overview so all 11 categories are listed, including `docs` for the documentation skill
