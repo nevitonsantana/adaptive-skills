@@ -3,6 +3,10 @@ import { defineConfig } from "blume";
 export default defineConfig({
   title: "Adaptive Skills Docs",
   description: "Official documentation for Adaptive Skills micro-skills, capability metadata, projections, and governed evolution.",
+  github: {
+    owner: "nevitonsantana",
+    repo: "adaptive-skills",
+  },
   content: {
     sources: [{ type: "filesystem", root: "../../docs" }],
   },
