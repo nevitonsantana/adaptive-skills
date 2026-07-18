@@ -86,7 +86,7 @@ The canonical library currently contains **34 generic skills across 11 categorie
 - governance;
 - quality;
 - metrics;
-- docs.
+- documentation (`docs`).
 
 The [skill catalog](https://nevitonsantana.github.io/adaptive-skills/getting-started/skill-catalog/) lists every skill, the signal that suggests using it, and its expected contribution.
 

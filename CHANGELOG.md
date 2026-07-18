@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+- clarify the public category label as `documentation` with the canonical `docs` identifier
+
 - correct the public library overview so all 11 categories are listed, including `docs` for the documentation skill
 
 - repair public documentation routing across nested pages, validate every local published route after build, and add creator links for Neviton Santana
