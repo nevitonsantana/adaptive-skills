@@ -7,7 +7,7 @@ This page describes the repository state represented by current documentation an
 
 ## Published capability surface
 
-- **33 generic skills** under `skills/*/SKILL.md`.
+- **34 generic skills** under `skills/*/SKILL.md`.
 - **3 domain-pack skills** in the crisis-management validation pack.
 - Generic skills remain the reusable public capability library.
 - Domain-pack skills remain validation cases rather than part of the generic inventory.
