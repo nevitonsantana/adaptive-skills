@@ -1,0 +1,4 @@
+interface:
+  display_name: "Documentation"
+  short_description: "Create and maintain clear, structured technical documentation"
+  default_prompt: "Use $documentation to plan, write, restructure, and validate technical documentation for the intended audience."

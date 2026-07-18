@@ -758,6 +758,27 @@
         "mode": "available-not-default",
         "target_path": null
       }
+    },
+    {
+      "id": "documentation",
+      "source_path": "skills/documentation/SKILL.md",
+      "category": "docs",
+      "status": "active",
+      "portability_tags": [
+        "docs",
+        "generic"
+      ],
+      "codex_projection": {
+        "enabled": true,
+        "target_name": "documentation",
+        "generate_openai_yaml": true,
+        "default_prompt": "Use $documentation when creating, restructuring, or validating technical documentation."
+      },
+      "claude_projection": {
+        "enabled": true,
+        "mode": "available-not-default",
+        "target_path": null
+      }
     }
   ]
 }

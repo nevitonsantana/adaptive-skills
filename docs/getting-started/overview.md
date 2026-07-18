@@ -74,7 +74,7 @@ This model is called **Core + Modules + Triggers**. You do not need to understan
 
 ## Current library
 
-The canonical library currently contains **33 generic skills across 10 categories**:
+The canonical library currently contains **34 generic skills across 11 categories**:
 
 - engineering;
 - design;

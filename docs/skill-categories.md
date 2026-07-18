@@ -30,6 +30,13 @@ Design-domain skills for experience framing, UX critique, content clarity, and b
 - **Published:** `ux-strategy`, `ux-provocation`, `heuristic-audit`, `ux-writing`, `design-system-intelligence`
 - **Backlog:** `ux-research-synthesis`, `ux-ui-review`
 
+## docs
+
+Documentation skills for structuring, writing, publishing, and validating reader-facing technical content.
+
+- **Published:** `documentation`
+- **Backlog:** —
+
 ## efficiency
 
 Skills that compound execution speed without sacrificing clarity — task chunking, handoff hygiene, mid-flight checkpoints.

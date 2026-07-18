@@ -9,7 +9,7 @@ Short answers to common questions from new users and teams.
 
 ### What is Adaptive Skills?
 
-A portable library of 33 small capabilities for AI-assisted work. Each skill defines when it fits, essential moves, optional depth, an expected output, and verification criteria.
+A portable library of 34 small capabilities for AI-assisted work. Each skill defines when it fits, essential moves, optional depth, an expected output, and verification criteria.
 
 ### Is a skill just a prompt?
 
@@ -105,7 +105,7 @@ Real usage can produce observations. Maintainers may turn repeated evidence into
 
 ### Where can I see all available skills?
 
-Use the [skill catalog](https://nevitonsantana.github.io/adaptive-skills/getting-started/skill-catalog/). It lists all 33 canonical skills by category and trigger.
+Use the [skill catalog](https://nevitonsantana.github.io/adaptive-skills/getting-started/skill-catalog/). It lists all 34 canonical skills by category and trigger.
 
 ## Troubleshooting
 

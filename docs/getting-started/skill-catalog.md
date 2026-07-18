@@ -3,7 +3,7 @@ title: Skills catalog
 description: Browse all published Adaptive Skills by category, trigger, and expected outcome.
 ---
 
-Adaptive Skills currently publishes **33 generic skills**. Use this page when you already know the kind of help you need. If the task is still unclear, start with [Choose the right skill](https://nevitonsantana.github.io/adaptive-skills/guides/skill-selection/).
+Adaptive Skills currently publishes **34 generic skills**. Use this page when you already know the kind of help you need. If the task is still unclear, start with [Choose the right skill](https://nevitonsantana.github.io/adaptive-skills/guides/skill-selection/).
 
 Each skill appears once in this catalog. Its `skills/<name>/SKILL.md` file remains the canonical instruction source.
 
@@ -32,6 +32,12 @@ Each skill appears once in this catalog. Its `skills/<name>/SKILL.md` file remai
 | `heuristic-audit` | An existing interface has usability risks | Prioritized failures and defensible fixes |
 | `ux-writing` | Product language is unclear or unsafe | Clear, actionable interface language |
 | `design-system-intelligence` | Reviewing an artifact against declared design-system sources | Source-backed conformance and exception evidence |
+
+## Documentation
+
+| Skill | Use it when | Expected outcome |
+|---|---|---|
+| `documentation` | Creating, restructuring, or auditing technical documentation | Progressive reader journey, canonical content, and validated links |
 
 ## Planning
 
@@ -92,7 +98,7 @@ Each skill appears once in this catalog. Its `skills/<name>/SKILL.md` file remai
 
 ## What is outside this catalog
 
-- Domain-pack skills are validation cases and are not part of the 33-skill generic library.
+- Domain-pack skills are validation cases and are not part of the 34-skill generic library.
 - Capability metadata is an advisory discovery layer, not an additional skill inventory.
 - Evolution records describe how skills improve; they are not executable skills.
 

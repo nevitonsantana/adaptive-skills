@@ -35,7 +35,7 @@ ls .claude/skills/
 # ux-writing  workflow
 ```
 
-33 skills, one per directory, each with a `SKILL.md` entrypoint.
+34 skills, one per directory, each with a `SKILL.md` entrypoint.
 
 ## Install a single skill
 
@@ -57,7 +57,7 @@ The selection is persisted in your project's `apm.yml` and lockfile, so subseque
 
 | In the APM payload | Not in the APM payload |
 |---|---|
-| `skills/**` (all 33 skills) | `domain-packs/` (see below) |
+| `skills/**` (all 34 skills) | `domain-packs/` (see below) |
 | `apm.yml` | `evolution/` (meta-process, not capability) |
 | `docs/skill-categories.md` | `projections/`, `capabilities/`, `templates/`, `examples/` |
 | `docs/guides/install-via-apm.md` | `docs/concepts/`, `docs/_meta/`, internal docs |
@@ -88,7 +88,7 @@ pip install 'skills-ref==0.1.0'
 skills-ref validate .claude/skills/
 ```
 
-All 33 skills should report conformant.
+All 34 skills should report conformant.
 
 ## Two-step caveat (vs. AletheIA)
 
