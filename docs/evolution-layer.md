@@ -8,6 +8,10 @@ description: "Reference documentation for Evolution Layer in Adaptive Skills."
 Adaptive Skills already treats skills as reusable, structured, and portable.
 The next step is to let the library improve through real usage without turning it into an unrestricted self-rewriting system.
 
+![Governed Evolution Loop](https://nevitonsantana.github.io/adaptive-skills/assets/adaptive-skills/07_governed_evolution_loop.png)
+
+*Governed Evolution Loop — the evidence-based cycle for reviewing and evolving skills.*
+
 The evolution layer exists to make that improvement:
 
 - visible

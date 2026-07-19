@@ -7,6 +7,10 @@ description: "Reference documentation for Crisis Monitor Case Study in Adaptive 
 
 The first real consumer test of Adaptive Skills happened in **Crisis Monitor**, using **AletheIA** as the macro layer and a small set of skills as the micro layer.
 
+![Case Slice: Crisis Monitor](https://nevitonsantana.github.io/adaptive-skills/assets/adaptive-skills/10_case_slice_crisis_monitor.png)
+
+*Case Slice: Crisis Monitor — supplementary illustration for the documented consumer case. The case narrative and evidence remain authoritative.*
+
 This matters because it was not a synthetic demo.
 It was a bounded, real product lane with existing signals, approvals, follow-up explainability, and auditability.
 

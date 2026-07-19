@@ -19,6 +19,10 @@ This is a portable return pattern, not a required runtime API. Skills remain use
 
 The authoritative source remains the referenced execution, artifact, knowledge record, or user input. A compact return is a decision-support observation, not replacement evidence.
 
+![Evidence Return Packet](https://nevitonsantana.github.io/adaptive-skills/assets/adaptive-skills/06_evidence_return_packet.png)
+
+*Evidence Return Packet — a conceptual structure for returning outcomes, evidence references, risks, and next-step signals.*
+
 ## Minimum return
 
 ```yaml

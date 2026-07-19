@@ -5,6 +5,10 @@ description: "Reference documentation for Capability Graph in Adaptive Skills."
 
 The Capability Graph describes how skills and modules relate during execution.
 
+![Tree for Humans, Graph for Execution](https://nevitonsantana.github.io/adaptive-skills/assets/adaptive-skills/04_tree_for_humans_graph_for_execution.png)
+
+*Tree for Humans, Graph for Execution — a conceptual view of discovery and composition.*
+
 It is a hybrid model:
 
 - a tree for human browsing;

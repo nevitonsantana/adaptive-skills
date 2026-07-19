@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+- add curated Adaptive Skills documentation illustrations with captions and explicit conceptual/evidence boundaries
+
 - add the illustrated Adaptive Skills layer to the ecosystem map with explicit presentation-only evidence boundaries
 
 - clarify the public category label as `documentation` with the canonical `docs` identifier
