@@ -8,6 +8,10 @@ description: "Reference documentation for Skill Model in Adaptive Skills."
 Rigid step-by-step skills break when one skill supports multiple task shapes.
 Unstructured skills break because they depend on improvisation.
 
+![Anatomy of a Skill](https://nevitonsantana.github.io/adaptive-skills/assets/adaptive-skills/01_anatomy_of_a_skill.png)
+
+*Anatomy of a Skill — the elements that define a reusable skill in Adaptive Skills.*
+
 Adaptive Skills uses a middle path:
 
 - **Core Moves** for invariants

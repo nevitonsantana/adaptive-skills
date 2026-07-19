@@ -5,6 +5,10 @@ description: Understand what Adaptive Skills is, what problem it solves, how a s
 
 Adaptive Skills is a portable library of small capabilities for AI-assisted work. A capability is a reusable way to approach one kind of problem, such as clarifying intent, planning a feature, debugging a failure, reviewing an interface, testing a change, or handing work to another person or agent.
 
+![Skills as reusable building blocks](https://nevitonsantana.github.io/adaptive-skills/assets/adaptive-skills/11_skills_as_reusable_building_blocks.png)
+
+*Skills as reusable building blocks — a conceptual illustration of modular, composable capabilities. It is not a performance claim.*
+
 The library helps make AI-assisted work less improvised while keeping human judgment and project rules in control.
 
 ## The problem it solves

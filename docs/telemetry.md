@@ -6,6 +6,10 @@ description: "Reference documentation for Recommended Telemetry in Adaptive Skil
 This repository still does not implement runtime telemetry.
 What it now provides is a **governed telemetry shape** so real usage can feed the evolution layer without drifting into anecdote.
 
+![Telemetry Evidence Funnel](https://nevitonsantana.github.io/adaptive-skills/assets/adaptive-skills/08_telemetry_evidence_funnel.png)
+
+> **Conceptual / future-state illustration.** This image describes a possible evidence flow; it does not represent an implemented telemetry store, automatic collector, dashboard, or outcome metric.
+
 ## Recommended fields
 
 - `skill_id`

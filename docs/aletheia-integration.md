@@ -7,6 +7,10 @@ description: Understand how AletheIA governs work while Adaptive Skills supplies
 
 They are complementary systems with different responsibilities. Neither needs to absorb the other.
 
+![Macro Governance / Micro Execution](https://nevitonsantana.github.io/adaptive-skills/assets/adaptive-skills/03_macro_governance_micro_execution.png)
+
+*Macro Governance / Micro Execution — AletheIA governs the work while Adaptive Skills provides reusable execution capabilities.*
+
 ## The relationship at a glance
 
 | Layer | Owns | Does not own |

@@ -15,6 +15,10 @@ what logs, what rollback.
 The two must not be merged. A skill should run unchanged inside a light harness or a strict one; a
 harness should govern any skill without rewriting it.
 
+![Skill is not harness](https://nevitonsantana.github.io/adaptive-skills/assets/adaptive-skills/02_skill_is_not_harness.png)
+
+*Skill is not harness — a skill defines thinking and output; a harness defines execution conditions and controls.*
+
 This sits alongside [skill-knowledge-boundaries.md](https://nevitonsantana.github.io/adaptive-skills/skill-knowledge-boundaries/) (skill vs.
 content) — together they keep a skill free of both embedded content and embedded environment.
 

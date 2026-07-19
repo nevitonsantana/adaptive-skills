@@ -7,6 +7,10 @@ Adaptive Skills currently publishes **34 generic skills**. Use this page when yo
 
 Each skill appears once in this catalog. Its `skills/<name>/SKILL.md` file remains the canonical instruction source.
 
+![Skill Catalog: 11 Categories](https://nevitonsantana.github.io/adaptive-skills/assets/adaptive-skills/09_skill_catalog_11_categories.png)
+
+*Skill Catalog: 11 Categories — 34 generic skills organized by category, trigger, and expected outcome.*
+
 ## Engineering
 
 | Skill | Use it when | Expected outcome |
