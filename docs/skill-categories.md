@@ -32,7 +32,7 @@ Design-domain skills for experience framing, UX critique, content clarity, and b
 
 ## docs
 
-Documentation skills for structuring, writing, publishing, and validating reader-facing technical content.
+Documentation skills for designing self-service reader journeys, creating source-backed onboarding, manuals, guides, and reference content, and validating procedural clarity, recovery paths, and publication quality across reader levels.
 
 - **Published:** `documentation`
 - **Backlog:** —
