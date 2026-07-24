@@ -11,6 +11,7 @@ This page describes the repository state represented by current documentation an
 - **3 domain-pack skills** in the crisis-management validation pack.
 - Generic skills remain the reusable public capability library.
 - Domain-pack skills remain validation cases rather than part of the generic inventory.
+- `documentation` is the generic `docs` skill for source-backed self-service journeys across novice, practitioner, advanced, and maintainer readers.
 
 See the [complete skills catalog](https://nevitonsantana.github.io/adaptive-skills/getting-started/skill-catalog/) for task triggers and expected outcomes.
 
@@ -32,9 +33,11 @@ Adaptive Skills can be consumed independently through a compatible harness. Alet
 
 The public Blume site provides progressive paths for beginners, practitioners, advanced readers, and maintainers. Manual GitHub Pages publication remains the current release process.
 
+The canonical `documentation` skill uses five durable Core Moves and context-triggered modules for reader journeys, information architecture, technical storytelling, controlled procedural clarity, editorial governance, change documentation, and publication QA. A reusable checklist and three synthetic validation cases cover multi-level onboarding, executable procedures, and mixed-corpus audits.
+
 ## Maturity boundaries
 
-Current documentation does not claim autonomous orchestration, automatic routing authority, universal effectiveness from pilots, automatic promotion from observation, or an AletheIA dependency.
+Current documentation does not claim autonomous orchestration, automatic routing authority, universal effectiveness from pilots, automatic promotion from observation, formal ASD-STE100 compliance, elimination of all support dependency, or an AletheIA dependency.
 
 ## How to verify
 

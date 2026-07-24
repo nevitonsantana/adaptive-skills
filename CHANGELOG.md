@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+- evolve the generic `documentation` skill around source-backed self-service reader journeys, five durable Core Moves, context-triggered modules, a reusable checklist, and synthetic validation cases; align its public catalog, category, generic-domain taxonomy, current-state record, and consumer-facing changelog without adding runtime enforcement or formal ASD-STE100 compliance
+
 - add curated Adaptive Skills documentation illustrations with captions and explicit conceptual/evidence boundaries
 
 - add the illustrated Adaptive Skills layer to the ecosystem map with explicit presentation-only evidence boundaries
