@@ -41,7 +41,7 @@ Each skill appears once in this catalog. Its `skills/<name>/SKILL.md` file remai
 
 | Skill | Use it when | Expected outcome |
 |---|---|---|
-| `documentation` | Creating, restructuring, or auditing technical documentation | Progressive reader journey, canonical content, and validated links |
+| `documentation` | Creating, restructuring, or auditing onboarding, manuals, guides, and technical documentation | Self-service reader journeys, source-backed content, controlled procedural clarity, and validated recovery paths |
 
 ## Planning
 

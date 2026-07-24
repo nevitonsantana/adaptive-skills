@@ -772,7 +772,7 @@
         "enabled": true,
         "target_name": "documentation",
         "generate_openai_yaml": true,
-        "default_prompt": "Use $documentation when creating, restructuring, or validating technical documentation."
+        "default_prompt": "Use $documentation to plan, write, restructure, or validate a source-backed self-service journey for the intended readers."
       },
       "claude_projection": {
         "enabled": true,
