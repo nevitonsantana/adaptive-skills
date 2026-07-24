@@ -1,4 +1,4 @@
 interface:
   display_name: "Documentation"
-  short_description: "Create and maintain clear, structured technical documentation"
-  default_prompt: "Use $documentation to plan, write, restructure, and validate technical documentation for the intended audience."
+  short_description: "Create self-service documentation for readers at different levels"
+  default_prompt: "Use $documentation to plan, write, restructure, or validate a source-backed self-service journey for the intended readers."
