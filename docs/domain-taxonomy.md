@@ -8,18 +8,17 @@ description: "Reference documentation for Domain Taxonomy in Adaptive Skills."
 Generic skills live under `skills/` and should work across products with little or no domain adaptation.
 
 Current generic domains:
-- engineering
-- design
 - business
-- quality
-- metrics
 - cross-functional
+- design
+- docs
 - efficiency
-- planning
-
-Skeleton-only in v0:
-- product
+- engineering
 - governance
+- metrics
+- planning
+- product
+- quality
 
 ## Domain packs
 

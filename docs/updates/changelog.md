@@ -7,9 +7,11 @@ This page summarizes changes that matter to skill consumers. The root `CHANGELOG
 
 ## Unreleased
 
-Current documentation work improves onboarding, task-based discovery, workflow recipes, AletheIA boundaries, navigation, title consistency, rendered links, and separation among current state, evidence, evolution, roadmaps, and maintainer records.
+The generic `documentation` skill now centers on source-backed self-service journeys for novice, practitioner, advanced, and maintainer readers. Its contract uses five durable Core Moves, context-triggered modules, a reusable checklist, and synthetic validation cases for multi-level onboarding, procedural clarity, and mixed-corpus auditing.
 
-These documentation changes do not alter skill behavior, runtime contracts, projections, or AletheIA authority.
+Public discovery and taxonomy now align the `docs` category, skill catalog, category description, and all 11 current generic domains. The broader documentation journey continues to improve onboarding, navigation, rendered links, and separation among current state, evidence, evolution, roadmaps, and maintainer records.
+
+These changes alter consultative skill guidance and discovery metadata. They do not add runtime enforcement, automatic routing authority, formal ASD-STE100 compliance, or AletheIA authority.
 
 ## 0.1.2
 
